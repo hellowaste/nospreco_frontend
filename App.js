@@ -2,14 +2,18 @@ import React from 'react';
 import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from 'react-redux';
 import userReducer from './src/state/features/user';
+import AppNavigation from './src/navigations/AppNavigation';
 
-import {SafeAreaView, Text, View} from 'react-native';
+const store = configureStore({
+  reducer: {
+    user: userReducer,
+  },
+});
 
-const App = () => {
+export default function App() {
   return (
-    <SafeAreaView>
-      <Text>App</Text>
-    </SafeAreaView>
+    <Provider store={store}>
+      <AppNavigation />
+    </Provider>
   );
-};
-export default App;
+}

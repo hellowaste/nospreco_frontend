@@ -6,10 +6,12 @@ const WelcomeScreen = ({navigation}) => {
     <SafeAreaView>
       <TouchableOpacity
         onPress={() => navigation.navigate('RegistrationScreen')}>
-        <Text>Registrazione</Text>
+        <Text style={{fontSize: 16, fontWeight: '600', marginTop: 20}}>
+          Registrazione
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
-        <Text>Login</Text>
+        <Text style={{fontSize: 16, fontWeight: '600', marginTop: 20}}>Login</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );

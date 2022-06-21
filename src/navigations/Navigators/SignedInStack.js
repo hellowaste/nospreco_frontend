@@ -27,11 +27,6 @@ const signedInScreenOptions = {
     },
     shadowRadius: 3.5,
   },
-  tabBarLabelStyle: {
-    fontSize: 8,
-    marginHorizontal: 2,
-    marginBottom: -10,
-  },
   tabBarActiveTintColor: '#009dff',
 };
 

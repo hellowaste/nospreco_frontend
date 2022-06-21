@@ -10,7 +10,7 @@ import {useDispatch} from 'react-redux';
 import axios from 'axios';
 import Spinner from 'react-native-loading-spinner-overlay/src';
 import Loader from 'react-native-modal-loader';
-import { login } from "../../state/features/user";
+import {login} from '../../state/features/user';
 
 const LoginScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);

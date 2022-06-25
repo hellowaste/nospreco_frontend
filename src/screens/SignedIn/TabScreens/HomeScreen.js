@@ -13,7 +13,7 @@ const HomeScreen = () => {
       <TouchableOpacity
         style={{marginTop: 20}}
         onPress={() => dispatch(logout())}>
-        <Text>Logout</Text>
+        <Text style={{textAlign: 'center'}}>Logout</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );

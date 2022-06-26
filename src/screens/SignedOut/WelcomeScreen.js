@@ -11,6 +11,9 @@ const WelcomeScreen = ({navigation}) => {
             justifyContent: 'center',
             marginHorizontal: 30,
             borderRadius: 20,
+            shadowOpacity: 0.5,
+            shadowColor: '#808080',
+            shadowRadius: 10,
           }}
           onPress={() => navigation.navigate('RegistrationScreen')}>
           <Text
@@ -31,6 +34,9 @@ const WelcomeScreen = ({navigation}) => {
             marginHorizontal: 30,
             borderRadius: 20,
             marginTop: 20,
+            shadowOpacity: 0.5,
+            shadowColor: '#808080',
+            shadowRadius: 10,
           }}
           onPress={() => navigation.navigate('LoginScreen')}>
           <Text

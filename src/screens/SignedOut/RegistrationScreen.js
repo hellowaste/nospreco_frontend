@@ -15,8 +15,10 @@ const RegistrationScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [email, setEmail] = useState('');
   const [emailAlert, setEmailAlert] = useState(false);
+  const [incorrectEmail, setIncorrectEmail] = useState(false);
   const [password, setPassword] = useState('');
   const [passwordAlert, setPasswordAlert] = useState(false);
+  const [passwordLengthAlert, setPasswordLengthAlert] = useState(false);
   const [registrationConfirmation, setRegistrationConfirmation] =
     useState(false);
 
@@ -30,6 +32,16 @@ const RegistrationScreen = ({navigation}) => {
       })
       .catch(error => console.log(error));
     return res;
+  };
+
+  const validateEmail = email => {
+    let re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  };
+  const validatePassword = password => {
+    let re = /^(?=.*\d)(?=.*[A-Z])(?!.*[^a-zA-Z0-9@#$^+=])(.{8,99})$/;
+    return re.test(password);
   };
   return (
     <SafeAreaView style={{flex: 1, justifyContent: 'space-between'}}>
@@ -53,10 +65,30 @@ const RegistrationScreen = ({navigation}) => {
       </View>
       <View style={{marginBottom: 50}}>
         <View style={{marginHorizontal: 20}}>
-          {emailAlert ? <Text>Email obbligatoria</Text> : null}
+          {emailAlert ? (
+            <Text
+              style={{
+                color: '#ff0000',
+                marginBottom: 7,
+                fontSize: 12,
+                fontWeight: '500',
+              }}>
+              Email obbligatoria
+            </Text>
+          ) : null}
+          {incorrectEmail ? (
+            <Text
+              style={{
+                color: '#ff0000',
+                marginBottom: 7,
+                fontSize: 12,
+                fontWeight: '500',
+              }}>
+              Email non valida
+            </Text>
+          ) : null}
           <View
             style={{
-              marginTop: 20,
               backgroundColor: '#ffffff',
               borderRadius: 5,
               padding: 10,
@@ -70,16 +102,43 @@ const RegistrationScreen = ({navigation}) => {
               placeholderTextColor={'#3d3d3d'}
               autoCapitalize={'none'}
               value={email}
-              onChangeText={value => setEmail(value)}
+              onChangeText={value => {
+                setEmail(value);
+                setEmailAlert(false);
+                setIncorrectEmail(false);
+              }}
             />
           </View>
-          {passwordAlert ? <Text>Password obbligatoria</Text> : null}
+          {passwordAlert ? (
+            <Text
+              style={{
+                color: '#ff0000',
+                marginBottom: -10,
+                fontSize: 12,
+                fontWeight: '500',
+                marginTop: 10,
+              }}>
+              Password obbligatoria
+            </Text>
+          ) : null}
+          {passwordLengthAlert ? (
+            <Text
+              style={{
+                color: '#ff0000',
+                marginBottom: -10,
+                fontSize: 12,
+                fontWeight: '500',
+                marginTop: 10,
+              }}>
+              Richiesti almeno 8 caratteri, una lettera maiuscola e un numero
+            </Text>
+          ) : null}
           <View
             style={{
-              marginTop: 20,
               backgroundColor: '#ffffff',
               borderRadius: 5,
               padding: 10,
+              marginTop: 20,
               shadowOpacity: 0.5,
               shadowColor: '#bebebe',
               shadowRadius: 10,
@@ -90,7 +149,13 @@ const RegistrationScreen = ({navigation}) => {
               style={{width: '100%', fontSize: 18}}
               placeholderTextColor={'#3d3d3d'}
               value={password}
-              onChangeText={value => setPassword(value)}
+              onChangeText={value => {
+                setPassword(value);
+                setPasswordAlert(false);
+                if (value.length >= 8) {
+                  setPasswordLengthAlert(false);
+                }
+              }}
             />
           </View>
           {registrationConfirmation ? (
@@ -102,7 +167,7 @@ const RegistrationScreen = ({navigation}) => {
             style={{
               backgroundColor: '#1daf70',
               marginHorizontal: 40,
-              borderRadius: 20,
+              borderRadius: 30,
               marginTop: 50,
               shadowOpacity: 0.5,
               shadowColor: '#8f8f8f',
@@ -110,8 +175,12 @@ const RegistrationScreen = ({navigation}) => {
             onPress={() => {
               if (email == '') {
                 setEmailAlert(true);
+              } else if (!validateEmail(email)) {
+                setIncorrectEmail(true);
               } else if (password == '') {
                 setPasswordAlert(true);
+              } else if (!validatePassword(password)) {
+                setPasswordLengthAlert(true);
               } else {
                 const requestPayload = {
                   email: email,
@@ -129,7 +198,7 @@ const RegistrationScreen = ({navigation}) => {
             <Text
               style={{
                 textAlign: 'center',
-                paddingVertical: 10,
+                paddingVertical: 15,
                 fontSize: 16,
                 fontWeight: '700',
                 color: '#ffffff',

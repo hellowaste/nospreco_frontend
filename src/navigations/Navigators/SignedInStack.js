@@ -6,6 +6,7 @@ import HomeScreen from '../../screens/SignedIn/TabScreens/HomeScreen';
 import SearchScreen from '../../screens/SignedIn/TabScreens/SearchScreen';
 import FavoriteScreen from '../../screens/SignedIn/TabScreens/FavoritesScreen';
 import SettingsScreen from '../../screens/SignedIn/TabScreens/SettingsScreen';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,18 +17,8 @@ const signedInScreenOptions = {
   gestureEnabled: false,
   tabBarStyle: {
     backgroundColor: '#ffffff',
-    position: 'absolute',
-    borderRadius: 25,
-    marginBottom: 20,
-    marginHorizontal: 10,
-    shadowColor: 'grey',
-    shadowOpacity: 0.5,
-    shadowOffset: {
-      height: 10,
-    },
-    shadowRadius: 3.5,
   },
-  tabBarActiveTintColor: '#009dff',
+  tabBarActiveTintColor: '#000000',
 };
 
 const MainStack = ({navigation}) => {
@@ -45,10 +36,40 @@ const MainStack = ({navigation}) => {
 const SignedInStack = ({navigation}) => {
   return (
     <Tab.Navigator screenOptions={signedInScreenOptions}>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Search" component={SearchScreen} />
-      <Tab.Screen name="Favorites" component={FavoriteScreen} />
-      <Tab.Screen name="Other" component={SettingsScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarIcon: () => (
+            <MaterialCommunityIcons name="home-outline" size={30} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Ricerca"
+        component={SearchScreen}
+        options={{
+          tabBarIcon: () => <MaterialCommunityIcons name="magnify" size={30} />,
+        }}
+      />
+      <Tab.Screen
+        name="Preferiti"
+        component={FavoriteScreen}
+        options={{
+          tabBarIcon: () => (
+            <MaterialCommunityIcons name="heart-outline" size={30} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Altro"
+        component={SettingsScreen}
+        options={{
+          tabBarIcon: () => (
+            <MaterialCommunityIcons name="dots-horizontal" size={30} />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 };

@@ -1,20 +1,36 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {SafeAreaView, Text, TouchableOpacity} from 'react-native';
-import {logout} from '../../../state/features/user';
+import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const HomeScreen = () => {
-  const dispatch = useDispatch();
   const currentUser = useSelector(state => state.user);
   return (
-    <SafeAreaView>
-      <Text>Home</Text>
-      <Text>Benvenuto {currentUser.email}</Text>
-      <TouchableOpacity
-        style={{marginTop: 20}}
-        onPress={() => dispatch(logout())}>
-        <Text style={{textAlign: 'center'}}>Logout</Text>
-      </TouchableOpacity>
+    <SafeAreaView style={{marginHorizontal: 10}}>
+      <View>
+        <Text style={{fontSize: 25, fontWeight: '700', marginVertical: 10}}>
+          Esplora
+        </Text>
+      </View>
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+        <View>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <MaterialCommunityIcons name="map-marker-outline" size={20} />
+            <Text style={{fontSize: 18, fontWeight: '500'}}>
+              Posizione attuale
+            </Text>
+          </View>
+          <Text style={{fontSize: 12, marginLeft: 20}}>entro 5 km</Text>
+        </View>
+        <View>
+          <Text style={{fontWeight: '500'}}>Modifica</Text>
+        </View>
+      </View>
     </SafeAreaView>
   );
 };

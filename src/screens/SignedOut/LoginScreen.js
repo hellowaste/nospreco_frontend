@@ -34,7 +34,7 @@ const LoginScreen = ({navigation}) => {
   const dispatch = useDispatch();
 
   return (
-    <SafeAreaView style={{flex: 1, justifyContent: 'space-between'}}>
+    <View style={{flex: 1, justifyContent: 'space-between', paddingTop: 50}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
@@ -53,102 +53,152 @@ const LoginScreen = ({navigation}) => {
           Accedi
         </Text>
       </View>
-      <View style={{marginBottom: 50}}>
-        <View style={{marginHorizontal: 20}}>
-          {emailAlert ? (
-            <Text style={{color: '#ff0000'}}>Email obbligatoria</Text>
-          ) : null}
-          <View
-            style={{
-              marginTop: 20,
-              backgroundColor: '#ffffff',
-              borderRadius: 5,
-              padding: 10,
-              shadowOpacity: 0.5,
-              shadowColor: '#bebebe',
-              shadowRadius: 10,
-            }}>
-            <TextInput
-              placeholder="Email"
-              style={{width: '100%', fontSize: 20}}
-              placeholderTextColor={'#3d3d3d'}
-              autoCapitalize={'none'}
-              value={email}
-              onChangeText={value => setEmail(value)}
-            />
-          </View>
-          {passwordAlert ? <Text>Password obbligatoria</Text> : null}
-          <View
-            style={{
-              marginTop: 20,
-              backgroundColor: '#ffffff',
-              borderRadius: 5,
-              padding: 10,
-              shadowOpacity: 0.5,
-              shadowColor: '#bebebe',
-              shadowRadius: 10,
-            }}>
-            <TextInput
-              placeholder="Password"
-              secureTextEntry={true}
-              style={{width: '100%', fontSize: 20}}
-              placeholderTextColor={'#3d3d3d'}
-              value={password}
-              onChangeText={value => setPassword(value)}
-            />
-          </View>
-          <TouchableOpacity
-            style={{
-              backgroundColor: '#1daf70',
-              marginHorizontal: 40,
-              borderRadius: 30,
-              marginTop: 50,
-              shadowOpacity: 0.5,
-              shadowColor: '#8f8f8f',
-            }}
-            onPress={() => {
-              if (email == '') {
-                setEmailAlert(true);
-              } else if (password == '') {
-                setPasswordAlert(true);
-              } else {
-                const requestPayload = {
-                  email: email,
-                  password: password,
-                };
-                setIsVisible(true);
-                loginUser(requestPayload)
-                  .then(res => {
-                    setIsVisible(false);
-                    if (res.hasOwnProperty('error')) {
-                      alert(res.error);
-                    } else {
-                      dispatch(login(res));
-                    }
-                  })
-                  .catch(error => console.log(error));
-              }
-            }}>
-            <Text
-              style={{
-                textAlign: 'center',
-                paddingVertical: 15,
-                fontSize: 16,
-                fontWeight: '700',
-                color: '#ffffff',
-              }}>
-              Accedi
-            </Text>
-          </TouchableOpacity>
-        </View>
-        <Spinner
-          visible={isVisible}
-          textContent={'Loading...'}
-          // textStyle={styles.spinnerTextStyle}
+      <View>
+        <View
+          style={{
+            backgroundColor: '#69d2af',
+            height: 100,
+            borderRadius: 30,
+            marginBottom: -50,
+          }}
         />
-        <Loader loading={isVisible} color="#FC0D0C" title="loading" />
+        <View style={{backgroundColor: '#69d2af', paddingBottom: 50}}>
+          <View style={{marginHorizontal: 20}}>
+            {emailAlert ? (
+              <Text
+                style={{
+                  color: '#ff0000',
+                  marginBottom: 7,
+                  fontSize: 12,
+                  fontWeight: '700',
+                }}>
+                Email obbligatoria
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginBottom: 7,
+                  fontSize: 12,
+                  fontWeight: '500',
+                }}
+              />
+            )}
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: 5,
+                padding: 10,
+                shadowOpacity: 0.5,
+                shadowColor: '#bebebe',
+                shadowRadius: 10,
+              }}>
+              <TextInput
+                placeholder="Email"
+                style={{width: '100%', fontSize: 20}}
+                placeholderTextColor={'#3d3d3d'}
+                autoCapitalize={'none'}
+                value={email}
+                onChangeText={value => {
+                  setEmail(value);
+                  setEmailAlert(false);
+                }}
+              />
+            </View>
+            {passwordAlert ? (
+              <Text
+                style={{
+                  color: '#ff0000',
+                  marginVertical: 5,
+                  fontSize: 12,
+                  fontWeight: '700',
+                }}>
+                Password obbligatoria
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#ff0000',
+                  marginVertical: 5,
+                  fontSize: 12,
+                  fontWeight: '700',
+                }}
+              />
+            )}
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: 5,
+                padding: 10,
+                shadowOpacity: 0.5,
+                shadowColor: '#bebebe',
+                shadowRadius: 10,
+              }}>
+              <TextInput
+                placeholder="Password"
+                secureTextEntry={true}
+                style={{width: '100%', fontSize: 20}}
+                placeholderTextColor={'#3d3d3d'}
+                value={password}
+                onChangeText={value => {
+                  setPassword(value);
+                  setPasswordAlert(false);
+                }}
+              />
+            </View>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#1daf70',
+                marginHorizontal: 40,
+                borderRadius: 30,
+                marginTop: 50,
+                shadowOpacity: 0.5,
+                shadowColor: '#009b6e',
+              }}
+              onPress={() => {
+                if (email == '') {
+                  setEmailAlert(true);
+                } else if (password == '') {
+                  setPasswordAlert(true);
+                } else {
+                  const requestPayload = {
+                    email: email,
+                    password: password,
+                  };
+                  setIsVisible(true);
+                  loginUser(requestPayload)
+                    .then(res => {
+                      setIsVisible(false);
+                      if (res.hasOwnProperty('error')) {
+                        alert(res.error);
+                      } else {
+                        dispatch(login(res));
+                      }
+                    })
+                    .catch(error => console.log(error));
+                }
+              }}>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  paddingVertical: 15,
+                  fontSize: 16,
+                  fontWeight: '700',
+                  color: '#ffffff',
+                }}>
+                Accedi
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <Spinner
+            visible={isVisible}
+            textContent={'Loading...'}
+            // textStyle={styles.spinnerTextStyle}
+          />
+          <Loader loading={isVisible} color="#FC0D0C" title="loading" />
+        </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -9,6 +9,7 @@ import {
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const SearchScreen = () => {
+  const [activeMap, setActiveMap] = useState(false);
   return (
     <SafeAreaView style={{marginHorizontal: 10, flex: 1}}>
       <View>
@@ -42,32 +43,81 @@ const SearchScreen = () => {
             alignItems: 'center',
             marginVertical: 20,
           }}>
-          <TouchableOpacity
-            style={{
-              width: '50%',
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: '#ffffff',
-              borderRadius: 10,
-            }}>
-            <Text
+          {activeMap == false ? (
+            <View
               style={{
-                padding: 10,
-                color: '#1ecc8e',
-                fontSize: 16,
-                fontWeight: '600',
+                width: '50%',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#ffffff',
+                borderRadius: 10,
               }}>
-              Lista
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              width: '50%',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-            <Text>Mappa</Text>
-          </TouchableOpacity>
+              <Text
+                style={{
+                  padding: 10,
+                  color: '#1ecc8e',
+                  fontSize: 16,
+                  fontWeight: '600',
+                }}>
+                Lista
+              </Text>
+            </View>
+          ) : (
+            <TouchableOpacity
+              style={{
+                width: '50%',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              onPress={() => setActiveMap(!activeMap)}>
+              <Text
+                style={{
+                  padding: 10,
+                  fontSize: 16,
+                  fontWeight: '600',
+                }}>
+                Lista
+              </Text>
+            </TouchableOpacity>
+          )}
+          {activeMap ? (
+            <View
+              style={{
+                width: '50%',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#ffffff',
+                borderRadius: 10,
+              }}>
+              <Text
+                style={{
+                  padding: 10,
+                  fontSize: 16,
+                  color: '#1ecc8e',
+                  fontWeight: '600',
+                }}>
+                Mappa
+              </Text>
+            </View>
+          ) : (
+            <TouchableOpacity
+              style={{
+                width: '50%',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              onPress={() => setActiveMap(true)}>
+              <Text
+                style={{
+                  padding: 10,
+                  fontSize: 16,
+                  fontWeight: '600',
+                }}>
+                Mappa
+              </Text>
+            </TouchableOpacity>
+          )}
+          <Text>{activeMap}</Text>
         </View>
       </ScrollView>
     </SafeAreaView>

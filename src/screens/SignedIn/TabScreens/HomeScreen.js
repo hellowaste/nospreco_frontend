@@ -49,7 +49,13 @@ const HomeScreen = () => {
             </Text>
             <Text style={{marginVertical: 20}}>oppure</Text>
             <TouchableOpacity
-              style={{backgroundColor: '#ffffff', borderRadius: 30}}>
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: 30,
+                shadowOpacity: 0.5,
+                shadowColor: '#8c8c8c',
+                shadowRadius: 5,
+              }}>
               <Text
                 style={{
                   padding: 10,
@@ -69,6 +75,39 @@ const HomeScreen = () => {
               marginTop: 50,
             }}
           />
+        </View>
+        <View style={{marginTop: 30, alignItems: 'center'}}>
+          <Text style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
+            Rimani sempre aggiornato
+          </Text>
+          <Text
+            style={{
+              textAlign: 'center',
+              marginTop: 10,
+              fontSize: 14,
+              fontWeight: '500',
+            }}>
+            Iscriviti alla nostra newsletter
+          </Text>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 30,
+              marginTop: 20,
+              shadowOpacity: 0.5,
+              shadowColor: '#8c8c8c',
+              shadowRadius: 5,
+            }}>
+            <Text
+              style={{
+                padding: 10,
+                fontSize: 18,
+                fontWeight: '600',
+                color: '#1daf70',
+              }}>
+              Attiva
+            </Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>

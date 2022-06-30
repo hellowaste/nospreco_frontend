@@ -1,18 +1,116 @@
 import React from 'react';
-import {SafeAreaView, Text, TouchableOpacity} from 'react-native';
+import {SafeAreaView, ScrollView, Text, TouchableOpacity} from 'react-native';
 import {logout} from '../../../state/features/user';
-import { useDispatch } from "react-redux";
+import {useDispatch} from 'react-redux';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const SettingsScreen = () => {
   const dispatch = useDispatch();
   return (
-    <SafeAreaView>
-      <Text>Settings</Text>
-      <TouchableOpacity
-        style={{marginTop: 20}}
-        onPress={() => dispatch(logout())}>
-        <Text style={{textAlign: 'center'}}>Logout</Text>
-      </TouchableOpacity>
+    <SafeAreaView style={{flex: 1}}>
+      <ScrollView style={{marginTop: 30, marginHorizontal: 20}}>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#c9c9c9',
+            borderRadius: 5,
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingHorizontal: 10,
+          }}>
+          <MaterialCommunityIcons name="account" size={30} />
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+            }}>
+            Dettagli account
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#c9c9c9',
+            borderRadius: 5,
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingHorizontal: 10,
+            marginTop: 20,
+          }}>
+          <MaterialCommunityIcons name="receipt" size={30} />
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+            }}>
+            Dettagli account
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#c9c9c9',
+            borderRadius: 5,
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingHorizontal: 10,
+            marginTop: 20,
+          }}>
+          <MaterialCommunityIcons name="lifebuoy" size={30} />
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+            }}>
+            Supporto
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#c9c9c9',
+            borderRadius: 5,
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingHorizontal: 10,
+            marginTop: 20,
+          }}>
+          <MaterialCommunityIcons name="newspaper-variant-outline" size={30} />
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+            }}>
+            Blog
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#c9c9c9',
+            borderRadius: 5,
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingHorizontal: 10,
+            marginTop: 20,
+          }}
+          onPress={() => dispatch(logout())}>
+          <MaterialCommunityIcons name="logout" size={30} color={'#ff3e3e'} />
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+              color: '#ff3e3e',
+            }}>
+            Logout
+          </Text>
+        </TouchableOpacity>
+      </ScrollView>
     </SafeAreaView>
   );
 };

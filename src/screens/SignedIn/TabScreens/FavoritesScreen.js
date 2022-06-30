@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 
-const FavoriteScreen = () => {
+const FavoriteScreen = ({navigation}) => {
   return (
     <SafeAreaView>
       <View style={{marginTop: 130}}>
@@ -22,7 +22,8 @@ const FavoriteScreen = () => {
             shadowOpacity: 0.5,
             shadowColor: '#969696',
             marginTop: 50,
-          }}>
+          }}
+          onPress={() => navigation.navigate('Home')}>
           <Text style={{fontSize: 18, fontWeight: '600', padding: 10}}>
             Esplora gli store
           </Text>

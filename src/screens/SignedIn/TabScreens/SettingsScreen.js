@@ -45,7 +45,7 @@ const SettingsScreen = () => {
               fontSize: 16,
               fontWeight: '700',
             }}>
-            Dettagli account
+            Storico ordini
           </Text>
         </TouchableOpacity>
         <TouchableOpacity

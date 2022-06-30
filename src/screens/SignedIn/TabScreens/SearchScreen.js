@@ -117,7 +117,59 @@ const SearchScreen = () => {
               </Text>
             </TouchableOpacity>
           )}
-          <Text>{activeMap}</Text>
+        </View>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#c2bfbf',
+                borderRadius: 3,
+                height: 40,
+                width: 40,
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginRight: 20,
+              }}>
+              <MaterialCommunityIcons
+                name="filter-outline"
+                size={30}
+                color={'#eee'}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#c2bfbf',
+                borderRadius: 3,
+                height: 40,
+                width: 40,
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginRight: 20,
+              }}>
+              <MaterialCommunityIcons name="magnify" size={30} color={'#eee'} />
+            </TouchableOpacity>
+          </View>
+        </ScrollView>
+        <View style={{alignItems: 'center', marginTop: 50}}>
+          <Text style={{fontSize: 20, fontWeight: '700', textAlign: 'center'}}>
+            Non ci sono store qui al momento!
+          </Text>
+          <MaterialCommunityIcons
+            name="store-search-outline"
+            size={50}
+            color={'#c5c2c2'}
+            style={{marginTop: 20}}
+          />
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: '400',
+              textAlign: 'center',
+              marginTop: 20,
+              marginHorizontal: 50,
+            }}>
+            Cambia la posizione o allarga l'area di ricerca per più risultati.
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>

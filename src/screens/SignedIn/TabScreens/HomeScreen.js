@@ -12,46 +12,99 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const HomeScreen = () => {
   const currentUser = useSelector(state => state.user);
   return (
-    <SafeAreaView style={{marginHorizontal: 10, flex: 1}}>
-      <View>
-        <Text style={{fontSize: 25, fontWeight: '700', marginVertical: 10}}>
-          Esplora
-        </Text>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
+      <View style={{marginHorizontal: 10}}>
+        <View>
+          <Text style={{fontSize: 25, fontWeight: '700', marginVertical: 10}}>
+            Esplora
+          </Text>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}>
+          <View>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <MaterialCommunityIcons name="map-marker-outline" size={20} />
+              <Text style={{fontSize: 18, fontWeight: '500'}}>
+                Posizione attuale
+              </Text>
+            </View>
+            <Text style={{fontSize: 12, marginLeft: 20}}>entro 5 km</Text>
+          </View>
+          <TouchableOpacity>
+            <Text style={{fontWeight: '500'}}>Modifica</Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <View
         style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
+          backgroundColor: '#92f19c',
+          flex: 1,
+          borderRadius: 20,
+          marginTop: 20,
         }}>
-        <View>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <MaterialCommunityIcons name="map-marker-outline" size={20} />
-            <Text style={{fontSize: 18, fontWeight: '500'}}>
-              Posizione attuale
-            </Text>
+        <ScrollView bounces={false} showsVerticalScrollIndicator={false}>
+          <View style={{marginTop: 30}}>
+            <View style={{alignItems: 'center', marginHorizontal: 10}}>
+              <Text
+                style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
+                Nessuno store presente in quest'area per ora!
+              </Text>
+              <Text
+                style={{marginVertical: 20, fontSize: 16, fontWeight: '500'}}>
+                Riprova in seguito
+              </Text>
+              <Text style={{marginVertical: 20}}>oppure</Text>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#ffffff',
+                  borderRadius: 30,
+                  shadowOpacity: 0.5,
+                  shadowColor: '#8c8c8c',
+                  shadowRadius: 5,
+                }}>
+                <Text
+                  style={{
+                    padding: 10,
+                    fontSize: 18,
+                    fontWeight: '600',
+                    color: '#1daf70',
+                  }}>
+                  Cambia posizione
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                height: 2,
+                backgroundColor: '#000000',
+                marginHorizontal: 20,
+                marginTop: 50,
+              }}
+            />
           </View>
-          <Text style={{fontSize: 12, marginLeft: 20}}>entro 5 km</Text>
-        </View>
-        <TouchableOpacity>
-          <Text style={{fontWeight: '500'}}>Modifica</Text>
-        </TouchableOpacity>
-      </View>
-      <ScrollView bounces={false} showsVerticalScrollIndicator={false}>
-        <View style={{marginTop: 30}}>
-          <View style={{alignItems: 'center'}}>
+          <View style={{marginTop: 30, alignItems: 'center'}}>
             <Text
               style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
-              Nessuno store presente in quest'area per ora!
+              Rimani sempre aggiornato
             </Text>
-            <Text style={{marginVertical: 20, fontSize: 16, fontWeight: '500'}}>
-              Riprova in seguito
+            <Text
+              style={{
+                textAlign: 'center',
+                marginTop: 10,
+                fontSize: 14,
+                fontWeight: '500',
+              }}>
+              Iscriviti alla nostra newsletter
             </Text>
-            <Text style={{marginVertical: 20}}>oppure</Text>
             <TouchableOpacity
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 30,
+                marginTop: 20,
                 shadowOpacity: 0.5,
                 shadowColor: '#8c8c8c',
                 shadowRadius: 5,
@@ -63,53 +116,12 @@ const HomeScreen = () => {
                   fontWeight: '600',
                   color: '#1daf70',
                 }}>
-                Cambia posizione
+                Attiva
               </Text>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              height: 2,
-              backgroundColor: '#000000',
-              marginHorizontal: 20,
-              marginTop: 50,
-            }}
-          />
-        </View>
-        <View style={{marginTop: 30, alignItems: 'center'}}>
-          <Text style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
-            Rimani sempre aggiornato
-          </Text>
-          <Text
-            style={{
-              textAlign: 'center',
-              marginTop: 10,
-              fontSize: 14,
-              fontWeight: '500',
-            }}>
-            Iscriviti alla nostra newsletter
-          </Text>
-          <TouchableOpacity
-            style={{
-              backgroundColor: '#ffffff',
-              borderRadius: 30,
-              marginTop: 20,
-              shadowOpacity: 0.5,
-              shadowColor: '#8c8c8c',
-              shadowRadius: 5,
-            }}>
-            <Text
-              style={{
-                padding: 10,
-                fontSize: 18,
-                fontWeight: '600',
-                color: '#1daf70',
-              }}>
-              Attiva
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
     </SafeAreaView>
   );
 };

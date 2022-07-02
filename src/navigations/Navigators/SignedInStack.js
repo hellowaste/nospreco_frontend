@@ -20,9 +20,9 @@ const signedInScreenOptions = {
   },
   tabBarLabelStyle: {
     fontWeight: '700',
-    color: '#06e3d9',
   },
   tabBarActiveTintColor: '#ffffff',
+  tabBarInactiveTintColor: '#06e3d9',
 };
 
 const MainStack = ({navigation}) => {

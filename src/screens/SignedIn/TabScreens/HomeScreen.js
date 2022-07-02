@@ -113,7 +113,8 @@ const HomeScreen = ({navigation}) => {
                 style={{
                   backgroundColor: '#00807a',
                   borderRadius: 20,
-                }}>
+                }}
+                onPress={() => navigation.navigate('MagicBoxList')}>
                 <View
                   style={{
                     flexDirection: 'row',

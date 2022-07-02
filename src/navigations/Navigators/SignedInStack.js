@@ -8,6 +8,7 @@ import FavoriteScreen from '../../screens/SignedIn/TabScreens/FavoritesScreen';
 import SettingsScreen from '../../screens/SignedIn/TabScreens/SettingsScreen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MagicBoxScreen from '../../screens/SignedIn/PagesScreens/MagicBox/MagicBoxScreen';
+import MagicBoxListScreen from "../../screens/SignedIn/PagesScreens/MagicBox/MagicBoxListScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -32,6 +33,7 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen name="MagicBoxList" component={MagicBoxListScreen} />
         <Stack.Screen name="MagicBoxScreen" component={MagicBoxScreen} />
         <Stack.Screen name="Auth" component={SignedInStack} />
       </Stack.Navigator>

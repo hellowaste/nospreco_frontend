@@ -45,7 +45,11 @@ const SignedInStack = ({navigation}) => {
         component={HomeScreen}
         options={{
           tabBarIcon: () => (
-            <MaterialCommunityIcons name="home-outline" size={30} />
+            <MaterialCommunityIcons
+              name="home-outline"
+              size={30}
+              color={'#000000'}
+            />
           ),
         }}
       />
@@ -53,7 +57,13 @@ const SignedInStack = ({navigation}) => {
         name="Ricerca"
         component={SearchScreen}
         options={{
-          tabBarIcon: () => <MaterialCommunityIcons name="magnify" size={30} />,
+          tabBarIcon: () => (
+            <MaterialCommunityIcons
+              name="magnify"
+              size={30}
+              color={'#000000'}
+            />
+          ),
         }}
       />
       <Tab.Screen
@@ -61,7 +71,11 @@ const SignedInStack = ({navigation}) => {
         component={FavoriteScreen}
         options={{
           tabBarIcon: () => (
-            <MaterialCommunityIcons name="heart-outline" size={30} />
+            <MaterialCommunityIcons
+              name="heart-outline"
+              size={30}
+              color={'#000000'}
+            />
           ),
         }}
       />
@@ -70,7 +84,11 @@ const SignedInStack = ({navigation}) => {
         component={SettingsScreen}
         options={{
           tabBarIcon: () => (
-            <MaterialCommunityIcons name="dots-horizontal" size={30} />
+            <MaterialCommunityIcons
+              name="dots-horizontal"
+              size={30}
+              color={'#000000'}
+            />
           ),
         }}
       />

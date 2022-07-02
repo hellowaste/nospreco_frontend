@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {
   Image,
+  ImageBackground,
   SafeAreaView,
   ScrollView,
   Text,
@@ -9,6 +10,10 @@ import {
   View,
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
+const image = {
+  uri: 'https://media-assets.vanityfair.it/photos/61e444841e21bc3bd54b5357/1:1/w_2832,h_2832,c_limit/pizza%20tendenze.jpg',
+};
 
 const HomeScreen = () => {
   const currentUser = useSelector(state => state.user);
@@ -134,39 +139,9 @@ const HomeScreen = () => {
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}>
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginRight: 10,
-                }}
-              />
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginHorizontal: 10,
-                }}
-              />
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginLeft: 10,
-                }}
-              />
+              <MagicBox />
+              <MagicBox />
+              <MagicBox />
             </ScrollView>
             <View
               style={{
@@ -431,6 +406,95 @@ const HomeScreen = () => {
         )}
       </View>
     </SafeAreaView>
+  );
+};
+
+const MagicBox = () => {
+  return (
+    <TouchableOpacity
+      style={{
+        backgroundColor: '#ffffff',
+        marginTop: 10,
+        borderRadius: 15,
+        marginRight: 10,
+      }}>
+      <ImageBackground
+        source={image}
+        resizeMode="cover"
+        borderRadius={15}
+        style={{
+          width: 250,
+          height: 75,
+          borderRadius: 35,
+        }}>
+        <View
+          style={{
+            backgroundColor: '#f34e4e',
+            marginTop: 10,
+            width: 130,
+            borderRadius: 20,
+            marginLeft: 10,
+          }}>
+          <Text
+            style={{
+              color: '#ffffff',
+              textAlign: 'center',
+              fontWeight: '500',
+              fontSize: 12,
+            }}>
+            Ultimo disponibile!
+          </Text>
+        </View>
+        <View
+          style={{
+            backgroundColor: '#000000',
+            borderRadius: 20,
+            marginLeft: 10,
+            marginTop: 20,
+            width: 150,
+          }}>
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: '700',
+              color: '#ffffff',
+            }}>
+            Pizzeria Da Michele
+          </Text>
+        </View>
+      </ImageBackground>
+      <View style={{width: 250, height: 100, borderRadius: 15, padding: 10}}>
+        <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+          Magic Box
+        </Text>
+        <Text style={{color: '#000000', fontSize: 12, fontWeight: '400'}}>
+          Ritira oggi 14:00 - 21:00
+        </Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginTop: 10,
+          }}>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <MaterialCommunityIcons
+              name="star-outline"
+              color={'#000000'}
+              size={16}
+            />
+            <Text style={{fontWeight: '600', color: '#000000'}}>4.8</Text>
+            <Text style={{marginHorizontal: 10, color: '#000000'}}>|</Text>
+            <Text style={{fontWeight: '600', color: '#000000'}}>1.6 km</Text>
+          </View>
+          <View>
+            <Text style={{color: '#00807a', fontWeight: '800', fontSize: 18}}>
+              € 7.99
+            </Text>
+          </View>
+        </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 

@@ -24,7 +24,13 @@ const HomeScreen = () => {
           zIndex: 99,
         }}>
         <View>
-          <Text style={{fontSize: 25, fontWeight: '700', marginVertical: 10}}>
+          <Text
+            style={{
+              fontSize: 25,
+              fontWeight: '700',
+              marginVertical: 10,
+              color: '#ffffff',
+            }}>
             Esplora
           </Text>
         </View>

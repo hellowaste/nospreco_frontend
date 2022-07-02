@@ -15,7 +15,7 @@ const image = {
   uri: 'https://media-assets.vanityfair.it/photos/61e444841e21bc3bd54b5357/1:1/w_2832,h_2832,c_limit/pizza%20tendenze.jpg',
 };
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   const currentUser = useSelector(state => state.user);
   const [storeVisibility, setStoreVisibility] = useState(false);
   return (
@@ -139,9 +139,9 @@ const HomeScreen = () => {
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}>
-              <MagicBox />
-              <MagicBox />
-              <MagicBox />
+              <MagicBox navigation={navigation} />
+              <MagicBox navigation={navigation} />
+              <MagicBox navigation={navigation} />
             </ScrollView>
             <View
               style={{
@@ -379,7 +379,7 @@ const HomeScreen = () => {
   );
 };
 
-const MagicBox = () => {
+const MagicBox = ({navigation}) => {
   return (
     <TouchableOpacity
       style={{
@@ -387,7 +387,8 @@ const MagicBox = () => {
         marginTop: 10,
         borderRadius: 15,
         marginRight: 10,
-      }}>
+      }}
+      onPress={() => navigation.navigate('MagicBoxScreen')}>
       <ImageBackground
         source={image}
         resizeMode="cover"

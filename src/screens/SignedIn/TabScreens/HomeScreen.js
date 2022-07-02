@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {
+  Image,
   SafeAreaView,
   ScrollView,
   Text,
@@ -11,9 +12,17 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const HomeScreen = () => {
   const currentUser = useSelector(state => state.user);
+  const [storeVisibility, setStoreVisibility] = useState(false);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
-      <View style={{marginHorizontal: 10}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#00807a'}}>
+      <View
+        style={{
+          paddingHorizontal: 10,
+          paddingBottom: 10,
+          backgroundColor: '#00807a',
+          borderRadius: 20,
+          zIndex: 99,
+        }}>
         <View>
           <Text style={{fontSize: 25, fontWeight: '700', marginVertical: 10}}>
             Esplora
@@ -28,40 +37,347 @@ const HomeScreen = () => {
           <View>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <MaterialCommunityIcons name="map-marker-outline" size={20} />
-              <Text style={{fontSize: 18, fontWeight: '500'}}>
+              <Text style={{fontSize: 18, fontWeight: '600'}}>
                 Posizione attuale
               </Text>
             </View>
-            <Text style={{fontSize: 12, marginLeft: 20}}>entro 5 km</Text>
+            <Text style={{fontSize: 12, fontWeight: '500', marginLeft: 20}}>
+              entro 5 km
+            </Text>
           </View>
-          <TouchableOpacity>
-            <Text style={{fontWeight: '500'}}>Modifica</Text>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#000000',
+              borderRadius: 20,
+              marginRight: 5,
+            }}
+            onPress={() => setStoreVisibility(!storeVisibility)}>
+            <Text style={{fontWeight: '500', color: '#ffffff', padding: 7}}>
+              Modifica
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
       <View
         style={{
-          backgroundColor: '#92f19c',
+          backgroundColor: '#eee',
           flex: 1,
-          borderRadius: 20,
-          marginTop: 20,
+          paddingTop: 20,
+          marginTop: -40,
         }}>
-        <ScrollView bounces={false} showsVerticalScrollIndicator={false}>
-          <View style={{marginTop: 30}}>
-            <View style={{alignItems: 'center', marginHorizontal: 10}}>
+        {storeVisibility ? (
+          <ScrollView
+            bounces={true}
+            showsVerticalScrollIndicator={false}
+            style={{paddingHorizontal: 10}}>
+            <View
+              style={{
+                marginTop: 30,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    textAlign: 'left',
+                    fontSize: 20,
+                    fontWeight: '700',
+                  }}>
+                  I box in offerta oggi
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#00807a',
+                  borderRadius: 20,
+                }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    padding: 3,
+                  }}>
+                  <Text
+                    style={{
+                      color: '#ffffff',
+                      fontWeight: '500',
+                      marginLeft: 5,
+                    }}>
+                    Vedi tutti
+                  </Text>
+                  <MaterialCommunityIcons
+                    name="chevron-right"
+                    size={18}
+                    color={'white'}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}>
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginRight: 10,
+                }}
+              />
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginHorizontal: 10,
+                }}
+              />
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginLeft: 10,
+                }}
+              />
+            </ScrollView>
+            <View
+              style={{
+                marginTop: 30,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    textAlign: 'left',
+                    fontSize: 20,
+                    fontWeight: '700',
+                  }}>
+                  Supermercati
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#00807a',
+                  borderRadius: 20,
+                }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    padding: 3,
+                  }}>
+                  <Text
+                    style={{
+                      color: '#ffffff',
+                      fontWeight: '500',
+                      marginLeft: 5,
+                    }}>
+                    Vedi tutti
+                  </Text>
+                  <MaterialCommunityIcons
+                    name="chevron-right"
+                    size={18}
+                    color={'white'}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}>
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginRight: 10,
+                }}
+              />
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginHorizontal: 10,
+                }}
+              />
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginLeft: 10,
+                }}
+              />
+            </ScrollView>
+            <View
+              style={{
+                marginTop: 30,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    textAlign: 'left',
+                    fontSize: 20,
+                    fontWeight: '700',
+                  }}>
+                  Pasti pronti
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#00807a',
+                  borderRadius: 20,
+                }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    padding: 3,
+                  }}>
+                  <Text
+                    style={{
+                      color: '#ffffff',
+                      fontWeight: '500',
+                      marginLeft: 5,
+                    }}>
+                    Vedi tutti
+                  </Text>
+                  <MaterialCommunityIcons
+                    name="chevron-right"
+                    size={18}
+                    color={'white'}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}>
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginRight: 10,
+                }}
+              />
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginHorizontal: 10,
+                }}
+              />
+              <View
+                style={{
+                  backgroundColor: '#ffffff',
+                  height: 170,
+                  width: 250,
+                  marginTop: 10,
+                  borderRadius: 15,
+                  flexDirection: 'column-reverse',
+                  marginLeft: 10,
+                }}
+              />
+            </ScrollView>
+          </ScrollView>
+        ) : (
+          <ScrollView bounces={true} showsVerticalScrollIndicator={false}>
+            <View style={{marginTop: 30}}>
+              <View style={{alignItems: 'center', marginHorizontal: 10}}>
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontSize: 20,
+                    fontWeight: '700',
+                  }}>
+                  Nessuno store presente in quest'area per ora!
+                </Text>
+                <Text
+                  style={{marginVertical: 20, fontSize: 16, fontWeight: '500'}}>
+                  Riprova in seguito
+                </Text>
+                <Text style={{marginVertical: 20}}>oppure</Text>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#ffffff',
+                    borderRadius: 30,
+                    shadowOpacity: 0.5,
+                    shadowColor: '#8c8c8c',
+                    shadowRadius: 5,
+                  }}>
+                  <Text
+                    style={{
+                      padding: 10,
+                      fontSize: 18,
+                      fontWeight: '600',
+                      color: '#1daf70',
+                    }}>
+                    Cambia posizione
+                  </Text>
+                </TouchableOpacity>
+              </View>
+              <View
+                style={{
+                  height: 2,
+                  backgroundColor: '#000000',
+                  marginHorizontal: 20,
+                  marginTop: 50,
+                }}
+              />
+            </View>
+            <View style={{marginTop: 30, alignItems: 'center'}}>
               <Text
                 style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
-                Nessuno store presente in quest'area per ora!
+                Rimani sempre aggiornato
               </Text>
               <Text
-                style={{marginVertical: 20, fontSize: 16, fontWeight: '500'}}>
-                Riprova in seguito
+                style={{
+                  textAlign: 'center',
+                  marginTop: 10,
+                  fontSize: 14,
+                  fontWeight: '500',
+                }}>
+                Iscriviti alla nostra newsletter
               </Text>
-              <Text style={{marginVertical: 20}}>oppure</Text>
               <TouchableOpacity
                 style={{
                   backgroundColor: '#ffffff',
                   borderRadius: 30,
+                  marginTop: 20,
                   shadowOpacity: 0.5,
                   shadowColor: '#8c8c8c',
                   shadowRadius: 5,
@@ -73,54 +389,12 @@ const HomeScreen = () => {
                     fontWeight: '600',
                     color: '#1daf70',
                   }}>
-                  Cambia posizione
+                  Attiva
                 </Text>
               </TouchableOpacity>
             </View>
-            <View
-              style={{
-                height: 2,
-                backgroundColor: '#000000',
-                marginHorizontal: 20,
-                marginTop: 50,
-              }}
-            />
-          </View>
-          <View style={{marginTop: 30, alignItems: 'center'}}>
-            <Text
-              style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
-              Rimani sempre aggiornato
-            </Text>
-            <Text
-              style={{
-                textAlign: 'center',
-                marginTop: 10,
-                fontSize: 14,
-                fontWeight: '500',
-              }}>
-              Iscriviti alla nostra newsletter
-            </Text>
-            <TouchableOpacity
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: 30,
-                marginTop: 20,
-                shadowOpacity: 0.5,
-                shadowColor: '#8c8c8c',
-                shadowRadius: 5,
-              }}>
-              <Text
-                style={{
-                  padding: 10,
-                  fontSize: 18,
-                  fontWeight: '600',
-                  color: '#1daf70',
-                }}>
-                Attiva
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </ScrollView>
+          </ScrollView>
+        )}
       </View>
     </SafeAreaView>
   );

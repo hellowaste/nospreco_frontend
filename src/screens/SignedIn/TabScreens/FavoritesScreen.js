@@ -17,7 +17,7 @@ const FavoriteScreen = ({navigation}) => {
       <View style={{alignItems: 'center'}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#1dc279',
+            backgroundColor: '#00807a',
             borderRadius: 20,
             shadowOpacity: 0.5,
             shadowColor: '#969696',

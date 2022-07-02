@@ -343,28 +343,36 @@ const HomeScreen = () => {
                     textAlign: 'center',
                     fontSize: 20,
                     fontWeight: '700',
+                    color: '#000000',
                   }}>
                   Nessuno store presente in quest'area per ora!
                 </Text>
                 <Text
-                  style={{marginVertical: 20, fontSize: 16, fontWeight: '500'}}>
+                  style={{
+                    marginVertical: 20,
+                    fontSize: 16,
+                    fontWeight: '500',
+                    color: '#000000',
+                  }}>
                   Riprova in seguito
                 </Text>
-                <Text style={{marginVertical: 20}}>oppure</Text>
+                <Text style={{marginVertical: 20, color: '#000000'}}>
+                  oppure
+                </Text>
                 <TouchableOpacity
                   style={{
                     backgroundColor: '#ffffff',
                     borderRadius: 30,
                     shadowOpacity: 0.5,
-                    shadowColor: '#8c8c8c',
-                    shadowRadius: 5,
+                    shadowColor: '#00807a',
+                    shadowRadius: 10,
                   }}>
                   <Text
                     style={{
                       padding: 10,
                       fontSize: 18,
                       fontWeight: '600',
-                      color: '#1daf70',
+                      color: '#00807a',
                     }}>
                     Cambia posizione
                   </Text>
@@ -381,7 +389,12 @@ const HomeScreen = () => {
             </View>
             <View style={{marginTop: 30, alignItems: 'center'}}>
               <Text
-                style={{textAlign: 'center', fontSize: 20, fontWeight: '700'}}>
+                style={{
+                  textAlign: 'center',
+                  fontSize: 20,
+                  fontWeight: '700',
+                  color: '#000000',
+                }}>
                 Rimani sempre aggiornato
               </Text>
               <Text
@@ -390,6 +403,7 @@ const HomeScreen = () => {
                   marginTop: 10,
                   fontSize: 14,
                   fontWeight: '500',
+                  color: '#000000',
                 }}>
                 Iscriviti alla nostra newsletter
               </Text>
@@ -399,15 +413,15 @@ const HomeScreen = () => {
                   borderRadius: 30,
                   marginTop: 20,
                   shadowOpacity: 0.5,
-                  shadowColor: '#8c8c8c',
-                  shadowRadius: 5,
+                  shadowColor: '#00807a',
+                  shadowRadius: 10,
                 }}>
                 <Text
                   style={{
                     padding: 10,
                     fontSize: 18,
                     fontWeight: '600',
-                    color: '#1daf70',
+                    color: '#00807a',
                   }}>
                   Attiva
                 </Text>

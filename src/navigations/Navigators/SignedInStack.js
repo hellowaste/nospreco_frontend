@@ -16,9 +16,13 @@ const signedInScreenOptions = {
   headerShown: false,
   gestureEnabled: false,
   tabBarStyle: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#00807a',
   },
-  tabBarActiveTintColor: '#000000',
+  tabBarLabelStyle: {
+    fontWeight: '700',
+    color: '#06e3d9',
+  },
+  tabBarActiveTintColor: '#ffffff',
 };
 
 const MainStack = ({navigation}) => {

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {
+  Image,
   SafeAreaView,
   Text,
   TextInput,
@@ -188,6 +189,36 @@ const LoginScreen = ({navigation}) => {
                 }}>
                 Accedi
               </Text>
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginTop: 50,
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: 5,
+                marginRight: 10,
+              }}>
+              <View style={{padding: 10}}>
+                <Image
+                  source={require('../../assets/logo/facebook/facebook.png')}
+                  style={{width: 25, height: 25}}
+                />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{backgroundColor: '#ffffff', borderRadius: 5}}>
+              <View style={{padding: 10}}>
+                <Image
+                  source={require('../../assets/logo/google/google.png')}
+                  style={{width: 25, height: 25}}
+                />
+              </View>
             </TouchableOpacity>
           </View>
           <Spinner

@@ -39,12 +39,22 @@ const SearchScreen = () => {
           }}>
           <View>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <MaterialCommunityIcons name="map-marker-outline" size={20} />
-              <Text style={{fontSize: 18, fontWeight: '600'}}>
+              <MaterialCommunityIcons
+                name="map-marker-outline"
+                size={20}
+                color={'#000000'}
+              />
+              <Text style={{fontSize: 18, fontWeight: '600', color: '#000000'}}>
                 Posizione attuale
               </Text>
             </View>
-            <Text style={{fontSize: 12, fontWeight: '500', marginLeft: 20}}>
+            <Text
+              style={{
+                fontSize: 12,
+                fontWeight: '500',
+                marginLeft: 20,
+                color: '#000000',
+              }}>
               entro 5 km
             </Text>
           </View>
@@ -112,6 +122,7 @@ const SearchScreen = () => {
                     padding: 10,
                     fontSize: 16,
                     fontWeight: '600',
+                    color: '#000000',
                   }}>
                   Lista
                 </Text>
@@ -151,6 +162,7 @@ const SearchScreen = () => {
                     padding: 10,
                     fontSize: 16,
                     fontWeight: '600',
+                    color: '#000000',
                   }}>
                   Mappa
                 </Text>
@@ -195,7 +207,12 @@ const SearchScreen = () => {
           </ScrollView>
           <View style={{alignItems: 'center', marginTop: 50}}>
             <Text
-              style={{fontSize: 20, fontWeight: '700', textAlign: 'center'}}>
+              style={{
+                fontSize: 20,
+                fontWeight: '700',
+                textAlign: 'center',
+                color: '#000000',
+              }}>
               Non ci sono store qui al momento!
             </Text>
             <MaterialCommunityIcons
@@ -211,6 +228,7 @@ const SearchScreen = () => {
                 textAlign: 'center',
                 marginTop: 20,
                 marginHorizontal: 50,
+                color: '#000000',
               }}>
               Cambia la posizione o allarga l'area di ricerca per più risultati.
             </Text>

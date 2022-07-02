@@ -191,39 +191,9 @@ const HomeScreen = () => {
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}>
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginRight: 10,
-                }}
-              />
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginHorizontal: 10,
-                }}
-              />
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginLeft: 10,
-                }}
-              />
+              <SupermarketBox />
+              <SupermarketBox />
+              <SupermarketBox />
             </ScrollView>
             <View
               style={{
@@ -495,6 +465,46 @@ const MagicBox = () => {
         </View>
       </View>
     </TouchableOpacity>
+  );
+};
+
+const SupermarketBox = () => {
+  return (
+    <View
+      style={{
+        backgroundColor: '#ffffff',
+        height: 170,
+        width: 170,
+        borderRadius: 15,
+        justifyContent: 'center',
+        marginTop: 10,
+        marginRight: 10,
+      }}>
+      <ImageBackground
+        source={{
+          uri: 'https://www.efanews.eu/resources/800x800/2e584b17e39c17de8d40fbeac7749532.jpg.jpg',
+        }}
+        borderRadius={15}
+        style={{height: 170, width: 170}}>
+        <View style={{alignItems: 'center', marginTop: 20}}>
+          <Image
+            source={{
+              uri: 'https://www.foodweb.it/wp-content/uploads/2021/10/Carrefour_logo.jpg',
+            }}
+            style={{
+              borderRadius: 50,
+              width: 50,
+              height: 50,
+            }}
+          />
+          <View style={{backgroundColor: '#000000', borderRadius: 20}}>
+            <Text style={{color: '#ffffff', padding: 5, fontWeight: '600'}}>
+              Carrefour
+            </Text>
+          </View>
+        </View>
+      </ImageBackground>
+    </View>
   );
 };
 

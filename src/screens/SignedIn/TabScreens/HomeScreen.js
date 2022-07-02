@@ -42,12 +42,22 @@ const HomeScreen = () => {
           }}>
           <View>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <MaterialCommunityIcons name="map-marker-outline" size={20} />
-              <Text style={{fontSize: 18, fontWeight: '600'}}>
+              <MaterialCommunityIcons
+                name="map-marker-outline"
+                size={20}
+                color={'#000000'}
+              />
+              <Text style={{fontSize: 18, fontWeight: '600', color: '#000000'}}>
                 Posizione attuale
               </Text>
             </View>
-            <Text style={{fontSize: 12, fontWeight: '500', marginLeft: 20}}>
+            <Text
+              style={{
+                fontSize: 12,
+                fontWeight: '500',
+                marginLeft: 20,
+                color: '#000000',
+              }}>
               entro 5 km
             </Text>
           </View>
@@ -89,6 +99,7 @@ const HomeScreen = () => {
                     textAlign: 'left',
                     fontSize: 20,
                     fontWeight: '700',
+                    color: '#000000',
                   }}>
                   I box in offerta oggi
                 </Text>
@@ -170,6 +181,7 @@ const HomeScreen = () => {
                     textAlign: 'left',
                     fontSize: 20,
                     fontWeight: '700',
+                    color: '#000000',
                   }}>
                   Supermercati
                 </Text>
@@ -251,6 +263,7 @@ const HomeScreen = () => {
                     textAlign: 'left',
                     fontSize: 20,
                     fontWeight: '700',
+                    color: '#000000',
                   }}>
                   Pasti pronti
                 </Text>
@@ -284,7 +297,8 @@ const HomeScreen = () => {
             </View>
             <ScrollView
               horizontal={true}
-              showsHorizontalScrollIndicator={false}>
+              showsHorizontalScrollIndicator={false}
+              style={{marginBottom: 10}}>
               <View
                 style={{
                   backgroundColor: '#ffffff',

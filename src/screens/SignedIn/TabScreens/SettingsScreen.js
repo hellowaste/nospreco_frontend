@@ -11,7 +11,7 @@ const SettingsScreen = () => {
       <ScrollView style={{marginTop: 30, marginHorizontal: 20}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#c9c9c9',
+            backgroundColor: '#00807a',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
@@ -30,7 +30,7 @@ const SettingsScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#c9c9c9',
+            backgroundColor: '#00807a',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
@@ -50,7 +50,7 @@ const SettingsScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#c9c9c9',
+            backgroundColor: '#00807a',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
@@ -70,7 +70,7 @@ const SettingsScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#c9c9c9',
+            backgroundColor: '#00807a',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
@@ -90,7 +90,7 @@ const SettingsScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#c9c9c9',
+            backgroundColor: '#00807a',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
@@ -98,14 +98,14 @@ const SettingsScreen = () => {
             marginTop: 20,
           }}
           onPress={() => dispatch(logout())}>
-          <MaterialCommunityIcons name="logout" size={30} color={'#ff3e3e'} />
+          <MaterialCommunityIcons name="logout" size={30} color={'#ffffff'} />
           <Text
             style={{
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
-              color: '#ff3e3e',
+              color: '#ffffff',
             }}>
             Logout
           </Text>

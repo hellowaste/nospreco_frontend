@@ -17,13 +17,14 @@ const SettingsScreen = () => {
             alignItems: 'center',
             paddingHorizontal: 10,
           }}>
-          <MaterialCommunityIcons name="account" size={30} />
+          <MaterialCommunityIcons name="account" size={30} color={'#000000'} />
           <Text
             style={{
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
+              color: '#000000',
             }}>
             Dettagli account
           </Text>
@@ -37,13 +38,14 @@ const SettingsScreen = () => {
             paddingHorizontal: 10,
             marginTop: 20,
           }}>
-          <MaterialCommunityIcons name="receipt" size={30} />
+          <MaterialCommunityIcons name="receipt" size={30} color={'#000000'} />
           <Text
             style={{
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
+              color: '#000000',
             }}>
             Storico ordini
           </Text>
@@ -57,13 +59,14 @@ const SettingsScreen = () => {
             paddingHorizontal: 10,
             marginTop: 20,
           }}>
-          <MaterialCommunityIcons name="lifebuoy" size={30} />
+          <MaterialCommunityIcons name="lifebuoy" size={30} color={'#000000'} />
           <Text
             style={{
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
+              color: '#000000',
             }}>
             Supporto
           </Text>
@@ -77,13 +80,18 @@ const SettingsScreen = () => {
             paddingHorizontal: 10,
             marginTop: 20,
           }}>
-          <MaterialCommunityIcons name="newspaper-variant-outline" size={30} />
+          <MaterialCommunityIcons
+            name="newspaper-variant-outline"
+            size={30}
+            color={'#000000'}
+          />
           <Text
             style={{
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
+              color: '#000000',
             }}>
             Blog
           </Text>

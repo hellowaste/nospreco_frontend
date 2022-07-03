@@ -3,6 +3,7 @@ import {
   SafeAreaView,
   ScrollView,
   Text,
+  TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -10,6 +11,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const SearchScreen = () => {
   const [activeMap, setActiveMap] = useState(false);
+  const [searchVisibility, setSearchVisibility] = useState(false);
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#00807a'}}>
       <View
@@ -170,7 +172,8 @@ const SearchScreen = () => {
             )}
           </View>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <View
+              style={{flexDirection: 'row', alignItems: 'center', width: 300}}>
               <TouchableOpacity
                 style={{
                   backgroundColor: '#ffffff',
@@ -180,29 +183,48 @@ const SearchScreen = () => {
                   alignItems: 'center',
                   justifyContent: 'center',
                   marginRight: 20,
-                }}>
+                }}
+                onPress={() => setSearchVisibility(false)}>
                 <MaterialCommunityIcons
                   name="filter-outline"
                   size={30}
                   color={'#00807a'}
                 />
               </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 3,
-                  height: 40,
-                  width: 40,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  marginRight: 20,
-                }}>
-                <MaterialCommunityIcons
-                  name="magnify"
-                  size={30}
-                  color={'#00807a'}
-                />
-              </TouchableOpacity>
+              {!searchVisibility ? (
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#ffffff',
+                    borderRadius: 3,
+                    height: 40,
+                    width: 40,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginRight: 20,
+                  }}
+                  onPress={() => setSearchVisibility(true)}>
+                  <MaterialCommunityIcons
+                    name="magnify"
+                    size={30}
+                    color={'#00807a'}
+                  />
+                </TouchableOpacity>
+              ) : (
+                <View
+                  style={{
+                    height: 40,
+                    backgroundColor: '#ffffff',
+                    borderRadius: 5,
+                    flex: 1,
+                  }}>
+                  <TextInput
+                    placeholder="Cerca"
+                    placeholderTextColor={'#212121'}
+                    autoFocus={true}
+                    style={{width: '100%', fontSize: 18, paddingVertical: 5}}
+                  />
+                </View>
+              )}
             </View>
           </ScrollView>
           <View style={{alignItems: 'center', marginTop: 50}}>

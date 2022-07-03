@@ -4,7 +4,7 @@ import {logout} from '../../../state/features/user';
 import {useDispatch} from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const SettingsScreen = () => {
+const SettingsScreen = ({navigation}) => {
   const dispatch = useDispatch();
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -16,7 +16,8 @@ const SettingsScreen = () => {
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,
-          }}>
+          }}
+          onPress={() => navigation.navigate('AccountDetailsScreen')}>
           <MaterialCommunityIcons name="account" size={30} color={'#000000'} />
           <Text
             style={{

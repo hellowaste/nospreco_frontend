@@ -10,6 +10,9 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MagicBoxScreen from '../../screens/SignedIn/PagesScreens/MagicBox/MagicBoxScreen';
 import MagicBoxListScreen from '../../screens/SignedIn/PagesScreens/MagicBox/MagicBoxListScreen';
 import SupermarketScreen from '../../screens/SignedIn/PagesScreens/Supermarket/SupermarketScreen';
+import AccountDetailsScreen from '../../screens/SignedIn/PagesScreens/Settings/AccountDetails/AccountDetailsScreen';
+import AccountInformationsScreen from '../../screens/SignedIn/PagesScreens/Settings/AccountDetails/AccountInformationsScreen';
+import PayoutSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Payments/PayoutSetupScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,6 +37,15 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen name="PayoutSetupScreen" component={PayoutSetupScreen} />
+        <Stack.Screen
+          name="AccountInformationsScreen"
+          component={AccountInformationsScreen}
+        />
+        <Stack.Screen
+          name="AccountDetailsScreen"
+          component={AccountDetailsScreen}
+        />
         <Stack.Screen name="SupermarketScreen" component={SupermarketScreen} />
         <Stack.Screen name="MagicBoxList" component={MagicBoxListScreen} />
         <Stack.Screen name="MagicBoxScreen" component={MagicBoxScreen} />

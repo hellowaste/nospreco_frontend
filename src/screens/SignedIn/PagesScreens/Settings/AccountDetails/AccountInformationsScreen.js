@@ -42,6 +42,7 @@ const AccountInformationsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '700',
+              paddingVertical: 10,
             }}>
             Nome
           </Text>
@@ -69,6 +70,7 @@ const AccountInformationsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '700',
+              paddingVertical: 10,
             }}>
             Email
           </Text>
@@ -96,6 +98,7 @@ const AccountInformationsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '700',
+              paddingVertical: 10,
             }}>
             Numero di telefono
           </Text>
@@ -122,6 +125,7 @@ const AccountInformationsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '700',
+              paddingVertical: 10,
             }}>
             Paese
           </Text>
@@ -159,6 +163,7 @@ const AccountInformationsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '700',
+              paddingVertical: 10,
             }}>
             Notifiche
           </Text>

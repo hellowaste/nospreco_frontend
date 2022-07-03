@@ -44,20 +44,25 @@ const RegistrationScreen = ({navigation}) => {
     return re.test(password);
   };
   return (
-    <SafeAreaView style={{flex: 1, justifyContent: 'space-between'}}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: 'space-between',
+        backgroundColor: '#eee',
+      }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={40}
-            color={'#1daf70'}
+            color={'#00807a'}
           />
         </TouchableOpacity>
         <Text
           style={{
             fontSize: 23,
             fontWeight: '600',
-            color: '#1daf70',
+            color: '#000000',
             marginLeft: 20,
           }}>
           Registrati
@@ -91,7 +96,7 @@ const RegistrationScreen = ({navigation}) => {
             style={{
               backgroundColor: '#ffffff',
               borderRadius: 5,
-              padding: 10,
+              padding: 5,
               shadowOpacity: 0.5,
               shadowColor: '#bebebe',
               shadowRadius: 10,
@@ -137,7 +142,7 @@ const RegistrationScreen = ({navigation}) => {
             style={{
               backgroundColor: '#ffffff',
               borderRadius: 5,
-              padding: 10,
+              padding: 5,
               marginTop: 20,
               shadowOpacity: 0.5,
               shadowColor: '#bebebe',
@@ -165,7 +170,7 @@ const RegistrationScreen = ({navigation}) => {
           ) : null}
           <TouchableOpacity
             style={{
-              backgroundColor: '#1daf70',
+              backgroundColor: '#00807a',
               marginHorizontal: 40,
               borderRadius: 30,
               marginTop: 50,
@@ -204,6 +209,26 @@ const RegistrationScreen = ({navigation}) => {
                 color: '#ffffff',
               }}>
               Crea account
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              marginHorizontal: 40,
+              borderRadius: 30,
+              marginTop: 10,
+              shadowOpacity: 0.5,
+              shadowColor: '#8f8f8f',
+            }}>
+            <Text
+              style={{
+                textAlign: 'center',
+                paddingVertical: 15,
+                fontSize: 16,
+                fontWeight: '700',
+                color: '#00807a',
+              }}>
+              Hai un punto vendita?
             </Text>
           </TouchableOpacity>
         </View>

@@ -35,20 +35,25 @@ const LoginScreen = ({navigation}) => {
   const dispatch = useDispatch();
 
   return (
-    <View style={{flex: 1, justifyContent: 'space-between', paddingTop: 50}}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: 'space-between',
+        backgroundColor: '#eee',
+      }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={40}
-            color={'#1daf70'}
+            color={'#00807a'}
           />
         </TouchableOpacity>
         <Text
           style={{
             fontSize: 23,
             fontWeight: '600',
-            color: '#1daf70',
+            color: '#000000',
             marginLeft: 20,
           }}>
           Accedi
@@ -57,13 +62,13 @@ const LoginScreen = ({navigation}) => {
       <View>
         <View
           style={{
-            backgroundColor: '#69d2af',
+            backgroundColor: '#00807a',
             height: 100,
             borderRadius: 30,
             marginBottom: -50,
           }}
         />
-        <View style={{backgroundColor: '#69d2af', paddingBottom: 50}}>
+        <View style={{backgroundColor: '#00807a', paddingBottom: 50}}>
           <View style={{marginHorizontal: 20}}>
             {emailAlert ? (
               <Text
@@ -89,7 +94,7 @@ const LoginScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 5,
-                padding: 10,
+                padding: 5,
                 shadowOpacity: 0.5,
                 shadowColor: '#bebebe',
                 shadowRadius: 10,
@@ -130,7 +135,7 @@ const LoginScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 5,
-                padding: 10,
+                padding: 5,
                 shadowOpacity: 0.5,
                 shadowColor: '#bebebe',
                 shadowRadius: 10,
@@ -149,12 +154,12 @@ const LoginScreen = ({navigation}) => {
             </View>
             <TouchableOpacity
               style={{
-                backgroundColor: '#1daf70',
+                backgroundColor: '#ffffff',
                 marginHorizontal: 40,
                 borderRadius: 30,
                 marginTop: 50,
                 shadowOpacity: 0.5,
-                shadowColor: '#009b6e',
+                shadowColor: '#ffffff',
               }}
               onPress={() => {
                 if (email == '') {
@@ -182,10 +187,10 @@ const LoginScreen = ({navigation}) => {
               <Text
                 style={{
                   textAlign: 'center',
-                  paddingVertical: 15,
-                  fontSize: 16,
+                  paddingVertical: 10,
+                  fontSize: 20,
                   fontWeight: '700',
-                  color: '#ffffff',
+                  color: '#00807a',
                 }}>
                 Accedi
               </Text>
@@ -229,7 +234,7 @@ const LoginScreen = ({navigation}) => {
           <Loader loading={isVisible} color="#FC0D0C" title="loading" />
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

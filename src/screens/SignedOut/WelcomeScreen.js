@@ -3,11 +3,19 @@ import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 
 const WelcomeScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
-      <View style={{marginTop: 580}}>
+    <SafeAreaView
+      style={{
+        backgroundColor: '#eee',
+        flex: 1,
+        justifyContent: 'space-between',
+      }}>
+      <View>
+        <Text style={{textAlign: 'center', paddingTop: 100}}>Logo</Text>
+      </View>
+      <View style={{paddingBottom: 20}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#1daf70',
+            backgroundColor: '#00807a',
             justifyContent: 'center',
             marginHorizontal: 30,
             borderRadius: 20,
@@ -29,7 +37,7 @@ const WelcomeScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#1daf70',
+            backgroundColor: '#00807a',
             justifyContent: 'center',
             marginHorizontal: 30,
             borderRadius: 20,

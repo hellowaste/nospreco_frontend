@@ -279,6 +279,44 @@ const HomeScreen = ({navigation}) => {
                 }}
               />
             </ScrollView>
+            <View style={{marginTop: 10}}>
+              <Text
+                style={{
+                  textAlign: 'left',
+                  fontSize: 20,
+                  fontWeight: '700',
+                  color: '#000000',
+                }}>
+                Gestisci le tue preferenze
+              </Text>
+              <View
+                style={{
+                  height: 100,
+                  justifyContent: 'center',
+                  marginHorizontal: 30,
+                }}>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#ffffff',
+                    borderRadius: 20,
+                    borderColor: '#00807a',
+                    borderWidth: 1,
+                    borderStyle: 'dashed',
+                  }}
+                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
+                  <Text
+                    style={{
+                      color: '#00807a',
+                      fontSize: 16,
+                      fontWeight: '600',
+                      padding: 10,
+                      textAlign: 'center',
+                    }}>
+                    Imposta i consigli
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </View>
           </ScrollView>
         ) : (
           <ScrollView bounces={true} showsVerticalScrollIndicator={false}>

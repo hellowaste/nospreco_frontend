@@ -150,7 +150,7 @@ const RegistrationScreen = ({navigation}) => {
             }}>
             <TextInput
               placeholder="Password"
-              secureTextEntry={true}
+              secureTextEntry={false}
               style={{width: '100%', fontSize: 18}}
               placeholderTextColor={'#3d3d3d'}
               value={password}
@@ -164,9 +164,38 @@ const RegistrationScreen = ({navigation}) => {
             />
           </View>
           {registrationConfirmation ? (
-            <Text style={{marginTop: 20, textAlign: 'center'}}>
-              Utente creato correttamente
-            </Text>
+            <View>
+              <Text
+                style={{
+                  marginTop: 20,
+                  textAlign: 'center',
+                  color: '#00807a',
+                  marginBottom: 10,
+                }}>
+                Utente creato correttamente
+              </Text>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#00807a',
+                  marginHorizontal: 40,
+                  borderRadius: 30,
+                  marginTop: 50,
+                  shadowOpacity: 0.5,
+                  shadowColor: '#8f8f8f',
+                }}
+                onPress={() => navigation.navigate('LoginScreen')}>
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    paddingVertical: 15,
+                    fontSize: 16,
+                    fontWeight: '700',
+                    color: '#ffffff',
+                  }}>
+                  Accedi
+                </Text>
+              </TouchableOpacity>
+            </View>
           ) : null}
           <TouchableOpacity
             style={{
@@ -219,7 +248,8 @@ const RegistrationScreen = ({navigation}) => {
               marginTop: 10,
               shadowOpacity: 0.5,
               shadowColor: '#8f8f8f',
-            }}>
+            }}
+            onPress={() => navigation.navigate('BusinessRegistrationScreen')}>
             <Text
               style={{
                 textAlign: 'center',

@@ -192,9 +192,9 @@ const HomeScreen = ({navigation}) => {
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}>
-              <SupermarketBox />
-              <SupermarketBox />
-              <SupermarketBox />
+              <SupermarketBox navigation={navigation} />
+              <SupermarketBox navigation={navigation} />
+              <SupermarketBox navigation={navigation} />
             </ScrollView>
             <View
               style={{
@@ -470,9 +470,9 @@ const MagicBox = ({navigation}) => {
   );
 };
 
-const SupermarketBox = () => {
+const SupermarketBox = ({navigation}) => {
   return (
-    <View
+    <TouchableOpacity
       style={{
         backgroundColor: '#ffffff',
         height: 170,
@@ -481,7 +481,8 @@ const SupermarketBox = () => {
         justifyContent: 'center',
         marginTop: 10,
         marginRight: 10,
-      }}>
+      }}
+      onPress={() => navigation.navigate('SupermarketScreen')}>
       <ImageBackground
         source={{
           uri: 'https://www.efanews.eu/resources/800x800/2e584b17e39c17de8d40fbeac7749532.jpg.jpg',
@@ -506,7 +507,7 @@ const SupermarketBox = () => {
           </View>
         </View>
       </ImageBackground>
-    </View>
+    </TouchableOpacity>
   );
 };
 

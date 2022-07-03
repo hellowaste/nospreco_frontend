@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const PayoutSetupScreen = ({navigation}) => {
+const OrdersHistoryScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -14,11 +14,11 @@ const PayoutSetupScreen = ({navigation}) => {
           />
         </TouchableOpacity>
         <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
-          Metodi di pagamento
+          Storico ordini
         </Text>
       </View>
     </SafeAreaView>
   );
 };
 
-export default PayoutSetupScreen;
+export default OrdersHistoryScreen;

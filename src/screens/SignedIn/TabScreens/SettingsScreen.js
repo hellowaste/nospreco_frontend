@@ -38,7 +38,8 @@ const SettingsScreen = ({navigation}) => {
             alignItems: 'center',
             paddingHorizontal: 10,
             marginTop: 20,
-          }}>
+          }}
+          onPress={() => navigation.navigate('OrdersHistory')}>
           <MaterialCommunityIcons name="receipt" size={30} color={'#000000'} />
           <Text
             style={{

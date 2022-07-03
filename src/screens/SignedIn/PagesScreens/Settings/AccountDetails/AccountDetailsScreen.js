@@ -78,7 +78,7 @@ const AccountDetailsScreen = ({navigation}) => {
             alignItems: 'center',
             paddingHorizontal: 10,
           }}
-          onPress={() => navigation.navigate('AccountDetailsScreen')}>
+          onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
           <MaterialCommunityIcons
             name="file-multiple-outline"
             size={30}

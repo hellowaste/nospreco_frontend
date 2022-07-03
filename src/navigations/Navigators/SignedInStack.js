@@ -13,6 +13,7 @@ import SupermarketScreen from '../../screens/SignedIn/PagesScreens/Supermarket/S
 import AccountDetailsScreen from '../../screens/SignedIn/PagesScreens/Settings/AccountDetails/AccountDetailsScreen';
 import AccountInformationsScreen from '../../screens/SignedIn/PagesScreens/Settings/AccountDetails/AccountInformationsScreen';
 import PayoutSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Payments/PayoutSetupScreen';
+import SuggestionsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Suggestions/SuggestionsSetupScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,6 +38,10 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="SuggestionsSetupScreen"
+          component={SuggestionsSetupScreen}
+        />
         <Stack.Screen name="PayoutSetupScreen" component={PayoutSetupScreen} />
         <Stack.Screen
           name="AccountInformationsScreen"

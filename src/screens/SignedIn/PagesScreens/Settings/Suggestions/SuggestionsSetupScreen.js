@@ -34,9 +34,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setReadyMeal(!readyMeal)}>
+              <MaterialCommunityIcons
+                name="food-takeout-box-outline"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Pasti pronti
               </Text>
@@ -48,9 +55,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setReadyMeal(!readyMeal)}>
+              <MaterialCommunityIcons
+                name="food-takeout-box-outline"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Pasti pronti
               </Text>
@@ -63,9 +77,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setFood(!food)}>
+              <MaterialCommunityIcons
+                name="food-steak"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Alimentari
               </Text>
@@ -77,9 +98,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setFood(!food)}>
+              <MaterialCommunityIcons
+                name="food-steak"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Alimentari
               </Text>
@@ -92,9 +120,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setBakery(!bakery)}>
+              <MaterialCommunityIcons
+                name="food-croissant"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Prodotti da forno
               </Text>
@@ -106,9 +141,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setBakery(!bakery)}>
+              <MaterialCommunityIcons
+                name="food-croissant"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Prodotti da forno
               </Text>
@@ -121,9 +163,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setOther(!other)}>
+              <MaterialCommunityIcons
+                name="food-fork-drink"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Altro
               </Text>
@@ -135,9 +184,16 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
-                justifyContent: 'center',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 10,
               }}
               onPress={() => setOther(!other)}>
+              <MaterialCommunityIcons
+                name="food-fork-drink"
+                size={20}
+                color={'#ffffff'}
+              />
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Altro
               </Text>

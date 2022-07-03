@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
+import {Image, SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 
 const WelcomeScreen = ({navigation}) => {
   return (
@@ -9,8 +9,15 @@ const WelcomeScreen = ({navigation}) => {
         flex: 1,
         justifyContent: 'space-between',
       }}>
-      <View>
-        <Text style={{textAlign: 'center', paddingTop: 100}}>Logo</Text>
+      <View
+        style={{alignItems: 'center', justifyContent: 'center', height: '40%'}}>
+        <Image
+          source={{
+            uri: 'https://cdn.shopify.com/s/files/1/0407/5181/products/mixed-box-med_grande.png?v=1519552514',
+          }}
+          style={{width: 200, height: 200}}
+        />
+        <Text>Logo da sostituire</Text>
       </View>
       <View style={{paddingBottom: 20}}>
         <TouchableOpacity

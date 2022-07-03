@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const PayoutSetupScreen = ({navigation}) => {
+const PaymentsSetupScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -17,8 +17,25 @@ const PayoutSetupScreen = ({navigation}) => {
           Metodi di pagamento
         </Text>
       </View>
+      <View style={{margin: 10}}>
+        <Text style={{color: '#000000', fontSize: 16, fontWeight: '600'}}>
+          Carte di pagamento
+        </Text>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 14,
+            fontWeight: '400',
+            marginTop: 10,
+          }}>
+          Non hai ancora inserito carte per il pagamento.
+        </Text>
+        <Text style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+          Potrai inserirne una quando procederai ad un acquisto.
+        </Text>
+      </View>
     </SafeAreaView>
   );
 };
 
-export default PayoutSetupScreen;
+export default PaymentsSetupScreen;

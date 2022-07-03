@@ -12,7 +12,7 @@ import MagicBoxListScreen from '../../screens/SignedIn/PagesScreens/MagicBox/Mag
 import SupermarketScreen from '../../screens/SignedIn/PagesScreens/Supermarket/SupermarketScreen';
 import AccountDetailsScreen from '../../screens/SignedIn/PagesScreens/Settings/AccountDetails/AccountDetailsScreen';
 import AccountInformationsScreen from '../../screens/SignedIn/PagesScreens/Settings/AccountDetails/AccountInformationsScreen';
-import PayoutSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Payments/PayoutSetupScreen';
+import PaymentsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Payments/PaymentsSetupScreen';
 import SuggestionsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Suggestions/SuggestionsSetupScreen';
 import OrdersHistoryScreen from '../../screens/SignedIn/PagesScreens/Settings/Orders/OrdersHistory/OrdersHistoryScreen';
 
@@ -44,7 +44,7 @@ const MainStack = ({navigation}) => {
           name="SuggestionsSetupScreen"
           component={SuggestionsSetupScreen}
         />
-        <Stack.Screen name="PayoutSetupScreen" component={PayoutSetupScreen} />
+        <Stack.Screen name="PayoutSetupScreen" component={PaymentsSetupScreen} />
         <Stack.Screen
           name="AccountInformationsScreen"
           component={AccountInformationsScreen}

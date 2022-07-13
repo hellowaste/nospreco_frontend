@@ -272,10 +272,15 @@ const HomeScreen = ({navigation}) => {
                   backgroundColor: '#ffffff',
                   height: 170,
                   width: 250,
+                  margin: 5,
                   marginTop: 10,
                   borderRadius: 15,
                   flexDirection: 'column-reverse',
                   marginRight: 10,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}
               />
               <View
@@ -283,10 +288,15 @@ const HomeScreen = ({navigation}) => {
                   backgroundColor: '#ffffff',
                   height: 170,
                   width: 250,
+                  margin: 5,
                   marginTop: 10,
                   borderRadius: 15,
                   flexDirection: 'column-reverse',
                   marginHorizontal: 10,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}
               />
               <View
@@ -294,10 +304,15 @@ const HomeScreen = ({navigation}) => {
                   backgroundColor: '#ffffff',
                   height: 170,
                   width: 250,
+                  margin: 5,
                   marginTop: 10,
                   borderRadius: 15,
                   flexDirection: 'column-reverse',
                   marginLeft: 10,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}
               />
             </ScrollView>
@@ -324,6 +339,11 @@ const HomeScreen = ({navigation}) => {
                     borderColor: '#00807a',
                     borderWidth: 1,
                     borderStyle: 'dashed',
+                    margin: 5,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#26562f',
+                    shadowOpacity: 1,
+                    elevation: 5,
                   }}
                   onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
                   <Text
@@ -541,15 +561,20 @@ const MagicBox = ({navigation}) => {
 
 const SupermarketBox = ({navigation}) => {
   return (
-    <TouchableOpacity
+    <Pressable
       style={{
         backgroundColor: '#ffffff',
         height: 170,
         width: 170,
         borderRadius: 15,
         justifyContent: 'center',
+        margin: 5,
         marginTop: 10,
         marginRight: 10,
+        shadowOffset: {width: 10, height: 10},
+        shadowColor: '#000000',
+        shadowOpacity: 1,
+        elevation: 5,
       }}
       onPress={() => navigation.navigate('SupermarketScreen')}>
       <ImageBackground
@@ -576,7 +601,7 @@ const SupermarketBox = ({navigation}) => {
           </View>
         </View>
       </ImageBackground>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 

@@ -29,7 +29,7 @@ const signedInScreenOptions = {
   tabBarLabelStyle: {
     fontWeight: '700',
   },
-  tabBarActiveTintColor: '#bcd0b1',
+  tabBarActiveTintColor: '#989898',
   tabBarInactiveTintColor: '#000000',
 };
 

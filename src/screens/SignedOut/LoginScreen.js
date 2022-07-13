@@ -30,6 +30,7 @@ const LoginScreen = ({navigation}) => {
         res = response.data;
       })
       .catch(error => console.log(error));
+    console.log(res);
     return res;
   };
   const dispatch = useDispatch();

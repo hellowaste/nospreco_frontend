@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {
   Image,
   ImageBackground,
+  Pressable,
   SafeAreaView,
   ScrollView,
   Text,
@@ -17,16 +18,20 @@ const image = {
 
 const HomeScreen = ({navigation}) => {
   const currentUser = useSelector(state => state.user);
-  const [storeVisibility, setStoreVisibility] = useState(false);
+  const [storeVisibility, setStoreVisibility] = useState(true);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#00807a'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
       <View
         style={{
           paddingHorizontal: 10,
           paddingBottom: 10,
-          backgroundColor: '#00807a',
+          backgroundColor: '#ffffff',
           borderRadius: 20,
           zIndex: 99,
+          shadowOffset: {width: 10, height: 10},
+          shadowColor: '#000000',
+          shadowOpacity: 1,
+          elevation: 5,
         }}>
         <View>
           <Text
@@ -34,7 +39,7 @@ const HomeScreen = ({navigation}) => {
               fontSize: 25,
               fontWeight: '700',
               marginVertical: 10,
-              color: '#ffffff',
+              color: '#000000',
             }}>
             Esplora
           </Text>
@@ -68,12 +73,17 @@ const HomeScreen = ({navigation}) => {
           </View>
           <TouchableOpacity
             style={{
-              backgroundColor: '#000000',
+              backgroundColor: '#b9ceac',
               borderRadius: 20,
               marginRight: 5,
+              margin: 3,
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 5,
             }}
             onPress={() => setStoreVisibility(!storeVisibility)}>
-            <Text style={{fontWeight: '500', color: '#ffffff', padding: 7}}>
+            <Text style={{fontWeight: '500', color: '#000000', padding: 7}}>
               Modifica
             </Text>
           </TouchableOpacity>
@@ -81,7 +91,7 @@ const HomeScreen = ({navigation}) => {
       </View>
       <View
         style={{
-          backgroundColor: '#eee',
+          backgroundColor: '#b9ceac',
           flex: 1,
           paddingTop: 20,
           marginTop: -40,
@@ -111,8 +121,12 @@ const HomeScreen = ({navigation}) => {
               </TouchableOpacity>
               <TouchableOpacity
                 style={{
-                  backgroundColor: '#00807a',
+                  backgroundColor: '#ffffff',
                   borderRadius: 20,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 3,
                 }}
                 onPress={() => navigation.navigate('MagicBoxList')}>
                 <View
@@ -123,7 +137,7 @@ const HomeScreen = ({navigation}) => {
                   }}>
                   <Text
                     style={{
-                      color: '#ffffff',
+                      color: '#000000',
                       fontWeight: '500',
                       marginLeft: 5,
                     }}>
@@ -132,7 +146,7 @@ const HomeScreen = ({navigation}) => {
                   <MaterialCommunityIcons
                     name="chevron-right"
                     size={18}
-                    color={'white'}
+                    color={'#000000'}
                   />
                 </View>
               </TouchableOpacity>
@@ -164,8 +178,12 @@ const HomeScreen = ({navigation}) => {
               </TouchableOpacity>
               <TouchableOpacity
                 style={{
-                  backgroundColor: '#00807a',
+                  backgroundColor: '#ffffff',
                   borderRadius: 20,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}>
                 <View
                   style={{
@@ -175,7 +193,7 @@ const HomeScreen = ({navigation}) => {
                   }}>
                   <Text
                     style={{
-                      color: '#ffffff',
+                      color: '#000000',
                       fontWeight: '500',
                       marginLeft: 5,
                     }}>
@@ -184,7 +202,7 @@ const HomeScreen = ({navigation}) => {
                   <MaterialCommunityIcons
                     name="chevron-right"
                     size={18}
-                    color={'white'}
+                    color={'#000000'}
                   />
                 </View>
               </TouchableOpacity>
@@ -216,8 +234,12 @@ const HomeScreen = ({navigation}) => {
               </TouchableOpacity>
               <TouchableOpacity
                 style={{
-                  backgroundColor: '#00807a',
+                  backgroundColor: '#ffffff',
                   borderRadius: 20,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}>
                 <View
                   style={{
@@ -227,7 +249,7 @@ const HomeScreen = ({navigation}) => {
                   }}>
                   <Text
                     style={{
-                      color: '#ffffff',
+                      color: '#000000',
                       fontWeight: '500',
                       marginLeft: 5,
                     }}>
@@ -236,7 +258,7 @@ const HomeScreen = ({navigation}) => {
                   <MaterialCommunityIcons
                     name="chevron-right"
                     size={18}
-                    color={'white'}
+                    color={'#000000'}
                   />
                 </View>
               </TouchableOpacity>
@@ -347,16 +369,18 @@ const HomeScreen = ({navigation}) => {
                   style={{
                     backgroundColor: '#ffffff',
                     borderRadius: 30,
-                    shadowOpacity: 0.5,
-                    shadowColor: '#00807a',
-                    shadowRadius: 10,
+                    margin: 5,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#000000',
+                    shadowOpacity: 1,
+                    elevation: 5,
                   }}>
                   <Text
                     style={{
                       padding: 10,
                       fontSize: 18,
                       fontWeight: '600',
-                      color: '#00807a',
+                      color: '#000000',
                     }}>
                     Cambia posizione
                   </Text>
@@ -396,16 +420,18 @@ const HomeScreen = ({navigation}) => {
                   backgroundColor: '#ffffff',
                   borderRadius: 30,
                   marginTop: 20,
-                  shadowOpacity: 0.5,
-                  shadowColor: '#00807a',
-                  shadowRadius: 10,
+                  margin: 5,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}>
                 <Text
                   style={{
                     padding: 10,
                     fontSize: 18,
                     fontWeight: '600',
-                    color: '#00807a',
+                    color: '#000000',
                   }}>
                   Attiva
                 </Text>
@@ -420,12 +446,17 @@ const HomeScreen = ({navigation}) => {
 
 const MagicBox = ({navigation}) => {
   return (
-    <TouchableOpacity
+    <Pressable
       style={{
         backgroundColor: '#ffffff',
+        margin: 5,
         marginTop: 10,
         borderRadius: 15,
         marginRight: 10,
+        shadowOffset: {width: 10, height: 10},
+        shadowColor: '#163119',
+        shadowOpacity: 1,
+        elevation: 5,
       }}
       onPress={() => navigation.navigate('MagicBoxScreen')}>
       <ImageBackground
@@ -504,7 +535,7 @@ const MagicBox = ({navigation}) => {
           </View>
         </View>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 

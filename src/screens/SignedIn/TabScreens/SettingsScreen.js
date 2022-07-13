@@ -7,15 +7,21 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const SettingsScreen = ({navigation}) => {
   const dispatch = useDispatch();
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <ScrollView style={{marginTop: 30, marginHorizontal: 20}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#eee'}}>
+      <ScrollView
+        style={{marginTop: 30, marginHorizontal: 20, backgroundColor: '#eee'}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
+            margin: 3,
             paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}
           onPress={() => navigation.navigate('AccountDetailsScreen')}>
           <MaterialCommunityIcons name="account" size={30} color={'#000000'} />
@@ -32,12 +38,17 @@ const SettingsScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
-            paddingHorizontal: 10,
+            margin: 3,
             marginTop: 20,
+            paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}
           onPress={() => navigation.navigate('OrdersHistory')}>
           <MaterialCommunityIcons name="receipt" size={30} color={'#000000'} />
@@ -54,12 +65,17 @@ const SettingsScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
-            paddingHorizontal: 10,
+            margin: 3,
             marginTop: 20,
+            paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}>
           <MaterialCommunityIcons name="lifebuoy" size={30} color={'#000000'} />
           <Text
@@ -75,47 +91,27 @@ const SettingsScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
-            paddingHorizontal: 10,
+            margin: 3,
             marginTop: 20,
-          }}>
-          <MaterialCommunityIcons
-            name="newspaper-variant-outline"
-            size={30}
-            color={'#000000'}
-          />
-          <Text
-            style={{
-              paddingVertical: 15,
-              marginLeft: 5,
-              fontSize: 16,
-              fontWeight: '700',
-              color: '#000000',
-            }}>
-            Blog
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            backgroundColor: '#00807a',
-            borderRadius: 5,
-            flexDirection: 'row',
-            alignItems: 'center',
             paddingHorizontal: 10,
-            marginTop: 20,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}
           onPress={() => dispatch(logout())}>
-          <MaterialCommunityIcons name="logout" size={30} color={'#ffffff'} />
+          <MaterialCommunityIcons name="logout" size={30} color={'#000000'} />
           <Text
             style={{
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
-              color: '#ffffff',
+              color: '#410000',
             }}>
             Logout
           </Text>

@@ -13,12 +13,12 @@ const SearchScreen = () => {
   const [activeMap, setActiveMap] = useState(false);
   const [searchVisibility, setSearchVisibility] = useState(false);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#00807a'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
       <View
         style={{
           paddingHorizontal: 10,
           paddingBottom: 10,
-          backgroundColor: '#00807a',
+          backgroundColor: '#ffffff',
           borderRadius: 20,
           zIndex: 99,
         }}>
@@ -28,7 +28,7 @@ const SearchScreen = () => {
               fontSize: 25,
               fontWeight: '700',
               marginVertical: 10,
-              color: '#ffffff',
+              color: '#000000',
             }}>
             Ricerca
           </Text>
@@ -62,7 +62,7 @@ const SearchScreen = () => {
           </View>
           <TouchableOpacity
             style={{
-              backgroundColor: '#000000',
+              backgroundColor: '#b9ceac',
               borderRadius: 20,
               marginRight: 5,
             }}>

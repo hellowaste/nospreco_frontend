@@ -24,13 +24,13 @@ const signedInScreenOptions = {
   headerShown: false,
   gestureEnabled: false,
   tabBarStyle: {
-    backgroundColor: '#00807a',
+    backgroundColor: '#ffffff',
   },
   tabBarLabelStyle: {
     fontWeight: '700',
   },
-  tabBarActiveTintColor: '#ffffff',
-  tabBarInactiveTintColor: '#06e3d9',
+  tabBarActiveTintColor: '#bcd0b1',
+  tabBarInactiveTintColor: '#000000',
 };
 
 const MainStack = ({navigation}) => {
@@ -44,7 +44,10 @@ const MainStack = ({navigation}) => {
           name="SuggestionsSetupScreen"
           component={SuggestionsSetupScreen}
         />
-        <Stack.Screen name="PayoutSetupScreen" component={PaymentsSetupScreen} />
+        <Stack.Screen
+          name="PayoutSetupScreen"
+          component={PaymentsSetupScreen}
+        />
         <Stack.Screen
           name="AccountInformationsScreen"
           component={AccountInformationsScreen}

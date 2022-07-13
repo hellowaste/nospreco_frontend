@@ -150,7 +150,7 @@ const RegistrationScreen = ({navigation}) => {
             }}>
             <TextInput
               placeholder="Password"
-              secureTextEntry={false}
+              secureTextEntry={true}
               style={{width: '100%', fontSize: 18}}
               placeholderTextColor={'#3d3d3d'}
               value={password}

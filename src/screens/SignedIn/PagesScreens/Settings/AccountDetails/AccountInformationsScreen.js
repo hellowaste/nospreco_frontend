@@ -4,13 +4,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const AccountInformationsScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={45}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
@@ -33,8 +33,8 @@ const AccountInformationsScreen = ({navigation}) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginBottom: 10,
-            backgroundColor: '#dcdcdc',
-            borderRadius: 10,
+            backgroundColor: '#ffffff',
+            borderRadius: 5,
             paddingHorizontal: 5,
           }}>
           <Text
@@ -61,8 +61,8 @@ const AccountInformationsScreen = ({navigation}) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginBottom: 10,
-            backgroundColor: '#dcdcdc',
-            borderRadius: 10,
+            backgroundColor: '#ffffff',
+            borderRadius: 5,
             paddingHorizontal: 5,
           }}>
           <Text
@@ -89,8 +89,8 @@ const AccountInformationsScreen = ({navigation}) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginBottom: 10,
-            backgroundColor: '#dcdcdc',
-            borderRadius: 10,
+            backgroundColor: '#ffffff',
+            borderRadius: 5,
             paddingHorizontal: 5,
           }}>
           <Text
@@ -116,8 +116,8 @@ const AccountInformationsScreen = ({navigation}) => {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
-            backgroundColor: '#dcdcdc',
-            borderRadius: 10,
+            backgroundColor: '#ffffff',
+            borderRadius: 5,
             paddingHorizontal: 5,
           }}>
           <Text
@@ -154,10 +154,11 @@ const AccountInformationsScreen = ({navigation}) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginBottom: 10,
-            backgroundColor: '#dcdcdc',
-            borderRadius: 10,
+            backgroundColor: '#ffffff',
+            borderRadius: 5,
             paddingHorizontal: 5,
-          }}>
+          }}
+          onPress={() => navigation.navigate('NotificationsSetupScreen')}>
           <Text
             style={{
               color: '#000000',

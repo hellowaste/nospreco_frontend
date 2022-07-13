@@ -9,13 +9,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
   const [other, setOther] = useState(false);
   const [foodPreferences, setFoodPreferences] = useState(0);
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={45}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
@@ -30,7 +30,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
           {!readyMeal ? (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
@@ -42,9 +42,9 @@ const SuggestionsSetupScreen = ({navigation}) => {
               <MaterialCommunityIcons
                 name="food-takeout-box-outline"
                 size={20}
-                color={'#ffffff'}
+                color={'#000000'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Pasti pronti
               </Text>
             </TouchableOpacity>
@@ -73,7 +73,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
           {!food ? (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
@@ -85,9 +85,9 @@ const SuggestionsSetupScreen = ({navigation}) => {
               <MaterialCommunityIcons
                 name="food-steak"
                 size={20}
-                color={'#ffffff'}
+                color={'#000000'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Alimentari
               </Text>
             </TouchableOpacity>
@@ -116,7 +116,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
           {!bakery ? (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
@@ -128,9 +128,9 @@ const SuggestionsSetupScreen = ({navigation}) => {
               <MaterialCommunityIcons
                 name="food-croissant"
                 size={20}
-                color={'#ffffff'}
+                color={'#000000'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Prodotti da forno
               </Text>
             </TouchableOpacity>
@@ -159,7 +159,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
           {!other ? (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
@@ -171,9 +171,9 @@ const SuggestionsSetupScreen = ({navigation}) => {
               <MaterialCommunityIcons
                 name="food-fork-drink"
                 size={20}
-                color={'#ffffff'}
+                color={'#000000'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Altro
               </Text>
             </TouchableOpacity>
@@ -226,14 +226,14 @@ const SuggestionsSetupScreen = ({navigation}) => {
           ) : (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
                 justifyContent: 'center',
               }}
               onPress={() => setFoodPreferences(0)}>
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Nessuna
               </Text>
             </TouchableOpacity>
@@ -261,7 +261,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
           ) : (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
@@ -273,9 +273,9 @@ const SuggestionsSetupScreen = ({navigation}) => {
               <MaterialCommunityIcons
                 name="food-apple-outline"
                 size={20}
-                color={'#ffffff'}
+                color={'#000000'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Vegetariano
               </Text>
             </TouchableOpacity>
@@ -303,7 +303,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
           ) : (
             <TouchableOpacity
               style={{
-                backgroundColor: '#3b3b3b',
+                backgroundColor: '#ffffff',
                 marginBottom: 10,
                 borderRadius: 10,
                 height: 50,
@@ -315,9 +315,9 @@ const SuggestionsSetupScreen = ({navigation}) => {
               <MaterialCommunityIcons
                 name="sprout-outline"
                 size={20}
-                color={'#ffffff'}
+                color={'#000000'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
                 Vegano
               </Text>
             </TouchableOpacity>

@@ -4,13 +4,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const AccountDetailsScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: 'eee', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={45}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
@@ -20,12 +20,17 @@ const AccountDetailsScreen = ({navigation}) => {
       <View style={{marginHorizontal: 10}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,
+            margin: 5,
             marginBottom: 20,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}
           onPress={() => navigation.navigate('AccountInformationsScreen')}>
           <MaterialCommunityIcons
@@ -46,12 +51,18 @@ const AccountDetailsScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,
+            margin: 5,
             marginBottom: 20,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
+
           }}
           onPress={() => navigation.navigate('PayoutSetupScreen')}>
           <MaterialCommunityIcons
@@ -72,11 +83,17 @@ const AccountDetailsScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             borderRadius: 5,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,
+            margin: 5,
+            marginBottom: 20,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}
           onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
           <MaterialCommunityIcons

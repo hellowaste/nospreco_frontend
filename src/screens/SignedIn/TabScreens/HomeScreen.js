@@ -348,7 +348,7 @@ const HomeScreen = ({navigation}) => {
                   onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
                   <Text
                     style={{
-                      color: '#00807a',
+                      color: '#000000',
                       fontSize: 16,
                       fontWeight: '600',
                       padding: 10,

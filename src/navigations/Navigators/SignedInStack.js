@@ -15,6 +15,7 @@ import AccountInformationsScreen from '../../screens/SignedIn/PagesScreens/Setti
 import PaymentsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Payments/PaymentsSetupScreen';
 import SuggestionsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Suggestions/SuggestionsSetupScreen';
 import OrdersHistoryScreen from '../../screens/SignedIn/PagesScreens/Settings/Orders/OrdersHistory/OrdersHistoryScreen';
+import NotificationsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Notifications/NotificationsSetupScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -39,6 +40,10 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="NotificationsSetupScreen"
+          component={NotificationsSetupScreen}
+        />
         <Stack.Screen name="OrdersHistory" component={OrdersHistoryScreen} />
         <Stack.Screen
           name="SuggestionsSetupScreen"

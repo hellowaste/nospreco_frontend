@@ -12,7 +12,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const MagicBoxScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{flex: 1, justifyContent: 'space-between'}}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: 'space-between',
+        backgroundColor: '#b9ceac',
+      }}>
       <View>
         <ImageBackground
           source={{
@@ -32,7 +37,7 @@ const MagicBoxScreen = ({navigation}) => {
             onPress={() => navigation.goBack()}>
             <MaterialCommunityIcons
               name="chevron-left"
-              color={'#00807a'}
+              color={'#000000'}
               size={30}
             />
           </TouchableOpacity>
@@ -69,7 +74,7 @@ const MagicBoxScreen = ({navigation}) => {
               </Text>
             </View>
             <View>
-              <Text style={{color: '#00807a', fontSize: 30, fontWeight: '800'}}>
+              <Text style={{color: '#000000', fontSize: 30, fontWeight: '800'}}>
                 € 7.99
               </Text>
             </View>
@@ -96,17 +101,17 @@ const MagicBoxScreen = ({navigation}) => {
               }}>
               <MaterialCommunityIcons
                 name="map-marker"
-                color={'#00807a'}
+                color={'#000000'}
                 size={20}
               />
-              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '600'}}>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
                 Via Vittorio Veneto, 1, Napoli 00000 NA
               </Text>
             </View>
             <View>
               <Text
                 style={{
-                  color: '#000000',
+                  color: '#494949',
                   fontSize: 12,
                   fontWeight: '500',
                   marginLeft: 15,

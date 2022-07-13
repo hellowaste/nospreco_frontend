@@ -3,8 +3,8 @@ import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 
 const FavoriteScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
-      <View style={{marginTop: 130, backgroundColor: '#eee'}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
+      <View style={{marginTop: 130, backgroundColor: '#b9ceac'}}>
         <Text
           style={{
             textAlign: 'center',
@@ -28,7 +28,7 @@ const FavoriteScreen = ({navigation}) => {
       <View style={{alignItems: 'center'}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#b9ceac',
+            backgroundColor: '#ffffff',
             borderRadius: 20,
             marginTop: 50,
             shadowOffset: {width: 10, height: 10},

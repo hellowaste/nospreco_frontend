@@ -21,6 +21,10 @@ const SearchScreen = () => {
           backgroundColor: '#ffffff',
           borderRadius: 20,
           zIndex: 99,
+          shadowOffset: {width: 10, height: 10},
+          shadowColor: '#000000',
+          shadowOpacity: 1,
+          elevation: 5,
         }}>
         <View>
           <Text
@@ -65,8 +69,13 @@ const SearchScreen = () => {
               backgroundColor: '#b9ceac',
               borderRadius: 20,
               marginRight: 5,
+              margin: 3,
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 5,
             }}>
-            <Text style={{fontWeight: '500', color: '#ffffff', padding: 7}}>
+            <Text style={{fontWeight: '500', color: '#000000', padding: 7}}>
               Modifica
             </Text>
           </TouchableOpacity>
@@ -74,7 +83,7 @@ const SearchScreen = () => {
       </View>
       <View
         style={{
-          backgroundColor: '#eee',
+          backgroundColor: '#b9ceac',
           flex: 1,
           paddingTop: 20,
           marginTop: -40,
@@ -88,18 +97,22 @@ const SearchScreen = () => {
             style={{
               flexDirection: 'row',
               alignItems: 'center',
+              justifyContent: 'center',
               marginVertical: 20,
             }}>
             {activeMap == false ? (
               <View
                 style={{
-                  width: '50%',
+                  width: '45%',
                   alignItems: 'center',
                   justifyContent: 'center',
                   backgroundColor: '#ffffff',
                   borderRadius: 10,
-                  shadowOpacity: 0.1,
-                  shadowColor: '#00807a',
+                  margin: 3,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}>
                 <Text
                   style={{
@@ -114,9 +127,10 @@ const SearchScreen = () => {
             ) : (
               <TouchableOpacity
                 style={{
-                  width: '50%',
+                  width: '45%',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  margin: 3,
                 }}
                 onPress={() => setActiveMap(!activeMap)}>
                 <Text
@@ -133,13 +147,16 @@ const SearchScreen = () => {
             {activeMap ? (
               <View
                 style={{
-                  width: '50%',
+                  width: '45%',
                   alignItems: 'center',
                   justifyContent: 'center',
                   backgroundColor: '#ffffff',
                   borderRadius: 10,
-                  shadowOpacity: 0.1,
-                  shadowColor: '#00807a',
+                  margin: 3,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}>
                 <Text
                   style={{
@@ -154,7 +171,7 @@ const SearchScreen = () => {
             ) : (
               <TouchableOpacity
                 style={{
-                  width: '50%',
+                  width: '45%',
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
@@ -240,7 +257,7 @@ const SearchScreen = () => {
             <MaterialCommunityIcons
               name="store-search-outline"
               size={50}
-              color={'#c5c2c2'}
+              color={'#000000'}
               style={{marginTop: 20}}
             />
             <Text

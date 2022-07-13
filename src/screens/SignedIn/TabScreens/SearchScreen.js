@@ -199,7 +199,12 @@ const SearchScreen = () => {
                   width: 40,
                   alignItems: 'center',
                   justifyContent: 'center',
+                  margin: 5,
                   marginRight: 20,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
                 }}
                 onPress={() => setSearchVisibility(false)}>
                 <MaterialCommunityIcons
@@ -217,7 +222,12 @@ const SearchScreen = () => {
                     width: 40,
                     alignItems: 'center',
                     justifyContent: 'center',
+                    margin: 5,
                     marginRight: 20,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#000000',
+                    shadowOpacity: 1,
+                    elevation: 5,
                   }}
                   onPress={() => setSearchVisibility(true)}>
                   <MaterialCommunityIcons
@@ -233,6 +243,11 @@ const SearchScreen = () => {
                     backgroundColor: '#ffffff',
                     borderRadius: 5,
                     flex: 1,
+                    margin: 5,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#000000',
+                    shadowOpacity: 1,
+                    elevation: 5,
                   }}>
                   <TextInput
                     placeholder="Cerca"

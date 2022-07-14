@@ -5,6 +5,7 @@ import WelcomeScreen from '../../screens/SignedOut/WelcomeScreen';
 import RegistrationScreen from '../../screens/SignedOut/RegistrationScreen';
 import LoginScreen from '../../screens/SignedOut/LoginScreen';
 import BusinessRegistrationScreen from '../../screens/SignedOut/BusinessRegistrationScreen';
+import ForgotPasswordScreen from '../../screens/SignedOut/ForgotPasswordScreen';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,10 @@ const SignedOutStack = () => (
     <Stack.Navigator
       initialRouteName="WelcomeScreen"
       screenOptions={signedOutScreenOptions}>
+      <Stack.Screen
+        name="ForgotPasswordScreen"
+        component={ForgotPasswordScreen}
+      />
       <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
       <Stack.Screen name="RegistrationScreen" component={RegistrationScreen} />
       <Stack.Screen

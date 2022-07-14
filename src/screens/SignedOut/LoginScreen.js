@@ -161,6 +161,28 @@ const LoginScreen = ({navigation}) => {
                 }}
               />
             </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginTop: 20,
+              }}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ForgotPasswordScreen')}>
+                <Text
+                  style={{color: '#2e650a', fontSize: 12, fontWeight: '600'}}>
+                  Password dimenticata?
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('RegistrationScreen')}>
+                <Text
+                  style={{color: '#2e650a', fontSize: 12, fontWeight: '600'}}>
+                  Non hai ancora un account?
+                </Text>
+              </TouchableOpacity>
+            </View>
             <TouchableOpacity
               style={{
                 backgroundColor: '#ffffff',

@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   ImageBackground,
+  Pressable,
   SafeAreaView,
   ScrollView,
   Text,
@@ -15,14 +16,14 @@ const image = {
 
 const MagicBoxListScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
       <TouchableOpacity
         style={{flexDirection: 'row', alignItems: 'center'}}
         onPress={() => navigation.goBack()}>
         <MaterialCommunityIcons
           name="chevron-left"
           size={40}
-          color={'#00807a'}
+          color={'#000000'}
         />
         <Text style={{color: '#000000', fontSize: 24, fontWeight: '600'}}>
           In offerta oggi
@@ -43,12 +44,16 @@ const MagicBoxListScreen = ({navigation}) => {
 
 const MagicBox = ({navigation}) => {
   return (
-    <TouchableOpacity
+    <Pressable
       style={{
         backgroundColor: '#ffffff',
         marginTop: 10,
         borderRadius: 15,
         marginRight: 10,
+        shadowOffset: {width: 10, height: 10},
+        shadowColor: '#000000',
+        shadowOpacity: 1,
+        elevation: 5,
       }}
       onPress={() => navigation.navigate('MagicBoxScreen')}>
       <ImageBackground
@@ -136,7 +141,7 @@ const MagicBox = ({navigation}) => {
           </Text>
         </View>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 

@@ -1,4 +1,4 @@
-package com.nospreco_frontend.newarchitecture;
+package com.hellowaste_tst.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.nospreco_frontend.BuildConfig;
-import com.nospreco_frontend.newarchitecture.components.MainComponentsRegistry;
-import com.nospreco_frontend.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.hellowaste_tst.BuildConfig;
+import com.hellowaste_tst.newarchitecture.components.MainComponentsRegistry;
+import com.hellowaste_tst.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

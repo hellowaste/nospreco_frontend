@@ -55,7 +55,7 @@ const RegistrationScreen = ({navigation}) => {
           <MaterialCommunityIcons
             name="chevron-left"
             size={40}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text
@@ -97,9 +97,10 @@ const RegistrationScreen = ({navigation}) => {
               backgroundColor: '#ffffff',
               borderRadius: 5,
               padding: 5,
-              shadowOpacity: 0.5,
-              shadowColor: '#bebebe',
-              shadowRadius: 10,
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 3,
             }}>
             <TextInput
               placeholder="Email"
@@ -144,9 +145,10 @@ const RegistrationScreen = ({navigation}) => {
               borderRadius: 5,
               padding: 5,
               marginTop: 20,
-              shadowOpacity: 0.5,
-              shadowColor: '#bebebe',
-              shadowRadius: 10,
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 3,
             }}>
             <TextInput
               placeholder="Password"
@@ -199,12 +201,14 @@ const RegistrationScreen = ({navigation}) => {
           ) : null}
           <TouchableOpacity
             style={{
-              backgroundColor: '#00807a',
+              backgroundColor: '#b9ceac',
               marginHorizontal: 40,
               borderRadius: 30,
               marginTop: 50,
-              shadowOpacity: 0.5,
-              shadowColor: '#8f8f8f',
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 3,
             }}
             onPress={() => {
               if (email == '') {
@@ -246,8 +250,10 @@ const RegistrationScreen = ({navigation}) => {
               marginHorizontal: 40,
               borderRadius: 30,
               marginTop: 10,
-              shadowOpacity: 0.5,
-              shadowColor: '#8f8f8f',
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 3,
             }}
             onPress={() => navigation.navigate('BusinessRegistrationScreen')}>
             <Text
@@ -256,7 +262,7 @@ const RegistrationScreen = ({navigation}) => {
                 paddingVertical: 15,
                 fontSize: 16,
                 fontWeight: '700',
-                color: '#00807a',
+                color: '#b9ceac',
               }}>
               Hai un punto vendita?
             </Text>

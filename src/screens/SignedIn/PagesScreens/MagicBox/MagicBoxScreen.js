@@ -24,23 +24,46 @@ const MagicBoxScreen = ({navigation}) => {
             uri: 'https://media-cdn.tripadvisor.com/media/photo-s/17/f5/39/f7/fooood-at-the-food-department.jpg',
           }}
           style={{width: '100%', height: 100}}>
-          <TouchableOpacity
+          <View
             style={{
-              backgroundColor: '#ffffff',
-              width: 35,
-              height: 35,
-              borderRadius: 30,
+              flexDirection: 'row',
               alignItems: 'center',
-              justifyContent: 'center',
-              margin: 10,
-            }}
-            onPress={() => navigation.goBack()}>
-            <MaterialCommunityIcons
-              name="chevron-left"
-              color={'#000000'}
-              size={30}
-            />
-          </TouchableOpacity>
+              justifyContent: 'space-between',
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#ffffff',
+                width: 35,
+                height: 35,
+                borderRadius: 30,
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: 10,
+              }}
+              onPress={() => navigation.goBack()}>
+              <MaterialCommunityIcons
+                name="chevron-left"
+                color={'#000000'}
+                size={30}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#ffffff',
+                width: 35,
+                height: 35,
+                borderRadius: 30,
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: 10,
+              }}>
+              <MaterialCommunityIcons
+                name="share-variant-outline"
+                color={'#000000'}
+                size={30}
+              />
+            </TouchableOpacity>
+          </View>
           <View style={{backgroundColor: '#000000', marginTop: 20}}>
             <Text
               style={{
@@ -90,9 +113,28 @@ const MagicBoxScreen = ({navigation}) => {
             <Text style={{color: '#000000', fontWeight: '700', fontSize: 18}}>
               Ritira: 14:00 - 21:00
             </Text>
+            <View
+              style={{
+                marginLeft: 10,
+                backgroundColor: '#4ea85a',
+                borderRadius: 15,
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 12,
+                  fontWeight: '700',
+                  padding: 3,
+                  paddingHorizontal: 5,
+                }}>
+                Oggi
+              </Text>
+            </View>
           </View>
           <View style={{height: 1, backgroundColor: '#000000'}} />
-          <View style={{marginHorizontal: 10}}>
+          <TouchableOpacity
+            style={{marginHorizontal: 10}}
+            onPress={() => navigation.navigate('ShopDetailsScreen')}>
             <View
               style={{
                 flexDirection: 'row',
@@ -120,24 +162,52 @@ const MagicBoxScreen = ({navigation}) => {
                 Scopri di più sullo store
               </Text>
             </View>
-          </View>
+          </TouchableOpacity>
+          <View
+            style={{
+              height: 1,
+              backgroundColor: '#777777',
+              marginTop: 25,
+              marginHorizontal: 20,
+            }}
+          />
           <TouchableOpacity
             style={{
               flexDirection: 'row',
               alignItems: 'center',
+              justifyContent: 'space-between',
               marginTop: 20,
               marginLeft: 10,
+              marginRight: 20,
             }}>
-            <MaterialCommunityIcons
-              name="food-outline"
-              color={'#00807a'}
-              size={20}
-              style={{marginRight: 10}}
-            />
-            <Text style={{color: '#00807a', fontSize: 16, fontWeight: '600'}}>
-              Ingredienti e allergie
-            </Text>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <MaterialCommunityIcons
+                name="food-outline"
+                color={'#00807a'}
+                size={20}
+                style={{marginRight: 10}}
+              />
+              <Text style={{color: '#00807a', fontSize: 16, fontWeight: '600'}}>
+                Ingredienti e allergie
+              </Text>
+            </View>
+            <View>
+              <MaterialCommunityIcons
+                name="chevron-right"
+                color={'#000000'}
+                size={20}
+                style={{marginRight: 10}}
+              />
+            </View>
           </TouchableOpacity>
+          <View
+            style={{
+              height: 1,
+              backgroundColor: '#777777',
+              marginTop: 25,
+              marginHorizontal: 20,
+            }}
+          />
           <View
             style={{
               flexDirection: 'row',
@@ -181,6 +251,10 @@ const MagicBoxScreen = ({navigation}) => {
           backgroundColor: '#00807a',
           borderRadius: 20,
           marginBottom: 20,
+          shadowOffset: {width: 10, height: 10},
+          shadowColor: '#000000',
+          shadowOpacity: 1,
+          elevation: 5,
         }}>
         <Text
           style={{

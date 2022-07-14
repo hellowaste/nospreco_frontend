@@ -1,4 +1,4 @@
-package com.nospreco_frontend;
+package com.hellowaste_tst;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

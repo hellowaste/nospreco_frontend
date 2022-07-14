@@ -4,13 +4,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const PaymentsSetupScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={45}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>

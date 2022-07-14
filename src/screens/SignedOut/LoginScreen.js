@@ -47,7 +47,7 @@ const LoginScreen = ({navigation}) => {
           <MaterialCommunityIcons
             name="chevron-left"
             size={40}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text
@@ -63,13 +63,18 @@ const LoginScreen = ({navigation}) => {
       <View>
         <View
           style={{
-            backgroundColor: '#00807a',
+            backgroundColor: '#b9ceac',
             height: 100,
             borderRadius: 30,
             marginBottom: -50,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 15,
+            zIndex: -1,
           }}
         />
-        <View style={{backgroundColor: '#00807a', paddingBottom: 50}}>
+        <View style={{backgroundColor: '#b9ceac', paddingBottom: 50}}>
           <View style={{marginHorizontal: 20}}>
             {emailAlert ? (
               <Text
@@ -96,13 +101,14 @@ const LoginScreen = ({navigation}) => {
                 backgroundColor: '#ffffff',
                 borderRadius: 5,
                 padding: 5,
-                shadowOpacity: 0.5,
-                shadowColor: '#bebebe',
-                shadowRadius: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}>
               <TextInput
                 placeholder="Email"
-                style={{width: '100%', fontSize: 20}}
+                style={{width: '100%', fontSize: 20, color: '#000000'}}
                 placeholderTextColor={'#3d3d3d'}
                 autoCapitalize={'none'}
                 value={email}
@@ -137,14 +143,16 @@ const LoginScreen = ({navigation}) => {
                 backgroundColor: '#ffffff',
                 borderRadius: 5,
                 padding: 5,
-                shadowOpacity: 0.5,
-                shadowColor: '#bebebe',
                 shadowRadius: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}>
               <TextInput
                 placeholder="Password"
                 secureTextEntry={true}
-                style={{width: '100%', fontSize: 20}}
+                style={{width: '100%', fontSize: 20, color: '#000000'}}
                 placeholderTextColor={'#3d3d3d'}
                 value={password}
                 onChangeText={value => {
@@ -159,8 +167,10 @@ const LoginScreen = ({navigation}) => {
                 marginHorizontal: 40,
                 borderRadius: 30,
                 marginTop: 50,
-                shadowOpacity: 0.5,
-                shadowColor: '#ffffff',
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => {
                 if (email == '') {
@@ -191,7 +201,7 @@ const LoginScreen = ({navigation}) => {
                   paddingVertical: 10,
                   fontSize: 20,
                   fontWeight: '700',
-                  color: '#00807a',
+                  color: '#2e650a',
                 }}>
                 Accedi
               </Text>

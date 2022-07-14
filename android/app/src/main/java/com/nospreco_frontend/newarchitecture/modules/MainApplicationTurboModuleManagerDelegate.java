@@ -1,4 +1,4 @@
-package com.nospreco_frontend.newarchitecture.modules;
+package com.hellowaste_tst.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

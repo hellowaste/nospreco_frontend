@@ -5,13 +5,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const OrdersHistoryScreen = ({navigation}) => {
   const [inProgress, setInProgress] = useState(true);
   return (
-    <SafeAreaView style={{backgroundColor: '#eee', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
             name="chevron-left"
             size={45}
-            color={'#00807a'}
+            color={'#000000'}
           />
         </TouchableOpacity>
         <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
@@ -19,13 +19,23 @@ const OrdersHistoryScreen = ({navigation}) => {
         </Text>
       </View>
       <View style={{marginHorizontal: 10, marginTop: 10}}>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
           {inProgress ? (
             <View
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 15,
-                width: '50%',
+                width: '45%',
+                margin: 3,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 5,
               }}>
               <Text
                 style={{
@@ -42,7 +52,8 @@ const OrdersHistoryScreen = ({navigation}) => {
             <TouchableOpacity
               style={{
                 borderRadius: 15,
-                width: '50%',
+                width: '45%',
+                margin: 3,
               }}
               onPress={() => setInProgress(true)}>
               <Text
@@ -61,7 +72,8 @@ const OrdersHistoryScreen = ({navigation}) => {
             <TouchableOpacity
               style={{
                 borderRadius: 15,
-                width: '50%',
+                width: '45%',
+                margin: 3,
               }}
               onPress={() => setInProgress(false)}>
               <Text
@@ -80,7 +92,12 @@ const OrdersHistoryScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 15,
-                width: '50%',
+                width: '45%',
+                margin: 3,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 5,
               }}>
               <Text
                 style={{

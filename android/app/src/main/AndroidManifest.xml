@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.nospreco_frontend">
+  package="com.hellowaste_tst">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

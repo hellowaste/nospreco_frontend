@@ -16,6 +16,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const LoginScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [imageLoader, setImageLoader] = useState(false);
   const [email, setEmail] = useState('');
   const [emailAlert, setEmailAlert] = useState(false);
   const [password, setPassword] = useState('');
@@ -259,14 +260,31 @@ const LoginScreen = ({navigation}) => {
               </View>
             </TouchableOpacity>
           </View>
-          <Spinner
-            visible={isVisible}
-            textContent={'Loading...'}
-            // textStyle={styles.spinnerTextStyle}
-          />
+          <Spinner visible={isVisible} textContent={'Loading...'} />
           <Loader loading={isVisible} color="#FC0D0C" title="loading" />
         </View>
       </View>
+      {/*<View*/}
+      {/*  style={{*/}
+      {/*    position: 'absolute',*/}
+      {/*    width: 100,*/}
+      {/*    height: 100,*/}
+      {/*    backgroundColor: '#ffffff',*/}
+      {/*    borderRadius: 15,*/}
+      {/*    top: '50%',*/}
+      {/*    left: '35%',*/}
+      {/*    alignItems: 'center',*/}
+      {/*    justifyContent: 'center',*/}
+      {/*    shadowOffset: {width: 10, height: 10},*/}
+      {/*    shadowColor: '#000000',*/}
+      {/*    shadowOpacity: 1,*/}
+      {/*    elevation: 3,*/}
+      {/*  }}>*/}
+      {/*  <Image*/}
+      {/*    source={require('../../assets/logo/app/app_logo.png')}*/}
+      {/*    style={{height: 120, width: 120}}*/}
+      {/*  />*/}
+      {/*</View>*/}
     </SafeAreaView>
   );
 };

@@ -7,7 +7,6 @@ import {
   View,
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { login } from "../../state/features/user";
 
 const ForgotPasswordScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);

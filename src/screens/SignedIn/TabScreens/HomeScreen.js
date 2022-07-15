@@ -20,18 +20,13 @@ const HomeScreen = ({navigation}) => {
   const currentUser = useSelector(state => state.user);
   const [storeVisibility, setStoreVisibility] = useState(true);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#b9ceac'}}>
       <View
         style={{
           paddingHorizontal: 10,
           paddingBottom: 10,
-          backgroundColor: '#ffffff',
-          borderRadius: 20,
           zIndex: 99,
-          shadowOffset: {width: 10, height: 10},
-          shadowColor: '#000000',
-          shadowOpacity: 1,
-          elevation: 5,
+          backgroundColor: '#b9ceac',
         }}>
         <View>
           <Text
@@ -41,52 +36,54 @@ const HomeScreen = ({navigation}) => {
               marginVertical: 10,
               color: '#000000',
             }}>
-            Esplora
+            Home
           </Text>
-        </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}>
           <View>
-            <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <MaterialCommunityIcons
-                name="map-marker-outline"
-                size={20}
-                color={'#000000'}
-              />
-              <Text style={{fontSize: 18, fontWeight: '600', color: '#000000'}}>
-                Posizione attuale
-              </Text>
-            </View>
-            <Text
+            <TouchableOpacity
               style={{
-                fontSize: 12,
-                fontWeight: '500',
-                marginLeft: 20,
-                color: '#000000',
+                backgroundColor: '#b9ceac',
+                borderRadius: 15,
+                padding: 5,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingRight: 20,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}>
-              entro 5 km
-            </Text>
+              <View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  <MaterialCommunityIcons
+                    name="map-marker-outline"
+                    size={20}
+                    color={'#000000'}
+                  />
+                  <Text
+                    style={{color: '#000000', fontSize: 16, fontWeight: '600'}}>
+                    Posizione attuale
+                  </Text>
+                </View>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 12,
+                    fontWeight: '600',
+                    marginLeft: 20,
+                  }}>
+                  Entro 5 km
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-down"
+                  size={20}
+                  color={'#000000'}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
-          <TouchableOpacity
-            style={{
-              backgroundColor: '#b9ceac',
-              borderRadius: 20,
-              marginRight: 5,
-              margin: 3,
-              shadowOffset: {width: 10, height: 10},
-              shadowColor: '#000000',
-              shadowOpacity: 1,
-              elevation: 5,
-            }}
-            onPress={() => setStoreVisibility(!storeVisibility)}>
-            <Text style={{fontWeight: '500', color: '#000000', padding: 7}}>
-              Modifica
-            </Text>
-          </TouchableOpacity>
         </View>
       </View>
       <View
@@ -474,9 +471,9 @@ const MagicBox = ({navigation}) => {
         borderRadius: 15,
         marginRight: 10,
         shadowOffset: {width: 10, height: 10},
-        shadowColor: '#163119',
+        shadowColor: '#5d5d5d',
         shadowOpacity: 1,
-        elevation: 5,
+        elevation: 10,
       }}
       onPress={() => navigation.navigate('MagicBoxScreen')}>
       <ImageBackground

@@ -89,15 +89,11 @@ const SignedInStack = ({navigation}) => {
         }}
       />
       <Tab.Screen
-        name="Ricerca"
+        name="Esplora"
         component={SearchScreen}
         options={{
           tabBarIcon: () => (
-            <MaterialCommunityIcons
-              name="magnify"
-              size={30}
-              color={'#000000'}
-            />
+            <MaterialCommunityIcons name="map" size={30} color={'#000000'} />
           ),
         }}
       />

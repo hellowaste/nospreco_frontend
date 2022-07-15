@@ -13,7 +13,7 @@ const WelcomeScreen = ({navigation}) => {
         style={{alignItems: 'center', justifyContent: 'center', height: '40%'}}>
         <Image
           source={require('../../assets/logo/app/app_logo.png')}
-          style={{width: 200, height: 200}}
+          style={{width: 300, height: 300}}
         />
       </View>
       <View style={{paddingBottom: 50}}>

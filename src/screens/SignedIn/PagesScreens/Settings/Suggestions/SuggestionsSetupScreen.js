@@ -37,6 +37,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setReadyMeal(!readyMeal)}>
               <MaterialCommunityIcons
@@ -58,6 +62,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setReadyMeal(!readyMeal)}>
               <MaterialCommunityIcons
@@ -80,6 +88,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setFood(!food)}>
               <MaterialCommunityIcons
@@ -101,6 +113,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setFood(!food)}>
               <MaterialCommunityIcons
@@ -123,6 +139,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setBakery(!bakery)}>
               <MaterialCommunityIcons
@@ -144,6 +164,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setBakery(!bakery)}>
               <MaterialCommunityIcons
@@ -166,6 +190,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setOther(!other)}>
               <MaterialCommunityIcons
@@ -187,6 +215,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setOther(!other)}>
               <MaterialCommunityIcons
@@ -218,6 +250,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 borderRadius: 15,
                 height: 50,
                 justifyContent: 'center',
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}>
               <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
                 Nessuna
@@ -231,6 +267,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 borderRadius: 15,
                 height: 50,
                 justifyContent: 'center',
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setFoodPreferences(0)}>
               <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
@@ -248,6 +288,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}>
               <MaterialCommunityIcons
                 name="food-apple-outline"
@@ -268,6 +312,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setFoodPreferences(1)}>
               <MaterialCommunityIcons
@@ -290,6 +338,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}>
               <MaterialCommunityIcons
                 name="sprout-outline"
@@ -310,6 +362,10 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 paddingHorizontal: 10,
+                shadowOffset: {width: 10, height: 10},
+                shadowColor: '#000000',
+                shadowOpacity: 1,
+                elevation: 3,
               }}
               onPress={() => setFoodPreferences(2)}>
               <MaterialCommunityIcons

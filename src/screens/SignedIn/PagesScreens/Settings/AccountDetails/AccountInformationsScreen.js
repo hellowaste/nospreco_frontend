@@ -36,6 +36,10 @@ const AccountInformationsScreen = ({navigation}) => {
             backgroundColor: '#ffffff',
             borderRadius: 5,
             paddingHorizontal: 5,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}>
           <Text
             style={{
@@ -64,6 +68,10 @@ const AccountInformationsScreen = ({navigation}) => {
             backgroundColor: '#ffffff',
             borderRadius: 5,
             paddingHorizontal: 5,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}>
           <Text
             style={{
@@ -92,6 +100,10 @@ const AccountInformationsScreen = ({navigation}) => {
             backgroundColor: '#ffffff',
             borderRadius: 5,
             paddingHorizontal: 5,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}>
           <Text
             style={{
@@ -119,6 +131,10 @@ const AccountInformationsScreen = ({navigation}) => {
             backgroundColor: '#ffffff',
             borderRadius: 5,
             paddingHorizontal: 5,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}>
           <Text
             style={{
@@ -157,6 +173,10 @@ const AccountInformationsScreen = ({navigation}) => {
             backgroundColor: '#ffffff',
             borderRadius: 5,
             paddingHorizontal: 5,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
           }}
           onPress={() => navigation.navigate('NotificationsSetupScreen')}>
           <Text

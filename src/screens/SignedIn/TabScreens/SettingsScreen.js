@@ -43,7 +43,7 @@ const SettingsScreen = ({navigation}) => {
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
-            borderRadius: 5,
+            borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
             margin: 3,
@@ -70,7 +70,7 @@ const SettingsScreen = ({navigation}) => {
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
-            borderRadius: 5,
+            borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
             margin: 3,
@@ -100,7 +100,7 @@ const SettingsScreen = ({navigation}) => {
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
-            borderRadius: 5,
+            borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
             margin: 3,
@@ -119,7 +119,7 @@ const SettingsScreen = ({navigation}) => {
               marginLeft: 5,
               fontSize: 16,
               fontWeight: '700',
-              color: '#410000',
+              color: '#000000',
             }}>
             Logout
           </Text>

@@ -32,7 +32,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -53,7 +53,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -75,7 +75,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -96,7 +96,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -118,7 +118,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -139,7 +139,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -161,7 +161,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -182,7 +182,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -215,7 +215,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 justifyContent: 'center',
               }}>
@@ -228,7 +228,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 justifyContent: 'center',
               }}
@@ -243,7 +243,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -263,7 +263,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -285,7 +285,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#00807a',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -305,7 +305,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 backgroundColor: '#ffffff',
                 marginBottom: 10,
-                borderRadius: 10,
+                borderRadius: 15,
                 height: 50,
                 flexDirection: 'row',
                 alignItems: 'center',

@@ -21,7 +21,7 @@ const AccountDetailsScreen = ({navigation}) => {
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
-            borderRadius: 5,
+            borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,
@@ -52,7 +52,7 @@ const AccountDetailsScreen = ({navigation}) => {
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
-            borderRadius: 5,
+            borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,
@@ -84,7 +84,7 @@ const AccountDetailsScreen = ({navigation}) => {
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
-            borderRadius: 5,
+            borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
             paddingHorizontal: 10,

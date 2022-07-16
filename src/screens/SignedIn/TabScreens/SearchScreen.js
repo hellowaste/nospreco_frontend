@@ -13,12 +13,13 @@ const SearchScreen = ({navigation}) => {
   const [activeMap, setActiveMap] = useState(false);
   const [searchVisibility, setSearchVisibility] = useState(false);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#b9ceac'}}>
+    <SafeAreaView
+      style={{flex: 1, backgroundColor: !activeMap ? '#b9ceac' : '#eee'}}>
       <View
         style={{
           paddingHorizontal: 10,
           paddingBottom: 10,
-          backgroundColor: '#b9ceac',
+          backgroundColor: !activeMap ? '#b9ceac' : '#eee',
           zIndex: 99,
         }}>
         <View>
@@ -82,7 +83,7 @@ const SearchScreen = ({navigation}) => {
       </View>
       <View
         style={{
-          backgroundColor: '#b9ceac',
+          backgroundColor: !activeMap ? '#b9ceac' : '#eee',
           flex: 1,
           paddingTop: 20,
           marginTop: -40,
@@ -130,6 +131,8 @@ const SearchScreen = ({navigation}) => {
                   alignItems: 'center',
                   justifyContent: 'center',
                   margin: 3,
+                  backgroundColor: '#eee',
+                  borderRadius: 10,
                 }}
                 onPress={() => setActiveMap(!activeMap)}>
                 <Text
@@ -193,7 +196,7 @@ const SearchScreen = ({navigation}) => {
               <TouchableOpacity
                 style={{
                   backgroundColor: '#ffffff',
-                  borderRadius: 3,
+                  borderRadius: 15,
                   height: 40,
                   width: 40,
                   alignItems: 'center',
@@ -216,7 +219,7 @@ const SearchScreen = ({navigation}) => {
                 <TouchableOpacity
                   style={{
                     backgroundColor: '#ffffff',
-                    borderRadius: 3,
+                    borderRadius: 15,
                     height: 40,
                     width: 40,
                     alignItems: 'center',
@@ -258,36 +261,87 @@ const SearchScreen = ({navigation}) => {
               )}
             </View>
           </ScrollView>
-          <View style={{alignItems: 'center', marginTop: 50}}>
-            <Text
-              style={{
-                fontSize: 20,
-                fontWeight: '700',
-                textAlign: 'center',
-                color: '#000000',
-              }}>
-              Non ci sono store qui al momento!
-            </Text>
-            <MaterialCommunityIcons
-              name="store-search-outline"
-              size={50}
-              color={'#000000'}
-              style={{marginTop: 20}}
-            />
-            <Text
-              style={{
-                fontSize: 14,
-                fontWeight: '500',
-                textAlign: 'center',
-                marginTop: 20,
-                marginHorizontal: 50,
-                color: '#000000',
-              }}>
-              Cambia la posizione o allarga l'area di ricerca per più risultati.
-            </Text>
-          </View>
+          {!activeMap ? (
+            <View style={{alignItems: 'center', marginTop: 50}}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  fontWeight: '700',
+                  textAlign: 'center',
+                  color: '#000000',
+                }}>
+                Non ci sono store qui al momento!
+              </Text>
+              <MaterialCommunityIcons
+                name="store-search-outline"
+                size={50}
+                color={'#000000'}
+                style={{marginTop: 20}}
+              />
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: '500',
+                  textAlign: 'center',
+                  marginTop: 20,
+                  marginHorizontal: 50,
+                  color: '#000000',
+                }}>
+                Cambia la posizione o allarga l'area di ricerca per più
+                risultati.
+              </Text>
+            </View>
+          ) : null}
         </ScrollView>
       </View>
+      {activeMap ? (
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            alignSelf: 'center',
+            marginBottom: 10,
+            marginRight: -70,
+          }}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 20,
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 3,
+            }}>
+            <Text
+              style={{
+                color: '#b9ceac',
+                fontSize: 22,
+                fontWeight: '700',
+                paddingHorizontal: 15,
+                paddingVertical: 5,
+              }}>
+              Store vicini
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 30,
+              marginLeft: 30,
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 3,
+            }}>
+            <MaterialCommunityIcons
+              name="crosshairs-gps"
+              size={30}
+              color={'#b9ceac'}
+              style={{padding: 10}}
+            />
+          </TouchableOpacity>
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 };

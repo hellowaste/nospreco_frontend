@@ -81,7 +81,11 @@ const SettingsScreen = ({navigation}) => {
             shadowOpacity: 1,
             elevation: 3,
           }}>
-          <MaterialCommunityIcons name="lifebuoy" size={30} color={'#000000'} />
+          <MaterialCommunityIcons
+            name="face-agent"
+            size={30}
+            color={'#000000'}
+          />
           <Text
             style={{
               paddingVertical: 15,

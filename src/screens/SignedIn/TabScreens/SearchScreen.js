@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const SearchScreen = () => {
+const SearchScreen = ({navigation}) => {
   const [activeMap, setActiveMap] = useState(false);
   const [searchVisibility, setSearchVisibility] = useState(false);
   return (
@@ -45,7 +45,8 @@ const SearchScreen = () => {
                 shadowColor: '#000000',
                 shadowOpacity: 1,
                 elevation: 3,
-              }}>
+              }}
+              onPress={() => navigation.navigate('UserPositionScreen')}>
               <View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                   <MaterialCommunityIcons

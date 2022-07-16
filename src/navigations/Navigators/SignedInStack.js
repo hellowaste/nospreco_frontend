@@ -17,6 +17,7 @@ import SuggestionsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings
 import OrdersHistoryScreen from '../../screens/SignedIn/PagesScreens/Settings/Orders/OrdersHistory/OrdersHistoryScreen';
 import NotificationsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Notifications/NotificationsSetupScreen';
 import ShopDetailsScreen from '../../screens/SignedIn/PagesScreens/Store/ShopDetailsScreen';
+import UserPositionScreen from '../../screens/SignedIn/PagesScreens/Position/UserPositionScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -41,6 +42,10 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="UserPositionScreen"
+          component={UserPositionScreen}
+        />
         <Stack.Screen name="ShopDetailsScreen" component={ShopDetailsScreen} />
         <Stack.Screen
           name="NotificationsSetupScreen"

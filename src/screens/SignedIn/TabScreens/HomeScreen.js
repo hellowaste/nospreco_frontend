@@ -52,7 +52,8 @@ const HomeScreen = ({navigation}) => {
                 shadowColor: '#000000',
                 shadowOpacity: 1,
                 elevation: 3,
-              }}>
+              }}
+              onPress={() => navigation.navigate('UserPositionScreen')}>
               <View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                   <MaterialCommunityIcons

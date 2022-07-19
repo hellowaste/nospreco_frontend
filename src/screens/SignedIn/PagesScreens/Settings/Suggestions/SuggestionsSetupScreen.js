@@ -23,7 +23,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
         </Text>
       </View>
       <View style={{marginTop: 20, marginHorizontal: 10}}>
-        <Text style={{color: '#000000', fontSize: 16, marginBottom: 10}}>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 16,
+            fontWeight: '700',
+            marginBottom: 10,
+          }}>
           Seleziona qui le tue preferenze
         </Text>
         <View>
@@ -48,7 +54,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#000000'}
               />
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Pasti pronti
               </Text>
             </TouchableOpacity>
@@ -73,7 +85,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#ffffff'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Pasti pronti
               </Text>
             </TouchableOpacity>
@@ -99,7 +117,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#000000'}
               />
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Alimentari
               </Text>
             </TouchableOpacity>
@@ -124,7 +148,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#ffffff'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Alimentari
               </Text>
             </TouchableOpacity>
@@ -150,7 +180,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#000000'}
               />
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Prodotti da forno
               </Text>
             </TouchableOpacity>
@@ -175,7 +211,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#ffffff'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Prodotti da forno
               </Text>
             </TouchableOpacity>
@@ -201,7 +243,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#000000'}
               />
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Altro
               </Text>
             </TouchableOpacity>
@@ -226,7 +274,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#ffffff'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Altro
               </Text>
             </TouchableOpacity>
@@ -255,7 +309,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 shadowOpacity: 1,
                 elevation: 3,
               }}>
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Nessuna
               </Text>
             </View>
@@ -273,7 +333,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 elevation: 3,
               }}
               onPress={() => setFoodPreferences(0)}>
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Nessuna
               </Text>
             </TouchableOpacity>
@@ -298,7 +364,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#ffffff'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Vegetariano
               </Text>
             </View>
@@ -323,7 +395,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#000000'}
               />
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Vegetariano
               </Text>
             </TouchableOpacity>
@@ -348,7 +426,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#ffffff'}
               />
-              <Text style={{color: '#ffffff', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#ffffff',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Vegano
               </Text>
             </View>
@@ -373,7 +457,13 @@ const SuggestionsSetupScreen = ({navigation}) => {
                 size={20}
                 color={'#000000'}
               />
-              <Text style={{color: '#000000', marginLeft: 10, fontSize: 20}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  marginLeft: 10,
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Vegano
               </Text>
             </TouchableOpacity>

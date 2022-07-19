@@ -9,7 +9,7 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             textAlign: 'center',
             fontSize: 18,
-            fontWeight: '600',
+            fontWeight: '900',
             color: '#000000',
           }}>
           Non hai alcuno store preferito
@@ -17,7 +17,9 @@ const FavoriteScreen = ({navigation}) => {
         <Text
           style={{
             textAlign: 'center',
-            marginHorizontal: 30,
+            fontSize: 12,
+            fontWeight: '600',
+            marginHorizontal: 50,
             marginTop: 20,
             color: '#000000',
           }}>

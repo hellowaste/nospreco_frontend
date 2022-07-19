@@ -18,19 +18,19 @@ const PaymentsSetupScreen = ({navigation}) => {
         </Text>
       </View>
       <View style={{margin: 10}}>
-        <Text style={{color: '#000000', fontSize: 16, fontWeight: '600'}}>
+        <Text style={{color: '#000000', fontSize: 16, fontWeight: '800'}}>
           Carte di pagamento
         </Text>
         <Text
           style={{
             color: '#000000',
             fontSize: 14,
-            fontWeight: '400',
+            fontWeight: '600',
             marginTop: 10,
           }}>
           Non hai ancora inserito carte per il pagamento.
         </Text>
-        <Text style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+        <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
           Potrai inserirne una quando procederai ad un acquisto.
         </Text>
       </View>

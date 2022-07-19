@@ -62,7 +62,6 @@ const AccountDetailsScreen = ({navigation}) => {
             shadowColor: '#000000',
             shadowOpacity: 1,
             elevation: 3,
-
           }}
           onPress={() => navigation.navigate('PayoutSetupScreen')}>
           <MaterialCommunityIcons

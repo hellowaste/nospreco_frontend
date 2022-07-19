@@ -25,8 +25,8 @@ const SearchScreen = ({navigation}) => {
         <View>
           <Text
             style={{
-              fontSize: 25,
-              fontWeight: '700',
+              fontSize: 23,
+              fontWeight: '800',
               marginVertical: 10,
               color: '#000000',
             }}>
@@ -56,7 +56,7 @@ const SearchScreen = ({navigation}) => {
                     color={'#000000'}
                   />
                   <Text
-                    style={{color: '#000000', fontSize: 16, fontWeight: '600'}}>
+                    style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
                     Posizione attuale
                   </Text>
                 </View>
@@ -64,7 +64,7 @@ const SearchScreen = ({navigation}) => {
                   style={{
                     color: '#000000',
                     fontSize: 12,
-                    fontWeight: '600',
+                    fontWeight: '700',
                     marginLeft: 20,
                   }}>
                   Entro 5 km

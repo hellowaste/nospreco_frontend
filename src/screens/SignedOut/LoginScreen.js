@@ -13,6 +13,8 @@ import Spinner from 'react-native-loading-spinner-overlay/src';
 import Loader from 'react-native-modal-loader';
 import {login} from '../../state/features/user';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as Animatable from 'react-native-animatable';
+import appLogo from '../../assets/logo/app/app_logo.png';
 
 const LoginScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,6 +37,39 @@ const LoginScreen = ({navigation}) => {
     return res;
   };
   const dispatch = useDispatch();
+
+  const FlippingImage = ({
+    back = false,
+    delay,
+    duration = 2000,
+    source,
+    style = {},
+  }) => (
+    <Animatable.Image
+      animation={{
+        from: {
+          rotateX: back ? '0deg' : '180deg',
+          rotate: !back ? '180deg' : '0deg',
+        },
+        to: {
+          rotateX: back ? '360deg' : '-180deg',
+          rotate: !back ? '180deg' : '0deg',
+        },
+      }}
+      duration={duration}
+      delay={delay}
+      easing="linear"
+      iterationCount="infinite"
+      useNativeDriver
+      source={source}
+      style={{
+        ...style,
+        backfaceVisibility: 'hidden',
+        width: 110,
+        height: 110,
+      }}
+    />
+  );
 
   return (
     <SafeAreaView
@@ -260,31 +295,28 @@ const LoginScreen = ({navigation}) => {
               </View>
             </TouchableOpacity>
           </View>
-          <Spinner visible={isVisible} textContent={'Loading...'} />
-          <Loader loading={isVisible} color="#FC0D0C" title="loading" />
         </View>
       </View>
-      {/*<View*/}
-      {/*  style={{*/}
-      {/*    position: 'absolute',*/}
-      {/*    width: 100,*/}
-      {/*    height: 100,*/}
-      {/*    backgroundColor: '#ffffff',*/}
-      {/*    borderRadius: 15,*/}
-      {/*    top: '50%',*/}
-      {/*    left: '35%',*/}
-      {/*    alignItems: 'center',*/}
-      {/*    justifyContent: 'center',*/}
-      {/*    shadowOffset: {width: 10, height: 10},*/}
-      {/*    shadowColor: '#000000',*/}
-      {/*    shadowOpacity: 1,*/}
-      {/*    elevation: 3,*/}
-      {/*  }}>*/}
-      {/*  <Image*/}
-      {/*    source={require('../../assets/logo/app/app_logo.png')}*/}
-      {/*    style={{height: 120, width: 120}}*/}
-      {/*  />*/}
-      {/*</View>*/}
+      {isVisible ? (
+        <View
+          style={{
+            position: 'absolute',
+            width: 100,
+            height: 100,
+            backgroundColor: '#ffffff',
+            borderRadius: 15,
+            top: '50%',
+            left: '35%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
+          }}>
+          <FlippingImage source={appLogo} delay={1} />
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 };

@@ -10,11 +10,24 @@ const WelcomeScreen = ({navigation}) => {
         justifyContent: 'space-between',
       }}>
       <View
-        style={{alignItems: 'center', justifyContent: 'center', height: '40%'}}>
+        style={{
+          alignItems: 'center',
+          height: '40%',
+          marginTop: 50,
+        }}>
         <Image
           source={require('../../assets/logo/app/app_logo.png')}
           style={{width: 300, height: 300}}
         />
+        <Text
+          style={{
+            color: '#17942e',
+            fontSize: 30,
+            fontWeight: '800',
+            marginTop: -50,
+          }}>
+          Ciao spreco!
+        </Text>
       </View>
       <View style={{paddingBottom: 50}}>
         <TouchableOpacity

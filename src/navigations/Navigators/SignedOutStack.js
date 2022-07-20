@@ -6,6 +6,8 @@ import RegistrationScreen from '../../screens/SignedOut/RegistrationScreen';
 import LoginScreen from '../../screens/SignedOut/LoginScreen';
 import BusinessRegistrationScreen from '../../screens/SignedOut/BusinessRegistrationScreen';
 import ForgotPasswordScreen from '../../screens/SignedOut/ForgotPasswordScreen';
+import TermsScreen from '../../screens/SignedOut/TermsScreen';
+import PrivacyPolicyScreen from '../../screens/SignedOut/PrivacyPolicyScreen';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +21,11 @@ const SignedOutStack = () => (
     <Stack.Navigator
       initialRouteName="WelcomeScreen"
       screenOptions={signedOutScreenOptions}>
+      <Stack.Screen
+        name="PrivacyPolicyScreen"
+        component={PrivacyPolicyScreen}
+      />
+      <Stack.Screen name="TermsScreen" component={TermsScreen} />
       <Stack.Screen
         name="ForgotPasswordScreen"
         component={ForgotPasswordScreen}

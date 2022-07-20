@@ -10,6 +10,7 @@ import axios from 'axios';
 import Spinner from 'react-native-loading-spinner-overlay/src';
 import Loader from 'react-native-modal-loader';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import CheckBox from '@react-native-community/checkbox';
 
 const RegistrationScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,6 +22,9 @@ const RegistrationScreen = ({navigation}) => {
   const [passwordLengthAlert, setPasswordLengthAlert] = useState(false);
   const [registrationConfirmation, setRegistrationConfirmation] =
     useState(false);
+  const [termsToggleCheckBox, setTermsToggleCheckBox] = useState(true);
+  const [privacyPolicyToggleCheckBox, setPrivacyPolicyToggleCheckBox] =
+    useState(true);
 
   const createUser = async values => {
     let res;
@@ -164,6 +168,37 @@ const RegistrationScreen = ({navigation}) => {
                 }
               }}
             />
+          </View>
+          <View
+            style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
+            <CheckBox
+              disabled={false}
+              value={termsToggleCheckBox}
+              onValueChange={newValue => setTermsToggleCheckBox(newValue)}
+            />
+            <Text style={{color: '#000000'}}>Accetto i </Text>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('TermsScreen')}>
+              <Text style={{color: '#03640c', fontWeight: '700'}}>
+                termini e le condizioni d'uso
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <CheckBox
+              disabled={false}
+              value={privacyPolicyToggleCheckBox}
+              onValueChange={newValue =>
+                setPrivacyPolicyToggleCheckBox(newValue)
+              }
+            />
+            <Text style={{color: '#000000'}}>Accetto la </Text>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('PrivacyPolicyScreen')}>
+              <Text style={{color: '#03640c', fontWeight: '700'}}>
+                privacy policy
+              </Text>
+            </TouchableOpacity>
           </View>
           {registrationConfirmation ? (
             <View>

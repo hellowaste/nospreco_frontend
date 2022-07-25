@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {
+  Image,
   SafeAreaView,
   Text,
   TextInput,
@@ -71,6 +72,12 @@ const RegistrationScreen = ({navigation}) => {
           }}>
           Registrati
         </Text>
+      </View>
+      <View style={{alignItems: 'center'}}>
+        <Image
+          source={require('../../assets/logo/app/app_logo.png')}
+          style={{width: 200, height: 200}}
+        />
       </View>
       <View style={{marginBottom: 50}}>
         <View style={{marginHorizontal: 20}}>
@@ -276,7 +283,7 @@ const RegistrationScreen = ({navigation}) => {
                 fontWeight: '700',
                 color: '#ffffff',
               }}>
-              Crea account
+              CREA ACCOUNT
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -299,7 +306,7 @@ const RegistrationScreen = ({navigation}) => {
                 fontWeight: '700',
                 color: '#b9ceac',
               }}>
-              Hai un punto vendita?
+              HAI UN PUNTO VENDITA?
             </Text>
           </TouchableOpacity>
         </View>

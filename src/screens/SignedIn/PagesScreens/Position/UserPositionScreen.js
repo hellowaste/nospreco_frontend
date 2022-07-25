@@ -59,7 +59,7 @@ const UserPositionScreen = ({navigation}) => {
             maximumValue={30}
             containerStyle={{marginHorizontal: 30, width: '75%'}}
           />
-          <Text>{Math.round(distanceRange)}</Text>
+          <Text style={{color: '#000000'}}>{Math.round(distanceRange)}</Text>
         </View>
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
@@ -99,7 +99,8 @@ const UserPositionScreen = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'center',
               alignSelf: 'center',
-              marginTop: 10,
+              marginTop: 20,
+              marginBottom: 10,
             }}>
             <MaterialCommunityIcons
               name="navigation"
@@ -116,21 +117,21 @@ const UserPositionScreen = ({navigation}) => {
               backgroundColor: '#b9ceac',
               borderRadius: 30,
               marginTop: 10,
-              marginHorizontal: 50,
+              marginHorizontal: 20,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',
               shadowOpacity: 1,
-              elevation: 3,
+              elevation: 10,
             }}>
             <Text
               style={{
-                color: '#000000',
-                fontSize: 18,
-                fontWeight: '600',
+                color: '#ffffff',
+                fontSize: 24,
+                fontWeight: '900',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
-              Scegli questa posizione
+              CONFERMA
             </Text>
           </TouchableOpacity>
         </View>

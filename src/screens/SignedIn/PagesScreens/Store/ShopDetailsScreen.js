@@ -12,7 +12,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const ShopDetailsScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#b9ceac'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
       <TouchableOpacity
         style={{marginTop: 10, flexDirection: 'row', alignItems: 'center'}}
         onPress={() => navigation.goBack()}>

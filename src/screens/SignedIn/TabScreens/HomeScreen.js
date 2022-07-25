@@ -41,7 +41,7 @@ const HomeScreen = ({navigation}) => {
           <View>
             <TouchableOpacity
               style={{
-                backgroundColor: '#b9ceac',
+                backgroundColor: '#ffffff',
                 borderRadius: 15,
                 padding: 5,
                 flexDirection: 'row',
@@ -51,7 +51,7 @@ const HomeScreen = ({navigation}) => {
                 shadowOffset: {width: 10, height: 10},
                 shadowColor: '#000000',
                 shadowOpacity: 1,
-                elevation: 3,
+                elevation: 10,
               }}
               onPress={() => navigation.navigate('UserPositionScreen')}>
               <View>
@@ -99,6 +99,65 @@ const HomeScreen = ({navigation}) => {
             bounces={true}
             showsVerticalScrollIndicator={false}
             style={{paddingHorizontal: 10}}>
+            <View style={{marginTop: 30}}>
+              <Text
+                style={{
+                  textAlign: 'left',
+                  fontSize: 20,
+                  fontWeight: '700',
+                  color: '#000000',
+                  marginBottom: 10,
+                }}>
+                Consigliati per te
+              </Text>
+              <View
+                style={{
+                  borderStyle: 'dashed',
+                  borderWidth: 1,
+                  borderColor: '#000000',
+                  borderRadius: 15,
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '600',
+                    marginTop: 10,
+                    marginBottom: 10,
+                    marginHorizontal: 10,
+                  }}>
+                  Lascia che ti consigliamo le Magic Box più interessanti in
+                  base alle tue preferenze
+                </Text>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#ffffff',
+                    borderRadius: 20,
+                    borderColor: '#00807a',
+                    borderWidth: 1,
+                    borderStyle: 'solid',
+                    margin: 5,
+                    marginBottom: 10,
+                    marginHorizontal: 10,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#26562f',
+                    shadowOpacity: 1,
+                    elevation: 5,
+                  }}
+                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 16,
+                      fontWeight: '600',
+                      padding: 10,
+                      textAlign: 'center',
+                    }}>
+                    Scegli preferenze
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </View>
             <View
               style={{
                 marginTop: 30,
@@ -314,49 +373,6 @@ const HomeScreen = ({navigation}) => {
                 }}
               />
             </ScrollView>
-            <View style={{marginTop: 10}}>
-              <Text
-                style={{
-                  textAlign: 'left',
-                  fontSize: 20,
-                  fontWeight: '700',
-                  color: '#000000',
-                }}>
-                Gestisci le tue preferenze
-              </Text>
-              <View
-                style={{
-                  height: 100,
-                  justifyContent: 'center',
-                  marginHorizontal: 30,
-                }}>
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: '#ffffff',
-                    borderRadius: 20,
-                    borderColor: '#00807a',
-                    borderWidth: 1,
-                    borderStyle: 'dashed',
-                    margin: 5,
-                    shadowOffset: {width: 10, height: 10},
-                    shadowColor: '#26562f',
-                    shadowOpacity: 1,
-                    elevation: 5,
-                  }}
-                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontSize: 16,
-                      fontWeight: '600',
-                      padding: 10,
-                      textAlign: 'center',
-                    }}>
-                    Imposta i consigli
-                  </Text>
-                </TouchableOpacity>
-              </View>
-            </View>
           </ScrollView>
         ) : (
           <ScrollView bounces={true} showsVerticalScrollIndicator={false}>

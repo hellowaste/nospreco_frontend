@@ -45,17 +45,17 @@ const WelcomeScreen = ({navigation}) => {
           <Text
             style={{
               fontSize: 20,
-              fontWeight: '600',
+              fontWeight: '800',
               textAlign: 'center',
-              color: '#2e650a',
+              color: '#ffffff',
               paddingVertical: 10,
             }}>
-            Crea account
+            CREA ACCOUNT
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={{
-            backgroundColor: '#b9ceac',
+            backgroundColor: '#ffffff',
             justifyContent: 'center',
             marginHorizontal: 30,
             borderRadius: 20,
@@ -69,12 +69,12 @@ const WelcomeScreen = ({navigation}) => {
           <Text
             style={{
               fontSize: 20,
-              fontWeight: '600',
+              fontWeight: '800',
               textAlign: 'center',
-              color: '#2e650a',
+              color: '#b9ceac',
               paddingVertical: 10,
             }}>
-            Accedi
+            ACCEDI
           </Text>
         </TouchableOpacity>
       </View>

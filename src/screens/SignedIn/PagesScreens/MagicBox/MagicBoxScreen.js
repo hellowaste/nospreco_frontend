@@ -22,63 +22,97 @@ const MagicBoxScreen = ({navigation}) => {
       style={{
         flex: 1,
         justifyContent: 'space-between',
-        backgroundColor: '#b9ceac',
+        backgroundColor: '#ffffff',
       }}>
       <ImageBackground
         source={{
           uri: 'https://media-cdn.tripadvisor.com/media/photo-s/17/f5/39/f7/fooood-at-the-food-department.jpg',
         }}
-        style={{width: '100%', height: 200}}>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}>
-          <TouchableOpacity
+        style={{
+          width: '100%',
+          height: 180,
+        }}>
+        <View>
+          <View
             style={{
-              backgroundColor: '#ffffff',
-              width: 35,
-              height: 35,
-              borderRadius: 30,
+              flexDirection: 'row',
               alignItems: 'center',
-              justifyContent: 'center',
-              margin: 10,
-            }}
-            onPress={() => navigation.goBack()}>
-            <MaterialCommunityIcons
-              name="chevron-left"
-              color={'#000000'}
-              size={30}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
+              justifyContent: 'space-between',
+              marginBottom: 75,
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#ffffff',
+                width: 35,
+                height: 35,
+                borderRadius: 30,
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: 10,
+              }}
+              onPress={() => navigation.goBack()}>
+              <MaterialCommunityIcons
+                name="chevron-left"
+                color={'#000000'}
+                size={30}
+              />
+            </TouchableOpacity>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#ffffff',
+                  width: 35,
+                  height: 35,
+                  borderRadius: 30,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: 10,
+                }}>
+                <MaterialCommunityIcons
+                  name="share-variant-outline"
+                  color={'#000000'}
+                  size={30}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#ffffff',
+                  width: 35,
+                  height: 35,
+                  borderRadius: 30,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  margin: 10,
+                }}>
+                <MaterialCommunityIcons
+                  name="heart-outline"
+                  color={'#000000'}
+                  size={25}
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View
             style={{
-              backgroundColor: '#ffffff',
-              width: 35,
-              height: 35,
-              borderRadius: 30,
+              paddingLeft: 10,
+              flexDirection: 'row',
               alignItems: 'center',
-              justifyContent: 'center',
-              margin: 10,
+              backgroundColor: 'rgba(0,0,0,0.44)',
             }}>
-            <MaterialCommunityIcons
-              name="share-variant-outline"
-              color={'#000000'}
-              size={30}
+            <Image
+              source={{
+                uri: 'https://www.giallozafferano.it/images/238-23809/Pizza-Margherita_450x300.jpg',
+              }}
+              style={{
+                borderRadius: 50,
+                width: 50,
+                height: 50,
+              }}
             />
-          </TouchableOpacity>
-        </View>
-        <View style={{backgroundColor: '#000000', marginTop: 120}}>
-          <Text
-            style={{
-              color: '#ffffff',
-              fontWeight: '700',
-              fontSize: 18,
-              marginLeft: 10,
-            }}>
-            Pizzeria Da Michele
-          </Text>
+            <Text style={{color: '#ffffff', fontSize: 30, fontWeight: '800'}}>
+              Pizzeria Da Michele
+            </Text>
+          </View>
         </View>
       </ImageBackground>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -369,28 +403,29 @@ const MagicBoxScreen = ({navigation}) => {
           </Text>
         </View>
       </ScrollView>
-      <View>
+      <View style={{backgroundColor: '#ffffff'}}>
         <TouchableOpacity
           style={{
-            backgroundColor: '#ffffff',
+            backgroundColor: '#b9ceac',
             width: '50%',
             borderRadius: 25,
+            marginTop: 5,
             marginBottom: 10,
             alignSelf: 'center',
             alignItems: 'center',
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 10,
           }}>
           <Text
             style={{
-              color: '#000000',
+              color: '#ffffff',
               fontSize: 23,
               fontWeight: '800',
               padding: 10,
             }}>
-            Prenota
+            PRENOTA
           </Text>
         </TouchableOpacity>
       </View>

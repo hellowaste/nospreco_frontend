@@ -15,6 +15,7 @@ import {login} from '../../state/features/user';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as Animatable from 'react-native-animatable';
 import appLogo from '../../assets/logo/app/app_logo.png';
+import CheckBox from '@react-native-community/checkbox';
 
 const LoginScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,6 +24,7 @@ const LoginScreen = ({navigation}) => {
   const [emailAlert, setEmailAlert] = useState(false);
   const [password, setPassword] = useState('');
   const [passwordAlert, setPasswordAlert] = useState(false);
+  const [credentialsToggle, setCredentialsToggle] = useState(true);
 
   const loginUser = async values => {
     let res;
@@ -95,6 +97,12 @@ const LoginScreen = ({navigation}) => {
           }}>
           Accedi
         </Text>
+      </View>
+      <View style={{alignItems: 'center'}}>
+        <Image
+          source={require('../../assets/logo/app/app_logo.png')}
+          style={{width: 130, height: 130}}
+        />
       </View>
       <View>
         <View
@@ -201,8 +209,24 @@ const LoginScreen = ({navigation}) => {
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
+                marginTop: 10,
+              }}>
+              <CheckBox
+                disabled={false}
+                value={credentialsToggle}
+                onValueChange={newValue => setCredentialsToggle(newValue)}
+              />
+              <Text style={{color: '#2e650a', fontSize: 12, fontWeight: '600'}}>
+                Salva credenziali
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
                 justifyContent: 'space-between',
-                marginTop: 20,
+                marginTop: 5,
+                marginHorizontal: 5,
               }}>
               <TouchableOpacity
                 onPress={() => navigation.navigate('ForgotPasswordScreen')}>
@@ -258,10 +282,10 @@ const LoginScreen = ({navigation}) => {
                   textAlign: 'center',
                   paddingVertical: 10,
                   fontSize: 20,
-                  fontWeight: '700',
-                  color: '#2e650a',
+                  fontWeight: '800',
+                  color: '#b9ceac',
                 }}>
-                Accedi
+                ACCEDI
               </Text>
             </TouchableOpacity>
           </View>
@@ -270,7 +294,7 @@ const LoginScreen = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'center',
-              marginTop: 50,
+              marginTop: 20,
             }}>
             <TouchableOpacity
               style={{

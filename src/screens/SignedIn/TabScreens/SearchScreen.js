@@ -35,7 +35,7 @@ const SearchScreen = ({navigation}) => {
           <View>
             <TouchableOpacity
               style={{
-                backgroundColor: '#b9ceac',
+                backgroundColor: '#ffffff',
                 borderRadius: 15,
                 padding: 5,
                 flexDirection: 'row',
@@ -45,7 +45,7 @@ const SearchScreen = ({navigation}) => {
                 shadowOffset: {width: 10, height: 10},
                 shadowColor: '#000000',
                 shadowOpacity: 1,
-                elevation: 3,
+                elevation: 10,
               }}
               onPress={() => navigation.navigate('UserPositionScreen')}>
               <View>
@@ -315,19 +315,19 @@ const SearchScreen = ({navigation}) => {
             <Text
               style={{
                 color: '#b9ceac',
-                fontSize: 22,
-                fontWeight: '700',
+                fontSize: 18,
+                fontWeight: '600',
                 paddingHorizontal: 15,
                 paddingVertical: 5,
               }}>
-              Store vicini
+              MOSTRA GLI STORE VICINI
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
               backgroundColor: '#ffffff',
               borderRadius: 30,
-              marginLeft: 30,
+              marginLeft: 10,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',
               shadowOpacity: 1,

@@ -9,8 +9,6 @@ import {
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import axios from 'axios';
-import Spinner from 'react-native-loading-spinner-overlay/src';
-import Loader from 'react-native-modal-loader';
 import {login} from '../../state/features/user';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as Animatable from 'react-native-animatable';
@@ -48,16 +46,7 @@ const LoginScreen = ({navigation}) => {
     style = {},
   }) => (
     <Animatable.Image
-      animation={{
-        from: {
-          rotateX: back ? '0deg' : '180deg',
-          rotate: !back ? '180deg' : '0deg',
-        },
-        to: {
-          rotateX: back ? '360deg' : '-180deg',
-          rotate: !back ? '180deg' : '0deg',
-        },
-      }}
+      animation={'flash'}
       duration={duration}
       delay={delay}
       easing="linear"
@@ -327,6 +316,7 @@ const LoginScreen = ({navigation}) => {
             position: 'absolute',
             width: 100,
             height: 100,
+            paddingTop: 10,
             backgroundColor: '#ffffff',
             borderRadius: 15,
             top: '50%',

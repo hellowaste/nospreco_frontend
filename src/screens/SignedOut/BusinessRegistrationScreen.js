@@ -10,8 +10,8 @@ import {
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PhoneInput from 'react-native-phone-number-input';
 import axios from 'axios';
-import Spinner from 'react-native-loading-spinner-overlay/src';
-import Loader from 'react-native-modal-loader';
+import appLogo from '../../assets/logo/app/app_logo.png';
+import * as Animatable from 'react-native-animatable';
 
 const createBusinessUser = async values => {
   let res;
@@ -24,6 +24,30 @@ const createBusinessUser = async values => {
     .catch(error => console.log(error));
   return res;
 };
+
+const FlippingImage = ({
+  back = false,
+  delay,
+  duration = 2000,
+  source,
+  style = {},
+}) => (
+  <Animatable.Image
+    animation={'flash'}
+    duration={duration}
+    delay={delay}
+    easing="linear"
+    iterationCount="infinite"
+    useNativeDriver
+    source={source}
+    style={{
+      ...style,
+      backfaceVisibility: 'hidden',
+      width: 110,
+      height: 110,
+    }}
+  />
+);
 
 const BusinessRegistrationScreen = ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -251,12 +275,27 @@ const BusinessRegistrationScreen = ({navigation}) => {
           </Text>
         </TouchableOpacity>
       </ScrollView>
-      <Spinner
-        visible={isVisible}
-        textContent={'Loading...'}
-        // textStyle={styles.spinnerTextStyle}
-      />
-      <Loader loading={isVisible} color="#FC0D0C" title="loading" />
+      {isVisible ? (
+        <View
+          style={{
+            position: 'absolute',
+            width: 100,
+            height: 100,
+            paddingTop: 10,
+            backgroundColor: '#ffffff',
+            borderRadius: 15,
+            top: '50%',
+            left: '35%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 3,
+          }}>
+          <FlippingImage source={appLogo} delay={1} />
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 };

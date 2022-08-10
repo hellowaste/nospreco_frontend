@@ -7,12 +7,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const SettingsScreen = ({navigation}) => {
   const dispatch = useDispatch();
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#b9ceac'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
       <ScrollView
         style={{
           marginTop: 30,
           marginHorizontal: 20,
-          backgroundColor: '#b9ceac',
+          backgroundColor: '#ffffff',
         }}>
         <TouchableOpacity
           style={{
@@ -20,12 +20,12 @@ const SettingsScreen = ({navigation}) => {
             borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
-            margin: 3,
+            margin: 5,
             paddingHorizontal: 10,
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 5,
           }}
           onPress={() => navigation.navigate('AccountDetailsScreen')}>
           <MaterialCommunityIcons name="account" size={30} color={'#000000'} />
@@ -46,13 +46,13 @@ const SettingsScreen = ({navigation}) => {
             borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
-            margin: 3,
+            margin: 5,
             marginTop: 20,
             paddingHorizontal: 10,
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 5,
           }}
           onPress={() => navigation.navigate('OrdersHistory')}>
           <MaterialCommunityIcons name="receipt" size={30} color={'#000000'} />
@@ -73,13 +73,13 @@ const SettingsScreen = ({navigation}) => {
             borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
-            margin: 3,
+            margin: 5,
             marginTop: 20,
             paddingHorizontal: 10,
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 5,
           }}>
           <MaterialCommunityIcons
             name="face-agent"
@@ -103,13 +103,13 @@ const SettingsScreen = ({navigation}) => {
             borderRadius: 15,
             flexDirection: 'row',
             alignItems: 'center',
-            margin: 3,
+            margin: 5,
             marginTop: 20,
             paddingHorizontal: 10,
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 5,
           }}
           onPress={() => dispatch(logout())}>
           <MaterialCommunityIcons name="logout" size={30} color={'#000000'} />

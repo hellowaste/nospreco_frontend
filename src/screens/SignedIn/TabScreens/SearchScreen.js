@@ -14,29 +14,21 @@ const SearchScreen = ({navigation}) => {
   const [searchVisibility, setSearchVisibility] = useState(false);
   return (
     <SafeAreaView
-      style={{flex: 1, backgroundColor: !activeMap ? '#b9ceac' : '#eee'}}>
+      style={{flex: 1, backgroundColor: !activeMap ? '#ffffff' : '#eee'}}>
       <View
         style={{
           paddingHorizontal: 10,
           paddingBottom: 10,
-          backgroundColor: !activeMap ? '#b9ceac' : '#eee',
+          backgroundColor: !activeMap ? '#ffffff' : '#eee',
           zIndex: 99,
         }}>
         <View>
-          <Text
-            style={{
-              fontSize: 23,
-              fontWeight: '800',
-              marginVertical: 10,
-              color: '#000000',
-            }}>
-            Esplora
-          </Text>
           <View>
             <TouchableOpacity
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 15,
+                marginTop: 20,
                 padding: 5,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -83,7 +75,7 @@ const SearchScreen = ({navigation}) => {
       </View>
       <View
         style={{
-          backgroundColor: !activeMap ? '#b9ceac' : '#eee',
+          backgroundColor: !activeMap ? '#ffffff' : '#eee',
           flex: 1,
           paddingTop: 20,
           marginTop: -40,

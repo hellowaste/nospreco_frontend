@@ -26,23 +26,15 @@ const HomeScreen = ({navigation}) => {
           paddingHorizontal: 10,
           paddingBottom: 10,
           zIndex: 99,
-          backgroundColor: '#b9ceac',
+          backgroundColor: '#ffffff',
         }}>
         <View>
-          <Text
-            style={{
-              fontSize: 23,
-              fontWeight: '800',
-              marginVertical: 10,
-              color: '#000000',
-            }}>
-            Home
-          </Text>
           <View>
             <TouchableOpacity
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 15,
+                marginTop: 20,
                 padding: 5,
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -89,7 +81,7 @@ const HomeScreen = ({navigation}) => {
       </View>
       <View
         style={{
-          backgroundColor: '#b9ceac',
+          backgroundColor: '#ffffff',
           flex: 1,
           paddingTop: 20,
           marginTop: -40,
@@ -217,7 +209,7 @@ const HomeScreen = ({navigation}) => {
             </ScrollView>
             <View
               style={{
-                marginTop: 30,
+                marginTop: 10,
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
@@ -273,7 +265,7 @@ const HomeScreen = ({navigation}) => {
             </ScrollView>
             <View
               style={{
-                marginTop: 30,
+                marginTop: 10,
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
@@ -286,13 +278,14 @@ const HomeScreen = ({navigation}) => {
                     fontWeight: '700',
                     color: '#000000',
                   }}>
-                  Pasti pronti
+                  Store in zona
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={{
                   backgroundColor: '#ffffff',
                   borderRadius: 20,
+                  marginRight: 10,
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
@@ -302,20 +295,12 @@ const HomeScreen = ({navigation}) => {
                   style={{
                     flexDirection: 'row',
                     alignItems: 'center',
-                    padding: 3,
+                    padding: 5,
                   }}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontWeight: '500',
-                      marginLeft: 5,
-                    }}>
-                    Vedi tutti
-                  </Text>
                   <MaterialCommunityIcons
-                    name="chevron-right"
-                    size={18}
-                    color={'#000000'}
+                    name="arrow-right"
+                    size={20}
+                    color={'#313131'}
                   />
                 </View>
               </TouchableOpacity>
@@ -324,54 +309,7 @@ const HomeScreen = ({navigation}) => {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               style={{marginBottom: 10}}>
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  margin: 5,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginRight: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}
-              />
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  margin: 5,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginHorizontal: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}
-              />
-              <View
-                style={{
-                  backgroundColor: '#ffffff',
-                  height: 170,
-                  width: 250,
-                  margin: 5,
-                  marginTop: 10,
-                  borderRadius: 15,
-                  flexDirection: 'column-reverse',
-                  marginLeft: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}
-              />
+              <StoreBox />
             </ScrollView>
           </ScrollView>
         ) : (
@@ -483,8 +421,9 @@ const MagicBox = ({navigation}) => {
     <Pressable
       style={{
         backgroundColor: '#ffffff',
-        margin: 5,
+        margin: 10,
         marginTop: 10,
+        marginBottom: 15,
         borderRadius: 15,
         marginRight: 10,
         shadowOffset: {width: 10, height: 10},
@@ -573,6 +512,119 @@ const MagicBox = ({navigation}) => {
   );
 };
 
+const StoreBox = () => {
+  return (
+    <Pressable
+      style={{
+        marginHorizontal: 10,
+      }}>
+      <View
+        style={{
+          backgroundColor: '#ffffff',
+          height: 170,
+          width: 250,
+          margin: 5,
+          marginTop: 10,
+          borderRadius: 15,
+          flexDirection: 'column-reverse',
+          shadowOffset: {width: 10, height: 10},
+          shadowColor: '#000000',
+          shadowOpacity: 1,
+          elevation: 5,
+        }}>
+        <ImageBackground
+          source={{
+            uri: 'https://static.fanpage.it/wp-content/uploads/sites/30/2021/10/poke-1200x675.jpg',
+          }}
+          borderRadius={15}
+          style={{
+            height: 170,
+            width: 250,
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <View
+            style={{
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 5,
+            }}>
+            <Text
+              style={{
+                color: '#ffffff',
+                fontSize: 26,
+                fontWeight: '900',
+                shadowColor: '#000000',
+              }}>
+              Pokè take away
+            </Text>
+          </View>
+        </ImageBackground>
+      </View>
+      <View
+        style={{
+          marginLeft: 15,
+          marginRight: 7,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <MaterialCommunityIcons
+            name="thumb-up-outline"
+            size={18}
+            color={'#000000'}
+            style={{
+              marginRight: 5,
+            }}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '600',
+              marginRight: 5,
+            }}>
+            90%
+          </Text>
+          <Text
+            style={{
+              color: '#5d5d5d',
+              fontSize: 14,
+              fontWeight: '600',
+            }}>
+            (43)
+          </Text>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            borderRadius: 15,
+            backgroundColor: '#d8e5d1',
+            padding: 1,
+            paddingHorizontal: 5,
+          }}>
+          <MaterialCommunityIcons
+            name="food-takeout-box-outline"
+            size={16}
+            color={'#000000'}
+          />
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <Text style={{color: '#000000', fontSize: 12, fontWeight: '600'}}>
+              Box in vendita:
+            </Text>
+            <Text style={{color: '#000000', fontSize: 14, fontWeight: '700'}}>
+              17
+            </Text>
+          </View>
+        </View>
+      </View>
+    </Pressable>
+  );
+};
+
 const SupermarketBox = ({navigation}) => {
   return (
     <Pressable
@@ -580,6 +632,7 @@ const SupermarketBox = ({navigation}) => {
         backgroundColor: '#ffffff',
         height: 170,
         width: 170,
+        marginBottom: 15,
         borderRadius: 15,
         justifyContent: 'center',
         margin: 5,
@@ -588,7 +641,7 @@ const SupermarketBox = ({navigation}) => {
         shadowOffset: {width: 10, height: 10},
         shadowColor: '#000000',
         shadowOpacity: 1,
-        elevation: 5,
+        elevation: 10,
       }}
       onPress={() => navigation.navigate('SupermarketScreen')}>
       <ImageBackground

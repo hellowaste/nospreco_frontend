@@ -42,6 +42,7 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen name="Preferiti" component={FavoriteScreen} />
         <Stack.Screen
           name="UserPositionScreen"
           component={UserPositionScreen}

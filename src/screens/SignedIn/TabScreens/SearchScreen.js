@@ -89,7 +89,7 @@ const SearchScreen = ({navigation}) => {
                   shadowColor: '#a2a2a2',
                   shadowOpacity: 0.5,
                   elevation: 5,
-                }}>
+                }} onPress={() => navigation.navigate('Preferiti')}>
                 <MaterialCommunityIcons
                   name="heart-outline"
                   size={24}

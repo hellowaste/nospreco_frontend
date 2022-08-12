@@ -549,6 +549,18 @@ const StoreBox = () => {
           alignItems: 'center',
           justifyContent: 'space-between',
         }}>
+        <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+          Ritiro: 14:00 - 16:00
+        </Text>
+      </View>
+      <View
+        style={{
+          marginLeft: 15,
+          marginRight: 7,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <MaterialCommunityIcons
             name="thumb-up-outline"
@@ -569,11 +581,21 @@ const StoreBox = () => {
           </Text>
           <Text
             style={{
-              color: '#5d5d5d',
-              fontSize: 14,
+              color: '#000000',
+              fontSize: 16,
               fontWeight: '600',
+              marginRight: 5,
             }}>
-            (43)
+            |
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '600',
+              marginRight: 5,
+            }}>
+            3.7 km
           </Text>
         </View>
         <View
@@ -586,13 +608,14 @@ const StoreBox = () => {
             paddingHorizontal: 5,
           }}>
           <MaterialCommunityIcons
-            name="food-takeout-box-outline"
+            name="basket-outline"
             size={16}
             color={'#000000'}
+            style={{marginRight: 3}}
           />
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <Text style={{color: '#000000', fontSize: 12, fontWeight: '600'}}>
-              Box in vendita:
+            <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+              Bag:
             </Text>
             <Text style={{color: '#000000', fontSize: 14, fontWeight: '700'}}>
               17

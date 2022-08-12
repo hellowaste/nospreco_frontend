@@ -501,7 +501,7 @@ const StoreBox = () => {
         style={{
           backgroundColor: '#ffffff',
           height: 170,
-          width: 300,
+          width: 280,
           margin: 5,
           marginTop: 10,
           borderRadius: 15,
@@ -518,7 +518,7 @@ const StoreBox = () => {
           borderRadius={15}
           style={{
             height: 170,
-            width: 300,
+            width: 280,
             alignItems: 'center',
             justifyContent: 'center',
           }}>

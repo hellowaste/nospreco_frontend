@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, Text, TouchableOpacity} from 'react-native';
+import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import {logout} from '../../../state/features/user';
 import {useDispatch} from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -105,6 +105,7 @@ const SettingsScreen = ({navigation}) => {
             alignItems: 'center',
             margin: 5,
             marginTop: 20,
+            marginBottom: 10,
             paddingHorizontal: 10,
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
@@ -124,6 +125,84 @@ const SettingsScreen = ({navigation}) => {
             Logout
           </Text>
         </TouchableOpacity>
+        <View
+          style={{
+            backgroundColor: '#006f3d',
+            borderRadius: 15,
+            flexDirection: 'row',
+            alignItems: 'center',
+            margin: 5,
+            marginTop: 20,
+            marginBottom: 10,
+            paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 5,
+          }}>
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+              color: '#000000',
+            }}>
+            RAL 6029
+          </Text>
+        </View>
+        <View
+          style={{
+            backgroundColor: '#00694c',
+            borderRadius: 15,
+            flexDirection: 'row',
+            alignItems: 'center',
+            margin: 5,
+            marginTop: 20,
+            marginBottom: 10,
+            paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 5,
+          }}>
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+              color: '#000000',
+            }}>
+            RAL 6016
+          </Text>
+        </View>
+        <View
+          style={{
+            backgroundColor: '#237f52',
+            borderRadius: 15,
+            flexDirection: 'row',
+            alignItems: 'center',
+            margin: 5,
+            marginTop: 20,
+            marginBottom: 10,
+            paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 5,
+          }}>
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+              color: '#000000',
+            }}>
+            RAL 6032
+          </Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

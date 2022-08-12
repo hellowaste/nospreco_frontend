@@ -99,7 +99,7 @@ const UserPositionScreen = ({navigation}) => {
               flexDirection: 'row',
               alignItems: 'center',
               alignSelf: 'center',
-              marginTop: 20,
+              marginTop: 30,
               marginBottom: 10,
             }}>
             <MaterialCommunityIcons
@@ -116,7 +116,7 @@ const UserPositionScreen = ({navigation}) => {
             style={{
               backgroundColor: '#b9ceac',
               borderRadius: 30,
-              marginTop: 10,
+              marginTop: 20,
               marginHorizontal: 20,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',
@@ -126,10 +126,10 @@ const UserPositionScreen = ({navigation}) => {
             <Text
               style={{
                 color: '#ffffff',
-                fontSize: 24,
-                fontWeight: '900',
+                fontSize: 20,
+                fontWeight: '800',
                 textAlign: 'center',
-                paddingVertical: 10,
+                paddingVertical: 5,
               }}>
               CONFERMA
             </Text>

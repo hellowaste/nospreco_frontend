@@ -30,52 +30,100 @@ const HomeScreen = ({navigation}) => {
         }}>
         <View>
           <View>
-            <TouchableOpacity
+            <View
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 15,
-                marginTop: 20,
+                marginTop: 15,
+                marginHorizontal: 10,
                 padding: 5,
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                paddingRight: 20,
-                shadowOffset: {width: 10, height: 10},
-                shadowColor: '#000000',
-                shadowOpacity: 1,
-                elevation: 10,
-              }}
-              onPress={() => navigation.navigate('UserPositionScreen')}>
+              }}>
+              <TouchableOpacity
+                style={{
+                  borderRadius: 30,
+                  marginBottom: 15,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#a2a2a2',
+                  shadowOpacity: 0.5,
+                  elevation: 5,
+                }}>
+                <MaterialCommunityIcons
+                  name="tune-variant"
+                  size={24}
+                  color={'#000000'}
+                  style={{padding: 5}}
+                />
+              </TouchableOpacity>
               <View>
-                <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <MaterialCommunityIcons
-                    name="map-marker-outline"
-                    size={20}
-                    color={'#000000'}
-                  />
-                  <Text
-                    style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
-                    Posizione attuale
-                  </Text>
-                </View>
-                <Text
+                <TouchableOpacity
                   style={{
-                    color: '#000000',
-                    fontSize: 12,
-                    fontWeight: '700',
-                    marginLeft: 20,
-                  }}>
-                  Entro 5 km
-                </Text>
+                    backgroundColor: '#ffffff',
+                    borderRadius: 20,
+                    borderColor: '#00807a',
+                    borderWidth: 1,
+                    borderStyle: 'solid',
+                    margin: 5,
+                    marginBottom: 15,
+                    marginHorizontal: 10,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#000000',
+                    shadowOpacity: 1,
+                    elevation: 10,
+                  }}
+                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 16,
+                      fontWeight: '600',
+                      paddingVertical: 5,
+                      paddingHorizontal: 15,
+                      textAlign: 'center',
+                    }}>
+                    Scegli preferenze
+                  </Text>
+                </TouchableOpacity>
               </View>
-              <View>
+              <TouchableOpacity
+                style={{
+                  borderRadius: 30,
+                  marginBottom: 15,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#a2a2a2',
+                  shadowOpacity: 0.5,
+                  elevation: 5,
+                }}>
+                <MaterialCommunityIcons
+                  name="heart-outline"
+                  size={24}
+                  color={'#000000'}
+                  style={{padding: 5}}
+                />
+              </TouchableOpacity>
+            </View>
+            <View style={{alignItems: 'center'}}>
+              <TouchableOpacity
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  marginTop: -10,
+                }}
+                onPress={() => navigation.navigate('UserPositionScreen')}>
+                <Text
+                  style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+                  Posizione attuale
+                </Text>
                 <MaterialCommunityIcons
                   name="chevron-down"
                   size={20}
                   color={'#000000'}
+                  style={{marginLeft: 10}}
                 />
-              </View>
-            </TouchableOpacity>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </View>
@@ -91,65 +139,6 @@ const HomeScreen = ({navigation}) => {
             bounces={true}
             showsVerticalScrollIndicator={false}
             style={{paddingHorizontal: 10}}>
-            <View style={{marginTop: 30}}>
-              <Text
-                style={{
-                  textAlign: 'left',
-                  fontSize: 20,
-                  fontWeight: '700',
-                  color: '#000000',
-                  marginBottom: 10,
-                }}>
-                Consigliati per te
-              </Text>
-              <View
-                style={{
-                  borderStyle: 'dashed',
-                  borderWidth: 1,
-                  borderColor: '#000000',
-                  borderRadius: 15,
-                }}>
-                <Text
-                  style={{
-                    color: '#000000',
-                    fontSize: 14,
-                    fontWeight: '600',
-                    marginTop: 10,
-                    marginBottom: 10,
-                    marginHorizontal: 10,
-                  }}>
-                  Lascia che ti consigliamo le Magic Box più interessanti in
-                  base alle tue preferenze
-                </Text>
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: '#ffffff',
-                    borderRadius: 20,
-                    borderColor: '#00807a',
-                    borderWidth: 1,
-                    borderStyle: 'solid',
-                    margin: 5,
-                    marginBottom: 10,
-                    marginHorizontal: 10,
-                    shadowOffset: {width: 10, height: 10},
-                    shadowColor: '#26562f',
-                    shadowOpacity: 1,
-                    elevation: 5,
-                  }}
-                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontSize: 16,
-                      fontWeight: '600',
-                      padding: 10,
-                      textAlign: 'center',
-                    }}>
-                    Scegli preferenze
-                  </Text>
-                </TouchableOpacity>
-              </View>
-            </View>
             <View
               style={{
                 marginTop: 30,
@@ -165,120 +154,7 @@ const HomeScreen = ({navigation}) => {
                     fontWeight: '700',
                     color: '#000000',
                   }}>
-                  I box in offerta oggi
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 20,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 3,
-                }}
-                onPress={() => navigation.navigate('MagicBoxList')}>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    padding: 3,
-                  }}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontWeight: '500',
-                      marginLeft: 5,
-                    }}>
-                    Vedi tutti
-                  </Text>
-                  <MaterialCommunityIcons
-                    name="chevron-right"
-                    size={18}
-                    color={'#000000'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}>
-              <MagicBox navigation={navigation} />
-              <MagicBox navigation={navigation} />
-              <MagicBox navigation={navigation} />
-            </ScrollView>
-            <View
-              style={{
-                marginTop: 10,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity>
-                <Text
-                  style={{
-                    textAlign: 'left',
-                    fontSize: 20,
-                    fontWeight: '700',
-                    color: '#000000',
-                  }}>
-                  Supermercati
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 20,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    padding: 3,
-                  }}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontWeight: '500',
-                      marginLeft: 5,
-                    }}>
-                    Vedi tutti
-                  </Text>
-                  <MaterialCommunityIcons
-                    name="chevron-right"
-                    size={18}
-                    color={'#000000'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}>
-              <SupermarketBox navigation={navigation} />
-              <SupermarketBox navigation={navigation} />
-              <SupermarketBox navigation={navigation} />
-            </ScrollView>
-            <View
-              style={{
-                marginTop: 10,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity>
-                <Text
-                  style={{
-                    textAlign: 'left',
-                    fontSize: 20,
-                    fontWeight: '700',
-                    color: '#000000',
-                  }}>
-                  Store in zona
+                  Il meglio nella zona
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
@@ -309,6 +185,108 @@ const HomeScreen = ({navigation}) => {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               style={{marginBottom: 10}}>
+              <StoreBox />
+              <StoreBox />
+              <StoreBox />
+            </ScrollView>
+            <View
+              style={{
+                marginTop: 10,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    textAlign: 'left',
+                    fontSize: 20,
+                    fontWeight: '700',
+                    color: '#000000',
+                  }}>
+                  Le tue preferenze
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#ffffff',
+                  borderRadius: 20,
+                  marginRight: 10,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
+                }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    padding: 5,
+                  }}>
+                  <MaterialCommunityIcons
+                    name="arrow-right"
+                    size={20}
+                    color={'#313131'}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              style={{marginBottom: 10}}>
+              <StoreBox />
+              <StoreBox />
+              <StoreBox />
+            </ScrollView>
+            <View
+              style={{
+                marginTop: 10,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TouchableOpacity>
+                <Text
+                  style={{
+                    textAlign: 'left',
+                    fontSize: 20,
+                    fontWeight: '700',
+                    color: '#000000',
+                  }}>
+                  I più vicini a te
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#ffffff',
+                  borderRadius: 20,
+                  marginRight: 10,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
+                }}>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    padding: 5,
+                  }}>
+                  <MaterialCommunityIcons
+                    name="arrow-right"
+                    size={20}
+                    color={'#313131'}
+                  />
+                </View>
+              </TouchableOpacity>
+            </View>
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              style={{marginBottom: 10}}>
+              <StoreBox />
+              <StoreBox />
               <StoreBox />
             </ScrollView>
           </ScrollView>
@@ -522,7 +500,7 @@ const StoreBox = () => {
         style={{
           backgroundColor: '#ffffff',
           height: 170,
-          width: 250,
+          width: 300,
           margin: 5,
           marginTop: 10,
           borderRadius: 15,
@@ -539,7 +517,7 @@ const StoreBox = () => {
           borderRadius={15}
           style={{
             height: 170,
-            width: 250,
+            width: 300,
             alignItems: 'center',
             justifyContent: 'center',
           }}>

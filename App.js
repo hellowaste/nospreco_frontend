@@ -1,4 +1,5 @@
 import React from 'react';
+import {StatusBar} from 'react-native';
 import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from 'react-redux';
 import userReducer from './src/state/features/user';
@@ -13,6 +14,7 @@ const store = configureStore({
 export default function App() {
   return (
     <Provider store={store}>
+      <StatusBar hidden={true} />
       <AppNavigation />
     </Provider>
   );

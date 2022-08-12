@@ -28,7 +28,7 @@ const createBusinessUser = async values => {
 const FlippingImage = ({
   back = false,
   delay,
-  duration = 2000,
+  duration = 4000,
   source,
   style = {},
 }) => (

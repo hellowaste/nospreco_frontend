@@ -19,57 +19,105 @@ const SearchScreen = ({navigation}) => {
         style={{
           paddingHorizontal: 10,
           paddingBottom: 10,
-          backgroundColor: !activeMap ? '#ffffff' : '#eee',
           zIndex: 99,
+          backgroundColor: '#ffffff',
         }}>
         <View>
           <View>
-            <TouchableOpacity
+            <View
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 15,
-                marginTop: 20,
+                marginTop: 15,
+                marginHorizontal: 10,
                 padding: 5,
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                paddingRight: 20,
-                shadowOffset: {width: 10, height: 10},
-                shadowColor: '#000000',
-                shadowOpacity: 1,
-                elevation: 10,
-              }}
-              onPress={() => navigation.navigate('UserPositionScreen')}>
+              }}>
+              <TouchableOpacity
+                style={{
+                  borderRadius: 30,
+                  marginBottom: 15,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#a2a2a2',
+                  shadowOpacity: 0.5,
+                  elevation: 5,
+                }}>
+                <MaterialCommunityIcons
+                  name="tune-variant"
+                  size={24}
+                  color={'#000000'}
+                  style={{padding: 5}}
+                />
+              </TouchableOpacity>
               <View>
-                <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <MaterialCommunityIcons
-                    name="map-marker-outline"
-                    size={20}
-                    color={'#000000'}
-                  />
-                  <Text
-                    style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
-                    Posizione attuale
-                  </Text>
-                </View>
-                <Text
+                <TouchableOpacity
                   style={{
-                    color: '#000000',
-                    fontSize: 12,
-                    fontWeight: '700',
-                    marginLeft: 20,
-                  }}>
-                  Entro 5 km
-                </Text>
+                    backgroundColor: '#ffffff',
+                    borderRadius: 20,
+                    borderColor: '#00807a',
+                    borderWidth: 1,
+                    borderStyle: 'solid',
+                    margin: 5,
+                    marginBottom: 15,
+                    marginHorizontal: 10,
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#000000',
+                    shadowOpacity: 1,
+                    elevation: 10,
+                  }}
+                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 16,
+                      fontWeight: '600',
+                      paddingVertical: 5,
+                      paddingHorizontal: 15,
+                      textAlign: 'center',
+                    }}>
+                    Scegli preferenze
+                  </Text>
+                </TouchableOpacity>
               </View>
-              <View>
+              <TouchableOpacity
+                style={{
+                  borderRadius: 30,
+                  marginBottom: 15,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#a2a2a2',
+                  shadowOpacity: 0.5,
+                  elevation: 5,
+                }}>
+                <MaterialCommunityIcons
+                  name="heart-outline"
+                  size={24}
+                  color={'#000000'}
+                  style={{padding: 5}}
+                />
+              </TouchableOpacity>
+            </View>
+            <View style={{alignItems: 'center'}}>
+              <TouchableOpacity
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  marginTop: -10,
+                }}
+                onPress={() => navigation.navigate('UserPositionScreen')}>
+                <Text
+                  style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+                  Posizione attuale
+                </Text>
                 <MaterialCommunityIcons
                   name="chevron-down"
                   size={20}
                   color={'#000000'}
+                  style={{marginLeft: 10}}
                 />
-              </View>
-            </TouchableOpacity>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </View>
@@ -106,15 +154,14 @@ const SearchScreen = ({navigation}) => {
                   shadowOpacity: 1,
                   elevation: 5,
                 }}>
-                <Text
+                <MaterialCommunityIcons
+                  name="format-list-bulleted"
+                  size={20}
+                  color={'#00807a'}
                   style={{
                     padding: 10,
-                    color: '#00807a',
-                    fontSize: 16,
-                    fontWeight: '600',
-                  }}>
-                  Lista
-                </Text>
+                  }}
+                />
               </View>
             ) : (
               <TouchableOpacity
@@ -127,15 +174,14 @@ const SearchScreen = ({navigation}) => {
                   borderRadius: 10,
                 }}
                 onPress={() => setActiveMap(!activeMap)}>
-                <Text
+                <MaterialCommunityIcons
+                  name="format-list-bulleted"
+                  size={20}
+                  color={'#000000'}
                   style={{
                     padding: 10,
-                    fontSize: 16,
-                    fontWeight: '600',
-                    color: '#000000',
-                  }}>
-                  Lista
-                </Text>
+                  }}
+                />
               </TouchableOpacity>
             )}
             {activeMap ? (
@@ -152,15 +198,14 @@ const SearchScreen = ({navigation}) => {
                   shadowOpacity: 1,
                   elevation: 5,
                 }}>
-                <Text
+                <MaterialCommunityIcons
+                  name="map"
+                  size={20}
+                  color={'#00807a'}
                   style={{
                     padding: 10,
-                    fontSize: 16,
-                    color: '#00807a',
-                    fontWeight: '600',
-                  }}>
-                  Mappa
-                </Text>
+                  }}
+                />
               </View>
             ) : (
               <TouchableOpacity
@@ -170,15 +215,14 @@ const SearchScreen = ({navigation}) => {
                   justifyContent: 'center',
                 }}
                 onPress={() => setActiveMap(true)}>
-                <Text
+                <MaterialCommunityIcons
+                  name="map"
+                  size={20}
+                  color={'#000000'}
                   style={{
                     padding: 10,
-                    fontSize: 16,
-                    fontWeight: '600',
-                    color: '#000000',
-                  }}>
-                  Mappa
-                </Text>
+                  }}
+                />
               </TouchableOpacity>
             )}
           </View>
@@ -293,7 +337,7 @@ const SearchScreen = ({navigation}) => {
             alignItems: 'center',
             alignSelf: 'center',
             marginBottom: 10,
-            marginRight: -70,
+            marginRight: -20,
           }}>
           <TouchableOpacity
             style={{
@@ -306,13 +350,13 @@ const SearchScreen = ({navigation}) => {
             }}>
             <Text
               style={{
-                color: '#b9ceac',
+                color: '#00807a',
                 fontSize: 18,
-                fontWeight: '600',
+                fontWeight: '800',
                 paddingHorizontal: 15,
-                paddingVertical: 5,
+                paddingVertical: 10,
               }}>
-              MOSTRA GLI STORE VICINI
+              STORE VICINI
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -328,8 +372,8 @@ const SearchScreen = ({navigation}) => {
             <MaterialCommunityIcons
               name="crosshairs-gps"
               size={30}
-              color={'#b9ceac'}
-              style={{padding: 10}}
+              color={'#00807a'}
+              style={{padding: 5}}
             />
           </TouchableOpacity>
         </View>

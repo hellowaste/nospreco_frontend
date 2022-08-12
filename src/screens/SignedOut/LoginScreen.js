@@ -41,7 +41,7 @@ const LoginScreen = ({navigation}) => {
   const FlippingImage = ({
     back = false,
     delay,
-    duration = 2000,
+    duration = 4000,
     source,
     style = {},
   }) => (
@@ -320,7 +320,7 @@ const LoginScreen = ({navigation}) => {
             backgroundColor: '#ffffff',
             borderRadius: 15,
             top: '50%',
-            left: '35%',
+            left: '37.5%',
             alignItems: 'center',
             justifyContent: 'center',
             shadowOffset: {width: 10, height: 10},

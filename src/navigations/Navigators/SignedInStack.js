@@ -103,19 +103,6 @@ const SignedInStack = ({navigation}) => {
         }}
       />
       <Tab.Screen
-        name="Preferiti"
-        component={FavoriteScreen}
-        options={{
-          tabBarIcon: () => (
-            <MaterialCommunityIcons
-              name="heart-outline"
-              size={30}
-              color={'#000000'}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
         name="Altro"
         component={SettingsScreen}
         options={{

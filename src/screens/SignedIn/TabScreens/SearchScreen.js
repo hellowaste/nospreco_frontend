@@ -239,10 +239,6 @@ const SearchScreen = ({navigation}) => {
                   justifyContent: 'center',
                   margin: 5,
                   marginRight: 20,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
                 }}
                 onPress={() => setSearchVisibility(false)}>
                 <MaterialCommunityIcons
@@ -262,10 +258,6 @@ const SearchScreen = ({navigation}) => {
                     justifyContent: 'center',
                     margin: 5,
                     marginRight: 20,
-                    shadowOffset: {width: 10, height: 10},
-                    shadowColor: '#000000',
-                    shadowOpacity: 1,
-                    elevation: 5,
                   }}
                   onPress={() => setSearchVisibility(true)}>
                   <MaterialCommunityIcons

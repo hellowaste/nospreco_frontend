@@ -20,7 +20,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
   const [night, setNight] = useState(false);
   const [lateNight, setLateNight] = useState(false);
   return (
-    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
@@ -58,7 +58,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setReadyMeal(!readyMeal)}>
                 <MaterialCommunityIcons
@@ -89,7 +89,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setReadyMeal(!readyMeal)}>
                 <MaterialCommunityIcons
@@ -121,7 +121,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setFood(!food)}>
                 <MaterialCommunityIcons
@@ -152,7 +152,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setFood(!food)}>
                 <MaterialCommunityIcons
@@ -184,7 +184,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setBakery(!bakery)}>
                 <MaterialCommunityIcons
@@ -215,7 +215,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setBakery(!bakery)}>
                 <MaterialCommunityIcons
@@ -247,7 +247,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setOther(!other)}>
                 <MaterialCommunityIcons
@@ -278,7 +278,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                   shadowOffset: {width: 10, height: 10},
                   shadowColor: '#000000',
                   shadowOpacity: 1,
-                  elevation: 3,
+                  elevation: 10,
                 }}
                 onPress={() => setOther(!other)}>
                 <MaterialCommunityIcons
@@ -921,7 +921,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
       </ScrollView>
       <View
         style={{
-          backgroundColor: '#b9ceac',
+          backgroundColor: '#ffffff',
           justifyContent: 'center',
         }}>
         <View

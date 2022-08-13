@@ -4,7 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const AccountDetailsScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons
@@ -17,7 +17,7 @@ const AccountDetailsScreen = ({navigation}) => {
           Dettagli account
         </Text>
       </View>
-      <View style={{marginHorizontal: 10}}>
+      <View style={{marginTop: 20, marginHorizontal: 10}}>
         <TouchableOpacity
           style={{
             backgroundColor: '#ffffff',
@@ -30,7 +30,7 @@ const AccountDetailsScreen = ({navigation}) => {
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 10,
           }}
           onPress={() => navigation.navigate('AccountInformationsScreen')}>
           <MaterialCommunityIcons
@@ -61,7 +61,7 @@ const AccountDetailsScreen = ({navigation}) => {
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 10,
           }}
           onPress={() => navigation.navigate('PayoutSetupScreen')}>
           <MaterialCommunityIcons
@@ -92,11 +92,11 @@ const AccountDetailsScreen = ({navigation}) => {
             shadowOffset: {width: 10, height: 10},
             shadowColor: '#000000',
             shadowOpacity: 1,
-            elevation: 3,
+            elevation: 10,
           }}
           onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
           <MaterialCommunityIcons
-            name="file-multiple-outline"
+            name="star-outline"
             size={30}
             color={'#000000'}
           />
@@ -108,7 +108,7 @@ const AccountDetailsScreen = ({navigation}) => {
               fontWeight: '700',
               color: '#000000',
             }}>
-            Consigli
+            Preferenze
           </Text>
         </TouchableOpacity>
       </View>

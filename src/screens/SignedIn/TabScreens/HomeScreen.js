@@ -147,7 +147,8 @@ const HomeScreen = ({navigation}) => {
                 alignItems: 'center',
                 justifyContent: 'space-between',
               }}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('MagicBoxList')}>
                 <Text
                   style={{
                     textAlign: 'left',
@@ -167,7 +168,8 @@ const HomeScreen = ({navigation}) => {
                   shadowColor: '#000000',
                   shadowOpacity: 1,
                   elevation: 5,
-                }}>
+                }}
+                onPress={() => navigation.navigate('MagicBoxList')}>
                 <View
                   style={{
                     flexDirection: 'row',

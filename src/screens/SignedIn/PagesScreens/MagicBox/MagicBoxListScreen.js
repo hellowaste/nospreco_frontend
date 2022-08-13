@@ -16,7 +16,7 @@ const image = {
 
 const MagicBoxListScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       <TouchableOpacity
         style={{flexDirection: 'row', alignItems: 'center'}}
         onPress={() => navigation.goBack()}>
@@ -26,18 +26,19 @@ const MagicBoxListScreen = ({navigation}) => {
           color={'#000000'}
         />
         <Text style={{color: '#000000', fontSize: 24, fontWeight: '600'}}>
-          In offerta oggi
+          Il meglio nella zona
         </Text>
       </TouchableOpacity>
-      <ScrollView
-        style={{marginHorizontal: 20, marginTop: 20}}
-        showsVerticalScrollIndicator={false}>
-        <MagicBox navigation={navigation} />
-        <MagicBox navigation={navigation} />
-        <MagicBox navigation={navigation} />
-        <MagicBox navigation={navigation} />
-        <MagicBox navigation={navigation} />
-      </ScrollView>
+      <View>
+        <ScrollView
+          style={{marginHorizontal: 0, marginTop: 20, marginBottom: 50}}
+          showsVerticalScrollIndicator={false}>
+          <StoreBox />
+          <StoreBox />
+          <StoreBox />
+          <StoreBox />
+        </ScrollView>
+      </View>
     </SafeAreaView>
   );
 };
@@ -139,6 +140,139 @@ const MagicBox = ({navigation}) => {
             }}>
             € 7.99
           </Text>
+        </View>
+      </View>
+    </Pressable>
+  );
+};
+
+const StoreBox = () => {
+  return (
+    <Pressable style={{marginHorizontal: 10, marginRight: 30}}>
+      <View
+        style={{
+          backgroundColor: '#ffffff',
+          height: 170,
+          width: '100%',
+          margin: 5,
+          marginTop: 10,
+          borderRadius: 15,
+          flexDirection: 'column-reverse',
+          shadowOffset: {width: 10, height: 10},
+          shadowColor: '#000000',
+          shadowOpacity: 1,
+          elevation: 5,
+        }}>
+        <ImageBackground
+          source={{
+            uri: 'https://static.fanpage.it/wp-content/uploads/sites/30/2021/10/poke-1200x675.jpg',
+          }}
+          borderRadius={15}
+          style={{
+            height: 170,
+            width: '100%',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          <View
+            style={{
+              shadowOffset: {width: 10, height: 10},
+              shadowColor: '#000000',
+              shadowOpacity: 1,
+              elevation: 5,
+            }}>
+            <Text
+              style={{
+                color: '#ffffff',
+                fontSize: 26,
+                fontWeight: '900',
+                shadowColor: '#000000',
+              }}>
+              Pokè take away
+            </Text>
+          </View>
+        </ImageBackground>
+      </View>
+      <View
+        style={{
+          marginLeft: 15,
+          marginRight: 7,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+        <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+          Ritiro: 14:00 - 16:00
+        </Text>
+      </View>
+      <View
+        style={{
+          marginLeft: 15,
+          marginRight: 7,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <MaterialCommunityIcons
+            name="thumb-up-outline"
+            size={18}
+            color={'#000000'}
+            style={{
+              marginRight: 5,
+            }}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '600',
+              marginRight: 5,
+            }}>
+            90%
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '600',
+              marginRight: 5,
+            }}>
+            |
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '600',
+              marginRight: 5,
+            }}>
+            3.7 km
+          </Text>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            borderRadius: 15,
+            backgroundColor: '#d8e5d1',
+            padding: 1,
+            paddingHorizontal: 5,
+          }}>
+          <MaterialCommunityIcons
+            name="basket-outline"
+            size={16}
+            color={'#000000'}
+            style={{marginRight: 3}}
+          />
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+              Bag:
+            </Text>
+            <Text style={{color: '#000000', fontSize: 14, fontWeight: '700'}}>
+              17
+            </Text>
+          </View>
         </View>
       </View>
     </Pressable>

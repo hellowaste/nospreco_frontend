@@ -16,7 +16,12 @@ import {Slider} from '@miblanchard/react-native-slider';
 const UserPositionScreen = ({navigation}) => {
   const [distanceRange, setDistanceRange] = useState(15);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: '#ffffff',
+        justifyContent: 'space-between',
+      }}>
       <View style={{flexDirection: 'row', marginTop: 20}}>
         <Text
           style={{
@@ -39,7 +44,11 @@ const UserPositionScreen = ({navigation}) => {
       </View>
       <View style={{backgroundColor: '#eee', height: 300, marginTop: 20}} />
       <View
-        style={{backgroundColor: '#ffffff', borderRadius: 15, marginTop: -10}}>
+        style={{
+          backgroundColor: '#ffffff',
+          borderRadius: 15,
+          marginBottom: 20,
+        }}>
         <Text
           style={{
             color: '#000000',

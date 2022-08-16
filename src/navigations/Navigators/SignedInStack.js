@@ -104,12 +104,12 @@ const SignedInStack = ({navigation}) => {
         }}
       />
       <Tab.Screen
-        name="Altro"
+        name="Account"
         component={SettingsScreen}
         options={{
           tabBarIcon: () => (
             <MaterialCommunityIcons
-              name="dots-horizontal"
+              name="account-cog-outline"
               size={30}
               color={'#000000'}
             />

@@ -8,6 +8,7 @@ import {
   View,
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MapView, {Marker} from 'react-native-maps';
 
 const SearchScreen = ({navigation}) => {
   const [activeMap, setActiveMap] = useState(false);
@@ -89,7 +90,8 @@ const SearchScreen = ({navigation}) => {
                   shadowColor: '#a2a2a2',
                   shadowOpacity: 0.5,
                   elevation: 5,
-                }} onPress={() => navigation.navigate('Preferiti')}>
+                }}
+                onPress={() => navigation.navigate('Preferiti')}>
                 <MaterialCommunityIcons
                   name="heart-outline"
                   size={24}

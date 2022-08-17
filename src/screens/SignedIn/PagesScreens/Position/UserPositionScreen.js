@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Slider} from '@miblanchard/react-native-slider';
+import MapView, {Marker} from 'react-native-maps';
 
 const UserPositionScreen = ({navigation}) => {
   const [distanceRange, setDistanceRange] = useState(15);
@@ -42,7 +43,22 @@ const UserPositionScreen = ({navigation}) => {
           />
         </TouchableOpacity>
       </View>
-      <View style={{backgroundColor: '#eee', height: 300, marginTop: 20}} />
+      <MapView
+        showsBuildings={true}
+        style={{width: '100%', height: '50%'}}
+        initialRegion={{
+          latitude: 45.46410094917278,
+          latitudeDelta: 0.005,
+          longitude: 9.190605457692481,
+          longitudeDelta: 0.005,
+        }}>
+        <Marker
+          coordinate={{
+            latitude: 45.46410094917278,
+            longitude: 9.190605457692481,
+          }}
+        />
+      </MapView>
       <View
         style={{
           backgroundColor: '#ffffff',

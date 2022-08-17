@@ -65,7 +65,7 @@ const BusinessRegistrationScreen = ({navigation}) => {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: '#eee',
+        backgroundColor: '#ffffff',
       }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>

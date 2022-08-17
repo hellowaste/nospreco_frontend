@@ -5,7 +5,7 @@ const WelcomeScreen = ({navigation}) => {
   return (
     <SafeAreaView
       style={{
-        backgroundColor: '#eee',
+        backgroundColor: '#ffffff',
         flex: 1,
         justifyContent: 'space-between',
       }}>

@@ -67,7 +67,7 @@ const LoginScreen = ({navigation}) => {
       style={{
         flex: 1,
         justifyContent: 'space-between',
-        backgroundColor: '#eee',
+        backgroundColor: '#ffffff',
       }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>

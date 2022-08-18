@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   Keyboard,
   KeyboardAvoidingView,
@@ -13,9 +13,27 @@ import {
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Slider} from '@miblanchard/react-native-slider';
 import MapView, {Marker} from 'react-native-maps';
+import Geolocation from '@react-native-community/geolocation';
 
-const UserPositionScreen = ({navigation}) => {
+const UserPositionScreen = ({navigation, route}) => {
   const [distanceRange, setDistanceRange] = useState(15);
+  const [currentLat, setCurrentLat] = useState(
+    route.params.userPosition.coords.latitude,
+  );
+  const [currentLong, setCurrentLong] = useState(
+    route.params.userPosition.coords.longitude,
+  );
+
+  const loadUserPosition = () => {
+    Geolocation.getCurrentPosition(response => {
+      console.log(JSON.stringify(response));
+      setCurrentLat(response.coords.latitude);
+      console.log('lat: ', currentLat);
+      setCurrentLong(response.coords.longitude);
+      console.log('long: ', currentLong);
+    });
+  };
+
   return (
     <SafeAreaView
       style={{
@@ -47,18 +65,12 @@ const UserPositionScreen = ({navigation}) => {
         showsBuildings={true}
         style={{width: '100%', height: '50%'}}
         initialRegion={{
-          latitude: 45.46410094917278,
+          latitude: currentLat,
           latitudeDelta: 0.005,
-          longitude: 9.190605457692481,
+          longitude: currentLong,
           longitudeDelta: 0.005,
-        }}>
-        <Marker
-          coordinate={{
-            latitude: 45.46410094917278,
-            longitude: 9.190605457692481,
-          }}
-        />
-      </MapView>
+        }}
+      />
       <View
         style={{
           backgroundColor: '#ffffff',
@@ -126,7 +138,8 @@ const UserPositionScreen = ({navigation}) => {
               alignSelf: 'center',
               marginTop: 30,
               marginBottom: 10,
-            }}>
+            }}
+            onPress={() => loadUserPosition()}>
             <MaterialCommunityIcons
               name="navigation"
               size={30}

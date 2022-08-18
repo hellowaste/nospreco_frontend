@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -8,11 +8,20 @@ import {
   View,
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import MapView, {Marker} from 'react-native-maps';
+import Geolocation from '@react-native-community/geolocation';
 
 const SearchScreen = ({navigation}) => {
   const [activeMap, setActiveMap] = useState(false);
   const [searchVisibility, setSearchVisibility] = useState(false);
+  const [userPosition, setUserPosition] = useState('');
+
+  useEffect(() => {
+    Geolocation.getCurrentPosition(res => {
+      console.log(JSON.stringify(res));
+      setUserPosition(res);
+    });
+  }, []);
+
   return (
     <SafeAreaView
       style={{flex: 1, backgroundColor: !activeMap ? '#ffffff' : '#eee'}}>
@@ -35,71 +44,8 @@ const SearchScreen = ({navigation}) => {
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity
-                style={{
-                  borderRadius: 30,
-                  marginBottom: 15,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#a2a2a2',
-                  shadowOpacity: 0.5,
-                  elevation: 5,
-                }}>
-                <MaterialCommunityIcons
-                  name="tune-variant"
-                  size={24}
-                  color={'#000000'}
-                  style={{padding: 5}}
-                />
-              </TouchableOpacity>
-              <View>
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: '#ffffff',
-                    borderRadius: 20,
-                    borderColor: '#00807a',
-                    borderWidth: 1,
-                    borderStyle: 'solid',
-                    margin: 5,
-                    marginBottom: 15,
-                    marginHorizontal: 10,
-                    shadowOffset: {width: 10, height: 10},
-                    shadowColor: '#000000',
-                    shadowOpacity: 1,
-                    elevation: 10,
-                  }}
-                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontSize: 16,
-                      fontWeight: '600',
-                      paddingVertical: 5,
-                      paddingHorizontal: 15,
-                      textAlign: 'center',
-                    }}>
-                    Scegli preferenze
-                  </Text>
-                </TouchableOpacity>
-              </View>
-              <TouchableOpacity
-                style={{
-                  borderRadius: 30,
-                  marginBottom: 15,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#a2a2a2',
-                  shadowOpacity: 0.5,
-                  elevation: 5,
-                }}
-                onPress={() => navigation.navigate('Preferiti')}>
-                <MaterialCommunityIcons
-                  name="heart-outline"
-                  size={24}
-                  color={'#000000'}
-                  style={{padding: 5}}
-                />
-              </TouchableOpacity>
-            </View>
+              }}
+            />
             <View style={{alignItems: 'center'}}>
               <TouchableOpacity
                 style={{
@@ -107,7 +53,11 @@ const SearchScreen = ({navigation}) => {
                   alignItems: 'center',
                   marginTop: -10,
                 }}
-                onPress={() => navigation.navigate('UserPositionScreen')}>
+                onPress={() =>
+                  navigation.navigate('UserPositionScreen', {
+                    userPosition: userPosition,
+                  })
+                }>
                 <Text
                   style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
                   Posizione attuale

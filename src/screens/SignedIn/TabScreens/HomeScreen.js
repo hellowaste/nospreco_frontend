@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {
   Image,
@@ -11,6 +11,7 @@ import {
   View,
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Geolocation from '@react-native-community/geolocation';
 
 const image = {
   uri: 'https://media-assets.vanityfair.it/photos/61e444841e21bc3bd54b5357/1:1/w_2832,h_2832,c_limit/pizza%20tendenze.jpg',
@@ -19,6 +20,15 @@ const image = {
 const HomeScreen = ({navigation}) => {
   const currentUser = useSelector(state => state.user);
   const [storeVisibility, setStoreVisibility] = useState(true);
+  const [userPosition, setUserPosition] = useState('');
+
+  useEffect(() => {
+    Geolocation.getCurrentPosition(res => {
+      console.log(JSON.stringify(res));
+      setUserPosition(res);
+    });
+  }, []);
+
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#b9ceac'}}>
       <View
@@ -112,7 +122,11 @@ const HomeScreen = ({navigation}) => {
                   alignItems: 'center',
                   marginTop: -10,
                 }}
-                onPress={() => navigation.navigate('UserPositionScreen')}>
+                onPress={() =>
+                  navigation.navigate('UserPositionScreen', {
+                    userPosition: userPosition,
+                  })
+                }>
                 <Text
                   style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
                   Posizione attuale

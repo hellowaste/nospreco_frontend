@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import {SafeAreaView, ScrollView, Text, TouchableOpacity} from 'react-native';
 import {logout} from '../../../state/features/user';
 import {useDispatch} from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';

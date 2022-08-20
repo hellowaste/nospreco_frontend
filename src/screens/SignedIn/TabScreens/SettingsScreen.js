@@ -105,6 +105,33 @@ const SettingsScreen = ({navigation}) => {
             alignItems: 'center',
             margin: 5,
             marginTop: 20,
+            paddingHorizontal: 10,
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 5,
+          }}
+          onPress={() => navigation.navigate('Business')}>
+          <MaterialCommunityIcons name="repeat" size={30} color={'#000000'} />
+          <Text
+            style={{
+              paddingVertical: 15,
+              marginLeft: 5,
+              fontSize: 16,
+              fontWeight: '700',
+              color: '#000000',
+            }}>
+            Vai a MyStore
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#ffffff',
+            borderRadius: 15,
+            flexDirection: 'row',
+            alignItems: 'center',
+            margin: 5,
+            marginTop: 20,
             marginBottom: 10,
             paddingHorizontal: 10,
             shadowOffset: {width: 10, height: 10},

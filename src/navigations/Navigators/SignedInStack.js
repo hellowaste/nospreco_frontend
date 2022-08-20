@@ -19,6 +19,9 @@ import NotificationsSetupScreen from '../../screens/SignedIn/PagesScreens/Settin
 import ShopDetailsScreen from '../../screens/SignedIn/PagesScreens/Store/ShopDetailsScreen';
 import UserPositionScreen from '../../screens/SignedIn/PagesScreens/Position/UserPositionScreen';
 import {View} from 'react-native';
+import BusinessHomeScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessHomeScreen';
+import BusinessSettingsScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessSettingsScreen';
+import BusinessAccountDetailsScreen from '../../screens/SignedIn/BusinessPagesScreens/Settings/BusinessAccountDetails/BusinessAccountDetailsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -43,6 +46,10 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="BusinessAccountDetailsScreen"
+          component={BusinessAccountDetailsScreen}
+        />
         <Stack.Screen name="Preferiti" component={FavoriteScreen} />
         <Stack.Screen
           name="UserPositionScreen"
@@ -74,6 +81,7 @@ const MainStack = ({navigation}) => {
         <Stack.Screen name="MagicBoxList" component={MagicBoxListScreen} />
         <Stack.Screen name="MagicBoxScreen" component={MagicBoxScreen} />
         <Stack.Screen name="Auth" component={SignedInStack} />
+        <Stack.Screen name="Business" component={BusinessUserStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -173,4 +181,51 @@ const SignedInStack = ({navigation}) => {
   );
 };
 
-export {SignedInStack, MainStack};
+const BusinessUserStack = () => {
+  return (
+    <Tab.Navigator screenOptions={signedInScreenOptions}>
+      <Tab.Screen
+        name="MyStore"
+        component={BusinessHomeScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: 20,
+                paddingHorizontal: 10,
+              }}>
+              <MaterialCommunityIcons
+                name="store-outline"
+                size={30}
+                color={focused ? '#00807a' : '#000000'}
+              />
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Altro"
+        component={BusinessSettingsScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: 20,
+                paddingHorizontal: 10,
+              }}>
+              <MaterialCommunityIcons
+                name="dots-horizontal"
+                size={30}
+                color={focused ? '#00807a' : '#000000'}
+              />
+            </View>
+          ),
+        }}
+      />
+    </Tab.Navigator>
+  );
+};
+
+export {SignedInStack, MainStack, BusinessUserStack};

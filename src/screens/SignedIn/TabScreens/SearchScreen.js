@@ -86,7 +86,8 @@ const SearchScreen = ({navigation}) => {
               alignSelf: 'center',
               height: '93%',
               justifyContent: 'space-between',
-            }}>
+            }}
+            pointerEvents={'box-none'}>
             <View>
               <View
                 style={{
@@ -304,18 +305,30 @@ const SearchScreen = ({navigation}) => {
                 marginTop: 20,
                 marginHorizontal: 20,
               }}>
-              <TouchableOpacity style={{marginRight: 20}}>
+              <TouchableOpacity
+                style={{
+                  marginRight: 20,
+                  backgroundColor: '#ffffff',
+                  borderRadius: 8,
+                }}>
                 <MaterialCommunityIcons
                   name="filter-outline"
                   size={26}
                   color={'#00807a'}
+                  style={{padding: 7}}
                 />
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  marginRight: 20,
+                  backgroundColor: '#ffffff',
+                  borderRadius: 8,
+                }}>
                 <MaterialCommunityIcons
                   name="magnify"
                   size={26}
                   color={'#00807a'}
+                  style={{padding: 7}}
                 />
               </TouchableOpacity>
             </View>

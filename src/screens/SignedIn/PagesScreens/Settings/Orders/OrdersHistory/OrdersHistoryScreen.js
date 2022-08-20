@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const OrdersHistoryScreen = ({navigation}) => {
   const [inProgress, setInProgress] = useState(true);
   return (
-    <SafeAreaView style={{backgroundColor: '#b9ceac', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons

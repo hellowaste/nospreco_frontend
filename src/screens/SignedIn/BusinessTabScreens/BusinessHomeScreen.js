@@ -1445,6 +1445,23 @@ const Impostazioni = () => {
               <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
                 Informazioni sul punto vendita
               </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+                Qui puoi vedere le informazioni che abbiamo registrato sul tuo
+                store. Se una di queste informazioni non è corretta e deve
+                essere modificata non esitare a contattarci.
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  marginTop: 20,
+                }}>
+                Dettagli
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Nome
+              </Text>
             </View>
           ) : null}
           {sectionStatus == 3 ? (

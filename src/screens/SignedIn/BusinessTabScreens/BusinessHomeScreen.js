@@ -1198,9 +1198,246 @@ const Impostazioni = () => {
         <ScrollView style={{marginTop: 20}}>
           {sectionStatus == 1 ? (
             <View>
-              <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  marginBottom: 20,
+                }}>
                 Informazioni sull'articolo
               </Text>
+              <View
+                style={{
+                  borderWidth: 0.5,
+                  borderColor: '#00807a',
+                  borderRadius: 10,
+                  padding: 10,
+                  marginBottom: 20,
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '800',
+                    marginBottom: 10,
+                  }}>
+                  Nome
+                </Text>
+                <View
+                  style={{
+                    borderWidth: 0.1,
+                    borderColor: '#000000',
+                    borderRadius: 3,
+                  }}>
+                  <TextInput
+                    placeholder={'Nome Bag'}
+                    placeholderTextColor={'#000000'}
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                    }}
+                    autoCapitalize={'words'}
+                  />
+                </View>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '800',
+                    marginVertical: 10,
+                  }}>
+                  Descrizione
+                </Text>
+                <View
+                  style={{
+                    borderWidth: 0.1,
+                    borderColor: '#000000',
+                    borderRadius: 3,
+                  }}>
+                  <TextInput
+                    placeholder={'Salva una Bag e goditi un pasto'}
+                    placeholderTextColor={'#000000'}
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                    }}
+                    autoCapitalize={'words'}
+                  />
+                </View>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '800',
+                    marginVertical: 10,
+                  }}>
+                  Prezzo
+                </Text>
+                <View
+                  style={{
+                    borderWidth: 0.1,
+                    borderColor: '#000000',
+                    borderRadius: 3,
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                  }}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      marginHorizontal: 10,
+                    }}>
+                    €
+                  </Text>
+                  <TextInput
+                    placeholder={'2.99'}
+                    placeholderTextColor={'#000000'}
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      width: '100%',
+                    }}
+                    autoCapitalize={'words'}
+                  />
+                </View>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '800',
+                    marginVertical: 10,
+                  }}>
+                  Categoria
+                </Text>
+                <View
+                  style={{
+                    borderWidth: 0.1,
+                    borderColor: '#000000',
+                    borderRadius: 3,
+                  }}>
+                  <TextInput
+                    placeholder={'Categorie in aggiornamento'}
+                    placeholderTextColor={'#000000'}
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                    }}
+                    autoCapitalize={'words'}
+                  />
+                </View>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '800',
+                    marginVertical: 10,
+                  }}>
+                  Valore minimo
+                </Text>
+                <View
+                  style={{
+                    borderWidth: 0.1,
+                    borderColor: '#000000',
+                    borderRadius: 3,
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                  }}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      marginHorizontal: 10,
+                    }}>
+                    €
+                  </Text>
+                  <TextInput
+                    placeholder={'9'}
+                    placeholderTextColor={'#000000'}
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      width: '100%',
+                    }}
+                    autoCapitalize={'words'}
+                  />
+                </View>
+                <TouchableOpacity
+                  style={{
+                    marginVertical: 20,
+                    borderWidth: 1,
+                    borderColor: '#039d6e',
+                    borderRadius: 5,
+                    marginHorizontal: 30,
+                    backgroundColor: '#00af7a',
+                    shadowColor: '#000000',
+                    shadowRadius: 10,
+                    shadowOpacity: 1,
+                    elevation: 10,
+                  }}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      textAlign: 'center',
+                      marginVertical: 5,
+                    }}>
+                    Carica immagine articolo
+                  </Text>
+                </TouchableOpacity>
+                <View
+                  style={{
+                    borderWidth: 0.5,
+                    borderColor: '#8f8f8f',
+                    borderRadius: 5,
+                    marginVertical: 10,
+                    marginHorizontal: 20,
+                    minHeight: 100,
+                    justifyContent: 'center',
+                  }}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      textAlign: 'center',
+                    }}>
+                    Anteprima immagine articolo
+                  </Text>
+                </View>
+                <TouchableOpacity
+                  style={{
+                    marginVertical: 20,
+                    borderWidth: 1,
+                    borderColor: '#039d6e',
+                    borderRadius: 5,
+                    marginHorizontal: 30,
+                    backgroundColor: '#00af7a',
+                    shadowColor: '#000000',
+                    shadowRadius: 10,
+                    shadowOpacity: 1,
+                    elevation: 10,
+                  }}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 16,
+                      fontWeight: '600',
+                      textAlign: 'center',
+                      marginVertical: 10,
+                    }}>
+                    Salva articolo
+                  </Text>
+                </TouchableOpacity>
+              </View>
             </View>
           ) : null}
           {sectionStatus == 2 ? (

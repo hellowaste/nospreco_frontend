@@ -3,7 +3,9 @@ import {
   Image,
   SafeAreaView,
   ScrollView,
+  Switch,
   Text,
+  TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -196,7 +198,7 @@ const BusinessHomeScreen = () => {
         </View>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Programma />
+        <Impostazioni />
       </ScrollView>
     </SafeAreaView>
   );
@@ -378,6 +380,27 @@ const Calendario = () => {
 };
 
 const Programma = () => {
+  const [ritiroMonday, setRitiroMonday] = useState(true);
+  const [ritiroTuesday, setRitiroTuesday] = useState(true);
+  const [ritiroWednesday, setRitiroWednesday] = useState(true);
+  const [ritiroThursday, setRitiroThursday] = useState(true);
+  const [ritiroFriday, setRitiroFriday] = useState(true);
+  const [ritiroSaturday, setRitiroSaturday] = useState(true);
+  const [ritiroSunday, setRitiroSunday] = useState(true);
+  const toggleRitiroMonday = () =>
+    setRitiroMonday(previousState => !previousState);
+  const toggleRitiroTuesday = () =>
+    setRitiroTuesday(previousState => !previousState);
+  const toggleRitiroWednesday = () =>
+    setRitiroWednesday(previousState => !previousState);
+  const toggleRitiroThursday = () =>
+    setRitiroThursday(previousState => !previousState);
+  const toggleRitiroFriday = () =>
+    setRitiroFriday(previousState => !previousState);
+  const toggleRitiroSaturday = () =>
+    setRitiroSaturday(previousState => !previousState);
+  const toggleRitiroSunday = () =>
+    setRitiroSunday(previousState => !previousState);
   return (
     <View style={{marginHorizontal: 20, marginTop: 30}}>
       <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
@@ -389,6 +412,820 @@ const Programma = () => {
         la finestra di ritiro in cui gli utenti possono presentarsi nel tuo
         store per ritirare la Bag.
       </Text>
+      <View
+        style={{height: 1, backgroundColor: '#919191', marginVertical: 20}}
+      />
+      <View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Lunedì</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroMonday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroMonday}
+              value={ritiroMonday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroMonday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Martedì</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroTuesday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroTuesday}
+              value={ritiroTuesday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroTuesday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Mercoledì</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroWednesday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroWednesday}
+              value={ritiroWednesday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroWednesday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Giovedì</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroThursday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroThursday}
+              value={ritiroThursday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroThursday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Venerdì</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroFriday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroFriday}
+              value={ritiroFriday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroFriday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Sabato</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroSaturday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroSaturday}
+              value={ritiroSaturday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroSaturday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            paddingBottom: 10,
+            marginBottom: 20,
+          }}>
+          <View style={{minWidth: 100}}>
+            <Text style={{color: '#000000', fontSize: 14}}>Domenica</Text>
+            <Switch
+              trackColor={{false: '#767577', true: '#d7d7d7'}}
+              thumbColor={ritiroSunday ? '#00807a' : '#f4f3f4'}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleRitiroSunday}
+              value={ritiroSunday}
+              style={{marginTop: 10, alignSelf: 'flex-start'}}
+            />
+            {ritiroSunday ? (
+              <Text style={{color: '#00807a', fontSize: 14, fontWeight: '400'}}>
+                Ritiro
+              </Text>
+            ) : (
+              <Text style={{color: '#ff0000', fontSize: 14, fontWeight: '400'}}>
+                Nessun ritiro
+              </Text>
+            )}
+          </View>
+          <View
+            style={{
+              backgroundColor: '#ffffff',
+              borderWidth: 0.5,
+              borderColor: '#7a7a7a',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+            }}>
+            <TextInput
+              placeholder={'3'}
+              placeholderTextColor={'#000000'}
+              style={{
+                textAlign: 'center',
+                fontSize: 20,
+                padding: 10,
+                color: '#000000',
+              }}
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+              }}>
+              <TextInput
+                placeholder={'16:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                backgroundColor: '#ffffff',
+                borderWidth: 0.5,
+                borderColor: '#7a7a7a',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 5,
+                minWidth: 100,
+                marginTop: 5,
+              }}>
+              <TextInput
+                placeholder={'19:00'}
+                placeholderTextColor={'#000000'}
+                style={{
+                  textAlign: 'center',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  paddingHorizontal: 15,
+                  color: '#000000',
+                }}
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  );
+};
+
+const Impostazioni = () => {
+  const [sectionStatus, setSectionStatus] = useState(1);
+  return (
+    <View style={{marginHorizontal: 20, marginTop: 30}}>
+      <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+        Impostazioni
+      </Text>
+      <View>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <TouchableOpacity onPress={() => setSectionStatus(1)}>
+            {sectionStatus == 1 ? (
+              <Text
+                style={{
+                  color: '#00807a',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Bag
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Bag
+              </Text>
+            )}
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setSectionStatus(2)}>
+            {sectionStatus == 2 ? (
+              <Text
+                style={{
+                  color: '#00807a',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Store
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Store
+              </Text>
+            )}
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setSectionStatus(3)}>
+            {sectionStatus == 3 ? (
+              <Text
+                style={{
+                  color: '#00807a',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Notifiche
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Notifiche
+              </Text>
+            )}
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setSectionStatus(4)}>
+            {sectionStatus == 4 ? (
+              <Text
+                style={{
+                  color: '#00807a',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Profilo
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Profilo
+              </Text>
+            )}
+          </TouchableOpacity>
+        </ScrollView>
+        <ScrollView style={{marginTop: 20}}>
+          {sectionStatus == 1 ? (
+            <View>
+              <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
+                Informazioni sull'articolo
+              </Text>
+            </View>
+          ) : null}
+          {sectionStatus == 2 ? (
+            <View>
+              <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
+                Informazioni sul punto vendita
+              </Text>
+            </View>
+          ) : null}
+          {sectionStatus == 3 ? (
+            <View>
+              <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
+                Informazioni email
+              </Text>
+            </View>
+          ) : null}
+          {sectionStatus == 4 ? (
+            <View>
+              <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
+                Informazioni profilo
+              </Text>
+            </View>
+          ) : null}
+        </ScrollView>
+      </View>
     </View>
   );
 };

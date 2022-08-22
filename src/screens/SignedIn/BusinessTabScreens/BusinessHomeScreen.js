@@ -14,6 +14,7 @@ import {Calendar, LocaleConfig} from 'react-native-calendars';
 
 const BusinessHomeScreen = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);
+  const [sectionStatus, setSectionStatus] = useState(1);
   return (
     <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       {visibleMenu ? (
@@ -79,86 +80,149 @@ const BusinessHomeScreen = () => {
               justifyContent: 'space-between',
             }}>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(1);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="view-day-outline"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 1 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 1 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Gestione quotidiana
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(2);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="calendar"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 2 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 2 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Calendario
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(3);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="clock-outline"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 3 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 3 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Programma
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(4);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="cog-outline"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 4 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 4 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Impostazioni
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(5);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="poll"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 5 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 5 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Performance
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(6);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="credit-card"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 6 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 6 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Vendite
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}>
+              style={{flexDirection: 'row', alignItems: 'center'}}
+              onPress={() => {
+                setSectionStatus(7);
+                setVisibleMenu(false);
+              }}>
               <MaterialCommunityIcons
                 name="message-question"
                 size={20}
-                color={'#000000'}
+                color={sectionStatus == 7 ? '#ffffff' : '#000000'}
                 style={{marginRight: 10}}
               />
-              <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: sectionStatus == 7 ? '#ffffff' : '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                }}>
                 Centro assistenza
               </Text>
             </TouchableOpacity>
@@ -198,7 +262,13 @@ const BusinessHomeScreen = () => {
         </View>
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Impostazioni />
+        {sectionStatus == 1 ? <GestioneQuotidiana /> : null}
+        {sectionStatus == 2 ? <Calendario /> : null}
+        {sectionStatus == 3 ? <Programma /> : null}
+        {sectionStatus == 4 ? <Impostazioni /> : null}
+        {sectionStatus == 5 ? <Performance /> : null}
+        {sectionStatus == 6 ? <Vendite /> : null}
+        {sectionStatus == 7 ? <CentroAssistenza /> : null}
       </ScrollView>
     </SafeAreaView>
   );
@@ -1095,6 +1165,18 @@ const Programma = () => {
 
 const Impostazioni = () => {
   const [sectionStatus, setSectionStatus] = useState(1);
+  const [orderConfirmEmail, setOrderConfirmEmail] = useState(true);
+  const [orderCancellationEmail, setOrderCancellationEmail] = useState(true);
+  const [monthlyNewsletter, setMonthlyNewsletter] = useState(true);
+  const [marketingEmail, setMarketingEmail] = useState(true);
+  const toggleOrderConfirmEmail = () =>
+    setOrderConfirmEmail(previousState => !previousState);
+  const toggleOrderCancellationEmail = () =>
+    setOrderCancellationEmail(previousState => !previousState);
+  const toggleMonthlyNewsletter = () =>
+    setMonthlyNewsletter(previousState => !previousState);
+  const toggleMarketingEmail = () =>
+    setMarketingEmail(previousState => !previousState);
   return (
     <View style={{marginHorizontal: 20, marginTop: 30}}>
       <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
@@ -1459,9 +1541,152 @@ const Impostazioni = () => {
                 }}>
                 Dettagli
               </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
                 Nome
               </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Nome Store
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Indirizzo
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Via Roma, 1
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Codice postale
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                24100
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Città
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Milano
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Regione
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Lombardia
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Paese
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Italia
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Valuta
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                EUR
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  marginTop: 20,
+                }}>
+                Contatti
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Telefono
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                +39 3333333333
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Email
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                mail@store.com
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  marginTop: 20,
+                }}>
+                Descrizione
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  backgroundColor: '#ababab',
+                  padding: 15,
+                  marginTop: 10,
+                  marginBottom: 30,
+                }}>
+                <MaterialCommunityIcons
+                  name="alert-circle"
+                  size={20}
+                  color={'#000000'}
+                  style={{marginRight: 5}}
+                />
+                <Text
+                  style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                  Il tuo store non ha ancora una descrizione
+                </Text>
+              </View>
             </View>
           ) : null}
           {sectionStatus == 3 ? (
@@ -1469,6 +1694,158 @@ const Impostazioni = () => {
               <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
                 Informazioni email
               </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+                Ti inviamo diversi tipi di email sugli ordini che ricevi sulla
+                piattaforma Hello Waste. Qui puoi selezionare quelle che vuoi
+                ricevere e vedere a quale indirizzo saranno inviate.
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  marginTop: 20,
+                }}>
+                Email per gli ordini
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 20,
+                }}>
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Conferma email
+                  </Text>
+                  <Text
+                    style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                    Email inviata per ogni ordine effettuato.
+                  </Text>
+                </View>
+                <View>
+                  <Switch
+                    trackColor={{false: '#767577', true: '#d7d7d7'}}
+                    thumbColor={orderConfirmEmail ? '#00807a' : '#f4f3f4'}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={toggleOrderConfirmEmail}
+                    value={orderConfirmEmail}
+                    style={{marginTop: 10, alignSelf: 'flex-start'}}
+                  />
+                </View>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 20,
+                }}>
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Cancellazione ordine
+                  </Text>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 14,
+                      fontWeight: '600',
+                      maxWidth: '80%',
+                    }}>
+                    Email inviata se un ordine è stato cancellato prima del
+                    ritiro.
+                  </Text>
+                </View>
+                <View>
+                  <Switch
+                    trackColor={{false: '#767577', true: '#d7d7d7'}}
+                    thumbColor={orderCancellationEmail ? '#00807a' : '#f4f3f4'}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={toggleOrderCancellationEmail}
+                    value={orderCancellationEmail}
+                    style={{marginTop: 10, alignSelf: 'flex-start'}}
+                  />
+                </View>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 20,
+                }}>
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Newsletter
+                  </Text>
+                  <Text
+                    style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                    Aggiornamenti mensili di Hello Waste.
+                  </Text>
+                </View>
+                <View>
+                  <Switch
+                    trackColor={{false: '#767577', true: '#d7d7d7'}}
+                    thumbColor={monthlyNewsletter ? '#00807a' : '#f4f3f4'}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={toggleMonthlyNewsletter}
+                    value={monthlyNewsletter}
+                    style={{marginTop: 10, alignSelf: 'flex-start'}}
+                  />
+                </View>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 20,
+                }}>
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Email di marketing
+                  </Text>
+                  <Text
+                    style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                    Comunicazioni rilevanti per il tuo store.
+                  </Text>
+                </View>
+                <View>
+                  <Switch
+                    trackColor={{false: '#767577', true: '#d7d7d7'}}
+                    thumbColor={marketingEmail ? '#00807a' : '#f4f3f4'}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={toggleMarketingEmail}
+                    value={marketingEmail}
+                    style={{marginTop: 10, alignSelf: 'flex-start'}}
+                  />
+                </View>
+              </View>
             </View>
           ) : null}
           {sectionStatus == 4 ? (
@@ -1476,10 +1853,639 @@ const Impostazioni = () => {
               <Text style={{color: '#000000', fontSize: 18, fontWeight: '600'}}>
                 Informazioni profilo
               </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Nome utente
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                Mario Rossi
+              </Text>
+              <Text
+                style={{
+                  color: '#545454',
+                  fontSize: 16,
+                  fontWeight: '800',
+                  marginTop: 10,
+                }}>
+                Indirizzo email dell'utente
+              </Text>
+              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                mariorossi@gmail.com
+              </Text>
             </View>
           ) : null}
         </ScrollView>
       </View>
+    </View>
+  );
+};
+
+const Performance = () => {
+  const [sectionStatus, setSectionStatus] = useState(1);
+  const [periodSection, setPeriodSection] = useState(1);
+  return (
+    <View style={{marginHorizontal: 20, marginTop: 30}}>
+      <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+        Performance
+      </Text>
+      <View>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <TouchableOpacity onPress={() => setSectionStatus(1)}>
+            {sectionStatus == 1 ? (
+              <Text
+                style={{
+                  color: '#00807a',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Statistiche
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Statistiche
+              </Text>
+            )}
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setSectionStatus(2)}>
+            {sectionStatus == 2 ? (
+              <Text
+                style={{
+                  color: '#00807a',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Approfondimenti
+              </Text>
+            ) : (
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 25,
+                  fontWeight: '700',
+                  marginRight: 30,
+                }}>
+                Approfondimenti
+              </Text>
+            )}
+          </TouchableOpacity>
+        </ScrollView>
+      </View>
+      <View>
+        <ScrollView>
+          {sectionStatus == 1 ? (
+            <View>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 16,
+                  fontWeight: '600',
+                  marginTop: 30,
+                }}>
+                Statistiche dall'inizio della collaborazione
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '400',
+                  marginTop: 10,
+                }}>
+                Qui sotto puoi trovare una panoramica delle tue statistiche
+                dall'inizio della tua collaborazione con Hello Waste.
+              </Text>
+              <View style={{marginTop: 20}}>
+                <ScrollView
+                  horizontal={true}
+                  showsHorizontalScrollIndicator={false}>
+                  <TouchableOpacity onPress={() => setPeriodSection(1)}>
+                    {periodSection == 1 ? (
+                      <Text
+                        style={{
+                          color: '#00807a',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 30 giorni
+                      </Text>
+                    ) : (
+                      <Text
+                        style={{
+                          color: '#000000',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 30 giorni
+                      </Text>
+                    )}
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => setPeriodSection(2)}>
+                    {periodSection == 2 ? (
+                      <Text
+                        style={{
+                          color: '#00807a',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultime 12 settimane
+                      </Text>
+                    ) : (
+                      <Text
+                        style={{
+                          color: '#000000',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultime 12 settimane
+                      </Text>
+                    )}
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => setPeriodSection(3)}>
+                    {periodSection == 3 ? (
+                      <Text
+                        style={{
+                          color: '#00807a',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 12 mesi
+                      </Text>
+                    ) : (
+                      <Text
+                        style={{
+                          color: '#000000',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 12 mesi
+                      </Text>
+                    )}
+                  </TouchableOpacity>
+                </ScrollView>
+              </View>
+              <View style={{marginTop: 10}}>
+                <ScrollView
+                  horizontal={true}
+                  showsHorizontalScrollIndicator={false}>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Pasti salvati
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0
+                    </Text>
+                  </View>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 25,
+                      }}>
+                      Preferiti
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0
+                    </Text>
+                  </View>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Visualizzati
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0
+                    </Text>
+                  </View>
+                </ScrollView>
+              </View>
+            </View>
+          ) : null}
+          {sectionStatus == 2 ? (
+            <View>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 16,
+                  fontWeight: '600',
+                  marginTop: 30,
+                }}>
+                Approfondimenti
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '400',
+                  marginTop: 10,
+                }}>
+                Qui sotto puoi trovare una panoramica di come sta andando il tuo
+                store in base alle valutazioni degli utenti e delle
+                cancellazioni.
+              </Text>
+              <View style={{marginTop: 20}}>
+                <ScrollView
+                  horizontal={true}
+                  showsHorizontalScrollIndicator={false}>
+                  <TouchableOpacity onPress={() => setPeriodSection(1)}>
+                    {periodSection == 1 ? (
+                      <Text
+                        style={{
+                          color: '#00807a',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 30 giorni
+                      </Text>
+                    ) : (
+                      <Text
+                        style={{
+                          color: '#000000',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 30 giorni
+                      </Text>
+                    )}
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => setPeriodSection(2)}>
+                    {periodSection == 2 ? (
+                      <Text
+                        style={{
+                          color: '#00807a',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultime 12 settimane
+                      </Text>
+                    ) : (
+                      <Text
+                        style={{
+                          color: '#000000',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultime 12 settimane
+                      </Text>
+                    )}
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => setPeriodSection(3)}>
+                    {periodSection == 3 ? (
+                      <Text
+                        style={{
+                          color: '#00807a',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 12 mesi
+                      </Text>
+                    ) : (
+                      <Text
+                        style={{
+                          color: '#000000',
+                          fontSize: 20,
+                          fontWeight: '700',
+                          marginRight: 30,
+                        }}>
+                        Ultimi 12 mesi
+                      </Text>
+                    )}
+                  </TouchableOpacity>
+                </ScrollView>
+              </View>
+              <View style={{marginTop: 10}}>
+                <ScrollView
+                  horizontal={true}
+                  showsHorizontalScrollIndicator={false}>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Esperienza complessiva
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0.0
+                    </Text>
+                  </View>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Valutazione media Bag
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0.0
+                    </Text>
+                  </View>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Valutazione esperienza store
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0
+                    </Text>
+                  </View>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Cancellazioni
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0
+                    </Text>
+                  </View>
+                  <View
+                    style={{
+                      borderWidth: 0.5,
+                      borderColor: '#000000',
+                      borderRadius: 5,
+                      padding: 10,
+                      marginRight: 10,
+                    }}>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 18,
+                        fontWeight: '600',
+                        marginRight: 15,
+                      }}>
+                      Rimborsi
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 30,
+                        fontWeight: '800',
+                      }}>
+                      0
+                    </Text>
+                  </View>
+                </ScrollView>
+              </View>
+            </View>
+          ) : null}
+        </ScrollView>
+      </View>
+    </View>
+  );
+};
+
+const Vendite = () => {
+  return (
+    <View style={{marginHorizontal: 20, marginTop: 30}}>
+      <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+        Vendite
+      </Text>
+      <View
+        style={{
+          borderWidth: 0.5,
+          borderColor: '#000000',
+          borderRadius: 10,
+          marginTop: 20,
+          padding: 10,
+        }}>
+        <Text style={{color: '#000000', fontSize: 16, fontWeight: '600'}}>
+          Resoconti mensili
+        </Text>
+        <Text style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+          Scarica i documenti sulla tua attività mensile su Hello Waste.
+        </Text>
+        <TouchableOpacity
+          style={{
+            borderWidth: 1,
+            borderColor: '#00807a',
+            borderRadius: 30,
+            marginVertical: 10,
+            marginHorizontal: 50,
+          }}>
+          <Text
+            style={{
+              color: '#00807a',
+              fontSize: 14,
+              fontWeight: '600',
+              textAlign: 'center',
+              padding: 10,
+            }}>
+            Esporta
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={{
+          borderWidth: 0.5,
+          borderColor: '#000000',
+          borderRadius: 10,
+          marginTop: 20,
+          padding: 10,
+        }}>
+        <Text style={{color: '#000000', fontSize: 16, fontWeight: '600'}}>
+          Pagamento
+        </Text>
+        <Text style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+          Qui visualizzi i dati inseriti sul conto bancario a cui invieremo i
+          pagamenti.
+        </Text>
+        <TouchableOpacity
+          style={{
+            borderWidth: 1,
+            borderColor: '#00807a',
+            borderRadius: 30,
+            marginVertical: 10,
+            marginHorizontal: 50,
+          }}>
+          <Text
+            style={{
+              color: '#00807a',
+              fontSize: 14,
+              fontWeight: '600',
+              textAlign: 'center',
+              padding: 10,
+            }}>
+            Aggiorna coordinate bancarie
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
+
+const CentroAssistenza = () => {
+  return (
+    <View style={{marginHorizontal: 20, marginTop: 30}}>
+      <Text style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+        Centro assistenza
+      </Text>
+      <Text
+        style={{
+          color: '#000000',
+          fontSize: 14,
+          fontWeight: '600',
+          textAlign: 'center',
+          marginTop: 30,
+        }}>
+        Hai bisogno di aiuto?
+      </Text>
+      <TouchableOpacity
+        style={{
+          backgroundColor: '#00807a',
+          borderRadius: 30,
+          margin: 10,
+          marginBottom: 20,
+          marginHorizontal: 30,
+          shadowOffset: {width: 10, height: 10},
+          shadowColor: '#000000',
+          shadowOpacity: 1,
+          elevation: 10,
+        }}>
+        <Text
+          style={{
+            color: '#ffffff',
+            fontSize: 16,
+            fontWeight: '600',
+            textAlign: 'center',
+            paddingVertical: 5,
+          }}>
+          Contattaci
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 };

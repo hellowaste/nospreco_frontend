@@ -36,7 +36,9 @@ const signedInScreenOptions = {
   tabBarLabelStyle: {
     fontWeight: '700',
   },
-  tabBarActiveTintColor: '#00807a',
+  tabBarActiveTintColor: '#000000',
+  tabBarActiveBackgroundColor: '#00807a',
+  tabBarInactiveBackgroundColor: '#ffffff',
   tabBarInactiveTintColor: '#000000',
 };
 
@@ -98,27 +100,12 @@ const SignedInStack = ({navigation}) => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <View
-              style={{
-                backgroundColor: homeColor,
-                borderRadius: 20,
-                paddingHorizontal: 10,
-              }}>
-              <MaterialCommunityIcons
-                name="home-outline"
-                size={30}
-                color={focused ? '#00807a' : '#000000'}
-              />
-            </View>
+            <MaterialCommunityIcons
+              name="home-outline"
+              size={30}
+              color={'#000000'}
+            />
           ),
-        }}
-        listeners={{
-          tabPress: () => {
-            setHomeColor('rgba(0,128,122,0.15)');
-            setTimeout(() => {
-              setHomeColor('rgba(0,128,122,0)');
-            }, 75);
-          },
         }}
       />
       <Tab.Screen
@@ -126,27 +113,8 @@ const SignedInStack = ({navigation}) => {
         component={SearchScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <View
-              style={{
-                backgroundColor: searchColor,
-                borderRadius: 20,
-                paddingHorizontal: 10,
-              }}>
-              <MaterialCommunityIcons
-                name="map"
-                size={30}
-                color={focused ? '#00807a' : '#000000'}
-              />
-            </View>
+            <MaterialCommunityIcons name="map" size={30} color={'#000000'} />
           ),
-        }}
-        listeners={{
-          tabPress: () => {
-            setSearchColor('rgba(0,128,122,0.15)');
-            setTimeout(() => {
-              setSearchColor('rgba(0,128,122,0)');
-            }, 75);
-          },
         }}
       />
       <Tab.Screen
@@ -154,27 +122,12 @@ const SignedInStack = ({navigation}) => {
         component={SettingsScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <View
-              style={{
-                backgroundColor: settingsColor,
-                borderRadius: 20,
-                paddingHorizontal: 10,
-              }}>
-              <MaterialCommunityIcons
-                name="account-cog-outline"
-                size={30}
-                color={focused ? '#00807a' : '#000000'}
-              />
-            </View>
+            <MaterialCommunityIcons
+              name="account-cog-outline"
+              size={30}
+              color={'#000000'}
+            />
           ),
-        }}
-        listeners={{
-          tabPress: () => {
-            setSettingsColor('rgba(0,128,122,0.15)');
-            setTimeout(() => {
-              setSettingsColor('rgba(0,128,122,0)');
-            }, 75);
-          },
         }}
       />
     </Tab.Navigator>
@@ -189,18 +142,11 @@ const BusinessUserStack = () => {
         component={BusinessHomeScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <View
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: 20,
-                paddingHorizontal: 10,
-              }}>
-              <MaterialCommunityIcons
-                name="store-outline"
-                size={30}
-                color={focused ? '#00807a' : '#000000'}
-              />
-            </View>
+            <MaterialCommunityIcons
+              name="store-outline"
+              size={30}
+              color={'#000000'}
+            />
           ),
         }}
       />
@@ -209,18 +155,11 @@ const BusinessUserStack = () => {
         component={BusinessSettingsScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <View
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: 20,
-                paddingHorizontal: 10,
-              }}>
-              <MaterialCommunityIcons
-                name="dots-horizontal"
-                size={30}
-                color={focused ? '#00807a' : '#000000'}
-              />
-            </View>
+            <MaterialCommunityIcons
+              name="dots-horizontal"
+              size={30}
+              color={'#000000'}
+            />
           ),
         }}
       />

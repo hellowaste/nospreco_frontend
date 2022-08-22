@@ -14,7 +14,7 @@ const store = configureStore({
 export default function App() {
   return (
     <Provider store={store}>
-      <StatusBar hidden={true} backgroundColor={'#ffffff'} />
+      <StatusBar backgroundColor={'#ffffff'} />
       <AppNavigation />
     </Provider>
   );

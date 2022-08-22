@@ -112,7 +112,11 @@ const SettingsScreen = ({navigation}) => {
             elevation: 5,
           }}
           onPress={() => navigation.navigate('Business')}>
-          <MaterialCommunityIcons name="repeat" size={30} color={'#000000'} />
+          <MaterialCommunityIcons
+            name="storefront-outline"
+            size={30}
+            color={'#000000'}
+          />
           <Text
             style={{
               paddingVertical: 15,
@@ -121,7 +125,7 @@ const SettingsScreen = ({navigation}) => {
               fontWeight: '700',
               color: '#000000',
             }}>
-            Vai a MyStore
+            Shop
           </Text>
         </TouchableOpacity>
         <TouchableOpacity

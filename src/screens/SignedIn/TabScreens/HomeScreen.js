@@ -166,7 +166,7 @@ const HomeScreen = ({navigation}) => {
                 <Text
                   style={{
                     textAlign: 'left',
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: '700',
                     color: '#000000',
                   }}>
@@ -202,9 +202,9 @@ const HomeScreen = ({navigation}) => {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               style={{marginBottom: 10}}>
-              <StoreBox />
-              <StoreBox />
-              <StoreBox />
+              <StoreBox navigation={navigation} />
+              <StoreBox navigation={navigation} />
+              <StoreBox navigation={navigation} />
             </ScrollView>
             <View
               style={{
@@ -217,7 +217,7 @@ const HomeScreen = ({navigation}) => {
                 <Text
                   style={{
                     textAlign: 'left',
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: '700',
                     color: '#000000',
                   }}>
@@ -252,9 +252,9 @@ const HomeScreen = ({navigation}) => {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               style={{marginBottom: 10}}>
-              <StoreBox />
-              <StoreBox />
-              <StoreBox />
+              <StoreBox navigation={navigation} />
+              <StoreBox navigation={navigation} />
+              <StoreBox navigation={navigation} />
             </ScrollView>
             <View
               style={{
@@ -267,7 +267,7 @@ const HomeScreen = ({navigation}) => {
                 <Text
                   style={{
                     textAlign: 'left',
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: '700',
                     color: '#000000',
                   }}>
@@ -302,9 +302,9 @@ const HomeScreen = ({navigation}) => {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               style={{marginBottom: 10}}>
-              <StoreBox />
-              <StoreBox />
-              <StoreBox />
+              <StoreBox navigation={navigation} />
+              <StoreBox navigation={navigation} />
+              <StoreBox navigation={navigation} />
             </ScrollView>
           </ScrollView>
         ) : (
@@ -507,17 +507,18 @@ const MagicBox = ({navigation}) => {
   );
 };
 
-const StoreBox = () => {
+const StoreBox = ({navigation}) => {
   return (
     <Pressable
       style={{
         marginHorizontal: 10,
-      }}>
+      }}
+      onPress={() => navigation.navigate('ShopScreen')}>
       <View
         style={{
           backgroundColor: '#ffffff',
-          height: 170,
-          width: 280,
+          height: 130,
+          width: 240,
           margin: 5,
           marginTop: 10,
           borderRadius: 15,
@@ -533,8 +534,8 @@ const StoreBox = () => {
           }}
           borderRadius={15}
           style={{
-            height: 170,
-            width: 280,
+            height: 130,
+            width: 240,
             alignItems: 'center',
             justifyContent: 'center',
           }}>

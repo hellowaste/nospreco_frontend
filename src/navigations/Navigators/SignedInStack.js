@@ -22,6 +22,7 @@ import {View} from 'react-native';
 import BusinessHomeScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessHomeScreen';
 import BusinessSettingsScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessSettingsScreen';
 import BusinessAccountDetailsScreen from '../../screens/SignedIn/BusinessPagesScreens/Settings/BusinessAccountDetails/BusinessAccountDetailsScreen';
+import ShopScreen from '../../screens/SignedIn/PagesScreens/Shop/ShopScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,9 +37,7 @@ const signedInScreenOptions = {
   tabBarLabelStyle: {
     fontWeight: '700',
   },
-  tabBarActiveTintColor: '#000000',
-  tabBarActiveBackgroundColor: '#00807a',
-  tabBarInactiveBackgroundColor: '#ffffff',
+  tabBarActiveTintColor: '#00807a',
   tabBarInactiveTintColor: '#000000',
 };
 
@@ -48,6 +47,7 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen name="ShopScreen" component={ShopScreen} />
         <Stack.Screen
           name="BusinessAccountDetailsScreen"
           component={BusinessAccountDetailsScreen}
@@ -103,7 +103,7 @@ const SignedInStack = ({navigation}) => {
             <MaterialCommunityIcons
               name="home-outline"
               size={30}
-              color={'#000000'}
+              color={focused ? '#00807a' : '#000000'}
             />
           ),
         }}
@@ -113,7 +113,11 @@ const SignedInStack = ({navigation}) => {
         component={SearchScreen}
         options={{
           tabBarIcon: ({focused}) => (
-            <MaterialCommunityIcons name="map" size={30} color={'#000000'} />
+            <MaterialCommunityIcons
+              name="map"
+              size={30}
+              color={focused ? '#00807a' : '#000000'}
+            />
           ),
         }}
       />
@@ -125,7 +129,7 @@ const SignedInStack = ({navigation}) => {
             <MaterialCommunityIcons
               name="account-cog-outline"
               size={30}
-              color={'#000000'}
+              color={focused ? '#00807a' : '#000000'}
             />
           ),
         }}
@@ -145,7 +149,7 @@ const BusinessUserStack = () => {
             <MaterialCommunityIcons
               name="store-outline"
               size={30}
-              color={'#000000'}
+              color={focused ? '#00807a' : '#000000'}
             />
           ),
         }}
@@ -158,7 +162,7 @@ const BusinessUserStack = () => {
             <MaterialCommunityIcons
               name="dots-horizontal"
               size={30}
-              color={'#000000'}
+              color={focused ? '#00807a' : '#000000'}
             />
           ),
         }}

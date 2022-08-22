@@ -376,11 +376,11 @@ const Calendario = () => {
         Calendario
       </Text>
       <Text style={{color: '#000000', fontSize: 14}}>
-        Il calendario ti offre una panoramica dei giorni in cui gli utenti
-        possono presentarsi al tuo store per ritirare una Bag. I giorni mostrati
-        sul calendario coincidono con il tuo programma settimanale; se devi
-        segnalare modifiche temporanee al programma, puoi farlo da qui con i
-        giorni speciali.
+        Il nostro calendario ti aiuta nell’avere una panoramica dei giorni e
+        l’orario in cui gli acquirenti possono venire al tuo negozio per
+        ritirare la Bag da te preparata , se volessi apportare modifiche
+        temporanee al calendario puoi farlo grazie alla funzione giorni
+        speciali.
       </Text>
       <View
         style={{backgroundColor: '#b9ceac', borderRadius: 5, marginTop: 30}}>

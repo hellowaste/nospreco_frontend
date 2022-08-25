@@ -20,17 +20,17 @@ const BusinessHomeScreen = () => {
       {visibleMenu ? (
         <View
           style={{
-            width: '60%',
+            width: '100%',
             height: '100%',
-            backgroundColor: '#b9ceac',
+            backgroundColor: '#00807a',
             position: 'absolute',
             zIndex: 999,
           }}>
           <TouchableOpacity
             style={{
-              backgroundColor: '#b9ceac',
+              backgroundColor: '#ffffff',
               borderRadius: 30,
-              alignSelf: 'flex-end',
+              alignSelf: 'flex-start',
               margin: 10,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',
@@ -39,10 +39,10 @@ const BusinessHomeScreen = () => {
             }}
             onPress={() => setVisibleMenu(false)}>
             <MaterialCommunityIcons
-              name="close"
+              name="chevron-left"
               size={20}
-              color={'#ffffff'}
-              style={{margin: 3}}
+              color={'#00807a'}
+              style={{margin: 5}}
             />
           </TouchableOpacity>
           <View
@@ -51,7 +51,7 @@ const BusinessHomeScreen = () => {
               alignItems: 'center',
               backgroundColor: '#00807a',
               marginHorizontal: 20,
-              marginTop: 5,
+              marginTop: 20,
               borderRadius: 10,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',
@@ -73,14 +73,23 @@ const BusinessHomeScreen = () => {
           </View>
           <View
             style={{
+              width: '100%',
+              borderRadius: 10,
+              backgroundColor: '#ffffff',
               marginTop: 30,
-              marginBottom: 75,
+              marginBottom: -10,
+              paddingBottom: 50,
+              paddingHorizontal: 20,
               alignSelf: 'center',
               flex: 1,
               justifyContent: 'space-between',
             }}>
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                marginTop: 20,
+              }}
               onPress={() => {
                 setSectionStatus(1);
                 setVisibleMenu(false);
@@ -88,16 +97,16 @@ const BusinessHomeScreen = () => {
               <MaterialCommunityIcons
                 name="view-day-outline"
                 size={20}
-                color={sectionStatus == 1 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 1 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 1 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 1 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
-                Gestione quotidiana
+                Amministrazione
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -109,12 +118,12 @@ const BusinessHomeScreen = () => {
               <MaterialCommunityIcons
                 name="calendar"
                 size={20}
-                color={sectionStatus == 2 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 2 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 2 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 2 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
@@ -130,16 +139,16 @@ const BusinessHomeScreen = () => {
               <MaterialCommunityIcons
                 name="clock-outline"
                 size={20}
-                color={sectionStatus == 3 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 3 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 3 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 3 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
-                Programma
+                Pianificazione
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -151,12 +160,12 @@ const BusinessHomeScreen = () => {
               <MaterialCommunityIcons
                 name="cog-outline"
                 size={20}
-                color={sectionStatus == 4 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 4 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 4 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 4 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
@@ -170,18 +179,18 @@ const BusinessHomeScreen = () => {
                 setVisibleMenu(false);
               }}>
               <MaterialCommunityIcons
-                name="poll"
+                name="rocket-launch-outline"
                 size={20}
-                color={sectionStatus == 5 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 5 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 5 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 5 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
-                Performance
+                Risultati
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -193,16 +202,16 @@ const BusinessHomeScreen = () => {
               <MaterialCommunityIcons
                 name="credit-card"
                 size={20}
-                color={sectionStatus == 6 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 6 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 6 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 6 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
-                Vendite
+                Venduto
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -212,18 +221,18 @@ const BusinessHomeScreen = () => {
                 setVisibleMenu(false);
               }}>
               <MaterialCommunityIcons
-                name="message-question"
+                name="account-question-outline"
                 size={20}
-                color={sectionStatus == 7 ? '#ffffff' : '#000000'}
+                color={sectionStatus == 7 ? '#00807a' : '#000000'}
                 style={{marginRight: 10}}
               />
               <Text
                 style={{
-                  color: sectionStatus == 7 ? '#ffffff' : '#000000',
+                  color: sectionStatus == 7 ? '#00807a' : '#000000',
                   fontSize: 16,
                   fontWeight: '700',
                 }}>
-                Centro assistenza
+                Aiuto
               </Text>
             </TouchableOpacity>
           </View>
@@ -248,7 +257,7 @@ const BusinessHomeScreen = () => {
           </TouchableOpacity>
           <Image
             source={require('../../../assets/logo/app/app_logo.png')}
-            style={{width: 50, height: 50, borderRadius: 30, marginTop: 5}}
+            style={{width: 70, height: 70, borderRadius: 30, marginTop: 5}}
           />
         </View>
         <View>
@@ -289,12 +298,12 @@ const GestioneQuotidiana = () => {
           Benvenuto, ci sei quasi
         </Text>
         <Text style={{color: '#000000', fontSize: 14, marginVertical: 20}}>
-          Ti contatteremo nei prossimi giorni lavorativi per rivere i tuoi dati
-          ed aiutarti ad iniziare.
+          Ti contatteremo nei prossimi giorni lavorativi per rivedere i tuoi
+          dati ed aiutarti ad iniziare.
         </Text>
         <Text style={{color: '#000000', fontSize: 14}}>
-          Se vuoi già partire, contattaci al (da inserire il numero di
-          assistenza).
+          Se vuoi già partire, contattaci alla nostra email di supporto (da
+          inserire il numero di assistenza).
         </Text>
       </View>
       <View
@@ -1169,6 +1178,18 @@ const Impostazioni = () => {
   const [orderCancellationEmail, setOrderCancellationEmail] = useState(true);
   const [monthlyNewsletter, setMonthlyNewsletter] = useState(true);
   const [marketingEmail, setMarketingEmail] = useState(true);
+
+  const [storeNameUpdate, setStoreNameUpdate] = useState(false);
+  const [storeAddressUpdate, setStoreAddressUpdate] = useState(false);
+  const [storeCapUpdate, setStoreCapUpdate] = useState(false);
+  const [storeCityUpdate, setStoreCityUpdate] = useState(false);
+  const [storeRegionUpdate, setStoreRegionUpdate] = useState(false);
+  const [storeCountryUpdate, setStoreCountryUpdate] = useState(false);
+  const [storeCurrencyUpdate, setStoreCurrencyUpdate] = useState(false);
+  const [storePhoneUpdate, setStorePhoneUpdate] = useState(false);
+  const [storeEmailUpdate, setStoreEmailUpdate] = useState(false);
+  const [storeDescriptionUpdate, setStoreDescriptionUpdate] = useState(false);
+
   const toggleOrderConfirmEmail = () =>
     setOrderConfirmEmail(previousState => !previousState);
   const toggleOrderCancellationEmail = () =>
@@ -1541,90 +1562,551 @@ const Impostazioni = () => {
                 }}>
                 Dettagli
               </Text>
-              <Text
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Nome
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                Nome Store
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Nome
+                  </Text>
+                  {!storeNameUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      Nome Store
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={'Digita il nome dello store qui'}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeNameUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreNameUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreNameUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreNameUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Indirizzo
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                Via Roma, 1
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Indirizzo
+                  </Text>
+                  {!storeAddressUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      Via Roma, 1
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={"Digita l'indirizzo dello store qui"}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeAddressUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreAddressUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreAddressUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreAddressUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Codice postale
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                24100
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Codice postale
+                  </Text>
+                  {!storeCapUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      24100
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={'Digita il cap dello store qui'}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeCapUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreCapUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreCapUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreCapUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Città
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                Milano
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Città
+                  </Text>
+                  {!storeCityUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      Milano
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={'Digita la città dello store qui'}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeCityUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreCityUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreCityUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreCityUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Regione
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                Lombardia
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Regione
+                  </Text>
+                  {!storeRegionUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      Lombardia
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={'Digita la regione dello store qui'}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeRegionUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreRegionUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreRegionUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreRegionUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Paese
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                Italia
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Paese
+                  </Text>
+                  {!storeCountryUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      Italia
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={'Digita il paese dello store qui'}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeCountryUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreCountryUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreCountryUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreCountryUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Valuta
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                EUR
-              </Text>
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Valuta
+                  </Text>
+                  <Text
+                    style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                    EUR
+                  </Text>
+                </View>
+              </View>
               <Text
                 style={{
                   color: '#000000',
@@ -1634,30 +2116,180 @@ const Impostazioni = () => {
                 }}>
                 Contatti
               </Text>
-              <Text
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Telefono
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                +39 3333333333
-              </Text>
-              <Text
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Telefono
+                  </Text>
+                  {!storePhoneUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      +39 3333333333
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={'Digita il telefono dello store qui'}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storePhoneUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStorePhoneUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStorePhoneUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStorePhoneUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
+              <View
                 style={{
-                  color: '#545454',
-                  fontSize: 16,
-                  fontWeight: '800',
-                  marginTop: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: 15,
                 }}>
-                Email
-              </Text>
-              <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-                mail@store.com
-              </Text>
+                <View>
+                  <Text
+                    style={{
+                      color: '#545454',
+                      fontSize: 16,
+                      fontWeight: '800',
+                      marginTop: 10,
+                    }}>
+                    Email
+                  </Text>
+                  {!storeEmailUpdate ? (
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '600',
+                      }}>
+                      mail@store.com
+                    </Text>
+                  ) : (
+                    <View>
+                      <TextInput
+                        placeholder={"Digita l'email dello store qui"}
+                        placeholderTextColor={'#000000'}
+                      />
+                    </View>
+                  )}
+                </View>
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  {!storeEmailUpdate ? (
+                    <TouchableOpacity
+                      style={{
+                        borderWidth: 0.5,
+                        borderColor: '#000000',
+                        padding: 5,
+                        borderRadius: 10,
+                        marginRight: 5,
+                      }}
+                      onPress={() => setStoreEmailUpdate(true)}>
+                      <MaterialCommunityIcons
+                        name="pencil"
+                        size={20}
+                        color={'#000000'}
+                      />
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          marginRight: 3,
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreEmailUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="check-circle-outline"
+                          size={20}
+                          color={'#17ab06'}
+                        />
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={{
+                          borderWidth: 0.5,
+                          borderColor: '#000000',
+                          padding: 5,
+                          borderRadius: 10,
+                        }}
+                        onPress={() => setStoreEmailUpdate(false)}>
+                        <MaterialCommunityIcons
+                          name="close"
+                          size={20}
+                          color={'#ff0000'}
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
+              </View>
               <Text
                 style={{
                   color: '#000000',
@@ -1686,6 +2318,38 @@ const Impostazioni = () => {
                   style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
                   Il tuo store non ha ancora una descrizione
                 </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                }}>
+                Logo Store
+              </Text>
+              <View style={{marginTop: 10, marginBottom: 30}}>
+                <TouchableOpacity
+                  style={{
+                    borderWidth: 0.5,
+                    borderColor: '#00807a',
+                    borderRadius: 20,
+                    backgroundColor: '#ffffff',
+                    shadowOffset: {width: 10, height: 10},
+                    shadowColor: '#000000',
+                    shadowOpacity: 1,
+                    elevation: 5,
+                  }}>
+                  <Text
+                    style={{
+                      color: '#000000',
+                      fontSize: 16,
+                      fontWeight: '600',
+                      textAlign: 'center',
+                      paddingVertical: 5,
+                    }}>
+                    Carica foto
+                  </Text>
+                </TouchableOpacity>
               </View>
             </View>
           ) : null}

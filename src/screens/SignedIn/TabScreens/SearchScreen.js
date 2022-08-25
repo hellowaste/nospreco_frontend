@@ -27,57 +27,59 @@ const SearchScreen = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
-      <View
-        style={{
-          paddingHorizontal: 10,
-          paddingBottom: 10,
-          zIndex: 99,
-          backgroundColor: '#ffffff',
-          height: '8%',
-        }}>
-        <View>
+      {!visibleMap ? (
+        <View
+          style={{
+            paddingHorizontal: 10,
+            paddingBottom: 10,
+            zIndex: 99,
+            backgroundColor: '#ffffff',
+            height: '8%',
+          }}>
           <View>
-            <View
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: 15,
-                marginTop: 15,
-                marginHorizontal: 10,
-                padding: 5,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}
-            />
-            <View style={{alignItems: 'center'}}>
-              <TouchableOpacity
+            <View>
+              <View
                 style={{
+                  backgroundColor: '#ffffff',
+                  borderRadius: 15,
+                  marginTop: 15,
+                  marginHorizontal: 10,
+                  padding: 5,
                   flexDirection: 'row',
                   alignItems: 'center',
-                  marginTop: -10,
+                  justifyContent: 'space-between',
                 }}
-                onPress={() =>
-                  navigation.navigate('UserPositionScreen', {
-                    userPosition: userPosition,
-                  })
-                }>
-                <Text
-                  style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
-                  Posizione attuale
-                </Text>
-                <MaterialCommunityIcons
-                  name="chevron-down"
-                  size={20}
-                  color={'#000000'}
-                  style={{marginLeft: 10}}
-                />
-              </TouchableOpacity>
+              />
+              <View style={{alignItems: 'center'}}>
+                <TouchableOpacity
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    marginTop: -10,
+                  }}
+                  onPress={() =>
+                    navigation.navigate('UserPositionScreen', {
+                      userPosition: userPosition,
+                    })
+                  }>
+                  <Text
+                    style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
+                    Posizione attuale
+                  </Text>
+                  <MaterialCommunityIcons
+                    name="chevron-down"
+                    size={20}
+                    color={'#000000'}
+                    style={{marginLeft: 10}}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </View>
-      </View>
+      ) : null}
       {visibleMap ? (
-        <View style={{height: '92%'}}>
+        <View style={{height: '100%'}}>
           <View
             style={{
               position: 'absolute',
@@ -89,6 +91,43 @@ const SearchScreen = ({navigation}) => {
             }}
             pointerEvents={'box-none'}>
             <View>
+              <TouchableOpacity
+                style={{
+                  marginBottom: 10,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: '#ffffff',
+                  borderRadius: 10,
+                  padding: 10,
+                  width: '90%',
+                  alignSelf: 'center',
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 5,
+                }}
+                onPress={() =>
+                  navigation.navigate('UserPositionScreen', {
+                    userPosition: userPosition,
+                  })
+                }>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 18,
+                    fontWeight: '700',
+                    textAlign: 'center',
+                  }}>
+                  Posizione attuale
+                </Text>
+                <MaterialCommunityIcons
+                  name="chevron-down"
+                  size={20}
+                  color={'#000000'}
+                  style={{marginLeft: 10}}
+                />
+              </TouchableOpacity>
               <View
                 style={{
                   flexDirection: 'row',

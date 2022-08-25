@@ -30,7 +30,7 @@ const HomeScreen = ({navigation}) => {
   }, []);
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#b9ceac'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
       <View
         style={{
           paddingHorizontal: 10,
@@ -306,6 +306,36 @@ const HomeScreen = ({navigation}) => {
               <StoreBox navigation={navigation} />
               <StoreBox navigation={navigation} />
             </ScrollView>
+            <View style={{marginTop: 30}}>
+              <TouchableOpacity
+                style={{
+                  backgroundColor: '#ffffff',
+                  borderRadius: 20,
+                  borderColor: '#00807a',
+                  borderWidth: 1,
+                  borderStyle: 'solid',
+                  margin: 5,
+                  marginBottom: 15,
+                  marginHorizontal: 10,
+                  shadowOffset: {width: 10, height: 10},
+                  shadowColor: '#000000',
+                  shadowOpacity: 1,
+                  elevation: 10,
+                }}
+                onPress={() => navigation.navigate('SuggestedStoreScreen')}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '600',
+                    paddingVertical: 5,
+                    paddingHorizontal: 15,
+                    textAlign: 'center',
+                  }}>
+                  Suggerisci negozio
+                </Text>
+              </TouchableOpacity>
+            </View>
           </ScrollView>
         ) : (
           <ScrollView bounces={true} showsVerticalScrollIndicator={false}>

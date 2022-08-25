@@ -23,6 +23,7 @@ import BusinessHomeScreen from '../../screens/SignedIn/BusinessTabScreens/Busine
 import BusinessSettingsScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessSettingsScreen';
 import BusinessAccountDetailsScreen from '../../screens/SignedIn/BusinessPagesScreens/Settings/BusinessAccountDetails/BusinessAccountDetailsScreen';
 import ShopScreen from '../../screens/SignedIn/PagesScreens/Shop/ShopScreen';
+import SuggestedStoreScreen from '../../screens/SignedIn/PagesScreens/Store/SuggestedStoreScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -47,6 +48,10 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="SuggestedStoreScreen"
+          component={SuggestedStoreScreen}
+        />
         <Stack.Screen name="ShopScreen" component={ShopScreen} />
         <Stack.Screen
           name="BusinessAccountDetailsScreen"

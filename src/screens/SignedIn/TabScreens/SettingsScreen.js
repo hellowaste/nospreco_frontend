@@ -7,7 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const SettingsScreen = ({navigation}) => {
   const dispatch = useDispatch();
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff', paddingTop: 20}}>
       <ScrollView
         style={{
           marginTop: 30,

@@ -14,7 +14,11 @@ const store = configureStore({
 export default function App() {
   return (
     <Provider store={store}>
-      <StatusBar backgroundColor={'#ffffff'} barStyle="dark-content" />
+      <StatusBar
+        translucent={true}
+        backgroundColor={'transparent'}
+        barStyle="dark-content"
+      />
       <AppNavigation />
     </Provider>
   );

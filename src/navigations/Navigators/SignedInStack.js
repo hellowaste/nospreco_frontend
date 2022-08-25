@@ -24,6 +24,7 @@ import BusinessSettingsScreen from '../../screens/SignedIn/BusinessTabScreens/Bu
 import BusinessAccountDetailsScreen from '../../screens/SignedIn/BusinessPagesScreens/Settings/BusinessAccountDetails/BusinessAccountDetailsScreen';
 import ShopScreen from '../../screens/SignedIn/PagesScreens/Shop/ShopScreen';
 import SuggestedStoreScreen from '../../screens/SignedIn/PagesScreens/Store/SuggestedStoreScreen';
+import CategoriesScreen from "../../screens/SignedIn/TabScreens/CategoriesScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -120,6 +121,19 @@ const SignedInStack = ({navigation}) => {
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
               name="map"
+              size={30}
+              color={focused ? '#00807a' : '#000000'}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Categorie"
+        component={CategoriesScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <MaterialCommunityIcons
+              name="clipboard-list-outline"
               size={30}
               color={focused ? '#00807a' : '#000000'}
             />

@@ -26,7 +26,7 @@ const SearchScreen = ({navigation}) => {
   }, []);
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff', paddingTop: 20}}>
       {!visibleMap ? (
         <View
           style={{

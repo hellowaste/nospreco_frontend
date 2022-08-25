@@ -30,7 +30,7 @@ const HomeScreen = ({navigation}) => {
   }, []);
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff', paddingTop: 20}}>
       <View
         style={{
           paddingHorizontal: 10,
@@ -59,9 +59,10 @@ const HomeScreen = ({navigation}) => {
                   shadowColor: '#a2a2a2',
                   shadowOpacity: 0.5,
                   elevation: 5,
-                }}>
+                }}
+                onPress={() => navigation.navigate('Categorie')}>
                 <MaterialCommunityIcons
-                  name="tune-variant"
+                  name="clipboard-list-outline"
                   size={24}
                   color={'#000000'}
                   style={{padding: 5}}

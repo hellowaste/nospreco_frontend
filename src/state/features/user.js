@@ -2,15 +2,11 @@ import {createSlice} from '@reduxjs/toolkit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const initialState = {
-  _id: '',
-  email: '',
-  token: '',
-  name: '',
-  surname: '',
-  user_role: '',
-  user_phone_nr: '',
-  user_address: '',
-  user_photo: '',
+  _id: '6308a00ee0569863097b5ca8',
+  email: 'admin@admin.com',
+  token:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMDhhMDBlZTA1Njk4NjMwOTdiNWNhOCIsImlhdCI6MTY2MTUwOTc0MCwiZXhwIjoxNjc3MDYxNzQwfQ.-V2quVw6c0LEwUnTf_hf8NH8Dq2gBaDsdFQUqtNzFx0',
+  user_role: 'Customer',
 };
 
 export const userSlice = createSlice({

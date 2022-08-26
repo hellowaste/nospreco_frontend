@@ -30,7 +30,7 @@ const ShopScreen = ({navigation}) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             marginHorizontal: 15,
-            marginTop: 10,
+            marginTop: 20,
           }}>
           <View>
             <TouchableOpacity

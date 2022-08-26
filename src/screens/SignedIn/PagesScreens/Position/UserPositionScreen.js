@@ -40,6 +40,7 @@ const UserPositionScreen = ({navigation, route}) => {
         flex: 1,
         backgroundColor: '#ffffff',
         justifyContent: 'space-between',
+        paddingTop: 20,
       }}>
       <View style={{flexDirection: 'row', marginTop: 20}}>
         <Text
@@ -154,7 +155,7 @@ const UserPositionScreen = ({navigation, route}) => {
             style={{
               backgroundColor: '#b9ceac',
               borderRadius: 30,
-              marginTop: 20,
+              marginTop: 10,
               marginHorizontal: 20,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',

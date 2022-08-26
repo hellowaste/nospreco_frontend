@@ -16,7 +16,7 @@ const image = {
 
 const MagicBoxListScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1, paddingTop: 20}}>
       <TouchableOpacity
         style={{flexDirection: 'row', alignItems: 'center'}}
         onPress={() => navigation.goBack()}>

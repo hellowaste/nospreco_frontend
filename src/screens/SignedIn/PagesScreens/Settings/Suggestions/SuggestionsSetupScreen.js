@@ -20,7 +20,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
   const [night, setNight] = useState(false);
   const [lateNight, setLateNight] = useState(false);
   return (
-    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1, paddingTop: 20}}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <MaterialCommunityIcons

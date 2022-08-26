@@ -66,6 +66,7 @@ const BusinessRegistrationScreen = ({navigation}) => {
       style={{
         flex: 1,
         backgroundColor: '#ffffff',
+        paddingTop: 20,
       }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>

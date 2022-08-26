@@ -25,6 +25,7 @@ const BusinessHomeScreen = () => {
             backgroundColor: '#00807a',
             position: 'absolute',
             zIndex: 999,
+            paddingTop: 20,
           }}>
           <TouchableOpacity
             style={{
@@ -243,6 +244,7 @@ const BusinessHomeScreen = () => {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
+          paddingTop: 20,
           backgroundColor: '#ffffff',
           shadowOffset: {width: 10, height: 10},
           shadowColor: '#000000',

@@ -17,6 +17,7 @@ const ForgotPasswordScreen = ({navigation}) => {
       style={{
         backgroundColor: '#b9ceac',
         flex: 1,
+        paddingTop: 20,
       }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>

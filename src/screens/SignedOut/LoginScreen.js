@@ -26,6 +26,7 @@ const LoginScreen = ({navigation}) => {
 
   const loginUser = async values => {
     let res;
+    console.log(values);
     await axios
       .post('https://nospreco-backend.herokuapp.com/user/login', values)
       .then(response => {
@@ -68,6 +69,7 @@ const LoginScreen = ({navigation}) => {
         flex: 1,
         justifyContent: 'space-between',
         backgroundColor: '#ffffff',
+        paddingTop: 20,
       }}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -256,14 +258,14 @@ const LoginScreen = ({navigation}) => {
                   setIsVisible(true);
                   loginUser(requestPayload)
                     .then(res => {
+                      console.log(res);
                       setIsVisible(false);
-                      if (res.hasOwnProperty('error')) {
-                        alert(res.error);
-                      } else {
-                        dispatch(login(res));
-                      }
+                      dispatch(login(res));
                     })
-                    .catch(error => console.log(error));
+                    .catch(error => {
+                      setIsVisible(false);
+                      console.log(error);
+                    });
                 }
               }}>
               <Text

@@ -50,6 +50,7 @@ const UserPositionScreen = ({navigation, route}) => {
             fontWeight: '800',
             textAlign: 'center',
             marginHorizontal: 30,
+            marginBottom: 10,
           }}>
           Scegli una posizione per scoprire gli store intorno a te
         </Text>
@@ -155,7 +156,6 @@ const UserPositionScreen = ({navigation, route}) => {
             style={{
               backgroundColor: '#b9ceac',
               borderRadius: 30,
-              marginTop: 10,
               marginHorizontal: 20,
               shadowOffset: {width: 10, height: 10},
               shadowColor: '#000000',

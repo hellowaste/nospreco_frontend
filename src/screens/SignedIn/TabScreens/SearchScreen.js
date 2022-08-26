@@ -26,15 +26,16 @@ const SearchScreen = ({navigation}) => {
   }, []);
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff', paddingTop: 20}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff'}}>
       {!visibleMap ? (
         <View
           style={{
+            paddingTop: 20,
             paddingHorizontal: 10,
             paddingBottom: 10,
             zIndex: 99,
             backgroundColor: '#ffffff',
-            height: '8%',
+            height: '10%',
           }}>
           <View>
             <View>
@@ -50,7 +51,7 @@ const SearchScreen = ({navigation}) => {
                   justifyContent: 'space-between',
                 }}
               />
-              <View style={{alignItems: 'center'}}>
+              <View style={{alignItems: 'center', paddingTop: 5}}>
                 <TouchableOpacity
                   style={{
                     flexDirection: 'row',
@@ -90,7 +91,7 @@ const SearchScreen = ({navigation}) => {
               justifyContent: 'space-between',
             }}
             pointerEvents={'box-none'}>
-            <View>
+            <View style={{paddingTop: 20}}>
               <TouchableOpacity
                 style={{
                   marginBottom: 10,

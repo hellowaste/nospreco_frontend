@@ -111,7 +111,7 @@ const SettingsScreen = ({navigation}) => {
             shadowOpacity: 1,
             elevation: 5,
           }}
-          onPress={() => navigation.navigate('Business')}>
+          onPress={() => navigation.navigate('StoreCreationScreen')}>
           <MaterialCommunityIcons
             name="storefront-outline"
             size={30}

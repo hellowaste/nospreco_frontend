@@ -18,13 +18,14 @@ import OrdersHistoryScreen from '../../screens/SignedIn/PagesScreens/Settings/Or
 import NotificationsSetupScreen from '../../screens/SignedIn/PagesScreens/Settings/Notifications/NotificationsSetupScreen';
 import ShopDetailsScreen from '../../screens/SignedIn/PagesScreens/Store/ShopDetailsScreen';
 import UserPositionScreen from '../../screens/SignedIn/PagesScreens/Position/UserPositionScreen';
-import {View} from 'react-native';
 import BusinessHomeScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessHomeScreen';
 import BusinessSettingsScreen from '../../screens/SignedIn/BusinessTabScreens/BusinessSettingsScreen';
 import BusinessAccountDetailsScreen from '../../screens/SignedIn/BusinessPagesScreens/Settings/BusinessAccountDetails/BusinessAccountDetailsScreen';
 import ShopScreen from '../../screens/SignedIn/PagesScreens/Shop/ShopScreen';
 import SuggestedStoreScreen from '../../screens/SignedIn/PagesScreens/Store/SuggestedStoreScreen';
-import CategoriesScreen from "../../screens/SignedIn/TabScreens/CategoriesScreen";
+import CategoriesScreen from '../../screens/SignedIn/TabScreens/CategoriesScreen';
+import StoreCreationScreen from '../../screens/SignedIn/PagesScreens/StoreCreation/StoreCreationScreen';
+import StorePayoutDetailsScreen from "../../screens/SignedIn/PagesScreens/StoreCreation/StorePayoutDetailsScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -49,6 +50,14 @@ const MainStack = ({navigation}) => {
       <Stack.Navigator
         initialRouteName="Auth"
         screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="StorePayoutDetailsScreen"
+          component={StorePayoutDetailsScreen}
+        />
+        <Stack.Screen
+          name="StoreCreationScreen"
+          component={StoreCreationScreen}
+        />
         <Stack.Screen
           name="SuggestedStoreScreen"
           component={SuggestedStoreScreen}

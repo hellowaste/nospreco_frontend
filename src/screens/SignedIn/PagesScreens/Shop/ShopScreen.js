@@ -60,8 +60,7 @@ const ShopScreen = ({navigation}) => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: 10,
-              }}
-              onPress={() => navigation.goBack()}>
+              }}>
               <MaterialCommunityIcons
                 name="share-variant-outline"
                 size={25}
@@ -77,8 +76,7 @@ const ShopScreen = ({navigation}) => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: 10,
-              }}
-              onPress={() => navigation.goBack()}>
+              }}>
               <MaterialCommunityIcons
                 name="heart-outline"
                 size={25}

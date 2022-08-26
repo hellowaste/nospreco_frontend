@@ -170,7 +170,7 @@ const ShopScreen = ({navigation}) => {
               justifyContent: 'space-between',
               marginTop: 15,
               marginBottom: 15,
-              marginHorizontal: 20,
+              marginHorizontal: 75,
             }}>
             <View>
               <MaterialCommunityIcons
@@ -196,49 +196,6 @@ const ShopScreen = ({navigation}) => {
                   textAlign: 'center',
                 }}>
                 16:00 - 20:00
-              </Text>
-            </View>
-            <TouchableOpacity>
-              <MaterialCommunityIcons
-                name="map-marker-star-outline"
-                size={20}
-                color={'#000000'}
-                style={{alignSelf: 'center'}}
-              />
-              <Text
-                style={{
-                  color: '#000000',
-                  fontSize: 14,
-                  fontWeight: '500',
-                  textAlign: 'center',
-                }}>
-                Via Roma, 1
-              </Text>
-            </TouchableOpacity>
-            <View>
-              <MaterialCommunityIcons
-                name="information-variant"
-                size={20}
-                color={'#000000'}
-                style={{alignSelf: 'center'}}
-              />
-              <Text
-                style={{
-                  color: '#000000',
-                  fontSize: 14,
-                  fontWeight: '500',
-                  textAlign: 'center',
-                }}>
-                Prodotti
-              </Text>
-              <Text
-                style={{
-                  color: '#000000',
-                  fontSize: 14,
-                  fontWeight: '500',
-                  textAlign: 'center',
-                }}>
-                da forno
               </Text>
             </View>
             <View>
@@ -269,6 +226,120 @@ const ShopScreen = ({navigation}) => {
               </Text>
             </View>
           </View>
+        </View>
+        <TouchableOpacity
+          style={{
+            alignSelf: 'center',
+            backgroundColor: '#ffffff',
+            borderRadius: 10,
+            marginTop: 20,
+            width: '85%',
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 10,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginHorizontal: 10,
+              marginVertical: 10,
+            }}>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <MaterialCommunityIcons
+                name="map-marker-outline"
+                size={20}
+                color={'#000000'}
+                style={{marginRight: 10}}
+              />
+              <View>
+                <Text
+                  style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+                  Via Roma, 1 24100 Milano
+                </Text>
+                <Text
+                  style={{color: '#000000', fontSize: 14, fontWeight: '400'}}>
+                  MI, Italia
+                </Text>
+                <Text
+                  style={{color: '#a2a2a2', fontSize: 12, fontWeight: '400'}}>
+                  Scopri di più sullo store
+                </Text>
+              </View>
+            </View>
+            <MaterialCommunityIcons
+              name="chevron-right"
+              size={20}
+              color={'#000000'}
+            />
+          </View>
+        </TouchableOpacity>
+        <View
+          style={{
+            alignSelf: 'center',
+            backgroundColor: '#ffffff',
+            borderRadius: 10,
+            marginTop: 20,
+            width: '85%',
+            shadowOffset: {width: 10, height: 10},
+            shadowColor: '#000000',
+            shadowOpacity: 1,
+            elevation: 10,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginHorizontal: 10,
+              marginVertical: 15,
+            }}>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <MaterialCommunityIcons
+                name="information-variant"
+                size={20}
+                color={'#000000'}
+                style={{marginRight: 10}}
+              />
+              <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '400',
+                    marginRight: 5,
+                  }}>
+                  Tipo:
+                </Text>
+                <Text
+                  style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
+                  Prodotti da forno
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 14,
+              fontWeight: '600',
+              marginHorizontal: 40,
+              marginBottom: 5,
+            }}>
+            Info del venditore:
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 14,
+              fontWeight: '400',
+              marginHorizontal: 40,
+              marginBottom: 30,
+            }}>
+            Descrizione del prodotto da parte del venditore
+          </Text>
         </View>
       </ImageBackground>
       <View>

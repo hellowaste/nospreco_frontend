@@ -11,7 +11,7 @@ const NotificationsSetupScreen = ({navigation}) => {
   const toggleNewsletterSwitch = () =>
     setIsNewsletterEnabled(previousState => !previousState);
   return (
-    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
+    <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1, paddingTop: 20}}>
       <View
         style={{
           flexDirection: 'row',

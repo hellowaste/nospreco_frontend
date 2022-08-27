@@ -13,18 +13,18 @@ const WelcomeScreen = ({navigation}) => {
         style={{
           alignItems: 'center',
           height: '40%',
-          marginTop: 50,
+          marginTop: 100,
         }}>
         <Image
-          source={require('../../assets/logo/app/app_logo.png')}
-          style={{width: 300, height: 300}}
+          source={require('../../assets/logo/app/logonew.png')}
+          style={{width: 200, height: 200}}
         />
         <Text
           style={{
             color: '#17942e',
             fontSize: 30,
             fontWeight: '800',
-            marginTop: -50,
+            marginTop: 30,
           }}>
           Ciao spreco!
         </Text>

@@ -258,8 +258,8 @@ const BusinessHomeScreen = () => {
             <MaterialCommunityIcons name="menu" size={30} color={'#000000'} />
           </TouchableOpacity>
           <Image
-            source={require('../../../assets/logo/app/app_logo.png')}
-            style={{width: 70, height: 70, borderRadius: 30, marginTop: 5}}
+            source={require('../../../assets/logo/app/logonew.png')}
+            style={{width: 60, height: 60, borderRadius: 0, margin: 10}}
           />
         </View>
         <View>

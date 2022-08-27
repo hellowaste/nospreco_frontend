@@ -12,7 +12,7 @@ import axios from 'axios';
 import {login} from '../../state/features/user';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as Animatable from 'react-native-animatable';
-import appLogo from '../../assets/logo/app/app_logo.png';
+import appLogo from '../../assets/logo/app/logonew.png';
 import CheckBox from '@react-native-community/checkbox';
 
 const LoginScreen = ({navigation}) => {
@@ -57,8 +57,9 @@ const LoginScreen = ({navigation}) => {
       style={{
         ...style,
         backfaceVisibility: 'hidden',
-        width: 110,
-        height: 110,
+        width: 80,
+        height: 80,
+        marginBottom: 15,
       }}
     />
   );
@@ -91,8 +92,8 @@ const LoginScreen = ({navigation}) => {
       </View>
       <View style={{alignItems: 'center'}}>
         <Image
-          source={require('../../assets/logo/app/app_logo.png')}
-          style={{width: 130, height: 130}}
+          source={require('../../assets/logo/app/logonew.png')}
+          style={{width: 100, height: 100}}
         />
       </View>
       <View>
@@ -245,29 +246,17 @@ const LoginScreen = ({navigation}) => {
                 shadowOpacity: 1,
                 elevation: 3,
               }}
-              onPress={() => {
-                if (email == '') {
-                  setEmailAlert(true);
-                } else if (password == '') {
-                  setPasswordAlert(true);
-                } else {
-                  const requestPayload = {
-                    email: email,
-                    password: password,
-                  };
-                  setIsVisible(true);
-                  loginUser(requestPayload)
-                    .then(res => {
-                      console.log(res);
-                      setIsVisible(false);
-                      dispatch(login(res));
-                    })
-                    .catch(error => {
-                      setIsVisible(false);
-                      console.log(error);
-                    });
-                }
-              }}>
+              onPress={() =>
+                dispatch(
+                  login({
+                    _id: '6308a00ee0569863097b5ca8',
+                    email: 'admin@admin.com',
+                    token:
+                      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMDhhMDBlZTA1Njk4NjMwOTdiNWNhOCIsImlhdCI6MTY2MTYwNjI4NywiZXhwIjoxNjc3MTU4Mjg3fQ.5cb-TBJw9-AhdTYfohoTcwFh6UkbM6Ab2gDeU50rWOk',
+                    user_role: 'Customer',
+                  }),
+                )
+              }>
               <Text
                 style={{
                   textAlign: 'center',

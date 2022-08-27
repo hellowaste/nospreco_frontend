@@ -10,7 +10,7 @@ import {
 import axios from 'axios';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import CheckBox from '@react-native-community/checkbox';
-import appLogo from '../../assets/logo/app/app_logo.png';
+import appLogo from '../../assets/logo/app/logonew.png';
 import * as Animatable from 'react-native-animatable';
 
 const RegistrationScreen = ({navigation}) => {
@@ -67,8 +67,9 @@ const RegistrationScreen = ({navigation}) => {
       style={{
         ...style,
         backfaceVisibility: 'hidden',
-        width: 110,
-        height: 110,
+        width: 80,
+        height: 80,
+        marginBottom: 15,
       }}
     />
   );
@@ -101,8 +102,8 @@ const RegistrationScreen = ({navigation}) => {
       </View>
       <View style={{alignItems: 'center'}}>
         <Image
-          source={require('../../assets/logo/app/app_logo.png')}
-          style={{width: 200, height: 200}}
+          source={require('../../assets/logo/app/logonew.png')}
+          style={{width: 150, height: 150}}
         />
       </View>
       <View style={{marginBottom: 50}}>

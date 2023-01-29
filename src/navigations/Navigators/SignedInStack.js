@@ -4,7 +4,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../../screens/SignedIn/TabScreens/HomeScreen';
 import SearchScreen from '../../screens/SignedIn/TabScreens/SearchScreen';
-import FavoriteScreen from '../../screens/SignedIn/TabScreens/FavoritesScreen';
+import FavoriteScreen from '../../screens/SignedIn/TabScreens/OrdersScreen';
 import SettingsScreen from '../../screens/SignedIn/TabScreens/SettingsScreen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MagicBoxScreen from '../../screens/SignedIn/PagesScreens/MagicBox/MagicBoxScreen';
@@ -25,7 +25,15 @@ import ShopScreen from '../../screens/SignedIn/PagesScreens/Shop/ShopScreen';
 import SuggestedStoreScreen from '../../screens/SignedIn/PagesScreens/Store/SuggestedStoreScreen';
 import CategoriesScreen from '../../screens/SignedIn/TabScreens/CategoriesScreen';
 import StoreCreationScreen from '../../screens/SignedIn/PagesScreens/StoreCreation/StoreCreationScreen';
-import StorePayoutDetailsScreen from "../../screens/SignedIn/PagesScreens/StoreCreation/StorePayoutDetailsScreen";
+import StorePayoutDetailsScreen from '../../screens/SignedIn/PagesScreens/StoreCreation/StorePayoutDetailsScreen';
+import OrdersScreen from '../../screens/SignedIn/TabScreens/OrdersScreen';
+import SearchStoresScreen from '../../screens/SignedIn/Customer/Explore/SearchScreen';
+import StoresFiltersScreen from '../../screens/SignedIn/Customer/Explore/StoresFiltersScreen';
+import StoreBagsScreen from '../../screens/SignedIn/Customer/Store/StoreBagsScreen';
+import HeroBagScreen from "../../screens/SignedIn/Customer/Store/HeroBagScreen";
+import Account from "../../screens/SignedIn/Customer/Settings/Account";
+import AppNotifications from "../../screens/SignedIn/Customer/Settings/AppNotifications";
+import PaymentMethods from "../../screens/SignedIn/Customer/Settings/PaymentMethods";
 
 const Tab = createBottomTabNavigator();
 
@@ -40,8 +48,8 @@ const signedInScreenOptions = {
   tabBarLabelStyle: {
     fontWeight: '700',
   },
-  tabBarActiveTintColor: '#00807a',
-  tabBarInactiveTintColor: '#000000',
+  tabBarActiveTintColor: '#21B861',
+  tabBarInactiveTintColor: '#A3AEB4',
 };
 
 const MainStack = ({navigation}) => {
@@ -99,6 +107,19 @@ const MainStack = ({navigation}) => {
         <Stack.Screen name="MagicBoxScreen" component={MagicBoxScreen} />
         <Stack.Screen name="Auth" component={SignedInStack} />
         <Stack.Screen name="Business" component={BusinessUserStack} />
+        <Stack.Screen
+          name="SearchStoresScreen"
+          component={SearchStoresScreen}
+        />
+        <Stack.Screen
+          name="StoresFiltersScreen"
+          component={StoresFiltersScreen}
+        />
+        <Stack.Screen name="StoreBagsScreen" component={StoreBagsScreen} />
+        <Stack.Screen name="HeroBagScreen" component={HeroBagScreen} />
+        <Stack.Screen name="Account" component={Account} />
+        <Stack.Screen name="AppNotifications" component={AppNotifications} />
+        <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -116,9 +137,9 @@ const SignedInStack = ({navigation}) => {
         options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
-              name="home-outline"
+              name={focused ? 'home' : 'home-outline'}
               size={30}
-              color={focused ? '#00807a' : '#000000'}
+              color={focused ? '#21B861' : '#A3AEB4'}
             />
           ),
         }}
@@ -129,9 +150,22 @@ const SignedInStack = ({navigation}) => {
         options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
-              name="map"
+              name={focused ? 'map' : 'map-outline'}
               size={30}
-              color={focused ? '#00807a' : '#000000'}
+              color={focused ? '#21B861' : '#A3AEB4'}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Ordini"
+        component={OrdersScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <MaterialCommunityIcons
+              name={focused ? 'shopping' : 'shopping-outline'}
+              size={30}
+              color={focused ? '#21B861' : '#A3AEB4'}
             />
           ),
         }}
@@ -142,22 +176,22 @@ const SignedInStack = ({navigation}) => {
         options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
-              name="clipboard-list-outline"
+              name={focused ? 'shape' : 'shape-outline'}
               size={30}
-              color={focused ? '#00807a' : '#000000'}
+              color={focused ? '#21B861' : '#A3AEB4'}
             />
           ),
         }}
       />
       <Tab.Screen
-        name="Account"
+        name="Profilo"
         component={SettingsScreen}
         options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
-              name="account-cog-outline"
+              name={focused ? 'account-circle' : 'account-circle-outline'}
               size={30}
-              color={focused ? '#00807a' : '#000000'}
+              color={focused ? '#21B861' : '#A3AEB4'}
             />
           ),
         }}

@@ -1,514 +1,35 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {
-  Image,
-  ImageBackground,
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Geolocation from '@react-native-community/geolocation';
-
-const image = {
-  uri: 'https://media-assets.vanityfair.it/photos/61e444841e21bc3bd54b5357/1:1/w_2832,h_2832,c_limit/pizza%20tendenze.jpg',
-};
+// import Geolocation from '@react-native-community/geolocation';
 
 const HomeScreen = ({navigation}) => {
-  const currentUser = useSelector(state => state.user);
-  const [storeVisibility, setStoreVisibility] = useState(true);
-  const [userPosition, setUserPosition] = useState('');
-
-  useEffect(() => {
-    Geolocation.getCurrentPosition(res => {
-      console.log(JSON.stringify(res));
-      setUserPosition(res);
-    });
-  }, []);
-
+  // useEffect(() => {
+  //   Geolocation.getCurrentPosition(res => {
+  //     console.log(JSON.stringify(res));
+  //     setUserPosition(res);
+  //   });
+  // }, []);
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#ffffff', paddingTop: 20}}>
-      <View
-        style={{
-          paddingHorizontal: 10,
-          paddingBottom: 10,
-          zIndex: 99,
-          backgroundColor: '#ffffff',
-        }}>
-        <View>
-          <View>
-            <View
-              style={{
-                backgroundColor: '#ffffff',
-                borderRadius: 15,
-                marginTop: 15,
-                marginHorizontal: 10,
-                padding: 5,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity
-                style={{
-                  borderRadius: 30,
-                  marginBottom: 15,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#a2a2a2',
-                  shadowOpacity: 0.5,
-                  elevation: 5,
-                }}
-                onPress={() => navigation.navigate('Categorie')}>
-                <MaterialCommunityIcons
-                  name="clipboard-list-outline"
-                  size={24}
-                  color={'#000000'}
-                  style={{padding: 5}}
-                />
-              </TouchableOpacity>
-              <View>
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: '#ffffff',
-                    borderRadius: 20,
-                    borderColor: '#00807a',
-                    borderWidth: 1,
-                    borderStyle: 'solid',
-                    margin: 5,
-                    marginBottom: 15,
-                    marginHorizontal: 10,
-                    shadowOffset: {width: 10, height: 10},
-                    shadowColor: '#000000',
-                    shadowOpacity: 1,
-                    elevation: 10,
-                  }}
-                  onPress={() => navigation.navigate('SuggestionsSetupScreen')}>
-                  <Text
-                    style={{
-                      color: '#000000',
-                      fontSize: 16,
-                      fontWeight: '600',
-                      paddingVertical: 5,
-                      paddingHorizontal: 15,
-                      textAlign: 'center',
-                    }}>
-                    Scegli preferenze
-                  </Text>
-                </TouchableOpacity>
-              </View>
-              <TouchableOpacity
-                style={{
-                  borderRadius: 30,
-                  marginBottom: 15,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#a2a2a2',
-                  shadowOpacity: 0.5,
-                  elevation: 5,
-                }}
-                onPress={() => navigation.navigate('Preferiti')}>
-                <MaterialCommunityIcons
-                  name="heart-outline"
-                  size={24}
-                  color={'#000000'}
-                  style={{padding: 5}}
-                />
-              </TouchableOpacity>
-            </View>
-            <View style={{alignItems: 'center'}}>
-              <TouchableOpacity
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: -10,
-                }}
-                onPress={() =>
-                  navigation.navigate('UserPositionScreen', {
-                    userPosition: userPosition,
-                  })
-                }>
-                <Text
-                  style={{color: '#000000', fontSize: 18, fontWeight: '700'}}>
-                  Posizione attuale
-                </Text>
-                <MaterialCommunityIcons
-                  name="chevron-down"
-                  size={20}
-                  color={'#000000'}
-                  style={{marginLeft: 10}}
-                />
-              </TouchableOpacity>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={{
-          backgroundColor: '#ffffff',
-          flex: 1,
-          paddingTop: 20,
-          marginTop: -40,
-        }}>
-        {storeVisibility ? (
-          <ScrollView
-            bounces={true}
-            showsVerticalScrollIndicator={false}
-            style={{paddingHorizontal: 10}}>
-            <View
-              style={{
-                marginTop: 30,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity
-                onPress={() => navigation.navigate('MagicBoxList')}>
-                <Text
-                  style={{
-                    textAlign: 'left',
-                    fontSize: 18,
-                    fontWeight: '700',
-                    color: '#000000',
-                  }}>
-                  Il meglio nella zona
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 20,
-                  marginRight: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}
-                onPress={() => navigation.navigate('MagicBoxList')}>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    padding: 5,
-                  }}>
-                  <MaterialCommunityIcons
-                    name="arrow-right"
-                    size={20}
-                    color={'#313131'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              style={{marginBottom: 10}}>
-              <StoreBox navigation={navigation} />
-              <StoreBox navigation={navigation} />
-              <StoreBox navigation={navigation} />
-            </ScrollView>
-            <View
-              style={{
-                marginTop: 10,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity>
-                <Text
-                  style={{
-                    textAlign: 'left',
-                    fontSize: 18,
-                    fontWeight: '700',
-                    color: '#000000',
-                  }}>
-                  Le tue preferenze
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 20,
-                  marginRight: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    padding: 5,
-                  }}>
-                  <MaterialCommunityIcons
-                    name="arrow-right"
-                    size={20}
-                    color={'#313131'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              style={{marginBottom: 10}}>
-              <StoreBox navigation={navigation} />
-              <StoreBox navigation={navigation} />
-              <StoreBox navigation={navigation} />
-            </ScrollView>
-            <View
-              style={{
-                marginTop: 10,
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-              <TouchableOpacity>
-                <Text
-                  style={{
-                    textAlign: 'left',
-                    fontSize: 18,
-                    fontWeight: '700',
-                    color: '#000000',
-                  }}>
-                  I più vicini a te
-                </Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 20,
-                  marginRight: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    padding: 5,
-                  }}>
-                  <MaterialCommunityIcons
-                    name="arrow-right"
-                    size={20}
-                    color={'#313131'}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              style={{marginBottom: 10}}>
-              <StoreBox navigation={navigation} />
-              <StoreBox navigation={navigation} />
-              <StoreBox navigation={navigation} />
-            </ScrollView>
-            <View style={{marginTop: 30}}>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 20,
-                  borderColor: '#00807a',
-                  borderWidth: 1,
-                  borderStyle: 'solid',
-                  margin: 5,
-                  marginBottom: 15,
-                  marginHorizontal: 10,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 10,
-                }}
-                onPress={() => navigation.navigate('SuggestedStoreScreen')}>
-                <Text
-                  style={{
-                    color: '#000000',
-                    fontSize: 16,
-                    fontWeight: '600',
-                    paddingVertical: 5,
-                    paddingHorizontal: 15,
-                    textAlign: 'center',
-                  }}>
-                  Suggerisci negozio
-                </Text>
-              </TouchableOpacity>
-            </View>
-          </ScrollView>
-        ) : (
-          <ScrollView bounces={true} showsVerticalScrollIndicator={false}>
-            <View style={{marginTop: 30}}>
-              <View style={{alignItems: 'center', marginHorizontal: 10}}>
-                <Text
-                  style={{
-                    textAlign: 'center',
-                    fontSize: 20,
-                    fontWeight: '700',
-                    color: '#000000',
-                  }}>
-                  Nessuno store presente in quest'area per ora!
-                </Text>
-                <Text
-                  style={{
-                    marginVertical: 20,
-                    fontSize: 16,
-                    fontWeight: '500',
-                    color: '#000000',
-                  }}>
-                  Riprova in seguito
-                </Text>
-                <Text style={{marginVertical: 20, color: '#000000'}}>
-                  oppure
-                </Text>
-                <TouchableOpacity
-                  style={{
-                    backgroundColor: '#ffffff',
-                    borderRadius: 30,
-                    margin: 5,
-                    shadowOffset: {width: 10, height: 10},
-                    shadowColor: '#000000',
-                    shadowOpacity: 1,
-                    elevation: 5,
-                  }}>
-                  <Text
-                    style={{
-                      padding: 10,
-                      fontSize: 18,
-                      fontWeight: '600',
-                      color: '#000000',
-                    }}>
-                    Cambia posizione
-                  </Text>
-                </TouchableOpacity>
-              </View>
-              <View
-                style={{
-                  height: 2,
-                  backgroundColor: '#000000',
-                  marginHorizontal: 20,
-                  marginTop: 50,
-                }}
-              />
-            </View>
-            <View style={{marginTop: 30, alignItems: 'center'}}>
-              <Text
-                style={{
-                  textAlign: 'center',
-                  fontSize: 20,
-                  fontWeight: '700',
-                  color: '#000000',
-                }}>
-                Rimani sempre aggiornato
-              </Text>
-              <Text
-                style={{
-                  textAlign: 'center',
-                  marginTop: 10,
-                  fontSize: 14,
-                  fontWeight: '500',
-                  color: '#000000',
-                }}>
-                Iscriviti alla nostra newsletter
-              </Text>
-              <TouchableOpacity
-                style={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: 30,
-                  marginTop: 20,
-                  margin: 5,
-                  shadowOffset: {width: 10, height: 10},
-                  shadowColor: '#000000',
-                  shadowOpacity: 1,
-                  elevation: 5,
-                }}>
-                <Text
-                  style={{
-                    padding: 10,
-                    fontSize: 18,
-                    fontWeight: '600',
-                    color: '#000000',
-                  }}>
-                  Attiva
-                </Text>
-              </TouchableOpacity>
-            </View>
-          </ScrollView>
-        )}
-      </View>
-    </SafeAreaView>
-  );
-};
-
-const MagicBox = ({navigation}) => {
-  return (
-    <Pressable
+    <ScrollView
+      showsVerticalScrollIndicator={false}
       style={{
         backgroundColor: '#ffffff',
-        margin: 10,
-        marginTop: 10,
-        marginBottom: 15,
-        borderRadius: 15,
-        marginRight: 10,
-        shadowOffset: {width: 10, height: 10},
-        shadowColor: '#5d5d5d',
-        shadowOpacity: 1,
-        elevation: 10,
-      }}
-      onPress={() => navigation.navigate('MagicBoxScreen')}>
-      <ImageBackground
-        source={image}
-        resizeMode="cover"
-        borderRadius={15}
-        style={{
-          width: 250,
-          height: 75,
-          borderRadius: 35,
-        }}>
-        <View
+        paddingTop: 50,
+        paddingBottom: 250,
+        flex: 1,
+        paddingHorizontal: 15,
+      }}>
+      <View>
+        <Text
           style={{
-            backgroundColor: '#f34e4e',
-            marginTop: 10,
-            width: 130,
-            borderRadius: 20,
-            marginLeft: 10,
+            color: '#000000',
+            fontSize: 22,
+            fontWeight: '700',
+            fontFamily: 'poppins',
           }}>
-          <Text
-            style={{
-              color: '#ffffff',
-              textAlign: 'center',
-              fontWeight: '500',
-              fontSize: 12,
-            }}>
-            Ultimo disponibile!
-          </Text>
-        </View>
-        <View
-          style={{
-            backgroundColor: '#000000',
-            borderRadius: 20,
-            marginLeft: 10,
-            marginTop: 20,
-            width: 150,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              fontWeight: '700',
-              color: '#ffffff',
-            }}>
-            Pizzeria Da Michele
-          </Text>
-        </View>
-      </ImageBackground>
-      <View style={{width: 250, height: 100, borderRadius: 15, padding: 10}}>
-        <Text style={{color: '#000000', fontSize: 16, fontWeight: '700'}}>
-          Magic Box
-        </Text>
-        <Text style={{color: '#000000', fontSize: 12, fontWeight: '400'}}>
-          Ritira oggi 14:00 - 21:00
+          Ciao @nomeutente!
         </Text>
         <View
           style={{
@@ -517,208 +38,1728 @@ const MagicBox = ({navigation}) => {
             justifyContent: 'space-between',
             marginTop: 10,
           }}>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <MaterialCommunityIcons
-              name="star-outline"
-              color={'#000000'}
-              size={16}
-            />
-            <Text style={{fontWeight: '600', color: '#000000'}}>4.8</Text>
-            <Text style={{marginHorizontal: 10, color: '#000000'}}>|</Text>
-            <Text style={{fontWeight: '600', color: '#000000'}}>1.6 km</Text>
-          </View>
-          <View>
-            <Text style={{color: '#00807a', fontWeight: '800', fontSize: 18}}>
-              € 7.99
-            </Text>
-          </View>
-        </View>
-      </View>
-    </Pressable>
-  );
-};
-
-const StoreBox = ({navigation}) => {
-  return (
-    <Pressable
-      style={{
-        marginHorizontal: 10,
-      }}
-      onPress={() => navigation.navigate('ShopScreen')}>
-      <View
-        style={{
-          backgroundColor: '#ffffff',
-          height: 130,
-          width: 240,
-          margin: 5,
-          marginTop: 10,
-          borderRadius: 15,
-          flexDirection: 'column-reverse',
-          shadowOffset: {width: 10, height: 10},
-          shadowColor: '#000000',
-          shadowOpacity: 1,
-          elevation: 5,
-        }}>
-        <ImageBackground
-          source={{
-            uri: 'https://static.fanpage.it/wp-content/uploads/sites/30/2021/10/poke-1200x675.jpg',
-          }}
-          borderRadius={15}
-          style={{
-            height: 130,
-            width: 240,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
           <View
             style={{
-              shadowOffset: {width: 10, height: 10},
-              shadowColor: '#000000',
-              shadowOpacity: 1,
-              elevation: 5,
+              flexDirection: 'row',
+              alignItems: 'center',
+              backgroundColor: '#F9FAFB',
+              borderRadius: 10,
+              flex: 1,
+              marginRight: 20,
+              height: '100%',
             }}>
-            <Text
+            <View>
+              <MaterialCommunityIcons
+                name="map-marker"
+                size={20}
+                color={'#21B861'}
+                style={{
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                La tua posizione
+              </Text>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Milano (entro 10 km)
+              </Text>
+            </View>
+          </View>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderRadius: 10,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+            <MaterialCommunityIcons
+              name="magnify"
+              size={20}
+              color={'#21B861'}
               style={{
-                color: '#ffffff',
-                fontSize: 26,
-                fontWeight: '900',
-                shadowColor: '#000000',
-              }}>
-              Pokè take away
-            </Text>
-          </View>
-        </ImageBackground>
-      </View>
-      <View
-        style={{
-          marginLeft: 15,
-          marginRight: 7,
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
-        <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-          Ritiro: 14:00 - 16:00
-        </Text>
-      </View>
-      <View
-        style={{
-          marginLeft: 15,
-          marginRight: 7,
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <MaterialCommunityIcons
-            name="thumb-up-outline"
-            size={18}
-            color={'#000000'}
-            style={{
-              marginRight: 5,
-            }}
-          />
-          <Text
-            style={{
-              color: '#000000',
-              fontSize: 16,
-              fontWeight: '600',
-              marginRight: 5,
-            }}>
-            90%
-          </Text>
-          <Text
-            style={{
-              color: '#000000',
-              fontSize: 16,
-              fontWeight: '600',
-              marginRight: 5,
-            }}>
-            |
-          </Text>
-          <Text
-            style={{
-              color: '#000000',
-              fontSize: 16,
-              fontWeight: '600',
-              marginRight: 5,
-            }}>
-            3.7 km
-          </Text>
+                margin: 15,
+              }}
+            />
+          </TouchableOpacity>
         </View>
-        <View
+      </View>
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginTop: 20,
+        }}>
+        <Text
           style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            borderRadius: 15,
-            backgroundColor: '#d8e5d1',
-            padding: 1,
-            paddingHorizontal: 5,
+            color: '#000000',
+            fontSize: 18,
+            fontWeight: '600',
+            fontFamily: 'poppins',
           }}>
-          <MaterialCommunityIcons
-            name="basket-outline"
-            size={16}
-            color={'#000000'}
-            style={{marginRight: 3}}
-          />
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <Text style={{color: '#000000', fontSize: 14, fontWeight: '600'}}>
-              Bag:
-            </Text>
-            <Text style={{color: '#000000', fontSize: 14, fontWeight: '700'}}>
-              17
-            </Text>
-          </View>
-        </View>
-      </View>
-    </Pressable>
-  );
-};
-
-const SupermarketBox = ({navigation}) => {
-  return (
-    <Pressable
-      style={{
-        backgroundColor: '#ffffff',
-        height: 170,
-        width: 170,
-        marginBottom: 15,
-        borderRadius: 15,
-        justifyContent: 'center',
-        margin: 5,
-        marginTop: 10,
-        marginRight: 10,
-        shadowOffset: {width: 10, height: 10},
-        shadowColor: '#000000',
-        shadowOpacity: 1,
-        elevation: 10,
-      }}
-      onPress={() => navigation.navigate('SupermarketScreen')}>
-      <ImageBackground
-        source={{
-          uri: 'https://www.efanews.eu/resources/800x800/2e584b17e39c17de8d40fbeac7749532.jpg.jpg',
-        }}
-        borderRadius={15}
-        style={{height: 170, width: 170}}>
-        <View style={{alignItems: 'center', marginTop: 20}}>
-          <Image
-            source={{
-              uri: 'https://www.foodweb.it/wp-content/uploads/2021/10/Carrefour_logo.jpg',
-            }}
+          Scegli categoria prodotti
+        </Text>
+        <TouchableOpacity>
+          <Text
             style={{
-              borderRadius: 50,
-              width: 50,
-              height: 50,
-            }}
+              color: '#3C434B',
+              fontSize: 12,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+              textDecorationLine: 'underline',
+            }}>
+            Vedi tutte
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        style={{marginVertical: 15}}>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            borderRadius: 15,
+            alignItems: 'center',
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            marginRight: 10,
+            borderWidth: 0.5,
+            borderColor: '#21B861',
+          }}>
+          <Image
+            source={require('../../../assets/app/categories/logos/alimentari.png')}
+            style={{width: 35, height: 35, marginHorizontal: 30}}
           />
-          <View style={{backgroundColor: '#000000', borderRadius: 20}}>
-            <Text style={{color: '#ffffff', padding: 5, fontWeight: '600'}}>
-              Carrefour
-            </Text>
-          </View>
-        </View>
-      </ImageBackground>
-    </Pressable>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Alimentari
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            borderRadius: 15,
+            alignItems: 'center',
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            marginRight: 10,
+          }}>
+          <Image
+            source={require('../../../assets/app/categories/logos/animali.png')}
+            style={{width: 35, height: 35, marginHorizontal: 30}}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Amici animali
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            borderRadius: 15,
+            alignItems: 'center',
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            marginRight: 10,
+          }}>
+          <Image
+            source={require('../../../assets/app/categories/logos/benessere.png')}
+            style={{width: 35, height: 35, marginHorizontal: 30}}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Cura e benessere
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            borderRadius: 15,
+            alignItems: 'center',
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            marginRight: 10,
+          }}>
+          <Image
+            source={require('../../../assets/app/categories/logos/natura.png')}
+            style={{width: 35, height: 35, marginHorizontal: 30}}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Natura
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            borderRadius: 15,
+            alignItems: 'center',
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+            marginRight: 10,
+          }}>
+          <Image
+            source={require('../../../assets/app/categories/logos/fashion.png')}
+            style={{width: 35, height: 35, marginHorizontal: 30}}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Fashion
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            borderRadius: 15,
+            alignItems: 'center',
+            paddingHorizontal: 15,
+            paddingVertical: 5,
+          }}>
+          <Image
+            source={require('../../../assets/app/categories/logos/altro.png')}
+            style={{width: 35, height: 35, marginHorizontal: 30}}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Altro
+          </Text>
+        </TouchableOpacity>
+      </ScrollView>
+      <View>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F2FDF7',
+            borderRadius: 10,
+          }}
+          onPress={() => {
+            navigation.navigate('StoresFiltersScreen');
+          }}>
+          <Text
+            style={{
+              color: '#21B861',
+              fontSize: 16,
+              fontWeight: '800',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+              paddingVertical: 15,
+            }}>
+            Imposta le tue preferenze
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View style={{marginTop: 15}}>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 18,
+            fontWeight: '600',
+            fontFamily: 'poppins',
+          }}>
+          Scelti per le tue preferenze
+        </Text>
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          style={{
+            marginTop: 5,
+          }}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}
+            onPress={() => {
+              navigation.navigate('StoreBagsScreen');
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/logo/app/logo.png')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-1.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-2.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-3.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </ScrollView>
+      </View>
+      <View style={{marginTop: 15}}>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 18,
+            fontWeight: '600',
+            fontFamily: 'poppins',
+          }}>
+          Migliori in zona
+        </Text>
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          style={{
+            marginTop: 5,
+          }}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/logo/app/logo.png')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-1.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-2.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-3.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </ScrollView>
+      </View>
+      <View style={{marginTop: 15}}>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 18,
+            fontWeight: '600',
+            fontFamily: 'poppins',
+          }}>
+          I tuoi negozi preferiti
+        </Text>
+        <ScrollView
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          style={{
+            marginTop: 5,
+          }}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/logo/app/logo.png')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-1.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-2.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#ffffff',
+              borderRadius: 10,
+              elevation: 3,
+              flexDirection: 'row',
+              alignItems: 'center',
+              margin: 10,
+            }}>
+            <View>
+              <Image
+                source={require('../../../assets/app/home/stores-logo/img-3.jpeg')}
+                style={{
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  margin: 10,
+                }}
+              />
+            </View>
+            <View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                }}>
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 14,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 100,
+                  }}>
+                  Nome Store
+                </Text>
+                <MaterialCommunityIcons
+                  name="heart"
+                  size={20}
+                  color={'#21B861'}
+                  style={{
+                    marginRight: 10,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#21B861'}
+                />
+                <Text
+                  style={{
+                    color: '#3C434B',
+                    fontSize: 12,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                    marginRight: 50,
+                  }}>
+                  8 disponibili a partire da €4,99
+                </Text>
+              </View>
+              <Text
+                style={{
+                  color: '#6D747C',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Ritiro oggi 20:00 - 22:00
+              </Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="star"
+                  size={15}
+                  color={'#FBBC04'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  4.2 (45)
+                </Text>
+                <MaterialCommunityIcons
+                  name="map-marker"
+                  size={10}
+                  color={'#8C979D'}
+                />
+                <Text
+                  style={{
+                    color: '#6D747C',
+                    fontSize: 10,
+                    fontWeight: '500',
+                    fontFamily: 'poppins',
+                    marginRight: 10,
+                  }}>
+                  3,0 Km da te
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </ScrollView>
+      </View>
+      <View
+        style={{
+          marginTop: 20,
+          marginBottom: 80,
+          alignItems: 'center',
+        }}>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            width: '70%',
+            borderRadius: 10,
+            borderWidth: 0.5,
+            borderColor: '#21B861',
+          }}>
+          <Text
+            style={{
+              color: '#21B861',
+              fontSize: 12,
+              fontWeight: '400',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+              paddingVertical: 10,
+            }}>
+            Consigliaci uno store
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </ScrollView>
   );
 };
 

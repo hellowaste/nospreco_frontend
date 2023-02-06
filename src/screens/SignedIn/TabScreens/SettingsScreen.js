@@ -607,6 +607,9 @@ const SettingsScreen = ({navigation}) => {
             justifyContent: 'space-between',
             paddingHorizontal: 15,
             marginBottom: 15,
+          }}
+          onPress={() => {
+            navigation.navigate('Business');
           }}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <MaterialCommunityIcons

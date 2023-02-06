@@ -30,10 +30,23 @@ import OrdersScreen from '../../screens/SignedIn/TabScreens/OrdersScreen';
 import SearchStoresScreen from '../../screens/SignedIn/Customer/Explore/SearchScreen';
 import StoresFiltersScreen from '../../screens/SignedIn/Customer/Explore/StoresFiltersScreen';
 import StoreBagsScreen from '../../screens/SignedIn/Customer/Store/StoreBagsScreen';
-import HeroBagScreen from "../../screens/SignedIn/Customer/Store/HeroBagScreen";
-import Account from "../../screens/SignedIn/Customer/Settings/Account";
-import AppNotifications from "../../screens/SignedIn/Customer/Settings/AppNotifications";
-import PaymentMethods from "../../screens/SignedIn/Customer/Settings/PaymentMethods";
+import HeroBagScreen from '../../screens/SignedIn/Customer/Store/HeroBagScreen';
+import Account from '../../screens/SignedIn/Customer/Settings/Account';
+import AppNotifications from '../../screens/SignedIn/Customer/Settings/AppNotifications';
+import PaymentMethods from '../../screens/SignedIn/Customer/Settings/PaymentMethods';
+import BusinessOnboarding from '../../screens/SignedIn/BusinessOnboarding/BusinessOnboarding';
+import BusinessRegister from '../../screens/SignedIn/BusinessAccess/BusinessRegister';
+import BusinessRegisterOwner from '../../screens/SignedIn/BusinessAccess/BusinessRegisterOwner';
+import BusinessRegisterSummary from '../../screens/SignedIn/BusinessAccess/BusinessSummary';
+import BusinessWeekSettings from '../../screens/SignedIn/Business/BusinessWeekSettings';
+import BusinessNotificationCenter from '../../screens/SignedIn/Business/BusinessNotificationCenter';
+import BusinessNavigationMenu from '../../screens/SignedIn/Business/BusinessNavigationMenu';
+import BusinessDay from '../../screens/SignedIn/Business/BusinessDay';
+import BusinessWeek from '../../screens/SignedIn/Business/BusinessWeek';
+import BusinessOrders from '../../screens/SignedIn/Business/BusinessOrders';
+import BusinessWallet from '../../screens/SignedIn/Business/BusinessWallet';
+import BusinessStatistics from '../../screens/SignedIn/Business/BusinessStatistics';
+import BusinessSettings from '../../screens/SignedIn/Business/BusinessSettings';
 
 const Tab = createBottomTabNavigator();
 
@@ -106,7 +119,7 @@ const MainStack = ({navigation}) => {
         <Stack.Screen name="MagicBoxList" component={MagicBoxListScreen} />
         <Stack.Screen name="MagicBoxScreen" component={MagicBoxScreen} />
         <Stack.Screen name="Auth" component={SignedInStack} />
-        <Stack.Screen name="Business" component={BusinessUserStack} />
+        <Stack.Screen name="Business" component={BusinessSignedOut} />
         <Stack.Screen
           name="SearchStoresScreen"
           component={SearchStoresScreen}
@@ -200,6 +213,52 @@ const SignedInStack = ({navigation}) => {
   );
 };
 
+const BusinessSignedOut = () => {
+  return (
+    <NavigationContainer independent={true}>
+      <Stack.Navigator
+        initialRouteName="BusinessOnboarding"
+        screenOptions={signedInScreenOptions}>
+        <Stack.Screen
+          name="BusinessOnboarding"
+          component={BusinessOnboarding}
+        />
+        <Stack.Screen name="BusinessRegister" component={BusinessRegister} />
+        <Stack.Screen
+          name="BusinessRegisterOwner"
+          component={BusinessRegisterOwner}
+        />
+        <Stack.Screen
+          name="BusinessRegisterSummary"
+          component={BusinessRegisterSummary}
+        />
+        <Stack.Screen name="BusinessSignedIn" component={BusinessUserStack} />
+        <Stack.Screen
+          name="BusinessWeekSettings"
+          component={BusinessWeekSettings}
+        />
+        <Stack.Screen
+          name="BusinessNotificationCenter"
+          component={BusinessNotificationCenter}
+        />
+        <Stack.Screen
+          name="BusinessNavigationMenu"
+          component={BusinessNavigationMenu}
+        />
+        <Stack.Screen name="BusinessDay" component={BusinessDay} />
+        <Stack.Screen name="BusinessWeek" component={BusinessWeek} />
+        <Stack.Screen name="BusinessOrders" component={BusinessOrders} />
+        <Stack.Screen name="BusinessWallet" component={BusinessWallet} />
+        <Stack.Screen
+          name="BusinessStatistics"
+          component={BusinessStatistics}
+        />
+        <Stack.Screen name="BusinessSettings" component={BusinessSettings} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
 const BusinessUserStack = () => {
   return (
     <Tab.Navigator screenOptions={signedInScreenOptions}>
@@ -233,4 +292,4 @@ const BusinessUserStack = () => {
   );
 };
 
-export {SignedInStack, MainStack, BusinessUserStack};
+export {SignedInStack, MainStack, BusinessUserStack, BusinessSignedOut};

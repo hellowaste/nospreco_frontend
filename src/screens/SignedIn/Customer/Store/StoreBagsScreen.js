@@ -401,13 +401,29 @@ const StoreBagsScreen = ({navigation}) => {
             marginHorizontal: 15,
             marginTop: 15,
           }}>
-          <Text>Recensioni (0)</Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 12,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Recensioni (0)
+          </Text>
           <TouchableOpacity
             style={{
               flexDirection: 'row',
               alignItems: 'center',
             }}>
-            <Text>Leggi tutte</Text>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 12,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Leggi tutte
+            </Text>
             <MaterialCommunityIcons
               name="chevron-down"
               size={20}

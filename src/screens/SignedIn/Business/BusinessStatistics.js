@@ -1,0 +1,354 @@
+import React from 'react';
+import {
+  Image,
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
+const BusinessStatistics = ({navigation}) => {
+  return (
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      style={{
+        flex: 1,
+        backgroundColor: '#ffffff',
+        paddingTop: 50,
+      }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          paddingHorizontal: 20,
+        }}>
+        <TouchableOpacity
+          style={{
+            alignItems: 'center',
+          }}
+          onPress={() => {
+            navigation.navigate('BusinessNavigationMenu');
+          }}>
+          <MaterialCommunityIcons name="menu" size={20} color={'#000000'} />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Menù
+          </Text>
+        </TouchableOpacity>
+        <Image
+          source={require('../../../assets/logo/app/logo.png')}
+          style={{
+            width: 40,
+            height: 40,
+          }}
+        />
+        <TouchableOpacity
+          style={{
+            alignItems: 'center',
+          }}
+          onPress={() => {
+            navigation.navigate('BusinessNotificationCenter');
+          }}>
+          <MaterialCommunityIcons name="bell" size={20} color={'#000000'} />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+            }}>
+            Notifiche
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={{
+          height: 1,
+          backgroundColor: '#D9E0E8',
+          width: '100%',
+          marginVertical: 10,
+        }}
+      />
+      <View
+        style={{
+          paddingHorizontal: 15,
+        }}>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 18,
+            fontWeight: '600',
+            fontFamily: 'poppins',
+          }}>
+          Statistiche
+        </Text>
+      </View>
+      <View
+        style={{
+          marginTop: 10,
+          paddingHorizontal: 15,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+        <Text
+          style={{
+            color: '#3C434B',
+            fontSize: 16,
+            fontWeight: '600',
+            fontFamily: 'poppins',
+          }}>
+          Novembre 2022
+        </Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}>
+          <TouchableOpacity>
+            <MaterialCommunityIcons
+              name="chevron-up"
+              size={20}
+              color={'#000000'}
+              style={{
+                marginHorizontal: 10,
+              }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <MaterialCommunityIcons
+              name="chevron-down"
+              size={20}
+              color={'#000000'}
+              style={{
+                marginHorizontal: 10,
+              }}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View
+        style={{
+          marginTop: 20,
+          marginHorizontal: 15,
+        }}>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}>
+          <View
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderColor: '#D9E0E8',
+              borderWidth: 0.5,
+              borderRadius: 10,
+              paddingHorizontal: 10,
+              paddingVertical: 10,
+              width: '45%',
+            }}>
+            <Text
+              style={{
+                color: '#6D747C',
+                fontSize: 12,
+                fontWeight: '400',
+                fontFamily: 'poppins',
+              }}>
+              HeroBag vendute
+            </Text>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 22,
+                fontWeight: '700',
+                fontFamily: 'poppins',
+                textAlign: 'center',
+              }}>
+              234
+            </Text>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderColor: '#D9E0E8',
+              borderWidth: 0.5,
+              borderRadius: 10,
+              paddingHorizontal: 10,
+              paddingVertical: 10,
+              width: '45%',
+            }}>
+            <Text
+              style={{
+                color: '#6D747C',
+                fontSize: 12,
+                fontWeight: '400',
+                fontFamily: 'poppins',
+              }}>
+              Ricavi totali
+            </Text>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 22,
+                fontWeight: '700',
+                fontFamily: 'poppins',
+                textAlign: 'center',
+              }}>
+              € 937,36
+            </Text>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginTop: 10,
+          }}>
+          <View
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderColor: '#D9E0E8',
+              borderWidth: 0.5,
+              borderRadius: 10,
+              paddingHorizontal: 10,
+              paddingVertical: 10,
+              width: '45%',
+            }}>
+            <Text
+              style={{
+                color: '#6D747C',
+                fontSize: 12,
+                fontWeight: '400',
+                fontFamily: 'poppins',
+              }}>
+              Recensioni totali
+            </Text>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 22,
+                fontWeight: '700',
+                fontFamily: 'poppins',
+                textAlign: 'center',
+              }}>
+              187
+            </Text>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderColor: '#D9E0E8',
+              borderWidth: 0.5,
+              borderRadius: 10,
+              paddingHorizontal: 10,
+              paddingVertical: 10,
+              width: '45%',
+            }}>
+            <Text
+              style={{
+                color: '#6D747C',
+                fontSize: 12,
+                fontWeight: '400',
+                fontFamily: 'poppins',
+              }}>
+              Valore recensioni
+            </Text>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 22,
+                fontWeight: '700',
+                fontFamily: 'poppins',
+                textAlign: 'center',
+              }}>
+              4.6 su 5.0
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={{
+          marginTop: 30,
+          marginHorizontal: 15,
+        }}>
+        <Text
+          style={{
+            color: '#000000',
+            fontSize: 16,
+            fontWeight: '600',
+            fontFamily: 'poppins',
+          }}>
+          Recensioni utenti
+        </Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}>
+          <Text
+            style={{
+              color: '#3C434B',
+              fontSize: 14,
+              fontWeight: '500',
+              fontFamily: 'poppins',
+              marginRight: 5,
+            }}>
+            Utente 1 ha assegnato 2
+          </Text>
+          <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+        </View>
+        <Text
+          style={{
+            color: '#A3AEB4',
+            fontSize: 10,
+            fontWeight: '500',
+            fontFamily: 'poppins',
+          }}>
+          Recensione pubblicata il: 12 Novembre 2022, 19:23
+        </Text>
+        <Text
+          style={{
+            color: '#6D747C',
+            fontSize: 16,
+            fontWeight: '400',
+            fontFamily: 'poppins',
+            marginTop: 10,
+          }}>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum is simply dummy text.
+        </Text>
+      </View>
+      <View
+        style={{
+          marginHorizontal: 15,
+          marginTop: 10,
+          borderColor: '#A3AEB4',
+          borderWidth: 0.5,
+          borderRadius: 10,
+        }}>
+        <TextInput
+          placeholder="Rispondi a questa recensione"
+          placeholderTextColor={'#21B861'}
+          style={{
+            color: '#000000',
+            fontSize: 14,
+            fontWeight: '500',
+            fontFamily: 'poppins',
+          }}
+        />
+      </View>
+    </ScrollView>
+  );
+};
+
+export default BusinessStatistics;

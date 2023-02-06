@@ -18,226 +18,611 @@ const BusinessHomeScreen = () => {
   return (
     <SafeAreaView style={{backgroundColor: '#ffffff', flex: 1}}>
       {visibleMenu ? (
-        <View
+        <ScrollView
           style={{
             width: '100%',
             height: '100%',
-            backgroundColor: '#00807a',
+            backgroundColor: '#ffffff',
             position: 'absolute',
             zIndex: 999,
             paddingTop: 20,
           }}>
-          <TouchableOpacity
-            style={{
-              backgroundColor: '#ffffff',
-              borderRadius: 30,
-              alignSelf: 'flex-start',
-              margin: 10,
-              shadowOffset: {width: 10, height: 10},
-              shadowColor: '#000000',
-              shadowOpacity: 1,
-              elevation: 10,
-            }}
-            onPress={() => setVisibleMenu(false)}>
-            <MaterialCommunityIcons
-              name="chevron-left"
-              size={20}
-              color={'#00807a'}
-              style={{margin: 5}}
-            />
-          </TouchableOpacity>
           <View
             style={{
               flexDirection: 'row',
               alignItems: 'center',
-              backgroundColor: '#00807a',
-              marginHorizontal: 20,
-              marginTop: 20,
-              borderRadius: 10,
-              shadowOffset: {width: 10, height: 10},
-              shadowColor: '#000000',
-              shadowOpacity: 1,
-              elevation: 10,
+              justifyContent: 'space-between',
+              paddingHorizontal: 20,
+              paddingTop: 20,
             }}>
-            <View
+            <TouchableOpacity
               style={{
-                width: 50,
-                height: 50,
-                borderRadius: 30,
-                backgroundColor: '#ffffff',
-                margin: 10,
+                alignItems: 'center',
+              }}
+              onPress={() => setVisibleMenu(false)}>
+              <MaterialCommunityIcons
+                name="close"
+                size={20}
+                color={'#000000'}
+              />
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Menù
+              </Text>
+            </TouchableOpacity>
+            <Image
+              source={require('../../../assets/logo/app/logo.png')}
+              style={{
+                width: 40,
+                height: 40,
               }}
             />
-            <Text style={{color: '#ffffff', fontSize: 16, fontWeight: '700'}}>
-              Nome Store
-            </Text>
+            <TouchableOpacity
+              style={{
+                alignItems: 'center',
+              }}>
+              <MaterialCommunityIcons name="bell" size={20} color={'#000000'} />
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 10,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Notifiche
+              </Text>
+            </TouchableOpacity>
           </View>
           <View
             style={{
+              height: 1,
               width: '100%',
-              borderRadius: 10,
-              backgroundColor: '#ffffff',
-              marginTop: 30,
-              marginBottom: -10,
-              paddingBottom: 50,
-              paddingHorizontal: 20,
-              alignSelf: 'center',
-              flex: 1,
+              backgroundColor: '#D9E0E8',
+              marginTop: 20,
+            }}
+          />
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
               justifyContent: 'space-between',
+              paddingHorizontal: 20,
+              paddingTop: 20,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={require('../../../assets/app/store/img-1.png')}
+                style={{
+                  width: 30,
+                  height: 30,
+                  borderRadius: 100,
+                  marginRight: 10,
+                }}
+              />
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 16,
+                  fontWeight: '400',
+                  fontFamily: 'poppins',
+                }}>
+                Nome Store
+              </Text>
+            </View>
+            <TouchableOpacity>
+              <MaterialCommunityIcons
+                name="chevron-right"
+                size={30}
+                color={'#000000'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              marginTop: 20,
             }}>
             <TouchableOpacity
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
-                marginTop: 20,
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+              }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="view-dashboard"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  La tua giornata
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
+            </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
               }}
-              onPress={() => {
-                setSectionStatus(1);
-                setVisibleMenu(false);
-              }}>
-              <MaterialCommunityIcons
-                name="view-day-outline"
-                size={20}
-                color={sectionStatus == 1 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
-                style={{
-                  color: sectionStatus == 1 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
-                }}>
-                Amministrazione
-              </Text>
-            </TouchableOpacity>
+            />
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => {
-                setSectionStatus(2);
-                setVisibleMenu(false);
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
               }}>
-              <MaterialCommunityIcons
-                name="calendar"
-                size={20}
-                color={sectionStatus == 2 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
+              <View
                 style={{
-                  color: sectionStatus == 2 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
+                  flexDirection: 'row',
+                  alignItems: 'center',
                 }}>
-                Calendario
-              </Text>
+                <MaterialCommunityIcons
+                  name="clock"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  La tua settimana
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
             </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => {
-                setSectionStatus(3);
-                setVisibleMenu(false);
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
               }}>
-              <MaterialCommunityIcons
-                name="clock-outline"
-                size={20}
-                color={sectionStatus == 3 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
+              <View
                 style={{
-                  color: sectionStatus == 3 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
+                  flexDirection: 'row',
+                  alignItems: 'center',
                 }}>
-                Pianificazione
-              </Text>
+                <MaterialCommunityIcons
+                  name="shopping"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Ordini
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
             </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => {
-                setSectionStatus(4);
-                setVisibleMenu(false);
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
               }}>
-              <MaterialCommunityIcons
-                name="cog-outline"
-                size={20}
-                color={sectionStatus == 4 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
+              <View
                 style={{
-                  color: sectionStatus == 4 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
+                  flexDirection: 'row',
+                  alignItems: 'center',
                 }}>
-                Impostazioni
-              </Text>
+                <MaterialCommunityIcons
+                  name="wallet"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Wallet
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
             </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => {
-                setSectionStatus(5);
-                setVisibleMenu(false);
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
               }}>
-              <MaterialCommunityIcons
-                name="rocket-launch-outline"
-                size={20}
-                color={sectionStatus == 5 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
+              <View
                 style={{
-                  color: sectionStatus == 5 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
+                  flexDirection: 'row',
+                  alignItems: 'center',
                 }}>
-                Risultati
-              </Text>
+                <MaterialCommunityIcons
+                  name="chart-box"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Statistiche
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
             </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => {
-                setSectionStatus(6);
-                setVisibleMenu(false);
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
               }}>
-              <MaterialCommunityIcons
-                name="credit-card"
-                size={20}
-                color={sectionStatus == 6 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
+              <View
                 style={{
-                  color: sectionStatus == 6 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
+                  flexDirection: 'row',
+                  alignItems: 'center',
                 }}>
-                Venduto
-              </Text>
+                <MaterialCommunityIcons
+                  name="cog"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Impostazioni
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
             </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
             <TouchableOpacity
-              style={{flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => {
-                setSectionStatus(7);
-                setVisibleMenu(false);
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+                marginTop: 30,
               }}>
-              <MaterialCommunityIcons
-                name="account-question-outline"
-                size={20}
-                color={sectionStatus == 7 ? '#00807a' : '#000000'}
-                style={{marginRight: 10}}
-              />
-              <Text
+              <View
                 style={{
-                  color: sectionStatus == 7 ? '#00807a' : '#000000',
-                  fontSize: 16,
-                  fontWeight: '700',
+                  flexDirection: 'row',
+                  alignItems: 'center',
                 }}>
-                Aiuto
-              </Text>
+                <MaterialCommunityIcons
+                  name="share-variant"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Condividi
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
             </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
+            <TouchableOpacity
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+              }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="help-circle"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Supporto
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
+            </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
+            <TouchableOpacity
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+              }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="lightbulb-on"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Guida all'app
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
+            </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
+            <TouchableOpacity
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+              }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="repeat"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Passa all'app Clienti
+                </Text>
+              </View>
+              <View>
+                <MaterialCommunityIcons
+                  name="chevron-right"
+                  size={30}
+                  color={'#000000'}
+                />
+              </View>
+            </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+              }}
+            />
+            <TouchableOpacity
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 20,
+                marginTop: 10,
+              }}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <MaterialCommunityIcons
+                  name="logout"
+                  size={20}
+                  color={'#000000'}
+                />
+                <Text
+                  style={{
+                    color: '#000000',
+                    fontSize: 16,
+                    fontWeight: '400',
+                    fontFamily: 'poppins',
+                    marginLeft: 5,
+                  }}>
+                  Log Out
+                </Text>
+              </View>
+            </TouchableOpacity>
+            <View
+              style={{
+                height: 1,
+                backgroundColor: '#D9E0E8',
+                width: '90%',
+                alignSelf: 'center',
+                marginTop: 10,
+                marginBottom: 80,
+              }}
+            />
           </View>
-        </View>
+        </ScrollView>
       ) : null}
       <View
         style={{

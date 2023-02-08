@@ -948,6 +948,30 @@ const StoresFiltersScreen = ({navigation}) => {
           marginBottom: 30,
         }}
       />
+      <View>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#F9FAFB',
+            width: '70%',
+            borderRadius: 10,
+            borderWidth: 0.5,
+            borderColor: '#21B861',
+            alignSelf: 'center',
+            marginBottom: 20,
+          }}>
+          <Text
+            style={{
+              color: '#21B861',
+              fontSize: 12,
+              fontWeight: '400',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+              paddingVertical: 10,
+            }}>
+            Consigliaci preferenze
+          </Text>
+        </TouchableOpacity>
+      </View>
       <View
         style={{
           flexDirection: 'row',

@@ -48,7 +48,6 @@ const BusinessOnboarding = ({navigation}) => {
                 fontWeight: '400',
                 textDecorationLine: 'underline',
                 alignSelf: 'flex-end',
-                paddingRight: 30,
               }}>
               Salta
             </Text>

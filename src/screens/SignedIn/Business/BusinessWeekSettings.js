@@ -352,6 +352,9 @@ const BusinessWeekSettings = ({navigation}) => {
           marginTop: 50,
           width: '90%',
           alignSelf: 'center',
+        }}
+        onPress={() => {
+          navigation.navigate('BusinessDay');
         }}>
         <Text
           style={{

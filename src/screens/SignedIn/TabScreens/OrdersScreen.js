@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {
+  Image,
   Modal,
   ScrollView,
   Text,
@@ -15,6 +16,9 @@ const FavoriteScreen = ({navigation}) => {
   const [confirmValidation, setConfirmValidation] = useState(false);
   const [supportModal, setSupportModal] = useState(false);
   const [cancelModal, setCancelModal] = useState(false);
+  const [confirmCancelModal, setConfirmCancelModal] = useState(false);
+  const [reviewModal, setReviewModal] = useState(false);
+  const [completeReviewModal, setCompleteReviewModal] = useState(false);
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
@@ -421,6 +425,7 @@ const FavoriteScreen = ({navigation}) => {
             }}
             onPress={() => {
               setCancelModal(false);
+              setConfirmCancelModal(true);
             }}>
             <Text
               style={{
@@ -649,6 +654,396 @@ const FavoriteScreen = ({navigation}) => {
                   textAlign: 'center',
                 }}>
                 convalidato correttamente
+              </Text>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <Modal animationType="slide" transparent={true} visible={reviewModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '85%',
+            marginTop: '25%',
+            alignSelf: 'center',
+            borderRadius: 8,
+            borderColor: '#000000',
+            borderWidth: 0.3,
+            paddingVertical: 20,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              width: '100%',
+              justifyContent: 'space-between',
+              paddingHorizontal: 15,
+              paddingBottom: 5,
+              paddingLeft: '40%',
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Recensione
+            </Text>
+            <TouchableOpacity
+              style={{alignSelf: 'flex-end'}}
+              onPress={() => {
+                setReviewModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#020905'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 0.5,
+              width: '90%',
+              alignSelf: 'center',
+            }}
+          />
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginTop: 10,
+              marginHorizontal: 15,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={require('../../../assets/app/store/img-1.png')}
+                style={{
+                  width: 30,
+                  height: 30,
+                  borderRadius: 50,
+                  marginRight: 10,
+                }}
+              />
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Nome Store
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                4.2
+              </Text>
+            </View>
+          </View>
+          <View
+            style={{
+              paddingHorizontal: 15,
+              marginTop: 10,
+            }}>
+            <Text
+              style={{
+                color: '#6D747C',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Nome Utente
+            </Text>
+            <View
+              style={{
+                borderColor: '#999da1',
+                borderWidth: 0.3,
+                borderRadius: 10,
+                marginTop: 2,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TextInput
+                placeholder="@NomeUtente"
+                placeholderTextColor={'#000000'}
+              />
+              <MaterialCommunityIcons
+                name="pencil"
+                size={20}
+                color={'#000000'}
+                style={{marginRight: 10}}
+              />
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+              <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+              <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+              <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+              <MaterialCommunityIcons name="star" size={20} color={'#FBBC04'} />
+            </View>
+            <Text
+              style={{
+                color: '#6D747C',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Recensione
+            </Text>
+            <View
+              style={{
+                borderColor: '#999da1',
+                borderWidth: 0.3,
+                borderRadius: 10,
+                marginTop: 2,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
+              <TextInput
+                placeholder="Scrivi una recensione"
+                placeholderTextColor={'#000000'}
+              />
+            </View>
+          </View>
+          <TouchableOpacity
+            style={{
+              borderRadius: 10,
+              backgroundColor: '#21B861',
+              marginHorizontal: 15,
+              marginTop: 20,
+            }}
+            onPress={() => {
+              setReviewModal(false);
+              setCompleteReviewModal(true);
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 16,
+                fontWeight: '700',
+                fontFamily: 'poppins',
+                textAlign: 'center',
+                paddingVertical: 15,
+              }}>
+              Pubblica recensione
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={confirmCancelModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '85%',
+            marginTop: '25%',
+            alignSelf: 'center',
+            borderRadius: 8,
+            borderColor: '#000000',
+            borderWidth: 0.3,
+            paddingVertical: 20,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              width: '100%',
+              justifyContent: 'space-between',
+              paddingHorizontal: 15,
+              paddingBottom: 5,
+              paddingLeft: '35%',
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Richiesta completata
+            </Text>
+            <TouchableOpacity
+              style={{alignSelf: 'flex-end'}}
+              onPress={() => {
+                setConfirmCancelModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#020905'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 0.5,
+              width: '90%',
+              alignSelf: 'center',
+            }}
+          />
+          <View>
+            <View
+              style={{
+                backgroundColor: '#21B861',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 50,
+                width: 100,
+                height: 100,
+                alignSelf: 'center',
+                marginTop: 10,
+              }}>
+              <MaterialCommunityIcons
+                name="check"
+                size={50}
+                color={'#ffffff'}
+              />
+            </View>
+            <View>
+              <Text
+                style={{
+                  color: '#08875D',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                }}>
+                Annullamento ordine nr. 35210{' '}
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                }}>
+                completato correttamente
+              </Text>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={completeReviewModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '85%',
+            marginTop: '25%',
+            alignSelf: 'center',
+            borderRadius: 8,
+            borderColor: '#000000',
+            borderWidth: 0.3,
+            paddingVertical: 20,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              width: '100%',
+              justifyContent: 'space-between',
+              paddingHorizontal: 15,
+              paddingBottom: 5,
+              paddingLeft: '35%',
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Richiesta completata
+            </Text>
+            <TouchableOpacity
+              style={{alignSelf: 'flex-end'}}
+              onPress={() => {
+                setCompleteReviewModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#020905'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 0.5,
+              width: '90%',
+              alignSelf: 'center',
+            }}
+          />
+          <View>
+            <View
+              style={{
+                backgroundColor: '#21B861',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderRadius: 50,
+                width: 100,
+                height: 100,
+                alignSelf: 'center',
+                marginTop: 10,
+              }}>
+              <MaterialCommunityIcons
+                name="check"
+                size={50}
+                color={'#ffffff'}
+              />
+            </View>
+            <View>
+              <Text
+                style={{
+                  color: '#08875D',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                }}>
+                Recensione{' '}
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                }}>
+                pubblicata correttamente
               </Text>
             </View>
           </View>
@@ -1073,192 +1468,189 @@ const FavoriteScreen = ({navigation}) => {
           </View>
         </View>
       ) : (
-        <OrdiniConclusi />
+        <View
+          style={{
+            paddingHorizontal: 15,
+            marginTop: 20,
+          }}>
+          <View
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderRadius: 10,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  fontFamily: 'poppins',
+                  marginTop: 10,
+                }}>
+                Ordine nr. 36210
+              </Text>
+            </View>
+            <View
+              style={{
+                paddingLeft: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                1x Veggy Mix
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                da ritirare oggi 13:00 - 15:00
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                presso Nome Ristorante Vegano
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Totale €4,99
+              </Text>
+            </View>
+            <TouchableOpacity
+              style={{
+                width: '100%',
+                backgroundColor: '#F2FDF7',
+                borderRadius: 10,
+                alignItems: 'center',
+                marginTop: 10,
+              }}
+              onPress={() => {
+                setReviewModal(true);
+              }}>
+              <Text
+                style={{
+                  color: '#21B861',
+                  fontSize: 12,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                  textDecorationLine: 'underline',
+                  paddingVertical: 20,
+                }}>
+                Recensisci Ordine
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#F9FAFB',
+              borderRadius: 10,
+              marginTop: 15,
+              marginBottom: 80,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 18,
+                  fontWeight: '600',
+                  fontFamily: 'poppins',
+                  marginTop: 10,
+                }}>
+                Ordine nr. 45675
+              </Text>
+            </View>
+            <View
+              style={{
+                paddingLeft: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                1x Veggy Mix
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                da ritirare oggi 13:00 - 15:00
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                presso Nome Ristorante Vegano
+              </Text>
+              <Text
+                style={{
+                  color: '#3C434B',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                }}>
+                Totale €4,99
+              </Text>
+            </View>
+            <TouchableOpacity
+              style={{
+                width: '100%',
+                backgroundColor: '#F2FDF7',
+                borderRadius: 10,
+                alignItems: 'center',
+                marginTop: 10,
+              }}>
+              <Text
+                style={{
+                  color: '#21B861',
+                  fontSize: 12,
+                  fontWeight: '500',
+                  fontFamily: 'poppins',
+                  textDecorationLine: 'underline',
+                  paddingVertical: 20,
+                }}>
+                Recensisci Ordine
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       )}
     </ScrollView>
-  );
-};
-
-const OrdiniConclusi = () => {
-  return (
-    <View
-      style={{
-        paddingHorizontal: 15,
-        marginTop: 20,
-      }}>
-      <View
-        style={{
-          backgroundColor: '#F9FAFB',
-          borderRadius: 10,
-        }}>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            paddingHorizontal: 10,
-          }}>
-          <Text
-            style={{
-              color: '#000000',
-              fontSize: 18,
-              fontWeight: '600',
-              fontFamily: 'poppins',
-              marginTop: 10,
-            }}>
-            Ordine nr. 36210
-          </Text>
-        </View>
-        <View
-          style={{
-            paddingLeft: 10,
-          }}>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            1x Veggy Mix
-          </Text>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            da ritirare oggi 13:00 - 15:00
-          </Text>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            presso Nome Ristorante Vegano
-          </Text>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            Totale €4,99
-          </Text>
-        </View>
-        <TouchableOpacity
-          style={{
-            width: '100%',
-            backgroundColor: '#F2FDF7',
-            borderRadius: 10,
-            alignItems: 'center',
-            marginTop: 10,
-          }}>
-          <Text
-            style={{
-              color: '#21B861',
-              fontSize: 12,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-              textDecorationLine: 'underline',
-              paddingVertical: 20,
-            }}>
-            Recensisci Ordine
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <View
-        style={{
-          backgroundColor: '#F9FAFB',
-          borderRadius: 10,
-          marginTop: 15,
-          marginBottom: 80,
-        }}>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            paddingHorizontal: 10,
-          }}>
-          <Text
-            style={{
-              color: '#000000',
-              fontSize: 18,
-              fontWeight: '600',
-              fontFamily: 'poppins',
-              marginTop: 10,
-            }}>
-            Ordine nr. 45675
-          </Text>
-        </View>
-        <View
-          style={{
-            paddingLeft: 10,
-          }}>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            1x Veggy Mix
-          </Text>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            da ritirare oggi 13:00 - 15:00
-          </Text>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            presso Nome Ristorante Vegano
-          </Text>
-          <Text
-            style={{
-              color: '#3C434B',
-              fontSize: 14,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-            }}>
-            Totale €4,99
-          </Text>
-        </View>
-        <TouchableOpacity
-          style={{
-            width: '100%',
-            backgroundColor: '#F2FDF7',
-            borderRadius: 10,
-            alignItems: 'center',
-            marginTop: 10,
-          }}>
-          <Text
-            style={{
-              color: '#21B861',
-              fontSize: 12,
-              fontWeight: '500',
-              fontFamily: 'poppins',
-              textDecorationLine: 'underline',
-              paddingVertical: 20,
-            }}>
-            Recensisci Ordine
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </View>
   );
 };
 

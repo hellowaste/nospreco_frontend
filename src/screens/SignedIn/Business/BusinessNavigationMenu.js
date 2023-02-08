@@ -14,6 +14,7 @@ import {logout} from '../../../state/features/user';
 const BusinessNavigationMenu = ({navigation}) => {
   const [supportModal, setSupportModal] = useState(false);
   const [logoutModal, setLogoutModal] = useState(false);
+  const [userGuideModal, setUserGuideModal] = useState(true);
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
@@ -22,6 +23,119 @@ const BusinessNavigationMenu = ({navigation}) => {
         backgroundColor: '#ffffff',
         paddingTop: 50,
       }}>
+      <Modal animationType="slide" transparent={true} visible={userGuideModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '100%',
+            height: '35%',
+            borderRadius: 10,
+            borderWidth: 0.5,
+            borderColor: '#bebebe',
+            top: '65%',
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingRight: 15,
+              paddingLeft: '40%',
+              paddingTop: 20,
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Guida all'app
+            </Text>
+            <TouchableOpacity
+              onPress={() => {
+                setUserGuideModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#000000'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 1,
+              width: '90%',
+              alignSelf: 'center',
+              marginVertical: 10,
+            }}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 18,
+              fontWeight: '600',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+            }}>
+            Con questo veloce tour avrai una panoramica generale
+            dell’applicazione.
+          </Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingHorizontal: 20,
+              marginTop: 10,
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#CED5DD',
+                borderRadius: 10,
+                width: '45%',
+              }}
+              onPress={() => {
+                setUserGuideModal(false);
+              }}>
+              <Text
+                style={{
+                  color: '#8C979D',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                  paddingVertical: 20,
+                }}>
+                Indietro
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#21B861',
+                borderRadius: 10,
+                width: '45%',
+              }}
+              onPress={() => {
+                navigation.navigate('BusinessDay');
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                  paddingVertical: 20,
+                }}>
+                Avanti
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
       <Modal animationType="slide" transparent={true} visible={supportModal}>
         <View
           style={{
@@ -802,6 +916,9 @@ const BusinessNavigationMenu = ({navigation}) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             paddingHorizontal: 20,
+          }}
+          onPress={() => {
+            setUserGuideModal(true);
           }}>
           <View
             style={{

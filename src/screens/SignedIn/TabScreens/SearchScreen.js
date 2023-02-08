@@ -42,12 +42,15 @@ const SearchScreen = ({navigation}) => {
             }}
             pointerEvents={'box-none'}>
             <View style={{paddingTop: 30, paddingHorizontal: 15}}>
-              <View
+              <TouchableOpacity
                 style={{
                   flexDirection: 'row',
                   alignItems: 'center',
                   backgroundColor: '#F9FAFB',
                   borderRadius: 10,
+                }}
+                onPress={() => {
+                  navigation.navigate('MapSettings');
                 }}>
                 <View>
                   <MaterialCommunityIcons
@@ -80,7 +83,7 @@ const SearchScreen = ({navigation}) => {
                     Milano (entro 10 km)
                   </Text>
                 </View>
-              </View>
+              </TouchableOpacity>
               <View
                 style={{
                   flexDirection: 'row',

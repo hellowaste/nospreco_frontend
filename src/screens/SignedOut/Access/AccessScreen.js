@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {
   Image,
+  Modal,
   ScrollView,
   Text,
   TextInput,
@@ -14,6 +15,8 @@ import {login} from '../../../state/features/user';
 const AccessScreen = ({navigation}) => {
   const [passwordVisibility, setPasswordVisibility] = useState(true);
   const [rememberPassword, setRememberPassword] = useState(false);
+  const [faceId, setFaceId] = useState(false);
+  const [touchId, setTouchId] = useState(false);
   const dispatch = useDispatch();
   return (
     <View
@@ -22,6 +25,178 @@ const AccessScreen = ({navigation}) => {
         flex: 1,
         paddingTop: 50,
       }}>
+      <Modal animationType="slide" transparent={true} visible={faceId}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '90%',
+            borderRadius: 10,
+            borderColor: '#b0b0b0',
+            borderWidth: 0.5,
+            alignSelf: 'center',
+            top: '30%',
+          }}>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 18,
+              fontWeight: '600',
+              textAlign: 'center',
+              marginTop: 10,
+            }}>
+            Accedi con il Face ID
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 14,
+              fontWeight: '400',
+              textAlign: 'center',
+              marginTop: 10,
+            }}>
+            Sblocca Hello Waste! con il tuo volto!
+          </Text>
+          <Image
+            source={require('../../../assets/app/access/face_id.png')}
+            style={{
+              width: 70,
+              height: 70,
+              alignSelf: 'center',
+              marginTop: 20,
+            }}
+          />
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingHorizontal: 30,
+              marginVertical: 20,
+            }}>
+            <TouchableOpacity
+              onPress={() => {
+                setFaceId(false);
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  textAlign: 'center',
+                  marginTop: 10,
+                }}>
+                Annulla
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                setFaceId(false);
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  textAlign: 'center',
+                  marginTop: 10,
+                }}>
+                Accedi con le credenziali
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+      <Modal animationType="slide" transparent={true} visible={touchId}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '90%',
+            borderRadius: 10,
+            borderColor: '#b0b0b0',
+            borderWidth: 0.5,
+            alignSelf: 'center',
+            top: '30%',
+          }}>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 18,
+              fontWeight: '600',
+              textAlign: 'center',
+              marginTop: 10,
+            }}>
+            Accedi con l’impronta
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 14,
+              fontWeight: '400',
+              textAlign: 'center',
+              marginTop: 10,
+            }}>
+            Conferma la tua impronta toccando il sensore per accedere
+            velocemente al tuo account Hello Waste.
+          </Text>
+          <Image
+            source={require('../../../assets/app/access/imprint.png')}
+            style={{
+              width: 50,
+              height: 50,
+              alignSelf: 'center',
+              marginTop: 20,
+            }}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 10,
+              fontWeight: '500',
+              textAlign: 'center',
+            }}>
+            Tocca il sensore
+          </Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingHorizontal: 30,
+              marginVertical: 20,
+            }}>
+            <TouchableOpacity
+              onPress={() => {
+                setTouchId(false);
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  textAlign: 'center',
+                  marginTop: 10,
+                }}>
+                Annulla
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                setTouchId(false);
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 14,
+                  fontWeight: '500',
+                  textAlign: 'center',
+                  marginTop: 10,
+                }}>
+                Accedi con le credenziali
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
       <View style={{width: '100%'}}>
         <TouchableOpacity
           onPress={() => {
@@ -313,6 +488,59 @@ const AccessScreen = ({navigation}) => {
                 </View>
               </View>
             </View>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingHorizontal: 100,
+              marginTop: 20,
+            }}>
+            <TouchableOpacity
+              style={{
+                width: '31%',
+                height: 50,
+                borderColor: '#3C434B',
+                borderStyle: 'solid',
+                borderWidth: 0.3,
+                borderRadius: 10,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              onPress={() => {
+                setFaceId(true);
+              }}>
+              <Image
+                source={require('../../../assets/app/access/face_id.png')}
+                style={{
+                  width: 30,
+                  height: 30,
+                }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                width: '31%',
+                height: 50,
+                borderColor: '#3C434B',
+                borderStyle: 'solid',
+                borderWidth: 0.3,
+                borderRadius: 10,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              onPress={() => {
+                setTouchId(true);
+              }}>
+              <Image
+                source={require('../../../assets/app/access/imprint.png')}
+                style={{
+                  width: 30,
+                  height: 30,
+                }}
+              />
+            </TouchableOpacity>
           </View>
           <View>
             <View style={{width: '100%', alignItems: 'center', marginTop: 30}}>

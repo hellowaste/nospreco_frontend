@@ -46,6 +46,9 @@ const BusinessNotificationCenter = ({navigation}) => {
         <TouchableOpacity
           style={{
             alignItems: 'center',
+          }}
+          onPress={() => {
+            navigation.goBack();
           }}>
           <MaterialCommunityIcons name="bell" size={20} color={'#21B861'} />
           <Text

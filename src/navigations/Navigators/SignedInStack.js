@@ -47,6 +47,10 @@ import BusinessOrders from '../../screens/SignedIn/Business/BusinessOrders';
 import BusinessWallet from '../../screens/SignedIn/Business/BusinessWallet';
 import BusinessStatistics from '../../screens/SignedIn/Business/BusinessStatistics';
 import BusinessSettings from '../../screens/SignedIn/Business/BusinessSettings';
+import BusinessAddBag from '../../screens/SignedIn/Business/BusinessAddBag';
+import BusinessUpdateBag from '../../screens/SignedIn/Business/BusinessUpdateBag';
+import MapSettings from '../../screens/SignedIn/Customer/Explore/MapSettings';
+import UpdateAccount from "../../screens/SignedIn/Customer/Settings/UpdateAccount";
 
 const Tab = createBottomTabNavigator();
 
@@ -124,6 +128,7 @@ const MainStack = ({navigation}) => {
           name="SearchStoresScreen"
           component={SearchStoresScreen}
         />
+        <Stack.Screen name="MapSettings" component={MapSettings} />
         <Stack.Screen
           name="StoresFiltersScreen"
           component={StoresFiltersScreen}
@@ -131,6 +136,7 @@ const MainStack = ({navigation}) => {
         <Stack.Screen name="StoreBagsScreen" component={StoreBagsScreen} />
         <Stack.Screen name="HeroBagScreen" component={HeroBagScreen} />
         <Stack.Screen name="Account" component={Account} />
+        <Stack.Screen name="UpdateAccount" component={UpdateAccount} />
         <Stack.Screen name="AppNotifications" component={AppNotifications} />
         <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
       </Stack.Navigator>
@@ -254,6 +260,8 @@ const BusinessSignedOut = () => {
           component={BusinessStatistics}
         />
         <Stack.Screen name="BusinessSettings" component={BusinessSettings} />
+        <Stack.Screen name="BusinessAddBag" component={BusinessAddBag} />
+        <Stack.Screen name="BusinessUpdateBag" component={BusinessUpdateBag} />
       </Stack.Navigator>
     </NavigationContainer>
   );

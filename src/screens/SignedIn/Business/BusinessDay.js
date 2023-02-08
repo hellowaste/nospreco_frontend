@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {
   Image,
+  Modal,
   ScrollView,
   Switch,
   Text,
@@ -15,6 +16,7 @@ const BusinessDay = ({navigation}) => {
     useState(true);
   const togglePushNotificationsSwitch = () =>
     setIsPushNotificationsEnabled(previousState => !previousState);
+  const [userGuideModal, setUserGuideModal] = useState(true);
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
@@ -23,6 +25,131 @@ const BusinessDay = ({navigation}) => {
         backgroundColor: '#ffffff',
         paddingTop: 50,
       }}>
+      <Modal animationType="slide" transparent={true} visible={userGuideModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '100%',
+            height: '45%',
+            borderRadius: 10,
+            borderWidth: 0.5,
+            borderColor: '#bebebe',
+            top: '55%',
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingRight: 15,
+              paddingLeft: '40%',
+              paddingTop: 20,
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Guida all'app
+            </Text>
+            <TouchableOpacity
+              onPress={() => {
+                setUserGuideModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#000000'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 1,
+              width: '90%',
+              alignSelf: 'center',
+              marginVertical: 10,
+            }}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 18,
+              fontWeight: '600',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+            }}>
+            La tua giornata
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '400',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+              paddingHorizontal: 10,
+            }}>
+            In questa schermata potrai gestire in totale autonomia le vendite
+            della giornata odierna, qui infatti puoi inserire o modificare le
+            Hero Bag in vendita e monitore o modificare gli ordini del giorno.
+          </Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingHorizontal: 20,
+              marginTop: 10,
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#F2FDF7',
+                borderRadius: 10,
+                width: '45%',
+              }}
+              onPress={() => {
+                navigation.goBack();
+              }}>
+              <Text
+                style={{
+                  color: '#21B861',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                  paddingVertical: 20,
+                }}>
+                Indietro
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#21B861',
+                borderRadius: 10,
+                width: '45%',
+              }}
+              onPress={() => {
+                navigation.navigate('BusinessWeek');
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                  paddingVertical: 20,
+                }}>
+                Avanti
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
       <View
         style={{
           flexDirection: 'row',
@@ -214,6 +341,9 @@ const BusinessDay = ({navigation}) => {
             borderRadius: 10,
             alignSelf: 'center',
             marginTop: 15,
+          }}
+          onPress={() => {
+            navigation.navigate('BusinessAddBag');
           }}>
           <Text
             style={{
@@ -340,17 +470,22 @@ const BusinessDay = ({navigation}) => {
             </Text>
           </View>
         </ScrollView>
-        <Text
-          style={{
-            color: '#000000',
-            fontSize: 16,
-            fontWeight: '600',
-            fontFamily: 'poppins',
-            textAlign: 'center',
-            marginTop: 20,
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('BusinessUpdateBag');
           }}>
-          Nessuna Bag
-        </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '600',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+              marginTop: 20,
+            }}>
+            Nessuna Bag
+          </Text>
+        </TouchableOpacity>
         <View
           style={{
             backgroundColor: '#CED5DD',

@@ -130,12 +130,17 @@ const Account = ({navigation}) => {
             placeholder="+39 393 333 3333"
             placeholderTextColor={'#000000'}
           />
-          <MaterialCommunityIcons
-            name="pencil"
-            size={20}
-            color={'#000000'}
-            style={{marginRight: 10}}
-          />
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('UpdateAccount');
+            }}>
+            <MaterialCommunityIcons
+              name="pencil"
+              size={20}
+              color={'#000000'}
+              style={{marginRight: 10}}
+            />
+          </TouchableOpacity>
         </View>
         <Text
           style={{

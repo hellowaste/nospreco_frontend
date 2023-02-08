@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {
   Image,
+  Modal,
   ScrollView,
   Switch,
   Text,
@@ -15,6 +16,7 @@ const BusinessOrders = ({navigation}) => {
     useState(true);
   const togglePushNotificationsSwitch = () =>
     setIsPushNotificationsEnabled(previousState => !previousState);
+  const [userGuideModal, setUserGuideModal] = useState(true);
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
@@ -23,6 +25,131 @@ const BusinessOrders = ({navigation}) => {
         backgroundColor: '#ffffff',
         paddingTop: 50,
       }}>
+      <Modal animationType="slide" transparent={true} visible={userGuideModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '100%',
+            height: '45%',
+            borderRadius: 10,
+            borderWidth: 0.5,
+            borderColor: '#bebebe',
+            top: '55%',
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingRight: 15,
+              paddingLeft: '40%',
+              paddingTop: 20,
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'poppins',
+              }}>
+              Guida all'app
+            </Text>
+            <TouchableOpacity
+              onPress={() => {
+                setUserGuideModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#000000'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 1,
+              width: '90%',
+              alignSelf: 'center',
+              marginVertical: 10,
+            }}
+          />
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 18,
+              fontWeight: '600',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+            }}>
+            Ordini
+          </Text>
+          <Text
+            style={{
+              color: '#000000',
+              fontSize: 16,
+              fontWeight: '400',
+              fontFamily: 'poppins',
+              textAlign: 'center',
+              paddingHorizontal: 10,
+            }}>
+            Visualizzare e monitora gli ordini in corso e gli ordini conclusi
+            con tutte le info necessarie nella tabella, così da poter tenere
+            sempre traccia di tutte le attività.
+          </Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingHorizontal: 20,
+              marginTop: 10,
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#F2FDF7',
+                borderRadius: 10,
+                width: '45%',
+              }}
+              onPress={() => {
+                navigation.goBack();
+              }}>
+              <Text
+                style={{
+                  color: '#21B861',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                  paddingVertical: 20,
+                }}>
+                Indietro
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#21B861',
+                borderRadius: 10,
+                width: '45%',
+              }}
+              onPress={() => {
+                navigation.navigate('BusinessWallet');
+              }}>
+              <Text
+                style={{
+                  color: '#000000',
+                  fontSize: 16,
+                  fontWeight: '700',
+                  fontFamily: 'poppins',
+                  textAlign: 'center',
+                  paddingVertical: 20,
+                }}>
+                Avanti
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
       <View
         style={{
           flexDirection: 'row',

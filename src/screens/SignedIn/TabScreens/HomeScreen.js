@@ -560,7 +560,7 @@ const HomeScreen = ({navigation}) => {
             borderRadius: 10,
           }}
           onPress={() => {
-            navigation.navigate('StoresFiltersScreen');
+            navigation.navigate('UserPreferences');
           }}>
           <Text
             style={{

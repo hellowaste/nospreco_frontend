@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {login} from '../state/features/user';
 import {SafeAreaView, View} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import appLogo from '../assets/logo/app/app_logo.png';
+import appLogo from '../assets/logo/app/logo.png';
 
 const AppNavigation = () => {
   const dispatch = useDispatch();
@@ -31,8 +31,8 @@ const AppNavigation = () => {
       style={{
         ...style,
         backfaceVisibility: 'hidden',
-        width: 110,
-        height: 110,
+        width: 100,
+        height: 100,
       }}
     />
   );

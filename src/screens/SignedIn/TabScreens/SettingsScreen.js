@@ -483,7 +483,7 @@ const SettingsScreen = ({navigation}) => {
             marginBottom: 15,
           }}
           onPress={() => {
-            navigation.navigate('StoresFiltersScreen');
+            navigation.navigate('UserPreferences');
           }}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <MaterialCommunityIcons name="heart" size={20} color={'#000000'} />

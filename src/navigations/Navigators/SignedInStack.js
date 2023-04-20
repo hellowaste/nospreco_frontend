@@ -51,6 +51,8 @@ import BusinessAddBag from '../../screens/SignedIn/Business/BusinessAddBag';
 import BusinessUpdateBag from '../../screens/SignedIn/Business/BusinessUpdateBag';
 import MapSettings from '../../screens/SignedIn/Customer/Explore/MapSettings';
 import UpdateAccount from "../../screens/SignedIn/Customer/Settings/UpdateAccount";
+import EditPaymentMethod from "../../screens/SignedIn/Customer/Settings/EditPaymentMethod";
+import UserPreferences from "../../screens/SignedIn/PagesScreens/Settings/Preferences/UserPreferences";
 
 const Tab = createBottomTabNavigator();
 
@@ -139,6 +141,8 @@ const MainStack = ({navigation}) => {
         <Stack.Screen name="UpdateAccount" component={UpdateAccount} />
         <Stack.Screen name="AppNotifications" component={AppNotifications} />
         <Stack.Screen name="PaymentMethods" component={PaymentMethods} />
+        <Stack.Screen name="EditPaymentMethod" component={EditPaymentMethod} />
+        <Stack.Screen name="UserPreferences" component={UserPreferences} />
       </Stack.Navigator>
     </NavigationContainer>
   );

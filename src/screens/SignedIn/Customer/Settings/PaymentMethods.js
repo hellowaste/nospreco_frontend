@@ -37,7 +37,7 @@ const PaymentMethods = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
-            fontWeight: '800',
+            
           }}>
           Metodi di pagamento
         </Text>
@@ -61,8 +61,8 @@ const PaymentMethods = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '800',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               Metodi salvati
             </Text>
@@ -112,7 +112,7 @@ const PaymentMethods = ({navigation}) => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   Mastercard **** 8765
                 </Text>
@@ -121,7 +121,7 @@ const PaymentMethods = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   Scade in data 10/2025
                 </Text>
@@ -137,8 +137,8 @@ const PaymentMethods = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '800',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               marginTop: 20,
             }}>
             Altri metodi di pagamento
@@ -170,7 +170,7 @@ const PaymentMethods = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     textAlign: 'center',
                     marginBottom: 5,
                   }}>
@@ -190,7 +190,7 @@ const PaymentMethods = ({navigation}) => {
                       color: '#000000',
                       fontSize: 14,
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}
                   />
                 </View>
@@ -201,7 +201,7 @@ const PaymentMethods = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     textAlign: 'center',
                     marginBottom: 5,
                   }}>
@@ -221,7 +221,7 @@ const PaymentMethods = ({navigation}) => {
                       color: '#000000',
                       fontSize: 14,
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}
                   />
                 </View>
@@ -233,7 +233,7 @@ const PaymentMethods = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   marginBottom: 5,
                 }}>
@@ -253,7 +253,7 @@ const PaymentMethods = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}
                 />
               </View>
@@ -269,7 +269,7 @@ const PaymentMethods = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'left',
                 marginBottom: 5,
               }}>
@@ -289,7 +289,7 @@ const PaymentMethods = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -304,7 +304,7 @@ const PaymentMethods = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'left',
                 marginBottom: 5,
               }}>
@@ -324,7 +324,7 @@ const PaymentMethods = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -342,8 +342,8 @@ const PaymentMethods = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 15,
                 }}>

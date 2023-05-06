@@ -48,7 +48,7 @@ const SetupPassword = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -97,7 +97,7 @@ const SetupPassword = ({navigation}) => {
                 color: '#08875D',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Password reimpostata
             </Text>
@@ -106,7 +106,7 @@ const SetupPassword = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               {' '}
               correttamente.
@@ -117,7 +117,7 @@ const SetupPassword = ({navigation}) => {
               color: '#3C434B',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingHorizontal: 50,
             }}>
@@ -138,8 +138,8 @@ const SetupPassword = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '800',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -168,7 +168,7 @@ const SetupPassword = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '300',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Indietro
           </Text>
@@ -179,8 +179,8 @@ const SetupPassword = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 22,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
           }}>
           Crea nuova password
         </Text>
@@ -189,7 +189,7 @@ const SetupPassword = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             paddingRight: 20,
           }}>
           La tua nuova password deve essere diversa da quella usata in
@@ -204,7 +204,7 @@ const SetupPassword = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Password
           </Text>
@@ -249,7 +249,7 @@ const SetupPassword = ({navigation}) => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Almeno 8 caratteri
           </Text>
@@ -258,7 +258,7 @@ const SetupPassword = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginTop: 15,
             }}>
             Conferma Password
@@ -304,7 +304,7 @@ const SetupPassword = ({navigation}) => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Le password devono coincidere
           </Text>
@@ -324,8 +324,8 @@ const SetupPassword = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
             paddingVertical: 15,
           }}>

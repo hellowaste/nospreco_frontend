@@ -31,7 +31,7 @@ const BusinessNotificationCenter = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -56,7 +56,7 @@ const BusinessNotificationCenter = ({navigation}) => {
               color: '#21B861',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -87,7 +87,7 @@ const BusinessNotificationCenter = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hai ricevuto un nuovo ordine
             </Text>
@@ -96,7 +96,7 @@ const BusinessNotificationCenter = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               1x Hero Bag - Prodotti da forno
             </Text>
@@ -105,7 +105,7 @@ const BusinessNotificationCenter = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro: 10-00 / 15-00
             </Text>

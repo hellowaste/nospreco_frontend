@@ -50,7 +50,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Guida all'app
             </Text>
@@ -79,7 +79,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             Ordini
@@ -89,7 +89,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
@@ -118,8 +118,8 @@ const BusinessOrders = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -139,8 +139,8 @@ const BusinessOrders = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -170,7 +170,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -195,7 +195,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -218,7 +218,7 @@ const BusinessOrders = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Ordini
         </Text>
@@ -227,7 +227,7 @@ const BusinessOrders = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
           }}>
           Pianificazione odierna
@@ -237,7 +237,7 @@ const BusinessOrders = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Martedì, 15 Novembre
@@ -254,7 +254,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#3C434B',
               fontSize: 14,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginTop: 10,
             }}>
             Hero Bag disponibili?
@@ -269,7 +269,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 5,
               }}>
               No
@@ -286,7 +286,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Sì
@@ -299,7 +299,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#3C434B',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Orario di ritiro:
           </Text>
@@ -373,7 +373,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -393,7 +393,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -412,7 +412,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 75,
             }}>
             ID Ordine
@@ -422,7 +422,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 75,
             }}>
             Stato
@@ -432,7 +432,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 75,
             }}>
             ID Bag
@@ -442,7 +442,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 75,
             }}>
             Cliente
@@ -452,7 +452,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 75,
             }}>
             Orario ritiro
@@ -462,7 +462,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 75,
             }}>
             Prezzo
@@ -473,7 +473,7 @@ const BusinessOrders = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
           }}>
           Nessun ordine

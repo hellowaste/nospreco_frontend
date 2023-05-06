@@ -13,7 +13,7 @@ import Geolocation from '@react-native-community/geolocation';
 import MapView, {Marker} from 'react-native-maps';
 
 const SearchScreen = ({navigation}) => {
-  const [visibleMap, setVisibleMap] = useState(false);
+  const [visibleMap, setVisibleMap] = useState(true);
   const [optionsVisibile, setOptionsVisible] = useState(false);
   const [searchVisibility, setSearchVisibility] = useState(false);
   const [userPosition, setUserPosition] = useState('');
@@ -71,7 +71,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                       }}>
                       La tua posizione
                     </Text>
@@ -80,7 +80,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#000000',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                       }}>
                       Milano (entro 10 km)
                     </Text>
@@ -104,7 +104,7 @@ const SearchScreen = ({navigation}) => {
                       paddingRight: 10,
                     }}
                     onPress={() => {
-                      navigation.navigate('SearchStoresScreen');
+                      navigation.navigate('SearchScreen');
                     }}>
                     <MaterialCommunityIcons
                       name="magnify"
@@ -119,7 +119,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 12,
                         fontWeight: '400',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 50,
                       }}>
                       Cerca
@@ -138,7 +138,7 @@ const SearchScreen = ({navigation}) => {
                       style={{margin: 10, marginRight: 10}}
                     />
                   </TouchableOpacity>
-                  {!optionsVisibile ? (
+                  {!visibleMap ? (
                     <TouchableOpacity
                       style={{
                         flexDirection: 'row',
@@ -162,12 +162,11 @@ const SearchScreen = ({navigation}) => {
                           color: '#000000',
                           fontSize: 12,
                           fontWeight: '400',
-                          fontFamily: 'poppins',
+                          fontFamily: 'Poppins-Regular',
                         }}>
                         Mappa
                       </Text>
                       <MaterialCommunityIcons
-                        name="chevron-down"
                         size={20}
                         color={'#000000'}
                         style={{
@@ -178,7 +177,7 @@ const SearchScreen = ({navigation}) => {
                     </TouchableOpacity>
                   ) : (
                     <View>
-                      <TouchableOpacity
+                      {/* <TouchableOpacity
                         style={{
                           flexDirection: 'row',
                           alignItems: 'center',
@@ -201,7 +200,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 12,
                             fontWeight: '400',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                           }}>
                           Mappa
                         </Text>
@@ -214,8 +213,8 @@ const SearchScreen = ({navigation}) => {
                             marginVertical: 10,
                           }}
                         />
-                      </TouchableOpacity>
-                      <TouchableOpacity
+                      </TouchableOpacity> */}
+                       <TouchableOpacity
                         style={{
                           flexDirection: 'row',
                           alignItems: 'center',
@@ -240,12 +239,11 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 12,
                             fontWeight: '400',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                           }}>
                           Lista
                         </Text>
                         <MaterialCommunityIcons
-                          name="chevron-down"
                           size={20}
                           color={'#F9FAFB'}
                           style={{
@@ -253,7 +251,7 @@ const SearchScreen = ({navigation}) => {
                             marginVertical: 10,
                           }}
                         />
-                      </TouchableOpacity>
+                      </TouchableOpacity> 
                     </View>
                   )}
                 </View>
@@ -287,7 +285,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                       }}>
                       La tua posizione
                     </Text>
@@ -296,7 +294,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#000000',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                       }}>
                       Milano (entro 10 km)
                     </Text>
@@ -335,7 +333,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 12,
                         fontWeight: '400',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 50,
                       }}>
                       Cerca
@@ -354,7 +352,7 @@ const SearchScreen = ({navigation}) => {
                       style={{margin: 10, marginRight: 10}}
                     />
                   </TouchableOpacity>
-                  {!optionsVisibile ? (
+                  {!visibleMap ? (
                     <TouchableOpacity
                       style={{
                         flexDirection: 'row',
@@ -378,12 +376,11 @@ const SearchScreen = ({navigation}) => {
                           color: '#000000',
                           fontSize: 12,
                           fontWeight: '400',
-                          fontFamily: 'poppins',
+                          fontFamily: 'Poppins-Regular',
                         }}>
                         Mappa
                       </Text>
                       <MaterialCommunityIcons
-                        name="chevron-down"
                         size={20}
                         color={'#000000'}
                         style={{
@@ -394,7 +391,7 @@ const SearchScreen = ({navigation}) => {
                     </TouchableOpacity>
                   ) : (
                     <View>
-                      <TouchableOpacity
+                      {/* <TouchableOpacity
                         style={{
                           flexDirection: 'row',
                           alignItems: 'center',
@@ -417,7 +414,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 12,
                             fontWeight: '400',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                           }}>
                           Mappa
                         </Text>
@@ -430,7 +427,7 @@ const SearchScreen = ({navigation}) => {
                             marginVertical: 10,
                           }}
                         />
-                      </TouchableOpacity>
+                      </TouchableOpacity> */}
                       <TouchableOpacity
                         style={{
                           flexDirection: 'row',
@@ -456,12 +453,11 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 12,
                             fontWeight: '400',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                           }}>
                           Lista
                         </Text>
                         <MaterialCommunityIcons
-                          name="chevron-down"
                           size={20}
                           color={'#F9FAFB'}
                           style={{
@@ -516,7 +512,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 14,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 100,
                           }}>
                           Nome Store
@@ -545,7 +541,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#3C434B',
                             fontSize: 12,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginLeft: 5,
                             marginRight: 50,
                           }}>
@@ -557,7 +553,7 @@ const SearchScreen = ({navigation}) => {
                           color: '#6D747C',
                           fontSize: 10,
                           fontWeight: '500',
-                          fontFamily: 'poppins',
+                          fontFamily: 'Poppins-Regular',
                         }}>
                         Ritiro oggi 20:00 - 22:00
                       </Text>
@@ -576,7 +572,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           4.2 (45)
@@ -591,7 +587,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           3,0 Km da te
@@ -632,7 +628,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 14,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 100,
                           }}>
                           Nome Store
@@ -661,7 +657,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#3C434B',
                             fontSize: 12,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginLeft: 5,
                             marginRight: 50,
                           }}>
@@ -673,7 +669,7 @@ const SearchScreen = ({navigation}) => {
                           color: '#6D747C',
                           fontSize: 10,
                           fontWeight: '500',
-                          fontFamily: 'poppins',
+                          fontFamily: 'Poppins-Regular',
                         }}>
                         Ritiro oggi 20:00 - 22:00
                       </Text>
@@ -692,7 +688,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           4.2 (45)
@@ -707,7 +703,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           3,0 Km da te
@@ -748,7 +744,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 14,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 100,
                           }}>
                           Nome Store
@@ -777,7 +773,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#3C434B',
                             fontSize: 12,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginLeft: 5,
                             marginRight: 50,
                           }}>
@@ -789,7 +785,7 @@ const SearchScreen = ({navigation}) => {
                           color: '#6D747C',
                           fontSize: 10,
                           fontWeight: '500',
-                          fontFamily: 'poppins',
+                          fontFamily: 'Poppins-Regular',
                         }}>
                         Ritiro oggi 20:00 - 22:00
                       </Text>
@@ -808,7 +804,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           4.2 (45)
@@ -823,7 +819,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           3,0 Km da te
@@ -864,7 +860,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#000000',
                             fontSize: 14,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 100,
                           }}>
                           Nome Store
@@ -893,7 +889,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#3C434B',
                             fontSize: 12,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginLeft: 5,
                             marginRight: 50,
                           }}>
@@ -905,7 +901,7 @@ const SearchScreen = ({navigation}) => {
                           color: '#6D747C',
                           fontSize: 10,
                           fontWeight: '500',
-                          fontFamily: 'poppins',
+                          fontFamily: 'Poppins-Regular',
                         }}>
                         Ritiro oggi 20:00 - 22:00
                       </Text>
@@ -924,7 +920,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           4.2 (45)
@@ -939,7 +935,7 @@ const SearchScreen = ({navigation}) => {
                             color: '#6D747C',
                             fontSize: 10,
                             fontWeight: '500',
-                            fontFamily: 'poppins',
+                            fontFamily: 'Poppins-Regular',
                             marginRight: 10,
                           }}>
                           3,0 Km da te
@@ -965,8 +961,8 @@ const SearchScreen = ({navigation}) => {
                       style={{
                         color: '#21B861',
                         fontSize: 16,
-                        fontWeight: '700',
-                        fontFamily: 'poppins',
+                        
+                        fontFamily: 'Poppins-Regular',
                         textAlign: 'center',
                         paddingVertical: 20,
                       }}>
@@ -1035,7 +1031,7 @@ const SearchScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 La tua posizione
               </Text>
@@ -1044,7 +1040,7 @@ const SearchScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Milano (entro 10 km)
               </Text>
@@ -1080,7 +1076,7 @@ const SearchScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 12,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginRight: 50,
                 }}>
                 Cerca
@@ -1099,7 +1095,7 @@ const SearchScreen = ({navigation}) => {
                 style={{margin: 10, marginRight: 10}}
               />
             </View>
-            {!optionsVisibile ? (
+            {visibleMap ? (
               <TouchableOpacity
                 style={{
                   flexDirection: 'row',
@@ -1108,7 +1104,8 @@ const SearchScreen = ({navigation}) => {
                   borderRadius: 10,
                 }}
                 onPress={() => {
-                  setOptionsVisible(true);
+                  setOptionsVisible(false);
+                  setVisibleMap(false);
                 }}>
                 <MaterialCommunityIcons
                   name="format-list-bulleted"
@@ -1123,7 +1120,7 @@ const SearchScreen = ({navigation}) => {
                     color: '#000000',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   Lista
                 </Text>
@@ -1139,7 +1136,7 @@ const SearchScreen = ({navigation}) => {
               </TouchableOpacity>
             ) : (
               <View>
-                <TouchableOpacity
+                {/* <TouchableOpacity
                   style={{
                     flexDirection: 'row',
                     alignItems: 'center',
@@ -1162,7 +1159,7 @@ const SearchScreen = ({navigation}) => {
                       color: '#000000',
                       fontSize: 12,
                       fontWeight: '400',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Lista
                   </Text>
@@ -1175,7 +1172,7 @@ const SearchScreen = ({navigation}) => {
                       marginVertical: 10,
                     }}
                   />
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 <TouchableOpacity
                   style={{
                     flexDirection: 'row',
@@ -1201,12 +1198,11 @@ const SearchScreen = ({navigation}) => {
                       color: '#000000',
                       fontSize: 12,
                       fontWeight: '400',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Mappa
                   </Text>
                   <MaterialCommunityIcons
-                    name="chevron-down"
                     size={20}
                     color={'#F9FAFB'}
                     style={{
@@ -1257,7 +1253,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#000000',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 100,
                       }}>
                       Nome Store
@@ -1286,7 +1282,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#3C434B',
                         fontSize: 12,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginLeft: 5,
                         marginRight: 50,
                       }}>
@@ -1298,7 +1294,7 @@ const SearchScreen = ({navigation}) => {
                       color: '#6D747C',
                       fontSize: 10,
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Ritiro oggi 20:00 - 22:00
                   </Text>
@@ -1317,7 +1313,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       4.2 (45)
@@ -1332,7 +1328,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       3,0 Km da te
@@ -1372,7 +1368,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#000000',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 100,
                       }}>
                       Nome Store
@@ -1401,7 +1397,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#3C434B',
                         fontSize: 12,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginLeft: 5,
                         marginRight: 50,
                       }}>
@@ -1413,7 +1409,7 @@ const SearchScreen = ({navigation}) => {
                       color: '#6D747C',
                       fontSize: 10,
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Ritiro oggi 20:00 - 22:00
                   </Text>
@@ -1432,7 +1428,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       4.2 (45)
@@ -1447,7 +1443,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       3,0 Km da te
@@ -1487,7 +1483,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#000000',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 100,
                       }}>
                       Nome Store
@@ -1516,7 +1512,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#3C434B',
                         fontSize: 12,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginLeft: 5,
                         marginRight: 50,
                       }}>
@@ -1528,7 +1524,7 @@ const SearchScreen = ({navigation}) => {
                       color: '#6D747C',
                       fontSize: 10,
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Ritiro oggi 20:00 - 22:00
                   </Text>
@@ -1547,7 +1543,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       4.2 (45)
@@ -1562,7 +1558,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       3,0 Km da te
@@ -1603,7 +1599,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#000000',
                         fontSize: 14,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 100,
                       }}>
                       Nome Store
@@ -1632,7 +1628,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#3C434B',
                         fontSize: 12,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginLeft: 5,
                         marginRight: 50,
                       }}>
@@ -1644,7 +1640,7 @@ const SearchScreen = ({navigation}) => {
                       color: '#6D747C',
                       fontSize: 10,
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Ritiro oggi 20:00 - 22:00
                   </Text>
@@ -1663,7 +1659,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       4.2 (45)
@@ -1678,7 +1674,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#6D747C',
                         fontSize: 10,
                         fontWeight: '500',
-                        fontFamily: 'poppins',
+                        fontFamily: 'Poppins-Regular',
                         marginRight: 10,
                       }}>
                       3,0 Km da te

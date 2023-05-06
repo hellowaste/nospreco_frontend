@@ -46,7 +46,7 @@ const SupermarketScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 24,
-              fontWeight: '700',
+              
               marginLeft: 20,
             }}>
             Carrefour
@@ -55,7 +55,7 @@ const SupermarketScreen = ({navigation}) => {
             style={{
               color: '#363636',
               fontSize: 12,
-              fontWeight: '700',
+              
               marginLeft: 20,
             }}>
             1.8 km
@@ -127,7 +127,7 @@ const SupermarketScreen = ({navigation}) => {
                     <Text
                       style={{
                         color: '#00807a',
-                        fontWeight: '800',
+                        
                         fontSize: 20,
                       }}>
                       € 3.99

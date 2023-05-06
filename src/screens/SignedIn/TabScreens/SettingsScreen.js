@@ -52,7 +52,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Supporto
             </Text>
@@ -83,7 +83,7 @@ const SettingsScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Richieste di supporto
@@ -107,7 +107,7 @@ const SettingsScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome utente
@@ -140,7 +140,7 @@ const SettingsScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Email
@@ -173,7 +173,7 @@ const SettingsScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Quale problema hai riscontrato?
@@ -205,8 +205,8 @@ const SettingsScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -245,7 +245,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Logout
             </Text>
@@ -270,7 +270,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -301,8 +301,8 @@ const SettingsScreen = ({navigation}) => {
               style={{
                 color: '#ffffff',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -325,8 +325,8 @@ const SettingsScreen = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -360,7 +360,7 @@ const SettingsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 10,
               paddingRight: 20,
               marginLeft: 5,
@@ -374,8 +374,8 @@ const SettingsScreen = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 22,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             paddingLeft: 20,
           }}>
           Ciao @nomeutente
@@ -412,7 +412,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Il mio account
@@ -454,7 +454,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Metodi di pagamento
@@ -492,7 +492,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Preferenze
@@ -530,7 +530,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Notifiche
@@ -572,7 +572,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               I miei ordini
@@ -622,7 +622,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Hai un negozio?
@@ -660,7 +660,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Logout
@@ -702,7 +702,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Denaro risparmiato
             </Text>
@@ -711,7 +711,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               € 56,35
             </Text>

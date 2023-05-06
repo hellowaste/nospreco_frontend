@@ -43,7 +43,7 @@ const BusinessAccountDetailsScreen = ({navigation}) => {
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
-              fontWeight: '700',
+              
               color: '#000000',
             }}>
             Il mio profilo
@@ -74,7 +74,7 @@ const BusinessAccountDetailsScreen = ({navigation}) => {
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
-              fontWeight: '700',
+              
               color: '#000000',
             }}>
             Metodi di pagamento

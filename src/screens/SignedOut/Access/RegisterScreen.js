@@ -31,7 +31,7 @@ const RegisterScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '400',
-              textDecorationLine: 'underline',
+              
               alignSelf: 'flex-end',
               paddingRight: 30,
             }}>
@@ -43,7 +43,7 @@ const RegisterScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
-              fontWeight: '700',
+              
             }}>
             Hello Waste
           </Text>
@@ -51,8 +51,8 @@ const RegisterScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
-              fontFamily: 'poppins',
-              fontWeight: '700',
+              fontFamily: 'Poppins-Regular',
+              
             }}>
             ti dà il benvenuto!
           </Text>
@@ -81,7 +81,7 @@ const RegisterScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginBottom: 5,
               }}>
               Email
@@ -103,18 +103,18 @@ const RegisterScreen = ({navigation}) => {
                   fontSize: 16,
                   color: '#000000',
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
           </View>
-          <View style={{marginTop: 15}}>
+          <View style={{marginTop: 10}}>
             <Text
               style={{
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginBottom: 5,
               }}>
               Password
@@ -129,7 +129,7 @@ const RegisterScreen = ({navigation}) => {
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 paddingLeft: 5,
-                paddingRight: 10,
+                paddingRight: 10
               }}>
               <TextInput
                 placeholder="Crea una nuova password"
@@ -141,7 +141,7 @@ const RegisterScreen = ({navigation}) => {
                   fontSize: 16,
                   color: '#000000',
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
               <TouchableOpacity
@@ -170,7 +170,7 @@ const RegisterScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginBottom: 5,
               }}>
               Password
@@ -187,16 +187,17 @@ const RegisterScreen = ({navigation}) => {
                 paddingLeft: 5,
                 paddingRight: 10,
               }}>
-              <TextInput
+             <TextInput
                 placeholder="Ripeti password"
                 placeholderTextColor="#000000"
+                secureTextEntry={passwordVisibility}
                 autoFocus={false}
                 style={{
                   marginLeft: 5,
                   fontSize: 16,
                   color: '#000000',
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
               <TouchableOpacity
@@ -266,7 +267,7 @@ const RegisterScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Accetto i{' '}
             </Text>
@@ -275,8 +276,8 @@ const RegisterScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
-                textDecorationLine: 'underline',
+                fontFamily: 'Poppins-Regular',
+                
               }}>
               Termini e Condizioni
             </Text>
@@ -285,7 +286,7 @@ const RegisterScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               {' '}
               e{' '}
@@ -295,8 +296,8 @@ const RegisterScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
-                textDecorationLine: 'underline',
+                fontFamily: 'Poppins-Regular',
+                
               }}>
               Privacy Policy
             </Text>
@@ -309,7 +310,7 @@ const RegisterScreen = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 marginBottom: 20,
               }}>
@@ -383,8 +384,8 @@ const RegisterScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>

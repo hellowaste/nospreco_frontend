@@ -131,7 +131,7 @@ const MagicBoxScreen = ({navigation}) => {
               size={20}
               style={{marginRight: 5}}
             />
-            <Text style={{color: '#000000', fontWeight: '700', fontSize: 18}}>
+            <Text style={{color: '#000000',  fontSize: 18}}>
               Magic Box Pizza
             </Text>
           </View>
@@ -152,7 +152,7 @@ const MagicBoxScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
+              
               marginHorizontal: 5,
             }}>
             4,2
@@ -166,7 +166,7 @@ const MagicBoxScreen = ({navigation}) => {
             size={20}
             style={{marginRight: 5}}
           />
-          <Text style={{color: '#000000', fontWeight: '700', fontSize: 18}}>
+          <Text style={{color: '#000000',  fontSize: 18}}>
             Ritira: 14:00 - 21:00
           </Text>
           <View
@@ -179,7 +179,7 @@ const MagicBoxScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 12,
-                fontWeight: '700',
+                
                 padding: 3,
                 paddingHorizontal: 5,
               }}>
@@ -304,7 +304,7 @@ const MagicBoxScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
+              
               textAlign: 'center',
             }}>
             Il giudizio degli utenti
@@ -338,7 +338,7 @@ const MagicBoxScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
+                
                 textAlign: 'center',
                 marginBottom: 20,
               }}>
@@ -422,7 +422,7 @@ const MagicBoxScreen = ({navigation}) => {
             style={{
               color: '#ffffff',
               fontSize: 23,
-              fontWeight: '800',
+              
               padding: 10,
             }}>
             PRENOTA
@@ -510,7 +510,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     textAlign: 'center',
     fontSize: 16,
-    fontWeight: '700',
+    
   },
 });
 

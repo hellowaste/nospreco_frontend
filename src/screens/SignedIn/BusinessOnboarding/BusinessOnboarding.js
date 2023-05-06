@@ -30,7 +30,7 @@ const BusinessOnboarding = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                textDecorationLine: 'underline',
+                
                 alignSelf: 'flex-end',
                 paddingRight: 30,
               }}>
@@ -46,7 +46,7 @@ const BusinessOnboarding = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                textDecorationLine: 'underline',
+                
                 alignSelf: 'flex-end',
               }}>
               Salta
@@ -72,8 +72,8 @@ const BusinessOnboarding = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>
@@ -91,8 +91,8 @@ const BusinessOnboarding = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>
@@ -189,8 +189,8 @@ const FirstSection = () => {
         style={{
           color: '#000000',
           fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
         }}>
         Vendere non è mai stato così facile, non ci credi?
@@ -200,7 +200,7 @@ const FirstSection = () => {
           color: '#6D747C',
           fontSize: 14,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
@@ -229,8 +229,8 @@ const SecondSection = () => {
         style={{
           color: '#000000',
           fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
@@ -242,7 +242,7 @@ const SecondSection = () => {
           lineHeight: 20,
           fontSize: 14,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
         }}>
         Controlla il codice ordine e consegna le Hero Bag ai clienti, ricorda di
@@ -270,8 +270,8 @@ const ThirdSection = () => {
         style={{
           color: '#000000',
           fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
@@ -283,7 +283,7 @@ const ThirdSection = () => {
           lineHeight: 20,
           fontSize: 14,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
           marginTop: 5,
         }}>

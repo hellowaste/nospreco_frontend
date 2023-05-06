@@ -31,7 +31,7 @@ const BusinessWeekSettings = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -56,7 +56,7 @@ const BusinessWeekSettings = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -80,7 +80,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Benvenuto!
         </Text>
@@ -89,7 +89,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Controlla i dettagli del tuo store
         </Text>
@@ -98,7 +98,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
           }}>
           Quando sei aperto?
@@ -108,7 +108,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#3C434B',
             fontSize: 12,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Durante i giorni di apertura, i clienti potranno prenotare i prodotti
@@ -139,7 +139,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Lunedì
@@ -172,7 +172,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Martedì
@@ -205,7 +205,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Mercoledì
@@ -238,7 +238,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Giovedì
@@ -271,7 +271,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Venerdì
@@ -304,7 +304,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Sabato
@@ -337,7 +337,7 @@ const BusinessWeekSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 10,
               }}>
               Domenica
@@ -360,8 +360,8 @@ const BusinessWeekSettings = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             paddingVertical: 15,
             textAlign: 'center',
           }}>

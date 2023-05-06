@@ -46,7 +46,7 @@ const ConfirmRecovery = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Supporto
             </Text>
@@ -77,7 +77,7 @@ const ConfirmRecovery = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Richieste di supporto
@@ -101,7 +101,7 @@ const ConfirmRecovery = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome utente
@@ -134,7 +134,7 @@ const ConfirmRecovery = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Email
@@ -167,7 +167,7 @@ const ConfirmRecovery = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Quale problema hai riscontrato?
@@ -199,8 +199,8 @@ const ConfirmRecovery = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -229,7 +229,7 @@ const ConfirmRecovery = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '300',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Indietro
           </Text>
@@ -258,8 +258,7 @@ const ConfirmRecovery = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Bold',
               marginTop: 15,
               textAlign: 'center',
             }}>
@@ -270,7 +269,7 @@ const ConfirmRecovery = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginTop: 15,
               textAlign: 'center',
               paddingHorizontal: 30,
@@ -292,8 +291,7 @@ const ConfirmRecovery = ({navigation}) => {
               style={{
                 color: '#585F67',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Bold',
                 paddingVertical: 15,
                 textAlign: 'center',
               }}>
@@ -314,8 +312,7 @@ const ConfirmRecovery = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Bold',
                 paddingVertical: 15,
                 textAlign: 'center',
               }}>
@@ -333,8 +330,7 @@ const ConfirmRecovery = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 12,
-            fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
           }}>
           Non hai ricevuto l'email? Controlla prima nella casella spam, se il

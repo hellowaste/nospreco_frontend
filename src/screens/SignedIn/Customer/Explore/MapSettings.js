@@ -48,7 +48,7 @@ const MapSettings = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   marginRight: 70,
                   marginLeft: 70,
@@ -80,7 +80,7 @@ const MapSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
               }}>
               Vuoi ricordare questa scelta per il futuro?
@@ -96,8 +96,8 @@ const MapSettings = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 15,
                 }}>
@@ -115,8 +115,8 @@ const MapSettings = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 15,
                 }}>

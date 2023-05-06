@@ -48,7 +48,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Guida all'app
             </Text>
@@ -77,7 +77,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             Con questo veloce tour avrai una panoramica generale
@@ -104,8 +104,8 @@ const BusinessNavigationMenu = ({navigation}) => {
                 style={{
                   color: '#8C979D',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -125,8 +125,8 @@ const BusinessNavigationMenu = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -163,7 +163,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Supporto
             </Text>
@@ -194,7 +194,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Richieste di supporto
@@ -218,7 +218,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome utente
@@ -251,7 +251,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Email
@@ -284,7 +284,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Quale problema hai riscontrato?
@@ -316,8 +316,8 @@ const BusinessNavigationMenu = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -353,7 +353,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Logout
             </Text>
@@ -378,7 +378,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -406,8 +406,8 @@ const BusinessNavigationMenu = ({navigation}) => {
               style={{
                 color: '#ffffff',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -430,8 +430,8 @@ const BusinessNavigationMenu = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -460,7 +460,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -475,6 +475,9 @@ const BusinessNavigationMenu = ({navigation}) => {
         <TouchableOpacity
           style={{
             alignItems: 'center',
+          }}
+          onPress={() => {
+            navigation.navigate('BusinessNotificationCenter');
           }}>
           <MaterialCommunityIcons name="bell" size={20} color={'#000000'} />
           <Text
@@ -482,7 +485,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -523,7 +526,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nome Store
           </Text>
@@ -565,7 +568,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               La tua giornata
@@ -609,7 +612,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               La tua settimana
@@ -657,7 +660,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Ordini
@@ -701,7 +704,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Wallet
@@ -749,10 +752,10 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
-              Statistiche
+              Statistiche/Recensioni
             </Text>
           </View>
           <View>
@@ -793,7 +796,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Impostazioni
@@ -839,7 +842,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Condividi
@@ -887,7 +890,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Supporto
@@ -935,7 +938,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Guida all'app
@@ -976,7 +979,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Passa all'app Clienti
@@ -1021,7 +1024,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Log Out

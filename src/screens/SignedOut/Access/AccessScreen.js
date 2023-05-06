@@ -206,8 +206,7 @@ const AccessScreen = ({navigation}) => {
             style={{
               color: '#21B861',
               fontSize: 14,
-              fontWeight: '400',
-              textDecorationLine: 'underline',
+              fontWeight: '400',             
               alignSelf: 'flex-end',
               paddingRight: 30,
             }}>
@@ -218,8 +217,8 @@ const AccessScreen = ({navigation}) => {
           <Text
             style={{
               color: '#000000',
-              fontSize: 22,
-              fontWeight: '700',
+              fontSize: 24,
+              fontFamily:'Poppins-Bold'
             }}>
             Ehi, bentornato!
           </Text>
@@ -229,8 +228,9 @@ const AccessScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
+                fontFamily: 'Poppins-Regular',
                 paddingRight: 90,
-                marginTop: 15,
+                marginTop: 5,
               }}>
               Accedi al tuo account
             </Text>
@@ -248,7 +248,7 @@ const AccessScreen = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 14,
                     fontWeight: '600',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginBottom: 5,
                   }}>
                   Email
@@ -270,7 +270,7 @@ const AccessScreen = ({navigation}) => {
                       fontSize: 16,
                       color: '#000000',
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}
                   />
                 </View>
@@ -281,7 +281,7 @@ const AccessScreen = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 14,
                     fontWeight: '600',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginBottom: 5,
                   }}>
                   Password
@@ -308,7 +308,7 @@ const AccessScreen = ({navigation}) => {
                       fontSize: 16,
                       color: '#000000',
                       fontWeight: '500',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}
                   />
                   <TouchableOpacity
@@ -393,7 +393,7 @@ const AccessScreen = ({navigation}) => {
                       color: '#000000',
                       fontSize: 14,
                       fontWeight: '400',
-                      fontFamily: 'poppins',
+                      fontFamily: 'Poppins-Regular',
                     }}>
                     Ricordami
                   </Text>
@@ -408,8 +408,8 @@ const AccessScreen = ({navigation}) => {
                     color: '#21B861',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
-                    textDecorationLine: 'underline',
+                    fontFamily: 'Poppins-Regular',
+                    
                   }}>
                   Hai dimenticato la password?
                 </Text>
@@ -422,7 +422,7 @@ const AccessScreen = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     textAlign: 'center',
                     marginBottom: 20,
                   }}>
@@ -560,8 +560,7 @@ const AccessScreen = ({navigation}) => {
                   style={{
                     color: '#000000',
                     fontSize: 16,
-                    fontWeight: '700',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Bold',
                     textAlign: 'center',
                     paddingVertical: 14,
                   }}>

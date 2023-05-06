@@ -96,7 +96,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -118,7 +118,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nome Store
           </Text>
@@ -133,7 +133,7 @@ const StoreBagsScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               4.2
             </Text>
@@ -151,7 +151,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Via Roma 1, 24100, Milano (MI)
           </Text>
@@ -170,7 +170,7 @@ const StoreBagsScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               8,3 Km
             </Text>
@@ -185,8 +185,8 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
-              textDecorationLine: 'underline',
+              fontFamily: 'Poppins-Regular',
+              
             }}>
             Vedi mappa
           </Text>
@@ -204,7 +204,7 @@ const StoreBagsScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginLeft: 15,
             marginTop: 10,
           }}>
@@ -245,7 +245,7 @@ const StoreBagsScreen = ({navigation}) => {
                   color: '#020905',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 15,
                   marginTop: 10,
                 }}>
@@ -270,7 +270,7 @@ const StoreBagsScreen = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   1 disponibili
                 </Text>
@@ -280,7 +280,7 @@ const StoreBagsScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 15,
                 }}>
                 Ritiro oggi 13:00 -15:00
@@ -292,7 +292,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 15,
               marginTop: 10,
             }}>
@@ -331,7 +331,7 @@ const StoreBagsScreen = ({navigation}) => {
                   color: '#020905',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 15,
                   marginTop: 10,
                 }}>
@@ -356,7 +356,7 @@ const StoreBagsScreen = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   6 disponibili
                 </Text>
@@ -366,7 +366,7 @@ const StoreBagsScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 15,
                 }}>
                 Ritiro oggi 13:00 -15:00
@@ -378,7 +378,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 15,
               marginTop: 10,
             }}>
@@ -406,7 +406,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Recensioni (0)
           </Text>
@@ -420,7 +420,7 @@ const StoreBagsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 12,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Leggi tutte
             </Text>
@@ -445,7 +445,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#3C434B',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Hai già acquistato da questo store?
           </Text>
@@ -454,7 +454,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Scrivi una recensione!
           </Text>

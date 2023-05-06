@@ -95,7 +95,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -117,7 +117,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             HeroBag Pasti pronti
           </Text>
@@ -130,8 +130,8 @@ const HeroBagScreen = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '800',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               € 8,99
             </Text>
@@ -149,7 +149,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Ritiro oggi 08:00 - 11:00
           </Text>
@@ -163,7 +163,7 @@ const HeroBagScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textDecorationLine: 'line-through',
               }}>
               € 11,99
@@ -191,7 +191,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nome Store
           </Text>
@@ -206,7 +206,7 @@ const HeroBagScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               4.2
             </Text>
@@ -224,7 +224,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Via Roma 1, 24100, Milano (MI)
           </Text>
@@ -243,7 +243,7 @@ const HeroBagScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               8,3 Km
             </Text>
@@ -258,8 +258,8 @@ const HeroBagScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
-              textDecorationLine: 'underline',
+              fontFamily: 'Poppins-Regular',
+              
             }}>
             Vedi mappa
           </Text>
@@ -277,7 +277,7 @@ const HeroBagScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginLeft: 15,
             marginTop: 10,
           }}>
@@ -288,7 +288,7 @@ const HeroBagScreen = ({navigation}) => {
             color: '#3C434B',
             fontSize: 14,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginLeft: 15,
             marginTop: 10,
           }}>
@@ -317,7 +317,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 15,
               marginTop: 10,
             }}>
@@ -338,7 +338,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 20,
               textAlign: 'center',
             }}>

@@ -50,7 +50,7 @@ const EditPaymentMethod = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Rimuovi
             </Text>
@@ -79,7 +79,7 @@ const EditPaymentMethod = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             Vuoi rimuovere questo metodo di pagamento dal tuo account?
@@ -97,8 +97,8 @@ const EditPaymentMethod = ({navigation}) => {
               style={{
                 color: '#ffffff',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -118,8 +118,8 @@ const EditPaymentMethod = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -132,8 +132,8 @@ const EditPaymentMethod = ({navigation}) => {
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          marginLeft: 15,
-          marginTop: 50,
+          marginLeft: 16,
+          marginTop: 60,
         }}
         onPress={() => {
           navigation.goBack();
@@ -145,9 +145,12 @@ const EditPaymentMethod = ({navigation}) => {
         />
         <Text
           style={{
-            color: '#000000',
-            fontSize: 20,
-            fontWeight: '800',
+            color: '#020905',
+            fontSize: 22,
+            fontStyle :'normal',
+            fontFamily :'poppins',
+            
+            lineHeight: 24,
           }}>
           Metodi di pagamento
         </Text>
@@ -183,7 +186,7 @@ const EditPaymentMethod = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mastercard **** 8765
           </Text>
@@ -225,9 +228,10 @@ const EditPaymentMethod = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
-                marginBottom: 5,
+                marginBottom: 2,
+                marginRight:12,
               }}>
               MM
             </Text>
@@ -235,17 +239,16 @@ const EditPaymentMethod = ({navigation}) => {
               style={{
                 borderRadius: 10,
                 borderColor: '#D9E0E8',
-                borderWidth: 0.3,
+                borderWidth: 0.5,
               }}>
               <TextInput
-                placeholder="MM"
                 placeholderTextColor={'#646464'}
                 style={{
                   margin: 10,
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -256,9 +259,10 @@ const EditPaymentMethod = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
-                marginBottom: 5,
+                marginBottom: 2,
+                marginRight: 20,
               }}>
               AAAA
             </Text>
@@ -266,7 +270,7 @@ const EditPaymentMethod = ({navigation}) => {
               style={{
                 borderRadius: 10,
                 borderColor: '#D9E0E8',
-                borderWidth: 0.3,
+                borderWidth: 0.5,
               }}>
               <TextInput
                 placeholder="AAAA"
@@ -276,7 +280,7 @@ const EditPaymentMethod = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -288,9 +292,10 @@ const EditPaymentMethod = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
-              marginBottom: 5,
+              marginBottom: 2,
+              marginRight:15,
             }}>
             CVC
           </Text>
@@ -298,7 +303,7 @@ const EditPaymentMethod = ({navigation}) => {
             style={{
               borderRadius: 10,
               borderColor: '#D9E0E8',
-              borderWidth: 0.3,
+              borderWidth: 0.5,
             }}>
             <TextInput
               placeholder="CVC"
@@ -308,7 +313,7 @@ const EditPaymentMethod = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}
             />
           </View>
@@ -324,7 +329,7 @@ const EditPaymentMethod = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
             marginBottom: 5,
           }}>
@@ -344,7 +349,7 @@ const EditPaymentMethod = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}
           />
         </View>
@@ -359,7 +364,7 @@ const EditPaymentMethod = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
             marginBottom: 5,
           }}>
@@ -379,7 +384,7 @@ const EditPaymentMethod = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}
           />
         </View>
@@ -398,8 +403,8 @@ const EditPaymentMethod = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

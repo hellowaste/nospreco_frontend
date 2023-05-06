@@ -44,7 +44,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Guida all'app
             </Text>
@@ -73,7 +73,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             Statistiche
@@ -83,7 +83,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
@@ -112,8 +112,8 @@ const BusinessStatistics = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -133,8 +133,8 @@ const BusinessStatistics = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -164,7 +164,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -189,7 +189,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -212,7 +212,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Statistiche
         </Text>
@@ -230,7 +230,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#3C434B',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Novembre 2022
         </Text>
@@ -287,7 +287,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               HeroBag vendute
             </Text>
@@ -295,8 +295,8 @@ const BusinessStatistics = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
               }}>
               234
@@ -317,7 +317,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ricavi totali
             </Text>
@@ -325,8 +325,8 @@ const BusinessStatistics = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
               }}>
               € 937,36
@@ -355,7 +355,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Recensioni totali
             </Text>
@@ -363,8 +363,8 @@ const BusinessStatistics = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
               }}>
               187
@@ -385,7 +385,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Valore recensioni
             </Text>
@@ -393,8 +393,8 @@ const BusinessStatistics = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
               }}>
               4.6 su 5.0
@@ -412,7 +412,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Recensioni utenti
         </Text>
@@ -426,7 +426,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#3C434B',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 5,
             }}>
             Utente 1 ha assegnato 2
@@ -438,7 +438,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#A3AEB4',
             fontSize: 10,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Recensione pubblicata il: 12 Novembre 2022, 19:23
         </Text>
@@ -447,7 +447,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#6D747C',
             fontSize: 16,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -469,7 +469,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}
         />
       </View>

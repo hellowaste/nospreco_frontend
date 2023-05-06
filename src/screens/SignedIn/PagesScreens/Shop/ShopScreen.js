@@ -149,7 +149,7 @@ const ShopScreen = ({navigation}) => {
                     style={{
                       color: '#000000',
                       fontSize: 14,
-                      fontWeight: '700',
+                      
                       marginRight: 10,
                     }}>
                     Scegli
@@ -192,7 +192,7 @@ const ShopScreen = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 12,
-                  fontWeight: '700',
+                  
                   textAlign: 'center',
                 }}>
                 16:00 - 20:00

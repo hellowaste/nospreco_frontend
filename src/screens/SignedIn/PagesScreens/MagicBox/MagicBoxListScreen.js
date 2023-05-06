@@ -93,7 +93,7 @@ const MagicBox = ({navigation}) => {
           <Text
             style={{
               fontSize: 14,
-              fontWeight: '700',
+              
               color: '#ffffff',
             }}>
             Pizzeria Da Michele
@@ -135,7 +135,7 @@ const MagicBox = ({navigation}) => {
           <Text
             style={{
               color: '#00807a',
-              fontWeight: '800',
+              
               fontSize: 18,
             }}>
             € 7.99

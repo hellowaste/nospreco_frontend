@@ -40,8 +40,8 @@ const UserPreferences = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 18,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
           }}>
           Preferenze
         </Text>
@@ -51,7 +51,7 @@ const UserPreferences = ({navigation}) => {
           color: '#3C434B',
           fontSize: 12,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
         }}>
         Selezionando le tue preferenze riusciremo a fornirti un’esperienza
         basata sulle tue esigenze e gusti.
@@ -70,7 +70,7 @@ const UserPreferences = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Cosa preferisci mangiare?
@@ -80,7 +80,7 @@ const UserPreferences = ({navigation}) => {
             color: '#6D747C',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Seleziona una o più categorie
         </Text>
@@ -115,7 +115,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Pasti pronti
           </Text>
@@ -148,7 +148,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Prodotti da banco
           </Text>
@@ -181,7 +181,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Prodotti da forno
           </Text>
@@ -214,7 +214,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Frutta e verdura
           </Text>
@@ -247,7 +247,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Altro
           </Text>
@@ -259,7 +259,7 @@ const UserPreferences = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
           }}>
           Hai preferenze alimentari?
@@ -269,7 +269,7 @@ const UserPreferences = ({navigation}) => {
             color: '#6D747C',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginBottom: 10,
           }}>
           Puoi selezionare una o più categorie
@@ -298,7 +298,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nessuna
           </Text>
@@ -326,7 +326,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Vegano
           </Text>
@@ -355,7 +355,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Vegetariano
           </Text>
@@ -384,7 +384,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Senza glutine
           </Text>
@@ -413,7 +413,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Senza lattosio
           </Text>
@@ -425,7 +425,7 @@ const UserPreferences = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
           }}>
           Orari di ritiro preferiti
@@ -435,7 +435,7 @@ const UserPreferences = ({navigation}) => {
             color: '#6D747C',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginBottom: 10,
           }}>
           Puoi selezionare una o più categorie
@@ -464,7 +464,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mattina (05:00 - 11:00)
           </Text>
@@ -492,7 +492,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mezzogiorno (11:00 - 14:00)
           </Text>
@@ -521,7 +521,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Pomeriggio (14:00 - 19:00)
           </Text>
@@ -550,7 +550,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Sera (19:00 - 24:00)
           </Text>
@@ -579,7 +579,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notte (24:00 - 05:00)
           </Text>
@@ -608,7 +608,7 @@ const UserPreferences = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Domani
           </Text>
@@ -637,7 +637,7 @@ const UserPreferences = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -662,8 +662,8 @@ const UserPreferences = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 20,
             }}>
@@ -680,8 +680,8 @@ const UserPreferences = ({navigation}) => {
             style={{
               color: '#21B861',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 20,
             }}>

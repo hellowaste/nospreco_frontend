@@ -260,7 +260,7 @@ const RegistrationScreen = ({navigation}) => {
                     textAlign: 'center',
                     paddingVertical: 15,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                     color: '#ffffff',
                   }}>
                   Accedi
@@ -307,7 +307,7 @@ const RegistrationScreen = ({navigation}) => {
                 textAlign: 'center',
                 paddingVertical: 15,
                 fontSize: 16,
-                fontWeight: '700',
+                
                 color: '#ffffff',
               }}>
               CREA ACCOUNT
@@ -330,7 +330,7 @@ const RegistrationScreen = ({navigation}) => {
                 textAlign: 'center',
                 paddingVertical: 15,
                 fontSize: 16,
-                fontWeight: '700',
+                
                 color: '#b9ceac',
               }}>
               HAI UN PUNTO VENDITA?

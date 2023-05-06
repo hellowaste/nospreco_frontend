@@ -32,7 +32,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Filtri
         </Text>
@@ -94,7 +94,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 14,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginLeft: 10,
           }}>
           Nascondi store senza HeroBag
@@ -105,7 +105,7 @@ const StoresFiltersScreen = ({navigation}) => {
           color: '#6D747C',
           fontSize: 12,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           marginTop: 10,
         }}>
         Attivando questo filtro ti mostreremo solo gli store che hanno delle
@@ -117,7 +117,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
           }}>
           Prezzo massimo
@@ -137,7 +137,7 @@ const StoresFiltersScreen = ({navigation}) => {
           <TextInput
             style={{
               fontSize: 20,
-              fontWeight: '800',
+              
               marginVertical: 5,
               width: '80%',
             }}
@@ -159,7 +159,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
             marginBottom: 10,
           }}>
@@ -188,7 +188,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mostra tutto
           </Text>
@@ -221,7 +221,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Alimentari
           </Text>
@@ -254,7 +254,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Amici animali
           </Text>
@@ -287,7 +287,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Cura e benessere
           </Text>
@@ -320,7 +320,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Natura
           </Text>
@@ -353,7 +353,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Fashion
           </Text>
@@ -386,7 +386,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Altro
           </Text>
@@ -398,7 +398,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
             marginBottom: 10,
           }}>
@@ -427,7 +427,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mostra tutto
           </Text>
@@ -460,7 +460,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Pasti pronti
           </Text>
@@ -493,7 +493,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Prodotti da banco
           </Text>
@@ -526,7 +526,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Prodotti da forno
           </Text>
@@ -559,7 +559,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Frutta e verdura
           </Text>
@@ -592,7 +592,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Altro
           </Text>
@@ -604,7 +604,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
             marginBottom: 10,
           }}>
@@ -634,7 +634,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nessuna
           </Text>
@@ -662,7 +662,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Vegano
           </Text>
@@ -691,7 +691,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Vegetariano
           </Text>
@@ -720,7 +720,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Senza glutine
           </Text>
@@ -749,7 +749,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Senza lattosio
           </Text>
@@ -761,7 +761,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 20,
             marginBottom: 10,
           }}>
@@ -791,7 +791,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mattina (05:00 - 11:00)
           </Text>
@@ -819,7 +819,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mezzogiorno (11:00 - 14:00)
           </Text>
@@ -848,7 +848,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Pomeriggio (14:00 - 19:00)
           </Text>
@@ -877,7 +877,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Sera (19:00 - 24:00)
           </Text>
@@ -906,7 +906,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notte (24:00 - 05:00)
           </Text>
@@ -935,7 +935,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Domani
           </Text>
@@ -964,7 +964,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -989,8 +989,8 @@ const StoresFiltersScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 20,
             }}>
@@ -1007,8 +1007,8 @@ const StoresFiltersScreen = ({navigation}) => {
             style={{
               color: '#21B861',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 20,
             }}>

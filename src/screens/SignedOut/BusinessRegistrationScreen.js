@@ -269,7 +269,7 @@ const BusinessRegistrationScreen = ({navigation}) => {
               textAlign: 'center',
               paddingVertical: 15,
               fontSize: 16,
-              fontWeight: '700',
+              
               color: '#ffffff',
             }}>
             Crea account

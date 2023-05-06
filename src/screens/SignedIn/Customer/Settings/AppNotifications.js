@@ -33,7 +33,7 @@ const AppNotifications = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
-            fontWeight: '800',
+            
           }}>
           Notifiche
         </Text>
@@ -57,7 +57,7 @@ const AppNotifications = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche Push
           </Text>
@@ -88,7 +88,7 @@ const AppNotifications = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nuove offerte disponibili
           </Text>
@@ -119,7 +119,7 @@ const AppNotifications = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Newsletter
           </Text>

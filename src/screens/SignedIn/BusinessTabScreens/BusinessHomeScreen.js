@@ -50,7 +50,7 @@ const BusinessHomeScreen = () => {
                   color: '#000000',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Menù
               </Text>
@@ -72,7 +72,7 @@ const BusinessHomeScreen = () => {
                   color: '#000000',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Notifiche
               </Text>
@@ -113,7 +113,7 @@ const BusinessHomeScreen = () => {
                   color: '#000000',
                   fontSize: 16,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Nome Store
               </Text>
@@ -152,7 +152,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   La tua giornata
@@ -197,7 +197,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   La tua settimana
@@ -242,7 +242,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Ordini
@@ -287,7 +287,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Wallet
@@ -332,7 +332,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Statistiche
@@ -377,7 +377,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Impostazioni
@@ -423,7 +423,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Condividi
@@ -468,7 +468,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Supporto
@@ -513,7 +513,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Guida all'app
@@ -558,7 +558,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Passa all'app Clienti
@@ -604,7 +604,7 @@ const BusinessHomeScreen = () => {
                     color: '#000000',
                     fontSize: 16,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                   }}>
                   Log Out
@@ -947,7 +947,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -970,7 +970,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1043,7 +1043,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1066,7 +1066,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1139,7 +1139,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1162,7 +1162,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1235,7 +1235,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1258,7 +1258,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1331,7 +1331,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1354,7 +1354,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1427,7 +1427,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1450,7 +1450,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1523,7 +1523,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1546,7 +1546,7 @@ const Programma = () => {
                 style={{
                   textAlign: 'center',
                   fontSize: 16,
-                  fontWeight: '700',
+                  
                   paddingHorizontal: 15,
                   color: '#000000',
                 }}
@@ -1598,7 +1598,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#00807a',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Bag
@@ -1608,7 +1608,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#000000',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Bag
@@ -1621,7 +1621,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#00807a',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Store
@@ -1631,7 +1631,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#000000',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Store
@@ -1644,7 +1644,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#00807a',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Notifiche
@@ -1654,7 +1654,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#000000',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Notifiche
@@ -1667,7 +1667,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#00807a',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Profilo
@@ -1677,7 +1677,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#000000',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Profilo
@@ -1709,7 +1709,7 @@ const Impostazioni = () => {
                   style={{
                     color: '#000000',
                     fontSize: 14,
-                    fontWeight: '800',
+                    
                     marginBottom: 10,
                   }}>
                   Nome
@@ -1735,7 +1735,7 @@ const Impostazioni = () => {
                   style={{
                     color: '#000000',
                     fontSize: 14,
-                    fontWeight: '800',
+                    
                     marginVertical: 10,
                   }}>
                   Descrizione
@@ -1761,7 +1761,7 @@ const Impostazioni = () => {
                   style={{
                     color: '#000000',
                     fontSize: 14,
-                    fontWeight: '800',
+                    
                     marginVertical: 10,
                   }}>
                   Prezzo
@@ -1799,7 +1799,7 @@ const Impostazioni = () => {
                   style={{
                     color: '#000000',
                     fontSize: 14,
-                    fontWeight: '800',
+                    
                     marginVertical: 10,
                   }}>
                   Categoria
@@ -1825,7 +1825,7 @@ const Impostazioni = () => {
                   style={{
                     color: '#000000',
                     fontSize: 14,
-                    fontWeight: '800',
+                    
                     marginVertical: 10,
                   }}>
                   Valore minimo
@@ -1961,7 +1961,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Nome
@@ -2048,7 +2048,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Indirizzo
@@ -2135,7 +2135,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Codice postale
@@ -2222,7 +2222,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Città
@@ -2309,7 +2309,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Regione
@@ -2396,7 +2396,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Paese
@@ -2483,7 +2483,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Valuta
@@ -2515,7 +2515,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Telefono
@@ -2602,7 +2602,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Email
@@ -2771,7 +2771,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Conferma email
@@ -2804,7 +2804,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Cancellazione ordine
@@ -2843,7 +2843,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Newsletter
@@ -2876,7 +2876,7 @@ const Impostazioni = () => {
                     style={{
                       color: '#545454',
                       fontSize: 16,
-                      fontWeight: '800',
+                      
                       marginTop: 10,
                     }}>
                     Email di marketing
@@ -2908,7 +2908,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#545454',
                   fontSize: 16,
-                  fontWeight: '800',
+                  
                   marginTop: 10,
                 }}>
                 Nome utente
@@ -2920,7 +2920,7 @@ const Impostazioni = () => {
                 style={{
                   color: '#545454',
                   fontSize: 16,
-                  fontWeight: '800',
+                  
                   marginTop: 10,
                 }}>
                 Indirizzo email dell'utente
@@ -2952,7 +2952,7 @@ const Performance = () => {
                 style={{
                   color: '#00807a',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Statistiche
@@ -2962,7 +2962,7 @@ const Performance = () => {
                 style={{
                   color: '#000000',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Statistiche
@@ -2975,7 +2975,7 @@ const Performance = () => {
                 style={{
                   color: '#00807a',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Approfondimenti
@@ -2985,7 +2985,7 @@ const Performance = () => {
                 style={{
                   color: '#000000',
                   fontSize: 25,
-                  fontWeight: '700',
+                  
                   marginRight: 30,
                 }}>
                 Approfondimenti
@@ -3027,7 +3027,7 @@ const Performance = () => {
                         style={{
                           color: '#00807a',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 30 giorni
@@ -3037,7 +3037,7 @@ const Performance = () => {
                         style={{
                           color: '#000000',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 30 giorni
@@ -3050,7 +3050,7 @@ const Performance = () => {
                         style={{
                           color: '#00807a',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultime 12 settimane
@@ -3060,7 +3060,7 @@ const Performance = () => {
                         style={{
                           color: '#000000',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultime 12 settimane
@@ -3073,7 +3073,7 @@ const Performance = () => {
                         style={{
                           color: '#00807a',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 12 mesi
@@ -3083,7 +3083,7 @@ const Performance = () => {
                         style={{
                           color: '#000000',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 12 mesi
@@ -3117,7 +3117,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0
                     </Text>
@@ -3143,7 +3143,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0
                     </Text>
@@ -3169,7 +3169,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0
                     </Text>
@@ -3210,7 +3210,7 @@ const Performance = () => {
                         style={{
                           color: '#00807a',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 30 giorni
@@ -3220,7 +3220,7 @@ const Performance = () => {
                         style={{
                           color: '#000000',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 30 giorni
@@ -3233,7 +3233,7 @@ const Performance = () => {
                         style={{
                           color: '#00807a',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultime 12 settimane
@@ -3243,7 +3243,7 @@ const Performance = () => {
                         style={{
                           color: '#000000',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultime 12 settimane
@@ -3256,7 +3256,7 @@ const Performance = () => {
                         style={{
                           color: '#00807a',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 12 mesi
@@ -3266,7 +3266,7 @@ const Performance = () => {
                         style={{
                           color: '#000000',
                           fontSize: 20,
-                          fontWeight: '700',
+                          
                           marginRight: 30,
                         }}>
                         Ultimi 12 mesi
@@ -3300,7 +3300,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0.0
                     </Text>
@@ -3326,7 +3326,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0.0
                     </Text>
@@ -3352,7 +3352,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0
                     </Text>
@@ -3378,7 +3378,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0
                     </Text>
@@ -3404,7 +3404,7 @@ const Performance = () => {
                       style={{
                         color: '#000000',
                         fontSize: 30,
-                        fontWeight: '800',
+                        
                       }}>
                       0
                     </Text>

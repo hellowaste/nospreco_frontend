@@ -29,7 +29,7 @@ const UpdateAccount = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
-            fontWeight: '800',
+            
           }}>
           Il tuo numero di telefono
         </Text>
@@ -47,7 +47,7 @@ const UpdateAccount = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
             marginTop: 20,
           }}>
@@ -84,8 +84,8 @@ const UpdateAccount = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

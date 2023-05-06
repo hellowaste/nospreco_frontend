@@ -27,7 +27,7 @@ import CategoriesScreen from '../../screens/SignedIn/TabScreens/CategoriesScreen
 import StoreCreationScreen from '../../screens/SignedIn/PagesScreens/StoreCreation/StoreCreationScreen';
 import StorePayoutDetailsScreen from '../../screens/SignedIn/PagesScreens/StoreCreation/StorePayoutDetailsScreen';
 import OrdersScreen from '../../screens/SignedIn/TabScreens/OrdersScreen';
-import SearchStoresScreen from '../../screens/SignedIn/Customer/Explore/SearchScreen';
+import SearchStoresScreen from '../../screens/SignedIn/Customer/Explore/SearchStoresScreen';
 import StoresFiltersScreen from '../../screens/SignedIn/Customer/Explore/StoresFiltersScreen';
 import StoreBagsScreen from '../../screens/SignedIn/Customer/Store/StoreBagsScreen';
 import HeroBagScreen from '../../screens/SignedIn/Customer/Store/HeroBagScreen';
@@ -65,7 +65,7 @@ const signedInScreenOptions = {
     backgroundColor: '#ffffff',
   },
   tabBarLabelStyle: {
-    fontWeight: '700',
+    
   },
   tabBarActiveTintColor: '#21B861',
   tabBarInactiveTintColor: '#A3AEB4',
@@ -131,6 +131,8 @@ const MainStack = ({navigation}) => {
           component={SearchStoresScreen}
         />
         <Stack.Screen name="MapSettings" component={MapSettings} />
+        <Stack.Screen name="SearchScreen" component={SearchScreen} />
+
         <Stack.Screen
           name="StoresFiltersScreen"
           component={StoresFiltersScreen}

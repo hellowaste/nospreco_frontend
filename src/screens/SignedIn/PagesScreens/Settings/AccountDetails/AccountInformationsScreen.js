@@ -22,7 +22,7 @@ const AccountInformationsScreen = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
-            fontWeight: '700',
+            
             marginBottom: 10,
           }}>
           Dettagli profilo
@@ -45,7 +45,7 @@ const AccountInformationsScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 14,
-              fontWeight: '700',
+              
               paddingVertical: 10,
             }}>
             Nome
@@ -77,7 +77,7 @@ const AccountInformationsScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 14,
-              fontWeight: '700',
+              
               paddingVertical: 10,
             }}>
             Email
@@ -109,7 +109,7 @@ const AccountInformationsScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 14,
-              fontWeight: '700',
+              
               paddingVertical: 10,
             }}>
             Numero di telefono
@@ -140,7 +140,7 @@ const AccountInformationsScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 14,
-              fontWeight: '700',
+              
               paddingVertical: 10,
             }}>
             Paese
@@ -158,7 +158,7 @@ const AccountInformationsScreen = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
-            fontWeight: '700',
+            
             marginBottom: 10,
             marginTop: 30,
           }}>
@@ -183,7 +183,7 @@ const AccountInformationsScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 14,
-              fontWeight: '700',
+              
               paddingVertical: 10,
             }}>
             Notifiche

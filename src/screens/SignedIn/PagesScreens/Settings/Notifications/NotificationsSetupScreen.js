@@ -46,7 +46,7 @@ const NotificationsSetupScreen = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '700',
+            
             marginBottom: 10,
           }}>
           Imposta preferenze notifiche

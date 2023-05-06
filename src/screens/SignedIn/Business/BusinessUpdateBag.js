@@ -50,7 +50,7 @@ const BusinessUpdateBag = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -98,7 +98,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 Modifica Hero Bag
@@ -108,7 +108,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 completato correttamente
@@ -137,7 +137,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -162,7 +162,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -201,7 +201,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Modifica Hero Bag
         </Text>
@@ -217,7 +217,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Categoria
         </Text>
@@ -226,7 +226,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#A3AEB4',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Ogni Hero Bag può contenere solo una categoria di prodotto, in
           presenza di più categorie sarà sufficiente creare altre bag.
@@ -250,7 +250,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 15,
             }}>
             Seleziona una categoria
@@ -301,7 +301,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Alimentari
@@ -331,7 +331,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Amici animali
@@ -361,7 +361,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Natura
@@ -391,7 +391,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Cura e benessere
@@ -421,7 +421,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Fashion
@@ -452,7 +452,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Altro
@@ -465,7 +465,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 15,
           }}>
           Tipologia
@@ -489,7 +489,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 15,
             }}>
             Seleziona una tipologia
@@ -548,7 +548,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Pasti pronti
               </Text>
@@ -585,7 +585,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Prodotti da banco
               </Text>
@@ -622,7 +622,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Prodotti da forno
               </Text>
@@ -659,7 +659,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Frutta e verdura
               </Text>
@@ -696,7 +696,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Biologico
               </Text>
@@ -734,7 +734,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Altro
               </Text>
@@ -746,7 +746,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 15,
           }}>
           Regimi alimentari
@@ -770,7 +770,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 15,
             }}>
             Seleziona regimi alimentari
@@ -821,7 +821,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Nessuna preferenza
@@ -851,7 +851,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Vegano
@@ -881,7 +881,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Vegetariano
@@ -911,7 +911,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Senza glutine
@@ -941,7 +941,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '400',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 10,
                 }}>
                 Senza lattosio
@@ -957,8 +957,8 @@ const BusinessUpdateBag = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 10,
                 }}>
@@ -972,7 +972,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 15,
           }}>
           Descrizione contenuto
@@ -995,7 +995,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 15,
             }}
           />
@@ -1011,7 +1011,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nome:{' '}
           </Text>
@@ -1020,7 +1020,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Inserisci categoria per vedere il nome
           </Text>
@@ -1036,7 +1036,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Codice Hero Bag:{' '}
           </Text>
@@ -1045,7 +1045,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             - - -
           </Text>
@@ -1061,7 +1061,7 @@ const BusinessUpdateBag = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Disponibilità:
           </Text>
@@ -1093,7 +1093,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -1118,7 +1118,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -1143,7 +1143,7 @@ const BusinessUpdateBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}
               />
             </View>
@@ -1154,7 +1154,7 @@ const BusinessUpdateBag = ({navigation}) => {
             color: '#A3AEB4',
             fontSize: 10,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           *Ti ricordiamo che il prezzo in app viene calcolato automaticamente
@@ -1175,8 +1175,8 @@ const BusinessUpdateBag = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               paddingVertical: 15,
               textAlign: 'center',
             }}>

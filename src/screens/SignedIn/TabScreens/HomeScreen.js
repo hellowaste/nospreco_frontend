@@ -35,8 +35,8 @@ const HomeScreen = ({navigation}) => {
         <View
           style={{
             backgroundColor: '#ffffff',
-            width: '85%',
-            marginTop: '5%',
+            width: '93%',
+            marginTop: '20%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -58,7 +58,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Aiutaci a migliorare
             </Text>
@@ -89,7 +89,7 @@ const HomeScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome utente
@@ -105,8 +105,14 @@ const HomeScreen = ({navigation}) => {
                   justifyContent: 'space-between',
                 }}>
                 <TextInput
-                  placeholder="@NomeUtente"
+                  placeholder="Inserisci nome utente      "
                   placeholderTextColor={'#000000'}
+                  style={{
+                    fontSize:12,
+                    fontFamily:'Poppins-Light',
+                    paddingBottom:8
+                  }}
+                  
                 />
                 <MaterialCommunityIcons
                   name="pencil"
@@ -122,7 +128,7 @@ const HomeScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Email
@@ -138,8 +144,14 @@ const HomeScreen = ({navigation}) => {
                   justifyContent: 'space-between',
                 }}>
                 <TextInput
-                  placeholder="indirizzoemail@email.com"
+                  placeholder="indirizzoemail@email.com     "
                   placeholderTextColor={'#000000'}
+                  style={{
+                    fontSize:12,
+                    fontFamily:'Poppins-Light',
+                    paddingBottom:8
+
+                  }}
                 />
                 <MaterialCommunityIcons
                   name="pencil"
@@ -155,23 +167,12 @@ const HomeScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Che cosa vuoi consigliarci?
               </Text>
-              <Text
-                style={{
-                  color: '#A3AEB4',
-                  fontSize: 12,
-                  fontWeight: '400',
-                  fontFamily: 'poppins',
-                  textAlign: 'left',
-                  paddingRight: 20,
-                }}>
-                Ogni Hero Bag può contenere solo una categoria di prodotto, in
-                presenza di più categorie sarà sufficiente creare altre bag.
-              </Text>
+            
               <View
                 style={{
                   borderColor: '#999da1',
@@ -185,7 +186,7 @@ const HomeScreen = ({navigation}) => {
                 }}>
                 <TextInput
                   placeholder="Store"
-                  placeholderTextColor={'#000000'}
+                  placeholderTextColor={'#000000'}                 
                 />
                 <MaterialCommunityIcons
                   name="chevron-down"
@@ -200,7 +201,7 @@ const HomeScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome Store
@@ -224,7 +225,7 @@ const HomeScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Indirizzo Store
@@ -256,8 +257,8 @@ const HomeScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -270,9 +271,8 @@ const HomeScreen = ({navigation}) => {
         <Text
           style={{
             color: '#000000',
-            fontSize: 22,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            fontSize: 22,           
+            fontFamily: 'Poppins-Bold',
           }}>
           Ciao @nomeutente!
         </Text>
@@ -309,7 +309,7 @@ const HomeScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 La tua posizione
               </Text>
@@ -318,7 +318,7 @@ const HomeScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Milano (entro 10 km)
               </Text>
@@ -332,7 +332,7 @@ const HomeScreen = ({navigation}) => {
               justifyContent: 'center',
             }}
             onPress={() => {
-              navigation.navigate('SearchStoresScreen');
+              navigation.navigate('SearchScreen');
             }}>
             <MaterialCommunityIcons
               name="magnify"
@@ -357,7 +357,7 @@ const HomeScreen = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Bold',
           }}>
           Scegli categoria prodotti
         </Text>
@@ -367,8 +367,8 @@ const HomeScreen = ({navigation}) => {
               color: '#3C434B',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'poppins',
-              textDecorationLine: 'underline',
+              fontFamily: 'Poppins-Regular',
+              
             }}>
             Vedi tutte
           </Text>
@@ -402,7 +402,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Alimentari
             </Text>
@@ -429,7 +429,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Alimentari
             </Text>
@@ -456,7 +456,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Amici animali
           </Text>
@@ -479,7 +479,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Cura e benessere
           </Text>
@@ -502,7 +502,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Natura
           </Text>
@@ -525,7 +525,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Fashion
           </Text>
@@ -547,7 +547,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Altro
           </Text>
@@ -565,9 +565,8 @@ const HomeScreen = ({navigation}) => {
           <Text
             style={{
               color: '#21B861',
-              fontSize: 16,
-              fontWeight: '800',
-              fontFamily: 'poppins',
+              fontSize: 16,             
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>
@@ -581,8 +580,8 @@ const HomeScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 20,
-              fontWeight: '800',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>
@@ -607,8 +606,8 @@ const HomeScreen = ({navigation}) => {
             style={{
               color: '#21B861',
               fontSize: 22,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               marginTop: 10,
             }}>
@@ -619,7 +618,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 15,
             }}>
@@ -641,7 +640,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ecco cosa puoi fare:
             </Text>
@@ -650,7 +649,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Vedi altre hero bag modificando le tue scelte oppure attiva le
               notifiche per sapere subito quando ci saranno nuove HeroBag
@@ -667,8 +666,8 @@ const HomeScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -699,9 +698,9 @@ const HomeScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
-              paddingVertical: 10,
+              paddingVertical: 11,
             }}>
             Consigliaci uno store
           </Text>
@@ -720,7 +719,7 @@ const ActiveHome = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Scelti per le tue preferenze
         </Text>
@@ -765,7 +764,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -794,7 +793,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -806,7 +805,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -825,7 +824,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -840,7 +839,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -880,7 +879,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -909,7 +908,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -921,7 +920,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -940,7 +939,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -955,7 +954,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -995,7 +994,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1024,7 +1023,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1036,7 +1035,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1055,7 +1054,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1070,7 +1069,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1111,7 +1110,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1140,7 +1139,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1152,7 +1151,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1171,7 +1170,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1186,7 +1185,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1202,7 +1201,7 @@ const ActiveHome = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Migliori in zona
         </Text>
@@ -1244,7 +1243,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1273,7 +1272,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1285,7 +1284,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1304,7 +1303,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1319,7 +1318,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1359,7 +1358,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1388,7 +1387,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1400,7 +1399,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1419,7 +1418,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1434,7 +1433,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1474,7 +1473,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1503,7 +1502,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1515,7 +1514,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1534,7 +1533,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1549,7 +1548,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1590,7 +1589,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1619,7 +1618,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1631,7 +1630,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1650,7 +1649,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1665,7 +1664,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1681,7 +1680,7 @@ const ActiveHome = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           I tuoi negozi preferiti
         </Text>
@@ -1723,7 +1722,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1752,7 +1751,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1764,7 +1763,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1783,7 +1782,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1798,7 +1797,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1838,7 +1837,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1867,7 +1866,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1879,7 +1878,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -1898,7 +1897,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -1913,7 +1912,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -1953,7 +1952,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -1982,7 +1981,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -1994,7 +1993,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -2013,7 +2012,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -2028,7 +2027,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te
@@ -2069,7 +2068,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#000000',
                     fontSize: 14,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 100,
                   }}>
                   Nome Store
@@ -2098,7 +2097,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#3C434B',
                     fontSize: 12,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginLeft: 5,
                     marginRight: 50,
                   }}>
@@ -2110,7 +2109,7 @@ const ActiveHome = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ritiro oggi 20:00 - 22:00
               </Text>
@@ -2129,7 +2128,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   4.2 (45)
@@ -2144,7 +2143,7 @@ const ActiveHome = ({navigation}) => {
                     color: '#6D747C',
                     fontSize: 10,
                     fontWeight: '500',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                     marginRight: 10,
                   }}>
                   3,0 Km da te

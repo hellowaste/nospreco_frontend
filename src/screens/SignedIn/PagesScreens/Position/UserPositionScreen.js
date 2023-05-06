@@ -47,7 +47,7 @@ const UserPositionScreen = ({navigation, route}) => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '800',
+            
             textAlign: 'center',
             marginHorizontal: 30,
             marginBottom: 10,
@@ -83,7 +83,7 @@ const UserPositionScreen = ({navigation, route}) => {
           style={{
             color: '#000000',
             fontSize: 14,
-            fontWeight: '800',
+            
             textAlign: 'center',
             marginTop: 20,
             marginBottom: 10,
@@ -166,7 +166,7 @@ const UserPositionScreen = ({navigation, route}) => {
               style={{
                 color: '#ffffff',
                 fontSize: 20,
-                fontWeight: '800',
+                
                 textAlign: 'center',
                 paddingVertical: 5,
               }}>

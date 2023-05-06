@@ -29,7 +29,7 @@ const Account = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
-            fontWeight: '800',
+            
           }}>
           Il mio account
         </Text>
@@ -47,7 +47,7 @@ const Account = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
           }}>
           Nome utente
@@ -78,7 +78,7 @@ const Account = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
             marginTop: 20,
           }}>
@@ -110,7 +110,7 @@ const Account = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
             marginTop: 20,
           }}>
@@ -147,7 +147,7 @@ const Account = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'left',
             marginTop: 20,
           }}>

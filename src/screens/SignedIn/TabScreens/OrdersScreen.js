@@ -54,7 +54,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Supporto
             </Text>
@@ -85,7 +85,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Richieste di supporto
@@ -109,7 +109,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome utente
@@ -142,7 +142,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Email
@@ -175,7 +175,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Quale problema hai riscontrato?
@@ -207,8 +207,8 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -244,7 +244,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Convalida ordine
             </Text>
@@ -277,7 +277,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -301,8 +301,8 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -326,8 +326,8 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -363,7 +363,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Annulla Ordine
             </Text>
@@ -396,7 +396,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -407,7 +407,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -431,8 +431,8 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#ffffff',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -455,8 +455,8 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -495,7 +495,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -543,7 +543,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 Ritiro ordine nr. 35210{' '}
@@ -553,7 +553,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 convalidato correttamente
@@ -592,7 +592,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -640,7 +640,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 Ritiro ordine nr. 35210{' '}
@@ -650,7 +650,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 convalidato correttamente
@@ -686,7 +686,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Recensione
             </Text>
@@ -737,7 +737,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Nome Store
               </Text>
@@ -753,7 +753,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 4.2
               </Text>
@@ -769,7 +769,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Nome Utente
             </Text>
@@ -810,7 +810,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Recensione
             </Text>
@@ -845,8 +845,8 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -885,7 +885,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -933,7 +933,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 Annullamento ordine nr. 35210{' '}
@@ -943,7 +943,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 completato correttamente
@@ -982,7 +982,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -1030,7 +1030,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 Recensione{' '}
@@ -1040,7 +1040,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                 }}>
                 pubblicata correttamente
@@ -1061,8 +1061,8 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 22,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
           }}>
           Ordini
         </Text>
@@ -1100,7 +1100,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1124,7 +1124,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1149,7 +1149,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1173,7 +1173,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1205,7 +1205,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ordine nr. 36210
               </Text>
@@ -1232,7 +1232,7 @@ const FavoriteScreen = ({navigation}) => {
                     color: '#ffffff',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   Elimina
                 </Text>
@@ -1247,7 +1247,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 1x Veggy Mix
               </Text>
@@ -1256,7 +1256,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 da ritirare oggi 13:00 - 15:00
               </Text>
@@ -1265,7 +1265,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 presso Nome Ristorante Vegano
               </Text>
@@ -1274,7 +1274,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Totale €4,99
               </Text>
@@ -1291,7 +1291,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Stato Ordine:{' '}
               </Text>
@@ -1300,7 +1300,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 15,
                   fontWeight: '600',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 In attesa di ritiro
               </Text>
@@ -1321,8 +1321,8 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
-                  textDecorationLine: 'underline',
+                  fontFamily: 'Poppins-Regular',
+                  
                   paddingVertical: 20,
                 }}>
                 Convalida Ordine
@@ -1348,7 +1348,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Ordine nr. 45675
               </Text>
@@ -1372,7 +1372,7 @@ const FavoriteScreen = ({navigation}) => {
                     color: '#ffffff',
                     fontSize: 12,
                     fontWeight: '400',
-                    fontFamily: 'poppins',
+                    fontFamily: 'Poppins-Regular',
                   }}>
                   Elimina
                 </Text>
@@ -1387,7 +1387,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 1x Veggy Mix
               </Text>
@@ -1396,7 +1396,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 da ritirare oggi 13:00 - 15:00
               </Text>
@@ -1405,7 +1405,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 presso Nome Ristorante Vegano
               </Text>
@@ -1414,7 +1414,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Totale €4,99
               </Text>
@@ -1431,7 +1431,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Stato Ordine:{' '}
               </Text>
@@ -1440,7 +1440,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 15,
                   fontWeight: '600',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 In attesa di ritiro
               </Text>
@@ -1458,8 +1458,8 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
-                  textDecorationLine: 'underline',
+                  fontFamily: 'Poppins-Regular',
+                  
                   paddingVertical: 20,
                 }}>
                 Convalida Ordine
@@ -1490,7 +1490,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginTop: 10,
                 }}>
                 Ordine nr. 36210
@@ -1505,7 +1505,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 1x Veggy Mix
               </Text>
@@ -1514,7 +1514,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 da ritirare oggi 13:00 - 15:00
               </Text>
@@ -1523,7 +1523,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 presso Nome Ristorante Vegano
               </Text>
@@ -1532,7 +1532,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Totale €4,99
               </Text>
@@ -1553,8 +1553,8 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
-                  textDecorationLine: 'underline',
+                  fontFamily: 'Poppins-Regular',
+                  
                   paddingVertical: 20,
                 }}>
                 Recensisci Ordine
@@ -1580,7 +1580,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginTop: 10,
                 }}>
                 Ordine nr. 45675
@@ -1595,7 +1595,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 1x Veggy Mix
               </Text>
@@ -1604,7 +1604,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 da ritirare oggi 13:00 - 15:00
               </Text>
@@ -1613,7 +1613,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 presso Nome Ristorante Vegano
               </Text>
@@ -1622,7 +1622,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                 }}>
                 Totale €4,99
               </Text>
@@ -1640,8 +1640,8 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
-                  textDecorationLine: 'underline',
+                  fontFamily: 'Poppins-Regular',
+                  
                   paddingVertical: 20,
                 }}>
                 Recensisci Ordine

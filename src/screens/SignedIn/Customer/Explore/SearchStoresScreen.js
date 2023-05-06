@@ -23,7 +23,7 @@ const SearchStoresScreen = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Cerca
         </Text>
@@ -71,7 +71,7 @@ const SearchStoresScreen = ({navigation}) => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 50,
             }}>
             Cerca
@@ -111,7 +111,7 @@ const SearchStoresScreen = ({navigation}) => {
             color: '#6D747C',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Ricerche recenti
@@ -150,7 +150,7 @@ const SearchStoresScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginRight: 100,
                 }}>
                 Nome Store
@@ -179,7 +179,7 @@ const SearchStoresScreen = ({navigation}) => {
                   color: '#3C434B',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginLeft: 5,
                   marginRight: 50,
                 }}>
@@ -191,7 +191,7 @@ const SearchStoresScreen = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro oggi 20:00 - 22:00
             </Text>
@@ -206,7 +206,7 @@ const SearchStoresScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginRight: 10,
                 }}>
                 4.2 (45)
@@ -221,7 +221,7 @@ const SearchStoresScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 10,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   marginRight: 10,
                 }}>
                 3,0 Km da te

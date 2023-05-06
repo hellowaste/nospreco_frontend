@@ -29,8 +29,8 @@ const ForgotPasswordScreen = ({navigation}) => {
         </TouchableOpacity>
         <Text
           style={{
-            fontSize: 23,
-            fontWeight: '600',
+            fontSize: 24,
+            fontFamily:'Poppins-Bold',
             color: '#000000',
             marginLeft: 20,
           }}>
@@ -44,7 +44,8 @@ const ForgotPasswordScreen = ({navigation}) => {
               color: '#ff0000',
               marginBottom: 7,
               fontSize: 12,
-              fontWeight: '700',
+              
+              fontFamily:'Poppins-Regular'
             }}>
             Email obbligatoria
           </Text>
@@ -107,7 +108,7 @@ const ForgotPasswordScreen = ({navigation}) => {
               textAlign: 'center',
               paddingVertical: 10,
               fontSize: 20,
-              fontWeight: '700',
+              
               color: '#2e650a',
             }}>
             Recupera password

@@ -48,7 +48,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Guida all'app
             </Text>
@@ -77,7 +77,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             Wallet
@@ -87,7 +87,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
@@ -117,8 +117,8 @@ const BusinessWallet = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -138,8 +138,8 @@ const BusinessWallet = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -179,7 +179,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Richiesta completata
             </Text>
@@ -232,7 +232,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 marginTop: 10,
               }}>
@@ -243,7 +243,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 marginTop: 10,
               }}>
@@ -279,7 +279,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Saldo disponibile
             </Text>
@@ -308,7 +308,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#3C434B',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               marginTop: 10,
             }}>
@@ -344,7 +344,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Prelievo
             </Text>
@@ -373,7 +373,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#3C434B',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginTop: 10,
               marginLeft: 10,
             }}>
@@ -398,7 +398,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}
             />
             <MaterialCommunityIcons name="pencil" size={20} color={'#000000'} />
@@ -413,8 +413,8 @@ const BusinessWallet = ({navigation}) => {
               style={{
                 color: '#6D747C',
                 fontSize: 18,
-                fontWeight: '800',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 marginTop: 10,
                 marginLeft: 10,
               }}>
@@ -424,8 +424,8 @@ const BusinessWallet = ({navigation}) => {
               style={{
                 color: '#6D747C',
                 fontSize: 18,
-                fontWeight: '800',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 marginTop: 10,
                 marginRight: 10,
               }}>
@@ -449,8 +449,8 @@ const BusinessWallet = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 marginLeft: 10,
               }}
@@ -480,8 +480,8 @@ const BusinessWallet = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -510,7 +510,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -535,7 +535,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -558,7 +558,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Wallet
         </Text>
@@ -584,7 +584,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#3C434B',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginRight: 10,
             }}>
             Saldo disponibile
@@ -604,8 +604,8 @@ const BusinessWallet = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 22,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
           }}>
           € 49,50
@@ -625,8 +625,8 @@ const BusinessWallet = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -638,13 +638,13 @@ const BusinessWallet = ({navigation}) => {
             color: '#3C434B',
             fontSize: 10,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             paddingHorizontal: 35,
             marginTop: 5,
             marginBottom: 20,
           }}>
-          Ti ricordiamo che la funzione Prelievo è usabile per un massimo di una
-          volta al mese per un importo minimo di 39 euro.
+          Ti ricordiamo che la funzione Prelievo è usabile per un massimo di una volta al mese per un importo minimo di 39 euro.
+(I primi 39 euro saranno a copertura della quota annua)
         </Text>
       </View>
       <View
@@ -657,7 +657,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Dettagli del tuo saldo
         </Text>
@@ -673,7 +673,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Hero Bag vendute
           </Text>
@@ -682,7 +682,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             € 49,50
           </Text>
@@ -699,7 +699,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Commissioni
           </Text>
@@ -708,7 +708,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             € 18,50
           </Text>
@@ -725,7 +725,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Residuo quota annua
           </Text>
@@ -734,7 +734,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             € 0,00 su € 39,00
           </Text>
@@ -750,7 +750,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Storico prelievi
         </Text>
@@ -759,7 +759,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Prelievo € 100,00 in data 20/05/2022
@@ -769,7 +769,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Prelievo € 48,00 in data 28/04/2022
         </Text>

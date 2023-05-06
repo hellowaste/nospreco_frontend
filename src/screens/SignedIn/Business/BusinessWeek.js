@@ -58,7 +58,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Guida all'app
             </Text>
@@ -87,7 +87,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             La tua settimana
@@ -97,7 +97,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
@@ -128,8 +128,8 @@ const BusinessWeek = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -149,8 +149,8 @@ const BusinessWeek = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -180,7 +180,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -205,7 +205,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -228,7 +228,7 @@ const BusinessWeek = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           La tua settimana
         </Text>
@@ -273,7 +273,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Ritiro disponibile
@@ -291,7 +291,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
               }}>
               Ritiro non disponibile
@@ -313,7 +313,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Lunedì, 14 Novembre
           </Text>
@@ -329,7 +329,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -353,7 +353,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -361,8 +361,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -379,7 +379,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -435,7 +435,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Martedì, 15 Novembre
           </Text>
@@ -451,7 +451,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -475,7 +475,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -483,8 +483,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -501,7 +501,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -557,7 +557,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Mercoledì, 16 Novembre
           </Text>
@@ -573,7 +573,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -597,7 +597,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -605,8 +605,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -623,7 +623,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -679,7 +679,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Giovedì, 17 Novembre
           </Text>
@@ -695,7 +695,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -719,7 +719,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -727,8 +727,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -745,7 +745,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -801,7 +801,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Venerdì, 18 Novembre
           </Text>
@@ -817,7 +817,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -841,7 +841,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -849,8 +849,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -867,7 +867,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -923,7 +923,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Sabato, 19 Novembre
           </Text>
@@ -939,7 +939,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -963,7 +963,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -971,8 +971,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -989,7 +989,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -1045,7 +1045,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Domenica, 20 Novembre
           </Text>
@@ -1061,7 +1061,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Ritiro disponibile
             </Text>
@@ -1085,7 +1085,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Hero Bag in vendita
             </Text>
@@ -1093,8 +1093,8 @@ const BusinessWeek = ({navigation}) => {
               style={{
                 color: '#21B861',
                 fontSize: 22,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
               }}>
               5
             </Text>
@@ -1111,7 +1111,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Orario di ritiro
             </Text>
@@ -1163,8 +1163,8 @@ const BusinessWeek = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

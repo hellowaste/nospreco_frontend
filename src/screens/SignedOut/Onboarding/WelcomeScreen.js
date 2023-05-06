@@ -1,9 +1,23 @@
 import React, {useState} from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Text, TouchableOpacity, View,useWindowDimensions } from 'react-native';
 import Svg, {Path} from 'react-native-svg';
+import { TabView, SceneMap } from 'react-native-tab-view';
+
 
 const WelcomeScreen = ({navigation}) => {
   const [section, setSection] = useState(1);
+   const layout = useWindowDimensions();
+
+  const [routes] = React.useState([
+    { key: 'first', title: 'First' },
+    { key: 'second', title: 'Second' },
+    { key: 'third', title: 'Third' }
+  ]);
+  const renderScene = SceneMap({
+    first: FirstSection,
+    second: SecondSection,
+    third: ThirdSection,
+  });
   return (
     <View
       style={{
@@ -33,6 +47,7 @@ const WelcomeScreen = ({navigation}) => {
         <View
           style={{
             alignSelf: 'center',
+            marginTop: -30
           }}>
           <Svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +79,7 @@ const WelcomeScreen = ({navigation}) => {
       {section === 1 ? <FirstSection /> : null}
       {section === 2 ? <SecondSection /> : null}
       {section === 3 ? <ThirdSection /> : null}
+     
       <View style={{width: '100%', alignItems: 'center'}}>
         {section != 3 ? (
           <TouchableOpacity
@@ -74,9 +90,8 @@ const WelcomeScreen = ({navigation}) => {
             <Text
               style={{
                 color: '#000000',
-                fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                fontSize: 16,               
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>
@@ -94,12 +109,12 @@ const WelcomeScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>
-              Alleati!
+              Unisciti a noi!
             </Text>
           </TouchableOpacity>
         ) : null}
@@ -175,15 +190,17 @@ const WelcomeScreen = ({navigation}) => {
   );
 };
 
+
 const FirstSection = () => {
   return (
     <View>
       <Image
         source={require('../../../assets/app/onboarding/img-1-onboarding.jpeg')}
         style={{
-          height: 180,
-          width: 180,
-          borderRadius: 100,
+          height: 220,
+          width: 220,
+          marginTop:-30,
+          borderRadius: 120,
           alignSelf: 'center',
           marginBottom: 30,
         }}
@@ -191,21 +208,27 @@ const FirstSection = () => {
       <Text
         style={{
           color: '#000000',
-          fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          fontSize: 26,
+          padding:5,
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
+          paddingHorizontal: 0,
+          lineHeight:24,
+          marginTop:50
+
         }}>
         Abbiamo un sogno!
       </Text>
       <Text
         style={{
           color: '#000000',
-          fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          fontSize: 26,
+          padding:5,
+          fontStyle:'normal',
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
-          paddingHorizontal: 30,
+          paddingHorizontal: 0,
+          lineHeight:24
         }}>
         Un mondo verde e senza sprechi, combatti insieme a noi per raggiungerlo!
       </Text>
@@ -219,24 +242,23 @@ const SecondSection = () => {
       <Image
         source={require('../../../assets/app/onboarding/img-2-onboarding.png')}
         style={{
-          height: 180,
-          width: 180,
+          height: 200,
+          width: 200,
           borderRadius: 100,
           alignSelf: 'center',
-          marginBottom: 30,
+          marginBottom: 50,
         }}
       />
       <Text
         style={{
           color: '#000000',
-          fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          fontSize: 22,         
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
         Cerca i nostri store alleati più vicini a te e scegli le tue HeroBag
-        scontate fino al 70%!
+        scontate fino al 70%
       </Text>
       <Text
         style={{
@@ -244,7 +266,7 @@ const SecondSection = () => {
           lineHeight: 20,
           fontSize: 14,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
           paddingHorizontal: 90,
           marginTop: 10,
@@ -262,19 +284,19 @@ const ThirdSection = () => {
       <Image
         source={require('../../../assets/app/onboarding/img-3-onboarding.png')}
         style={{
-          height: 180,
-          width: 180,
+          height: 200,
+          width: 200,
           borderRadius: 100,
           alignSelf: 'center',
-          marginBottom: 30,
+          marginBottom: 50,
         }}
       />
       <Text
         style={{
           color: '#000000',
           fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
@@ -284,8 +306,8 @@ const ThirdSection = () => {
         style={{
           color: '#000000',
           fontSize: 22,
-          fontWeight: '800',
-          fontFamily: 'poppins',
+          
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
@@ -297,7 +319,7 @@ const ThirdSection = () => {
           lineHeight: 20,
           fontSize: 14,
           fontWeight: '400',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           textAlign: 'center',
           paddingHorizontal: 90,
           marginTop: 10,

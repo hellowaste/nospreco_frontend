@@ -40,7 +40,7 @@ const BusinessSettings = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -65,7 +65,7 @@ const BusinessSettings = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -88,7 +88,7 @@ const BusinessSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Impostazioni
         </Text>
@@ -118,7 +118,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -142,7 +142,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -167,7 +167,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -191,7 +191,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -216,7 +216,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -240,7 +240,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -271,7 +271,7 @@ const StoreSettings = () => {
           color: '#000000',
           fontSize: 18,
           fontWeight: '600',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           marginTop: 20,
         }}>
         Quando sei aperto?
@@ -281,7 +281,7 @@ const StoreSettings = () => {
           color: '#3C434B',
           fontSize: 12,
           fontWeight: '600',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           marginTop: 10,
         }}>
         Durante i giorni di apertura, i clienti potranno prenotare i prodotti
@@ -312,7 +312,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Lunedì
@@ -341,7 +341,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Martedì
@@ -370,7 +370,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Mercoledì
@@ -399,7 +399,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Giovedì
@@ -428,7 +428,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Venerdì
@@ -457,7 +457,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Sabato
@@ -486,7 +486,7 @@ const StoreSettings = () => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               marginLeft: 10,
             }}>
             Domenica
@@ -498,7 +498,7 @@ const StoreSettings = () => {
           color: '#000000',
           fontSize: 16,
           fontWeight: '600',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           marginTop: 20,
         }}>
         Informazioni sullo store
@@ -509,7 +509,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Nome Store
         </Text>
@@ -536,7 +536,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Indirizzo Store
         </Text>
@@ -563,7 +563,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Ragione sociale
         </Text>
@@ -590,7 +590,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           P. IVA
         </Text>
@@ -617,7 +617,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Numero di telefono
         </Text>
@@ -644,7 +644,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Email
         </Text>
@@ -671,7 +671,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Logo Store
         </Text>
@@ -700,7 +700,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Logo Store
         </Text>
@@ -730,7 +730,7 @@ const StoreSettings = () => {
           color: '#000000',
           fontSize: 16,
           fontWeight: '600',
-          fontFamily: 'poppins',
+          fontFamily: 'Poppins-Regular',
           marginTop: 20,
         }}>
         Informazioni sul referente
@@ -741,7 +741,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Nome e Cognome
         </Text>
@@ -768,7 +768,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Numero di telefono
         </Text>
@@ -795,7 +795,7 @@ const StoreSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           IBAN Persona Giuridica
         </Text>
@@ -827,8 +827,8 @@ const StoreSettings = () => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
             paddingVertical: 15,
           }}>
@@ -860,7 +860,7 @@ const NotificationSettings = () => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Notifiche Push
         </Text>
@@ -891,7 +891,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Conferma ordine
           </Text>
@@ -900,7 +900,7 @@ const NotificationSettings = () => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Email inviata per ogni ordine effettuato.
           </Text>
@@ -932,7 +932,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Cancellazione ordine
           </Text>
@@ -941,7 +941,7 @@ const NotificationSettings = () => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Email inviata se un ordine
           </Text>
@@ -950,7 +950,7 @@ const NotificationSettings = () => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             viene cancellato prima del ritiro.
           </Text>
@@ -982,7 +982,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Nuova recensione
           </Text>
@@ -991,7 +991,7 @@ const NotificationSettings = () => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Email inviata ogni volta che un utente
           </Text>
@@ -1000,7 +1000,7 @@ const NotificationSettings = () => {
               color: '#6D747C',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             pubblica una recensione sul tuo store.
           </Text>
@@ -1032,7 +1032,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Newsletter
           </Text>
@@ -1058,7 +1058,7 @@ const NotificationSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Email store associata:
         </Text>
@@ -1090,8 +1090,8 @@ const NotificationSettings = () => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
             paddingVertical: 15,
           }}>
@@ -1111,7 +1111,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Nome Utente
         </Text>
@@ -1138,7 +1138,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Email
         </Text>
@@ -1165,7 +1165,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Numero di telefono
         </Text>
@@ -1192,7 +1192,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Password
         </Text>
@@ -1224,8 +1224,8 @@ const AccountSettings = () => {
           style={{
             color: '#000000',
             fontSize: 16,
-            fontWeight: '700',
-            fontFamily: 'poppins',
+            
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
             paddingVertical: 15,
           }}>

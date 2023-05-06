@@ -50,7 +50,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Guida all'app
             </Text>
@@ -79,7 +79,7 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
             La tua giornata
@@ -89,7 +89,7 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
@@ -118,8 +118,8 @@ const BusinessDay = ({navigation}) => {
                 style={{
                   color: '#21B861',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -139,8 +139,8 @@ const BusinessDay = ({navigation}) => {
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  fontWeight: '700',
-                  fontFamily: 'poppins',
+                  
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -170,7 +170,7 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Menù
           </Text>
@@ -195,7 +195,7 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 10,
               fontWeight: '500',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Notifiche
           </Text>
@@ -218,7 +218,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           La tua giornata
         </Text>
@@ -227,7 +227,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
           Martedì, 15 Novembre
@@ -244,7 +244,7 @@ const BusinessDay = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Ritiro disponibile
           </Text>
@@ -268,7 +268,7 @@ const BusinessDay = ({navigation}) => {
               color: '#A3AEB4',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Hero Bag in vendita
           </Text>
@@ -276,8 +276,8 @@ const BusinessDay = ({navigation}) => {
             style={{
               color: '#21B861',
               fontSize: 22,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
             }}>
             5
           </Text>
@@ -294,7 +294,7 @@ const BusinessDay = ({navigation}) => {
               color: '#A3AEB4',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
             }}>
             Orario di ritiro
           </Text>
@@ -349,8 +349,8 @@ const BusinessDay = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 15,
             }}>
@@ -371,7 +371,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Modifica Hero Bag esistenti
         </Text>
@@ -380,7 +380,7 @@ const BusinessDay = ({navigation}) => {
             color: '#3C434B',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Per modificare una Hero Bag esistente, clicca sul suo ID Bag. Per
           eliminare una Hero Bag dal catalogo, clicca sull’icona della “X”
@@ -402,7 +402,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
                 marginLeft: 50,
               }}>
@@ -413,7 +413,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Categoria
@@ -423,7 +423,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Tipologia
@@ -433,7 +433,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Descrizione contenuto
@@ -443,7 +443,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Quantità
@@ -453,7 +453,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Valore reale Hero Bag
@@ -463,7 +463,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Prezzo in app
@@ -479,7 +479,7 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '600',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               marginTop: 20,
             }}>
@@ -500,7 +500,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Gestione ordini
         </Text>
@@ -509,7 +509,7 @@ const BusinessDay = ({navigation}) => {
             color: '#3C434B',
             fontSize: 12,
             fontWeight: '400',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
           }}>
           Qui puoi vedere o modificare lo stato dei tuoi ordini, gli ordini sono
           modificabili al massimo fino a 2 ore prima dell'inizio del ritiro.
@@ -537,7 +537,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 10,
                 paddingHorizontal: 30,
               }}>
@@ -556,7 +556,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 10,
                 paddingHorizontal: 30,
               }}>
@@ -580,7 +580,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
                 marginLeft: 50,
               }}>
@@ -591,7 +591,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Stato
@@ -601,7 +601,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               ID Bag
@@ -611,7 +611,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Cliente
@@ -621,7 +621,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Orario ritiro
@@ -631,7 +631,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
               Prezzo
@@ -643,7 +643,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'poppins',
+            fontFamily: 'Poppins-Regular',
             textAlign: 'center',
             marginTop: 20,
             marginBottom: 100,

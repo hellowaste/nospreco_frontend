@@ -16,7 +16,7 @@ const StorePayoutDetailsScreen = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 23,
-            fontWeight: '700',
+            
             marginLeft: 20,
           }}>
           Crea il tuo store

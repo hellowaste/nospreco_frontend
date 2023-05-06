@@ -118,7 +118,7 @@ const LoginScreen = ({navigation}) => {
                   color: '#ff0000',
                   marginBottom: 7,
                   fontSize: 12,
-                  fontWeight: '700',
+                  
                 }}>
                 Email obbligatoria
               </Text>
@@ -160,7 +160,7 @@ const LoginScreen = ({navigation}) => {
                   color: '#ff0000',
                   marginVertical: 5,
                   fontSize: 12,
-                  fontWeight: '700',
+                  
                 }}>
                 Password obbligatoria
               </Text>
@@ -170,7 +170,7 @@ const LoginScreen = ({navigation}) => {
                   color: '#ff0000',
                   marginVertical: 5,
                   fontSize: 12,
-                  fontWeight: '700',
+                  
                 }}
               />
             )}
@@ -262,7 +262,7 @@ const LoginScreen = ({navigation}) => {
                   textAlign: 'center',
                   paddingVertical: 10,
                   fontSize: 20,
-                  fontWeight: '800',
+                  
                   color: '#b9ceac',
                 }}>
                 ACCEDI

@@ -34,7 +34,7 @@ const BusinessSettingsScreen = ({navigation}) => {
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
-              fontWeight: '700',
+              
               color: '#000000',
             }}>
             Dettagli account
@@ -61,7 +61,7 @@ const BusinessSettingsScreen = ({navigation}) => {
               paddingVertical: 15,
               marginLeft: 5,
               fontSize: 16,
-              fontWeight: '700',
+              
               color: '#000000',
             }}>
             Vai all'app consumatori

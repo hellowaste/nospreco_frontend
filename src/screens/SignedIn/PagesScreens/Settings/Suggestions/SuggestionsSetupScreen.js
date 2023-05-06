@@ -39,7 +39,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              fontWeight: '700',
+              
               marginBottom: 10,
             }}>
             Seleziona qui le tue preferenze
@@ -71,7 +71,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#000000',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Pasti pronti
                 </Text>
@@ -102,7 +102,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#ffffff',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Pasti pronti
                 </Text>
@@ -134,7 +134,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#000000',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Alimentari
                 </Text>
@@ -165,7 +165,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#ffffff',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Alimentari
                 </Text>
@@ -197,7 +197,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#000000',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Prodotti da forno
                 </Text>
@@ -228,7 +228,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#ffffff',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Prodotti da forno
                 </Text>
@@ -260,7 +260,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#000000',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Altro
                 </Text>
@@ -291,7 +291,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                     color: '#ffffff',
                     marginLeft: 10,
                     fontSize: 16,
-                    fontWeight: '700',
+                    
                   }}>
                   Altro
                 </Text>
@@ -335,7 +335,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#ffffff',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Nessuna
                   </Text>
@@ -361,7 +361,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#000000',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Nessuna
                   </Text>
@@ -394,7 +394,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#ffffff',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Vegetariano
                   </Text>
@@ -427,7 +427,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#000000',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Vegetariano
                   </Text>
@@ -468,7 +468,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#ffffff',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Vegano
                   </Text>
@@ -501,7 +501,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#000000',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Vegano
                   </Text>
@@ -534,7 +534,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#ffffff',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Senza Glutine
                   </Text>
@@ -567,7 +567,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
                       color: '#000000',
                       marginLeft: 10,
                       fontSize: 16,
-                      fontWeight: '700',
+                      
                     }}>
                     Senza Glutine
                   </Text>
@@ -948,7 +948,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
+                
                 paddingVertical: 10,
               }}>
               Cancella tutti
@@ -970,7 +970,7 @@ const SuggestionsSetupScreen = ({navigation}) => {
               style={{
                 color: '#00807a',
                 fontSize: 16,
-                fontWeight: '700',
+                
                 paddingVertical: 10,
               }}>
               Salva

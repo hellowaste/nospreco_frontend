@@ -49,7 +49,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
               }}>
               Aiutaci a migliorare
             </Text>
@@ -80,7 +80,7 @@ const CategoriesScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Nome utente
@@ -113,7 +113,7 @@ const CategoriesScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Email
@@ -146,23 +146,12 @@ const CategoriesScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Che cosa vuoi consigliarci?
               </Text>
-              <Text
-                style={{
-                  color: '#A3AEB4',
-                  fontSize: 12,
-                  fontWeight: '400',
-                  fontFamily: 'poppins',
-                  textAlign: 'left',
-                  paddingRight: 20,
-                }}>
-                Ogni Hero Bag può contenere solo una categoria di prodotto, in
-                presenza di più categorie sarà sufficiente creare altre bag.
-              </Text>
+             
               <View
                 style={{
                   borderColor: '#999da1',
@@ -187,7 +176,7 @@ const CategoriesScreen = ({navigation}) => {
                   color: '#6D747C',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'poppins',
+                  fontFamily: 'Poppins-Regular',
                   textAlign: 'left',
                 }}>
                 Il tuo consiglio
@@ -219,8 +208,8 @@ const CategoriesScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                fontWeight: '700',
-                fontFamily: 'poppins',
+                
+                fontFamily: 'Poppins-Regular',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -242,8 +231,8 @@ const CategoriesScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
             }}>
             Ciao @nomeutente,
           </Text>
@@ -251,8 +240,8 @@ const CategoriesScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
-              fontWeight: '700',
-              fontFamily: 'poppins',
+              
+              fontFamily: 'Poppins-Regular',
             }}>
             scegli una categoria
           </Text>
@@ -297,7 +286,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 15,
                 paddingLeft: 10,
               }}>
@@ -336,7 +325,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 15,
                 paddingLeft: 10,
               }}>
@@ -375,7 +364,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 15,
                 paddingLeft: 10,
               }}>
@@ -414,7 +403,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 15,
                 paddingLeft: 10,
               }}>
@@ -453,7 +442,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 15,
                 paddingLeft: 10,
               }}>
@@ -492,7 +481,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'poppins',
+                fontFamily: 'Poppins-Regular',
                 paddingVertical: 15,
                 paddingLeft: 10,
               }}>
@@ -528,7 +517,7 @@ const CategoriesScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'poppins',
+              fontFamily: 'Poppins-Regular',
               textAlign: 'center',
               paddingVertical: 10,
             }}>

@@ -23,7 +23,7 @@ const WelcomeScreen = ({navigation}) => {
           style={{
             color: '#17942e',
             fontSize: 30,
-            fontWeight: '800',
+            
             marginTop: 30,
           }}>
           Ciao spreco!
@@ -45,7 +45,7 @@ const WelcomeScreen = ({navigation}) => {
           <Text
             style={{
               fontSize: 20,
-              fontWeight: '800',
+              
               textAlign: 'center',
               color: '#ffffff',
               paddingVertical: 10,
@@ -69,7 +69,7 @@ const WelcomeScreen = ({navigation}) => {
           <Text
             style={{
               fontSize: 20,
-              fontWeight: '800',
+              
               textAlign: 'center',
               color: '#b9ceac',
               paddingVertical: 10,

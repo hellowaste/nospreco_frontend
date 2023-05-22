@@ -80,7 +80,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Benvenuto!
         </Text>
@@ -89,7 +89,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Controlla i dettagli del tuo store
         </Text>
@@ -98,7 +98,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 20,
           }}>
           Quando sei aperto?
@@ -349,7 +349,7 @@ const BusinessWeekSettings = ({navigation}) => {
         style={{
           backgroundColor: '#21B861',
           borderRadius: 10,
-          marginTop: 50,
+          marginTop: 60,
           width: '90%',
           alignSelf: 'center',
         }}
@@ -361,7 +361,7 @@ const BusinessWeekSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             paddingVertical: 15,
             textAlign: 'center',
           }}>

@@ -37,7 +37,7 @@ const BusinessRegister = ({navigation}) => {
             color: '#000000',
             fontSize: 22,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Registra il tuo store
         </Text>
@@ -77,26 +77,15 @@ const BusinessRegister = ({navigation}) => {
           />
           <Text
             style={{
-              paddingTop: 2,
+              paddingTop: 10,
               color: '#21B861',
               fontSize: 14,
               lineHeight: 12,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
-            Informazioni
-          </Text>
-          <Text
-            style={{
-              color: '#21B861',
-              fontSize: 14,
-              lineHeight: 12,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-           negozio
+            Info azienda
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
@@ -106,18 +95,8 @@ const BusinessRegister = ({navigation}) => {
             color={'#A3AEB4'}
           />
           <Text
-            style={{
-              paddingTop: 2,
-              color: '#A3AEB4',
-              fontSize: 14,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-            Informazioni
-          </Text>
-          <Text
-            style={{
+             style={{
+              paddingTop: 10,
               color: '#A3AEB4',
               fontSize: 14,
               lineHeight: 12,
@@ -125,7 +104,7 @@ const BusinessRegister = ({navigation}) => {
               fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
-           referente
+            Info referente
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
@@ -136,17 +115,7 @@ const BusinessRegister = ({navigation}) => {
           />
           <Text
             style={{
-              paddingTop: 2,
-              color: '#A3AEB4',
-              fontSize: 14,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-            Verifica 
-          </Text>
-          <Text
-            style={{
+              paddingTop: 10,
               color: '#A3AEB4',
               fontSize: 14,
               lineHeight: 12,
@@ -154,7 +123,7 @@ const BusinessRegister = ({navigation}) => {
               fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
-             informazioni
+            Verifica
           </Text>
         </View>
       </View>
@@ -172,7 +141,7 @@ const BusinessRegister = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Informazioni sullo store
         </Text>
@@ -182,7 +151,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Nome Store
           </Text>
@@ -204,7 +173,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Indirizzo
           </Text>
@@ -226,7 +195,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Città
           </Text>
@@ -248,7 +217,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Provincia
           </Text>
@@ -270,7 +239,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Codice postale
           </Text>
@@ -292,7 +261,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Ragione sociale
           </Text>
@@ -314,7 +283,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Partita IVA
           </Text>
@@ -336,7 +305,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Codice SDI
           </Text>
@@ -358,7 +327,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             PEC
           </Text>
@@ -380,7 +349,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Numero di telefono
           </Text>
@@ -402,7 +371,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Email
           </Text>
@@ -424,7 +393,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginTop: 10,
             }}>
             Categoria
@@ -466,7 +435,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginTop: 10,
             }}>
             Logo Negozio
@@ -524,7 +493,7 @@ const BusinessRegister = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

@@ -30,7 +30,7 @@ const SettingsScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '30%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -52,7 +52,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Supporto
             </Text>
@@ -183,7 +183,7 @@ const SettingsScreen = ({navigation}) => {
                   borderColor: '#999da1',
                   borderWidth: 0.3,
                   borderRadius: 10,
-                  marginTop: 2,
+                  marginTop: 1.5,
                 }}>
                 <TextInput
                   placeholder="Spiega cosa è successo"
@@ -206,7 +206,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -223,7 +223,7 @@ const SettingsScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '45%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -243,7 +243,7 @@ const SettingsScreen = ({navigation}) => {
             <Text
               style={{
                 color: '#000000',
-                fontSize: 14,
+                fontSize: 16,
                 fontWeight: '500',
                 fontFamily: 'Poppins-Regular',
               }}>
@@ -269,9 +269,9 @@ const SettingsScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 18,
-                fontWeight: '600',
-                fontFamily: 'Poppins-Regular',
-                paddingHorizontal: 50,
+                fontWeight: '500',
+                fontFamily: 'Poppins-Bold',
+                paddingHorizontal: 30,
                 textAlign: 'center',
               }}>
               Sei sicuro di voler effettuare il logout?
@@ -302,7 +302,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#ffffff',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -326,7 +326,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -361,7 +361,7 @@ const SettingsScreen = ({navigation}) => {
               fontSize: 16,
               fontWeight: '400',
               fontFamily: 'Poppins-Regular',
-              paddingVertical: 10,
+              paddingVertical: 12,
               paddingRight: 20,
               marginLeft: 5,
             }}>
@@ -375,7 +375,7 @@ const SettingsScreen = ({navigation}) => {
             color: '#000000',
             fontSize: 22,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             paddingLeft: 20,
           }}>
           Ciao @nomeutente
@@ -711,7 +711,7 @@ const SettingsScreen = ({navigation}) => {
                 color: '#020905',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               € 56,35
             </Text>

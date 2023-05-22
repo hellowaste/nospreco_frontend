@@ -31,7 +31,7 @@ const RegisterScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '400',
-              
+              fontFamily: 'Poppins-Bold',
               alignSelf: 'flex-end',
               paddingRight: 30,
             }}>
@@ -43,6 +43,7 @@ const RegisterScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
+              fontFamily: 'Poppins-Bold',
               
             }}>
             Hello Waste
@@ -51,7 +52,7 @@ const RegisterScreen = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 22,
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               
             }}>
             ti dà il benvenuto!
@@ -164,7 +165,7 @@ const RegisterScreen = ({navigation}) => {
               </TouchableOpacity>
             </View>
           </View>
-          <View style={{marginTop: 15}}>
+          <View style={{marginTop: 16}}>
             <Text
               style={{
                 color: '#6D747C',
@@ -328,10 +329,10 @@ const RegisterScreen = ({navigation}) => {
               style={{
                 width: '31%',
                 height: 50,
-                borderColor: '#3C434B',
+                borderColor: '#21B861',
                 borderStyle: 'solid',
-                borderWidth: 0.3,
-                borderRadius: 10,
+                borderWidth: 1,
+                borderRadius: 15,
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
@@ -345,10 +346,10 @@ const RegisterScreen = ({navigation}) => {
               style={{
                 width: '31%',
                 height: 50,
-                borderColor: '#3C434B',
+                borderColor: '#21B861',
                 borderStyle: 'solid',
-                borderWidth: 0.3,
-                borderRadius: 10,
+                borderWidth: 1,
+                borderRadius: 15,
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
@@ -361,10 +362,10 @@ const RegisterScreen = ({navigation}) => {
               style={{
                 width: '31%',
                 height: 50,
-                borderColor: '#3C434B',
+                borderColor: '#21B861',
                 borderStyle: 'solid',
-                borderWidth: 0.3,
-                borderRadius: 10,
+                borderWidth: 1,
+                borderRadius: 15,
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
@@ -376,7 +377,7 @@ const RegisterScreen = ({navigation}) => {
             </View>
           </View>
         </View>
-        <View style={{width: '100%', alignItems: 'center', marginTop: 20}}>
+        <View style={{width: '100%', alignItems: 'center', marginTop: 50}}>
           <TouchableOpacity
             style={{backgroundColor: '#21B861', width: '90%', borderRadius: 10}}
             onPress={() => {}}>
@@ -384,10 +385,10 @@ const RegisterScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
+                marginTop: 4,
                 textAlign: 'center',
-                paddingVertical: 14,
+                paddingVertical: 12,
               }}>
               Crea account
             </Text>

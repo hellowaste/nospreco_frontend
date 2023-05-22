@@ -953,8 +953,8 @@ const SearchScreen = ({navigation}) => {
                   }}>
                   <View
                     style={{
-                      backgroundColor: '#F2FDF7',
-                      borderRadius: 15,
+                      backgroundColor: '#F9FAFB',
+                      borderRadius: 20,
                       width: '70%',
                     }}>
                     <Text
@@ -962,7 +962,7 @@ const SearchScreen = ({navigation}) => {
                         color: '#21B861',
                         fontSize: 16,
                         
-                        fontFamily: 'Poppins-Regular',
+                        fontFamily: 'Poppins-Bold',
                         textAlign: 'center',
                         paddingVertical: 20,
                       }}>
@@ -971,7 +971,7 @@ const SearchScreen = ({navigation}) => {
                   </View>
                   <View
                     style={{
-                      backgroundColor: '#F2FDF7',
+                      backgroundColor: '#F9FAFB',
                       borderRadius: 15,
                       width: '20%',
                       alignItems: 'center',

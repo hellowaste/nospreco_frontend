@@ -40,7 +40,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingRight: 15,
-              paddingLeft: '40%',
+              paddingLeft: '38%',
               paddingTop: 20,
             }}>
             <Text
@@ -48,7 +48,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Guida all'app
             </Text>
@@ -77,7 +77,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
             Con questo veloce tour avrai una panoramica generale
@@ -105,7 +105,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                   color: '#8C979D',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -126,7 +126,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                   color: '#000000',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -163,7 +163,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Supporto
             </Text>
@@ -317,7 +317,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -331,9 +331,9 @@ const BusinessNavigationMenu = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '48%',
             alignSelf: 'center',
-            borderRadius: 8,
+            borderRadius: 15,
             borderColor: '#000000',
             borderWidth: 0.3,
             paddingVertical: 20,
@@ -353,7 +353,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Logout
             </Text>
@@ -378,7 +378,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -407,7 +407,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#ffffff',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -431,7 +431,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -515,8 +515,8 @@ const BusinessNavigationMenu = ({navigation}) => {
           <Image
             source={require('../../../assets/app/store/img-1.png')}
             style={{
-              width: 30,
-              height: 30,
+              width: 55,
+              height: 50,
               borderRadius: 100,
               marginRight: 10,
             }}
@@ -526,7 +526,7 @@ const BusinessNavigationMenu = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Nome Store
           </Text>
@@ -906,7 +906,7 @@ const BusinessNavigationMenu = ({navigation}) => {
         </TouchableOpacity>
         <View
           style={{
-            height: 1,
+            height: 1.5,
             backgroundColor: '#D9E0E8',
             width: '90%',
             alignSelf: 'center',
@@ -940,6 +940,7 @@ const BusinessNavigationMenu = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
                 marginLeft: 5,
+                marginTop: 5,
               }}>
               Guida all'app
             </Text>

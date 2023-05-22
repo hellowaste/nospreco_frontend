@@ -37,6 +37,7 @@ const PaymentMethods = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
+            fontFamily: 'Poppins-Bold',
             
           }}>
           Metodi di pagamento
@@ -62,7 +63,7 @@ const PaymentMethods = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Metodi salvati
             </Text>
@@ -138,7 +139,7 @@ const PaymentMethods = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginTop: 20,
             }}>
             Altri metodi di pagamento

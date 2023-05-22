@@ -41,7 +41,7 @@ const HomeScreen = ({navigation}) => {
             borderRadius: 8,
             borderColor: '#000000',
             borderWidth: 0.3,
-            paddingVertical: 20,
+            paddingVertical: 17,
           }}>
           <View
             style={{
@@ -58,7 +58,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Aiutaci a migliorare
             </Text>
@@ -108,8 +108,8 @@ const HomeScreen = ({navigation}) => {
                   placeholder="Inserisci nome utente      "
                   placeholderTextColor={'#000000'}
                   style={{
-                    fontSize:12,
-                    fontFamily:'Poppins-Light',
+                    fontSize:14,
+                    fontFamily:'Poppins-Regular',
                     paddingBottom:8
                   }}
                   
@@ -144,12 +144,12 @@ const HomeScreen = ({navigation}) => {
                   justifyContent: 'space-between',
                 }}>
                 <TextInput
-                  placeholder="indirizzoemail@email.com     "
+                  placeholder="indirizzoemail@email.com           "
                   placeholderTextColor={'#000000'}
                   style={{
-                    fontSize:12,
-                    fontFamily:'Poppins-Light',
-                    paddingBottom:8
+                    fontSize:14,
+                    fontFamily:'Poppins-Regular',
+                    paddingBottom:4
 
                   }}
                 />
@@ -211,7 +211,7 @@ const HomeScreen = ({navigation}) => {
                   borderColor: '#999da1',
                   borderWidth: 0.3,
                   borderRadius: 10,
-                  marginTop: 2,
+                  marginTop: 3,
                 }}>
                 <TextInput
                   placeholder="Inserisci il nome dello store"
@@ -235,7 +235,7 @@ const HomeScreen = ({navigation}) => {
                   borderColor: '#999da1',
                   borderWidth: 0.3,
                   borderRadius: 10,
-                  marginTop: 2,
+                  marginTop: 3,
                 }}>
                 <TextInput
                   placeholder="Inserisci l’indirizzo dello store"
@@ -258,7 +258,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -607,7 +607,7 @@ const HomeScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 22,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               marginTop: 10,
             }}>
@@ -618,7 +618,7 @@ const HomeScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>
@@ -647,11 +647,11 @@ const HomeScreen = ({navigation}) => {
             <Text
               style={{
                 color: '#3C434B',
-                fontSize: 14,
+                fontSize: 12,
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Vedi altre hero bag modificando le tue scelte oppure attiva le
+              Vedi altre HeroBag modificando le tue scelte oppure attiva le
               notifiche per sapere subito quando ci saranno nuove HeroBag
               disponibili
             </Text>
@@ -667,7 +667,7 @@ const HomeScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -687,7 +687,7 @@ const HomeScreen = ({navigation}) => {
             backgroundColor: '#F9FAFB',
             width: '70%',
             borderRadius: 10,
-            borderWidth: 0.5,
+            borderWidth: 1,
             borderColor: '#21B861',
           }}
           onPress={() => {
@@ -698,7 +698,7 @@ const HomeScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 11,
             }}>
@@ -719,7 +719,7 @@ const ActiveHome = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Scelti per le tue preferenze
         </Text>
@@ -1201,7 +1201,7 @@ const ActiveHome = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Migliori in zona
         </Text>
@@ -1680,7 +1680,7 @@ const ActiveHome = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           I tuoi negozi preferiti
         </Text>

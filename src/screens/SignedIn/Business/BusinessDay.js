@@ -42,7 +42,7 @@ const BusinessDay = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingRight: 15,
-              paddingLeft: '40%',
+              paddingLeft: '38%',
               paddingTop: 20,
             }}>
             <Text
@@ -50,7 +50,7 @@ const BusinessDay = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Guida all'app
             </Text>
@@ -79,7 +79,7 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
             La tua giornata
@@ -94,8 +94,8 @@ const BusinessDay = ({navigation}) => {
               paddingHorizontal: 10,
             }}>
             In questa schermata potrai gestire in totale autonomia le vendite
-            della giornata odierna, qui infatti puoi inserire o modificare le
-            Hero Bag in vendita e monitore o modificare gli ordini del giorno.
+            della giornata odierna, potrai inserire o modificare le
+            HeroBag in vendita e gli ordini del giorno.
           </Text>
           <View
             style={{
@@ -119,7 +119,7 @@ const BusinessDay = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -140,7 +140,7 @@ const BusinessDay = ({navigation}) => {
                   color: '#000000',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -218,7 +218,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           La tua giornata
         </Text>
@@ -227,7 +227,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 10,
           }}>
           Martedì, 15 Novembre
@@ -270,7 +270,7 @@ const BusinessDay = ({navigation}) => {
               fontWeight: '400',
               fontFamily: 'Poppins-Regular',
             }}>
-            Hero Bag in vendita
+            HeroBag in vendita
           </Text>
           <Text
             style={{
@@ -350,11 +350,11 @@ const BusinessDay = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>
-            Aggiungi nuova Hero Bag
+            Aggiungi nuova HeroBag
           </Text>
         </TouchableOpacity>
         <View
@@ -371,9 +371,9 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
-          Modifica Hero Bag esistenti
+          Modifica HeroBag esistenti
         </Text>
         <Text
           style={{
@@ -382,8 +382,8 @@ const BusinessDay = ({navigation}) => {
             fontWeight: '400',
             fontFamily: 'Poppins-Regular',
           }}>
-          Per modificare una Hero Bag esistente, clicca sul suo ID Bag. Per
-          eliminare una Hero Bag dal catalogo, clicca sull’icona della “X”
+          Per modificare una HeroBag esistente, clicca sul suo ID Bag. Per
+          eliminare una HeroBag dal catalogo, clicca sull’icona della “X”
           rossa.
         </Text>
         <ScrollView
@@ -456,7 +456,7 @@ const BusinessDay = ({navigation}) => {
                 fontFamily: 'Poppins-Regular',
                 marginRight: 75,
               }}>
-              Valore reale Hero Bag
+              Valore reale HeroBag
             </Text>
             <Text
               style={{
@@ -500,7 +500,7 @@ const BusinessDay = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Gestione ordini
         </Text>
@@ -515,14 +515,14 @@ const BusinessDay = ({navigation}) => {
           modificabili al massimo fino a 2 ore prima dell'inizio del ritiro.
           Ricorda: L'utente per ritirare l'ordine deve mostrare il codice ordine
           e convalidare il ritiro in app, così la transazione si concluderà e la
-          Hero Bag bag potrà essere consegnata.
+          HeroBag potrà essere consegnata.
         </Text>
         <View
           style={{
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
-            paddingHorizontal: 50,
+            paddingHorizontal: 20,
             marginTop: 20,
           }}>
           <TouchableOpacity
@@ -530,14 +530,14 @@ const BusinessDay = ({navigation}) => {
               backgroundColor: '#F9FAFB',
               borderColor: '#21B861',
               borderRadius: 10,
-              borderWidth: 0.5,
+              borderWidth: 1,
             }}>
             <Text
               style={{
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 paddingVertical: 10,
                 paddingHorizontal: 30,
               }}>
@@ -549,14 +549,14 @@ const BusinessDay = ({navigation}) => {
               backgroundColor: '#F9FAFB',
               borderColor: '#D9E0E8',
               borderRadius: 10,
-              borderWidth: 0.5,
+              borderWidth: 1,
             }}>
             <Text
               style={{
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 paddingVertical: 10,
                 paddingHorizontal: 30,
               }}>

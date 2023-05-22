@@ -40,7 +40,7 @@ const BusinessWeek = ({navigation}) => {
             width: '100%',
             height: '50%',
             borderRadius: 10,
-            borderWidth: 0.5,
+            borderWidth: 0.1,
             borderColor: '#bebebe',
             top: '50%',
           }}>
@@ -50,7 +50,7 @@ const BusinessWeek = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingRight: 15,
-              paddingLeft: '40%',
+              paddingLeft: '38%',
               paddingTop: 20,
             }}>
             <Text
@@ -58,7 +58,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Guida all'app
             </Text>
@@ -87,7 +87,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
             La tua settimana
@@ -101,9 +101,9 @@ const BusinessWeek = ({navigation}) => {
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
-            In questa schermata potrai gestire le vendite della settimana,
+            In questa schermata potrai pianificare le vendite della settimana,
             indicando i giorni in cui ipotizzi di avere prodotti disponibili per
-            il ritiro, il numero delle bag in vendita che puoi modificare in
+            il ritiro , il numero delle HeroBag in vendita che potrai modificare in
             qualsiasi momento e l’orario di ritiro in cui le persone potranno
             ritirare i loro ordini.
           </Text>
@@ -129,7 +129,7 @@ const BusinessWeek = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -150,7 +150,7 @@ const BusinessWeek = ({navigation}) => {
                   color: '#000000',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -228,7 +228,7 @@ const BusinessWeek = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           La tua settimana
         </Text>
@@ -273,7 +273,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 marginLeft: 5,
               }}>
               Ritiro disponibile
@@ -291,7 +291,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 marginLeft: 5,
               }}>
               Ritiro non disponibile
@@ -313,7 +313,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Lunedì, 14 Novembre
           </Text>
@@ -329,7 +329,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -355,14 +355,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -435,7 +435,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Martedì, 15 Novembre
           </Text>
@@ -451,7 +451,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -477,14 +477,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -557,7 +557,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Mercoledì, 16 Novembre
           </Text>
@@ -573,7 +573,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -599,14 +599,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -679,7 +679,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Giovedì, 17 Novembre
           </Text>
@@ -695,7 +695,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -721,14 +721,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -801,7 +801,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Venerdì, 18 Novembre
           </Text>
@@ -817,7 +817,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -843,14 +843,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -923,7 +923,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Sabato, 19 Novembre
           </Text>
@@ -939,7 +939,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -965,14 +965,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -1045,7 +1045,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Domenica, 20 Novembre
           </Text>
@@ -1061,7 +1061,7 @@ const BusinessWeek = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 14,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Ritiro disponibile
             </Text>
@@ -1087,14 +1087,14 @@ const BusinessWeek = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              Hero Bag in vendita
+              HeroBag in vendita
             </Text>
             <Text
               style={{
                 color: '#21B861',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
+                fontSize: 25,
+                marginRight:15,
+                fontFamily: 'Poppins-Bold',
               }}>
               5
             </Text>
@@ -1164,7 +1164,7 @@ const BusinessWeek = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

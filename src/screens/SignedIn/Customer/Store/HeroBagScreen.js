@@ -95,7 +95,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -117,7 +117,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             HeroBag Pasti pronti
           </Text>
@@ -131,7 +131,7 @@ const HeroBagScreen = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               € 8,99
             </Text>
@@ -191,7 +191,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Nome Store
           </Text>
@@ -258,7 +258,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               
             }}>
             Vedi mappa
@@ -277,7 +277,7 @@ const HeroBagScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginLeft: 15,
             marginTop: 10,
           }}>
@@ -317,7 +317,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginLeft: 15,
               marginTop: 10,
             }}>
@@ -338,7 +338,7 @@ const HeroBagScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               paddingVertical: 20,
               textAlign: 'center',
             }}>

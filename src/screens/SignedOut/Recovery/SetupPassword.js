@@ -139,7 +139,7 @@ const SetupPassword = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -179,8 +179,7 @@ const SetupPassword = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 22,
-            
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Crea nuova password
         </Text>
@@ -324,8 +323,7 @@ const SetupPassword = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 16,
-            
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             textAlign: 'center',
             paddingVertical: 15,
           }}>

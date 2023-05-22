@@ -27,7 +27,7 @@ const CategoriesScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '15%',
+            marginTop: '30%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -186,10 +186,10 @@ const CategoriesScreen = ({navigation}) => {
                   borderColor: '#999da1',
                   borderWidth: 0.3,
                   borderRadius: 10,
-                  marginTop: 2,
+                  marginTop: 1,
                 }}>
                 <TextInput
-                  placeholder="Dicci di più"
+                  placeholder="Parlaci del tuo consiglio"
                   placeholderTextColor={'#000000'}
                 />
               </View>
@@ -209,7 +209,7 @@ const CategoriesScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -232,7 +232,7 @@ const CategoriesScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 22,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Ciao @nomeutente,
           </Text>
@@ -241,9 +241,9 @@ const CategoriesScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 22,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
-            scegli una categoria
+            Scegli una categoria
           </Text>
         </View>
         <MaterialCommunityIcons name="magnify" size={30} color={'#000000'} />
@@ -506,7 +506,7 @@ const CategoriesScreen = ({navigation}) => {
             backgroundColor: '#F9FAFB',
             width: '70%',
             borderRadius: 10,
-            borderWidth: 0.5,
+            borderWidth: 0.6,
             borderColor: '#21B861',
           }}
           onPress={() => {
@@ -517,7 +517,7 @@ const CategoriesScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 10,
             }}>

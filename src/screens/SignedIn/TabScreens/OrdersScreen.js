@@ -208,7 +208,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -222,7 +222,7 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '50%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -237,14 +237,14 @@ const FavoriteScreen = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 5,
-              paddingLeft: '35%',
+              paddingLeft: '30%',
             }}>
             <Text
               style={{
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Convalida ordine
             </Text>
@@ -277,7 +277,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -302,7 +302,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -327,7 +327,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -341,11 +341,11 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '50%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
-            borderWidth: 0.3,
+            borderWidth: 0.5,
             paddingVertical: 20,
           }}>
           <View
@@ -396,7 +396,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 18,
                 fontWeight: '600',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 paddingHorizontal: 50,
                 textAlign: 'center',
               }}>
@@ -432,7 +432,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#ffffff',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -456,7 +456,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -473,7 +473,7 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '50%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -488,14 +488,14 @@ const FavoriteScreen = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 5,
-              paddingLeft: '35%',
+              paddingLeft: '25%',
             }}>
             <Text
               style={{
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Richiesta completata
             </Text>
@@ -543,104 +543,8 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
-                  textAlign: 'center',
-                }}>
-                Ritiro ordine nr. 35210{' '}
-              </Text>
-              <Text
-                style={{
-                  color: '#3C434B',
-                  fontSize: 14,
-                  fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
-                  textAlign: 'center',
-                }}>
-                convalidato correttamente
-              </Text>
-            </View>
-          </View>
-        </View>
-      </Modal>
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={confirmValidation}>
-        <View
-          style={{
-            backgroundColor: '#ffffff',
-            width: '85%',
-            marginTop: '25%',
-            alignSelf: 'center',
-            borderRadius: 8,
-            borderColor: '#000000',
-            borderWidth: 0.3,
-            paddingVertical: 20,
-          }}>
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              width: '100%',
-              justifyContent: 'space-between',
-              paddingHorizontal: 15,
-              paddingBottom: 5,
-              paddingLeft: '35%',
-            }}>
-            <Text
-              style={{
-                color: '#000000',
-                fontSize: 14,
-                fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
-              }}>
-              Richiesta completata
-            </Text>
-            <TouchableOpacity
-              style={{alignSelf: 'flex-end'}}
-              onPress={() => {
-                setConfirmValidation(false);
-              }}>
-              <MaterialCommunityIcons
-                name="close"
-                size={30}
-                color={'#020905'}
-              />
-            </TouchableOpacity>
-          </View>
-          <View
-            style={{
-              backgroundColor: '#D9E0E8',
-              height: 0.5,
-              width: '90%',
-              alignSelf: 'center',
-            }}
-          />
-          <View>
-            <View
-              style={{
-                backgroundColor: '#21B861',
-                alignItems: 'center',
-                justifyContent: 'center',
-                borderRadius: 50,
-                width: 100,
-                height: 100,
-                alignSelf: 'center',
-                marginTop: 10,
-              }}>
-              <MaterialCommunityIcons
-                name="check"
-                size={50}
-                color={'#ffffff'}
-              />
-            </View>
-            <View>
-              <Text
-                style={{
-                  color: '#08875D',
-                  fontSize: 14,
-                  fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
+                  marginTop:15,
                   textAlign: 'center',
                 }}>
                 Ritiro ordine nr. 35210{' '}
@@ -664,9 +568,9 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '51%',
             alignSelf: 'center',
-            borderRadius: 8,
+            borderRadius: 10,
             borderColor: '#000000',
             borderWidth: 0.3,
             paddingVertical: 20,
@@ -679,12 +583,12 @@ const FavoriteScreen = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 5,
-              paddingLeft: '40%',
+              paddingLeft: '35%',
             }}>
             <Text
               style={{
                 color: '#000000',
-                fontSize: 14,
+                fontSize: 15,
                 fontWeight: '500',
                 fontFamily: 'Poppins-Regular',
               }}>
@@ -778,7 +682,7 @@ const FavoriteScreen = ({navigation}) => {
                 borderColor: '#999da1',
                 borderWidth: 0.3,
                 borderRadius: 10,
-                marginTop: 2,
+                marginTop: 1,
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
@@ -846,7 +750,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -863,7 +767,7 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '50%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -878,14 +782,14 @@ const FavoriteScreen = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 5,
-              paddingLeft: '35%',
+              paddingLeft: '25%',
             }}>
             <Text
               style={{
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Richiesta completata
             </Text>
@@ -960,7 +864,7 @@ const FavoriteScreen = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '50%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -975,14 +879,14 @@ const FavoriteScreen = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 5,
-              paddingLeft: '35%',
+              paddingLeft: '25%',
             }}>
             <Text
               style={{
                 color: '#000000',
-                fontSize: 14,
+                fontSize: 15,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Richiesta completata
             </Text>
@@ -1030,20 +934,11 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
+                  marginTop:20,
                   textAlign: 'center',
                 }}>
-                Recensione{' '}
-              </Text>
-              <Text
-                style={{
-                  color: '#3C434B',
-                  fontSize: 14,
-                  fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
-                  textAlign: 'center',
-                }}>
-                pubblicata correttamente
+                Recensione pubblicata correttamente
               </Text>
             </View>
           </View>
@@ -1062,7 +957,7 @@ const FavoriteScreen = ({navigation}) => {
             color: '#000000',
             fontSize: 22,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Ordini
         </Text>
@@ -1100,7 +995,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1124,7 +1019,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1149,7 +1044,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1173,7 +1068,7 @@ const FavoriteScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -1205,7 +1100,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                 }}>
                 Ordine nr. 36210
               </Text>
@@ -1215,7 +1110,7 @@ const FavoriteScreen = ({navigation}) => {
                   flexDirection: 'row',
                   alignItems: 'center',
                   paddingVertical: 10,
-                  paddingHorizontal: 15,
+                  paddingHorizontal: 20,
                   borderRadius: 10,
                   marginTop: 10,
                 }}
@@ -1224,14 +1119,14 @@ const FavoriteScreen = ({navigation}) => {
                 }}>
                 <MaterialCommunityIcons
                   name="trash-can"
-                  size={15}
+                  size={20}
                   color={'#ffffff'}
                 />
                 <Text
                   style={{
                     color: '#ffffff',
                     fontSize: 12,
-                    fontWeight: '400',
+                    fontWeight: '500',
                     fontFamily: 'Poppins-Regular',
                   }}>
                   Elimina
@@ -1321,7 +1216,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   
                   paddingVertical: 20,
                 }}>
@@ -1348,7 +1243,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                 }}>
                 Ordine nr. 45675
               </Text>
@@ -1358,20 +1253,20 @@ const FavoriteScreen = ({navigation}) => {
                   flexDirection: 'row',
                   alignItems: 'center',
                   paddingVertical: 10,
-                  paddingHorizontal: 15,
+                  paddingHorizontal: 20,
                   borderRadius: 10,
                   marginTop: 10,
                 }}>
                 <MaterialCommunityIcons
                   name="trash-can"
-                  size={15}
+                  size={20}
                   color={'#ffffff'}
                 />
                 <Text
                   style={{
                     color: '#ffffff',
                     fontSize: 12,
-                    fontWeight: '400',
+                    fontWeight: '500',
                     fontFamily: 'Poppins-Regular',
                   }}>
                   Elimina
@@ -1458,7 +1353,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   
                   paddingVertical: 20,
                 }}>
@@ -1490,7 +1385,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   marginTop: 10,
                 }}>
                 Ordine nr. 36210
@@ -1553,7 +1448,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   
                   paddingVertical: 20,
                 }}>
@@ -1565,7 +1460,7 @@ const FavoriteScreen = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderRadius: 10,
-              marginTop: 15,
+              marginTop: 20,
               marginBottom: 80,
             }}>
             <View
@@ -1580,7 +1475,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#000000',
                   fontSize: 18,
                   fontWeight: '600',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   marginTop: 10,
                 }}>
                 Ordine nr. 45675
@@ -1640,7 +1535,7 @@ const FavoriteScreen = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 12,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   
                   paddingVertical: 20,
                 }}>

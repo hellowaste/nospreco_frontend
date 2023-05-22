@@ -37,7 +37,7 @@ const BusinessRegisterOwner = ({navigation}) => {
             color: '#000000',
             fontSize: 22,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Registra il tuo store
         </Text>
@@ -77,7 +77,7 @@ const BusinessRegisterOwner = ({navigation}) => {
           />
           <Text
             style={{
-              paddingTop: 2,
+              paddingTop: 10,
               color: '#A3AEB4',
               fontSize: 14,
               lineHeight: 12,
@@ -85,18 +85,7 @@ const BusinessRegisterOwner = ({navigation}) => {
               fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
-            Informazioni
-          </Text>
-          <Text
-            style={{
-              color: '#A3AEB4',
-              fontSize: 14,
-              lineHeight: 12,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-           negozio
+            Info azienda
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
@@ -106,26 +95,16 @@ const BusinessRegisterOwner = ({navigation}) => {
             color={'#21B861'}
           />
           <Text
-            style={{
-              paddingTop: 2,
-              color: '#21B861',
-              fontSize: 14,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
+           style={{
+            paddingTop: 10,
+            color: '#21B861',
+            fontSize: 14,
+            lineHeight: 12,
+            fontWeight: '400',
+            fontFamily: 'Poppins-Bold',
+            textAlign: 'center',
             }}>
-            Informazioni
-          </Text>
-          <Text
-            style={{
-              color: '#21B861',
-              fontSize: 14,
-              lineHeight: 12,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-           referente
+            Info referente
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
@@ -135,26 +114,16 @@ const BusinessRegisterOwner = ({navigation}) => {
             color={'#A3AEB4'}
           />
           <Text
-            style={{
-              paddingTop: 2,
-              color: '#A3AEB4',
-              fontSize: 14,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
+           style={{
+            paddingTop: 10,
+            color: '#A3AEB4',
+            fontSize: 14,
+            lineHeight: 12,
+            fontWeight: '400',
+            fontFamily: 'Poppins-Regular',
+            textAlign: 'center',
             }}>
             Verifica 
-          </Text>
-          <Text
-            style={{
-              color: '#A3AEB4',
-              fontSize: 14,
-              lineHeight: 12,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-             informazioni
           </Text>
         </View>
       </View>
@@ -172,7 +141,7 @@ const BusinessRegisterOwner = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Informazioni sul referente dello store
         </Text>
@@ -182,7 +151,7 @@ const BusinessRegisterOwner = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Nome e Cognome
           </Text>
@@ -204,7 +173,7 @@ const BusinessRegisterOwner = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Numero di telefono
           </Text>
@@ -226,9 +195,9 @@ const BusinessRegisterOwner = ({navigation}) => {
               color: '#6D747C',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
-            IBAN Persona Giuridica
+            IBAN Persona Giuridica/Azienda
           </Text>
           <View
             style={{
@@ -251,7 +220,7 @@ const BusinessRegisterOwner = ({navigation}) => {
             width: '100%',
             backgroundColor: '#21B861',
             borderRadius: 10,
-            marginTop: 30,
+            marginTop: 150,
             marginBottom: 80,
           }}
           onPress={() => {
@@ -262,7 +231,7 @@ const BusinessRegisterOwner = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

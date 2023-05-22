@@ -8,7 +8,7 @@ const Account = ({navigation}) => {
       style={{
         backgroundColor: '#ffffff',
         flex: 1,
-        paddingTop: 15,
+        paddingTop: 10,
       }}>
       <TouchableOpacity
         style={{
@@ -29,6 +29,9 @@ const Account = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 20,
+            fontWeight: '500',
+            fontFamily: 'Poppins-Bold',
+            textAlign: 'center',
             
           }}>
           Il mio account
@@ -149,7 +152,7 @@ const Account = ({navigation}) => {
             fontWeight: '500',
             fontFamily: 'Poppins-Regular',
             textAlign: 'left',
-            marginTop: 20,
+            marginTop: 18,
           }}>
           Password
         </Text>

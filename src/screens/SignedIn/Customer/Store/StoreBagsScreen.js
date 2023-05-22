@@ -96,7 +96,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -118,7 +118,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Nome Store
           </Text>
@@ -185,7 +185,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               
             }}>
             Vedi mappa
@@ -204,7 +204,7 @@ const StoreBagsScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginLeft: 15,
             marginTop: 10,
           }}>
@@ -233,10 +233,11 @@ const StoreBagsScreen = ({navigation}) => {
             <Image
               source={require('../../../../assets/app/store/img-1.png')}
               style={{
-                width: 50,
-                height: 50,
-                borderRadius: 50,
+                width: 60,
+                height: 60,
+                borderRadius: 60,
                 marginRight: 10,
+                marginTop: 10,
               }}
             />
             <View>
@@ -245,7 +246,7 @@ const StoreBagsScreen = ({navigation}) => {
                   color: '#020905',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   marginLeft: 15,
                   marginTop: 10,
                 }}>
@@ -292,7 +293,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginLeft: 15,
               marginTop: 10,
             }}>
@@ -319,10 +320,11 @@ const StoreBagsScreen = ({navigation}) => {
             <Image
               source={require('../../../../assets/app/store/img-1.png')}
               style={{
-                width: 50,
-                height: 50,
-                borderRadius: 50,
+                width: 60,
+                height: 60,
+                borderRadius: 60,
                 marginRight: 10,
+                marginTop: 10,
               }}
             />
             <View>
@@ -331,7 +333,7 @@ const StoreBagsScreen = ({navigation}) => {
                   color: '#020905',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   marginLeft: 15,
                   marginTop: 10,
                 }}>
@@ -378,7 +380,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginLeft: 15,
               marginTop: 10,
             }}>
@@ -406,7 +408,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Recensioni (0)
           </Text>
@@ -420,7 +422,7 @@ const StoreBagsScreen = ({navigation}) => {
                 color: '#000000',
                 fontSize: 12,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Leggi tutte
             </Text>
@@ -454,7 +456,7 @@ const StoreBagsScreen = ({navigation}) => {
               color: '#020905',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Scrivi una recensione!
           </Text>

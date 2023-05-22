@@ -42,7 +42,7 @@ const BusinessOrders = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingRight: 15,
-              paddingLeft: '40%',
+              paddingLeft: '38%',
               paddingTop: 20,
             }}>
             <Text
@@ -50,7 +50,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Guida all'app
             </Text>
@@ -79,7 +79,7 @@ const BusinessOrders = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
             Ordini
@@ -93,7 +93,7 @@ const BusinessOrders = ({navigation}) => {
               textAlign: 'center',
               paddingHorizontal: 10,
             }}>
-            Visualizzare e monitora gli ordini in corso e gli ordini conclusi
+            Visualizza e monitora gli ordini in corso e conclusi
             con tutte le info necessarie nella tabella, così da poter tenere
             sempre traccia di tutte le attività.
           </Text>
@@ -119,7 +119,7 @@ const BusinessOrders = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -140,7 +140,7 @@ const BusinessOrders = ({navigation}) => {
                   color: '#000000',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -218,17 +218,30 @@ const BusinessOrders = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Ordini
+        </Text>
+        <Text
+          style={{
+            color: '#3C434B',
+            fontSize: 12,
+            fontWeight: '400',
+            fontFamily: 'Poppins-Regular',
+          }}>
+          Qui puoi vedere o modificare lo stato dei tuoi ordini, gli ordini sono
+          modificabili al massimo fino a 2 ore prima dell'inizio del ritiro.
+          Ricorda: L'utente per ritirare l'ordine deve mostrare il codice ordine
+          e convalidare il ritiro in app, così la transazione si concluderà e la
+          HeroBag potrà essere consegnata.
         </Text>
         <Text
           style={{
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
-            marginTop: 20,
+            fontFamily: 'Poppins-Bold',
+            marginTop: 0,
           }}>
           Pianificazione odierna
         </Text>
@@ -237,7 +250,7 @@ const BusinessOrders = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 10,
           }}>
           Martedì, 15 Novembre
@@ -257,7 +270,7 @@ const BusinessOrders = ({navigation}) => {
               fontFamily: 'Poppins-Regular',
               marginTop: 10,
             }}>
-            Hero Bag disponibili?
+            HeroBag disponibili?
           </Text>
           <View
             style={{
@@ -269,7 +282,7 @@ const BusinessOrders = ({navigation}) => {
                 color: '#A3AEB4',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 marginRight: 5,
               }}>
               No
@@ -286,10 +299,10 @@ const BusinessOrders = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 marginLeft: 5,
               }}>
-              Sì
+              SI
             </Text>
           </View>
         </View>
@@ -364,18 +377,19 @@ const BusinessOrders = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#21B861',
-              borderWidth: 0.5,
+              borderWidth: 1,
+              height: 40,
               borderRadius: 10,
-              width: '45%',
+              width: '40%',
             }}>
             <Text
               style={{
                 color: '#000000',
-                fontSize: 16,
+                fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
-                paddingVertical: 10,
+                paddingVertical: 8,
               }}>
               Ordini in corso
             </Text>
@@ -391,11 +405,11 @@ const BusinessOrders = ({navigation}) => {
             <Text
               style={{
                 color: '#000000',
-                fontSize: 16,
+                fontSize: 12,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
-                paddingVertical: 10,
+                paddingVertical: 8,
               }}>
               Ordini conclusi
             </Text>

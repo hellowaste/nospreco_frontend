@@ -26,13 +26,14 @@ const AppNotifications = ({navigation}) => {
         }}>
         <MaterialCommunityIcons
           name="chevron-left"
-          size={30}
+          size={35}
           color={'#000000'}
         />
         <Text
           style={{
             color: '#000000',
             fontSize: 20,
+            fontFamily: 'Poppins-Bold',
             
           }}>
           Notifiche

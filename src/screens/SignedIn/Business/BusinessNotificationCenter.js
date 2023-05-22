@@ -98,7 +98,7 @@ const BusinessNotificationCenter = ({navigation}) => {
                 fontWeight: '400',
                 fontFamily: 'Poppins-Regular',
               }}>
-              1x Hero Bag - Prodotti da forno
+              1x HeroBag - Prodotti da forno
             </Text>
             <Text
               style={{

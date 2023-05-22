@@ -73,7 +73,7 @@ const BusinessOnboarding = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>
@@ -92,7 +92,7 @@ const BusinessOnboarding = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 14,
               }}>
@@ -190,10 +190,10 @@ const FirstSection = () => {
           color: '#000000',
           fontSize: 22,
           
-          fontFamily: 'Poppins-Regular',
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
         }}>
-        Vendere non è mai stato così facile, non ci credi?
+        Vendere merce invenduta ? da oggi è semplicissimo !
       </Text>
       <Text
         style={{
@@ -204,9 +204,7 @@ const FirstSection = () => {
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
-        Pianifica ed organizza le tue vendite su base settimanale, crea e
-        componi le tue Hero Bag ed indica tutte informazioni necessarie per
-        farti notare dai potenziali clienti.
+        Hello Waste , tramite le sue HeroBag ti consente di generare un doppio profitto vendendo la merce rimasta invenduta e acquistando nuovi clienti.
       </Text>
     </View>
   );
@@ -230,11 +228,11 @@ const SecondSection = () => {
           color: '#000000',
           fontSize: 22,
           
-          fontFamily: 'Poppins-Regular',
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>
-        Cosa fare quando arriva un cliente?
+        Cosa fare quando arriva un cliente ?
       </Text>
       <Text
         style={{
@@ -245,9 +243,8 @@ const SecondSection = () => {
           fontFamily: 'Poppins-Regular',
           textAlign: 'center',
         }}>
-        Controlla il codice ordine e consegna le Hero Bag ai clienti, ricorda di
-        far convalidare la consegna altrimenti l'ordine risulterà non
-        consegnato.
+         1) Controlla il codice ordine presente in app  2)consegna le HeroBag ai clienti  3)Fai convalidare al cliente l'ordine consegnato altrimenti risulterà privo di consegna
+
       </Text>
     </View>
   );
@@ -271,7 +268,7 @@ const ThirdSection = () => {
           color: '#000000',
           fontSize: 22,
           
-          fontFamily: 'Poppins-Regular',
+          fontFamily: 'Poppins-Bold',
           textAlign: 'center',
           paddingHorizontal: 30,
         }}>

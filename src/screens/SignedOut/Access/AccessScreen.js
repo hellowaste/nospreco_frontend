@@ -205,6 +205,7 @@ const AccessScreen = ({navigation}) => {
           <Text
             style={{
               color: '#21B861',
+              fontFamily: 'Poppins-Bold',
               fontSize: 14,
               fontWeight: '400',             
               alignSelf: 'flex-end',
@@ -275,7 +276,7 @@ const AccessScreen = ({navigation}) => {
                   />
                 </View>
               </View>
-              <View style={{marginTop: 15}}>
+              <View style={{marginTop: 20}}>
                 <Text
                   style={{
                     color: '#6D747C',
@@ -437,15 +438,15 @@ const AccessScreen = ({navigation}) => {
                   paddingHorizontal: 20,
                 }}>
                 <View
-                  style={{
-                    width: '31%',
-                    height: 50,
-                    borderColor: '#3C434B',
-                    borderStyle: 'solid',
-                    borderWidth: 0.3,
-                    borderRadius: 10,
-                    alignItems: 'center',
-                    justifyContent: 'center',
+                 style={{
+                  width: '31%',
+                  height: 50,
+                  borderColor: '#21B861',
+                  borderStyle: 'solid',
+                  borderWidth: 1,
+                  borderRadius: 15,
+                  alignItems: 'center',
+                  justifyContent: 'center',
                   }}>
                   <MaterialCommunityIcons
                     name="facebook"
@@ -457,10 +458,10 @@ const AccessScreen = ({navigation}) => {
                   style={{
                     width: '31%',
                     height: 50,
-                    borderColor: '#3C434B',
+                    borderColor: '#21B861',
                     borderStyle: 'solid',
-                    borderWidth: 0.3,
-                    borderRadius: 10,
+                    borderWidth: 1,
+                    borderRadius: 15,
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}>
@@ -470,15 +471,15 @@ const AccessScreen = ({navigation}) => {
                   />
                 </View>
                 <View
-                  style={{
-                    width: '31%',
-                    height: 50,
-                    borderColor: '#3C434B',
-                    borderStyle: 'solid',
-                    borderWidth: 0.3,
-                    borderRadius: 10,
-                    alignItems: 'center',
-                    justifyContent: 'center',
+                    style={{
+                      width: '31%',
+                      height: 50,
+                      borderColor: '#21B861',
+                      borderStyle: 'solid',
+                      borderWidth: 1,
+                      borderRadius: 15,
+                      alignItems: 'center',
+                      justifyContent: 'center',
                   }}>
                   <MaterialCommunityIcons
                     name="apple"

@@ -88,7 +88,7 @@ const BusinessSettings = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Impostazioni
         </Text>
@@ -106,7 +106,7 @@ const BusinessSettings = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#21B861',
-              borderWidth: 0.5,
+              borderWidth: 1,
               borderRadius: 10,
               width: '30%',
             }}
@@ -118,7 +118,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -130,7 +130,7 @@ const BusinessSettings = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#D9E0E8',
-              borderWidth: 0.5,
+              borderWidth: 1,
               borderRadius: 10,
               width: '30%',
             }}
@@ -142,7 +142,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -155,7 +155,7 @@ const BusinessSettings = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#21B861',
-              borderWidth: 0.5,
+              borderWidth: 1,
               borderRadius: 10,
               width: '30%',
             }}
@@ -167,7 +167,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -179,7 +179,7 @@ const BusinessSettings = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#D9E0E8',
-              borderWidth: 0.5,
+              borderWidth: 1,
               borderRadius: 10,
               width: '30%',
             }}
@@ -191,7 +191,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -204,7 +204,7 @@ const BusinessSettings = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#21B861',
-              borderWidth: 0.5,
+              borderWidth: 1,
               borderRadius: 10,
               width: '30%',
             }}
@@ -216,7 +216,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -228,7 +228,7 @@ const BusinessSettings = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderColor: '#D9E0E8',
-              borderWidth: 0.5,
+              borderWidth: 1,
               borderRadius: 10,
               width: '30%',
             }}
@@ -240,7 +240,7 @@ const BusinessSettings = ({navigation}) => {
                 color: '#000000',
                 fontSize: 10,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 10,
               }}>
@@ -271,7 +271,7 @@ const StoreSettings = () => {
           color: '#000000',
           fontSize: 18,
           fontWeight: '600',
-          fontFamily: 'Poppins-Regular',
+          fontFamily: 'Poppins-Bold',
           marginTop: 20,
         }}>
         Quando sei aperto?
@@ -498,7 +498,7 @@ const StoreSettings = () => {
           color: '#000000',
           fontSize: 16,
           fontWeight: '600',
-          fontFamily: 'Poppins-Regular',
+          fontFamily: 'Poppins-Bold',
           marginTop: 20,
         }}>
         Informazioni sullo store
@@ -704,6 +704,15 @@ const StoreSettings = () => {
           }}>
           Logo Store
         </Text>
+        <Text
+          style={{
+            color: '#6D747C',
+            fontSize: 14,
+            fontWeight: '500',
+            fontFamily: 'Poppins-Regular',
+          }}>
+          L’immagine di copertina sarà visualizzata dagli utenti  quando visiteranno il tuo store. Il nostro consiglio è quello di caricare un immagine personale dello store  o di una parte di esso ( banco prodotti , scaffalatura , ecc...).
+        </Text>
         <TouchableOpacity>
           <MaterialCommunityIcons
             name="pencil"
@@ -720,7 +729,7 @@ const StoreSettings = () => {
               height: 120,
               alignSelf: 'center',
               borderRadius: 10,
-              marginTop: 10,
+              marginTop: 5,
             }}
           />
         </TouchableOpacity>
@@ -730,7 +739,7 @@ const StoreSettings = () => {
           color: '#000000',
           fontSize: 16,
           fontWeight: '600',
-          fontFamily: 'Poppins-Regular',
+          fontFamily: 'Poppins-Bold',
           marginTop: 20,
         }}>
         Informazioni sul referente
@@ -828,7 +837,7 @@ const StoreSettings = () => {
             color: '#000000',
             fontSize: 16,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             textAlign: 'center',
             paddingVertical: 15,
           }}>
@@ -860,7 +869,7 @@ const NotificationSettings = () => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '400',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Notifiche Push
         </Text>
@@ -891,7 +900,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Conferma ordine
           </Text>
@@ -932,7 +941,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Cancellazione ordine
           </Text>
@@ -943,7 +952,7 @@ const NotificationSettings = () => {
               fontWeight: '400',
               fontFamily: 'Poppins-Regular',
             }}>
-            Email inviata se un ordine
+            Email inviata se un ordine viene cancellato
           </Text>
           <Text
             style={{
@@ -952,7 +961,7 @@ const NotificationSettings = () => {
               fontWeight: '400',
               fontFamily: 'Poppins-Regular',
             }}>
-            viene cancellato prima del ritiro.
+            prima del ritiro.
           </Text>
         </View>
         <Switch
@@ -982,7 +991,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Nuova recensione
           </Text>
@@ -1032,7 +1041,7 @@ const NotificationSettings = () => {
               color: '#000000',
               fontSize: 16,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Newsletter
           </Text>
@@ -1058,7 +1067,7 @@ const NotificationSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Email store associata:
         </Text>
@@ -1091,7 +1100,7 @@ const NotificationSettings = () => {
             color: '#000000',
             fontSize: 16,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             textAlign: 'center',
             paddingVertical: 15,
           }}>
@@ -1111,7 +1120,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Nome Utente
         </Text>
@@ -1138,7 +1147,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Email
         </Text>
@@ -1165,7 +1174,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Numero di telefono
         </Text>
@@ -1192,7 +1201,7 @@ const AccountSettings = () => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Password
         </Text>
@@ -1218,14 +1227,14 @@ const AccountSettings = () => {
           backgroundColor: '#21B861',
           width: '100%',
           borderRadius: 10,
-          marginTop: 20,
+          marginTop: 130,
         }}>
         <Text
           style={{
             color: '#000000',
             fontSize: 16,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             textAlign: 'center',
             paddingVertical: 15,
           }}>

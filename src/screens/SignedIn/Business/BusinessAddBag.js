@@ -28,11 +28,11 @@ const BusinessAddBag = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '25%',
+            marginTop: '45%',
             alignSelf: 'center',
-            borderRadius: 8,
+            borderRadius: 10,
             borderColor: '#000000',
-            borderWidth: 0.3,
+            borderWidth: 0.1,
             paddingVertical: 20,
           }}>
           <View
@@ -43,7 +43,7 @@ const BusinessAddBag = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 5,
-              paddingLeft: '35%',
+              paddingLeft: '25%',
             }}>
             <Text
               style={{
@@ -98,17 +98,17 @@ const BusinessAddBag = ({navigation}) => {
                   color: '#08875D',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                 }}>
-                Salvataggio nuova Hero Bag
+                Salvataggio nuova HeroBag
               </Text>
               <Text
                 style={{
                   color: '#3C434B',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                 }}>
                 completato correttamente
@@ -201,9 +201,9 @@ const BusinessAddBag = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
-          Aggiungi nuova Hero Bag
+          Aggiungi nuova HeroBag
         </Text>
       </View>
       <View
@@ -212,12 +212,12 @@ const BusinessAddBag = ({navigation}) => {
           marginTop: 10,
           marginBottom: 100,
         }}>
-        <Text
+         <Text
           style={{
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Categoria
         </Text>
@@ -228,8 +228,8 @@ const BusinessAddBag = ({navigation}) => {
             fontWeight: '400',
             fontFamily: 'Poppins-Regular',
           }}>
-          Ogni Hero Bag può contenere solo una categoria di prodotto, in
-          presenza di più categorie sarà sufficiente creare altre bag.
+          Ogni HeroBag può contenere solo una categoria di prodotti tra quelli a scelta , qualora fossero disponibili prodotti con categoria diversa sarà sufficiente creare tante HeroBag quante le categorie disponibili tra ivostri prodotti , la categoria altro identifica tutte quelle categorie non presenti nella scelta multipla (per questa categoria è possibile inserire anche prodotti diversi fra loro , ricorda però che non deve contenere prodotti di categorie disponibili nella scelta multipla)
+          
         </Text>
         <TouchableOpacity
           style={{
@@ -276,6 +276,7 @@ const BusinessAddBag = ({navigation}) => {
               backgroundColor: '#ffffff',
               marginVertical: 15,
               paddingHorizontal: 15,
+              borderRadius: 0.5,
             }}>
             <View
               style={{
@@ -465,7 +466,7 @@ const BusinessAddBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 15,
           }}>
           Tipologia
@@ -479,7 +480,7 @@ const BusinessAddBag = ({navigation}) => {
             borderRadius: 10,
             borderColor: '#B5B5B5',
             borderWidth: 0.5,
-            marginTop: 5,
+            marginTop: 7,
           }}
           onPress={() => {
             setTypeVisibility(!typeVisibility);
@@ -746,10 +747,21 @@ const BusinessAddBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            marginBottom: -15,
+            fontFamily: 'Poppins-Bold',
             marginTop: 15,
           }}>
           Regimi alimentari
+        </Text>
+        <Text
+          style={{
+            color: '#6D747C',
+            fontSize: 14,
+            fontWeight: '500',
+            fontFamily: 'Poppins-Regular',
+            marginTop: 15,
+          }}>
+          Per la categoria alimentari è possibile indicare anche i regimi alimentari)
         </Text>
         <TouchableOpacity
           style={{
@@ -958,7 +970,7 @@ const BusinessAddBag = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 10,
                 }}>
@@ -972,7 +984,7 @@ const BusinessAddBag = ({navigation}) => {
             color: '#6D747C',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 15,
           }}>
           Descrizione contenuto
@@ -986,10 +998,10 @@ const BusinessAddBag = ({navigation}) => {
             borderRadius: 10,
             borderColor: '#B5B5B5',
             borderWidth: 0.5,
-            marginTop: 5,
+            marginTop: 6,
           }}>
           <TextInput
-            placeholder="Inserisci la descrizione della Hero Bag"
+            placeholder="Inserisci la descrizione della HeroBag"
             placeholderTextColor={'#000000'}
             style={{
               color: '#000000',
@@ -1020,7 +1032,7 @@ const BusinessAddBag = ({navigation}) => {
               color: '#000000',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Inserisci categoria per vedere il nome
           </Text>
@@ -1038,7 +1050,7 @@ const BusinessAddBag = ({navigation}) => {
               fontWeight: '500',
               fontFamily: 'Poppins-Regular',
             }}>
-            Codice Hero Bag:{' '}
+            Codice HeroBag:{' '}
           </Text>
           <Text
             style={{
@@ -1082,7 +1094,7 @@ const BusinessAddBag = ({navigation}) => {
               style={{
                 borderRadius: 10,
                 borderColor: '#D9E0E8',
-                borderWidth: 0.5,
+                borderWidth: 1,
                 alignItems: 'center',
                 marginTop: 5,
               }}>
@@ -1093,7 +1105,7 @@ const BusinessAddBag = ({navigation}) => {
                   color: '#000000',
                   fontSize: 14,
                   fontWeight: '500',
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                 }}
               />
             </View>
@@ -1107,7 +1119,7 @@ const BusinessAddBag = ({navigation}) => {
               style={{
                 borderRadius: 10,
                 borderColor: '#D9E0E8',
-                borderWidth: 0.5,
+                borderWidth: 1,
                 alignItems: 'center',
                 marginTop: 5,
               }}>
@@ -1132,7 +1144,7 @@ const BusinessAddBag = ({navigation}) => {
               style={{
                 borderRadius: 10,
                 borderColor: '#D9E0E8',
-                borderWidth: 0.5,
+                borderWidth: 1,
                 alignItems: 'center',
                 marginTop: 5,
               }}>
@@ -1157,10 +1169,9 @@ const BusinessAddBag = ({navigation}) => {
             fontFamily: 'Poppins-Regular',
             marginTop: 10,
           }}>
-          *Ti ricordiamo che il prezzo in app viene calcolato automaticamente
-          con uno sconto pari a circa il 60% sul valore reale. Ricorda, puoi
-          sempre modificare il valore reale, più il prezzo offerto sarà basso
-          più saranno le opportunità di riuscire a vendere le tue Hero Bag.
+          *Il prezzo in app viene calcolato automaticamente
+          con uno sconto pari a circa il 60% sul valore reale che il cliente avrebbe pagato senza il nostro servizio, più il prezzo offerto sarà basso
+          più saranno le opportunità di riuscire a vendere le tue HeroBag.
         </Text>
         <TouchableOpacity
           style={{
@@ -1175,12 +1186,11 @@ const BusinessAddBag = ({navigation}) => {
             style={{
               color: '#000000',
               fontSize: 16,
-              
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               paddingVertical: 15,
               textAlign: 'center',
             }}>
-            Salva Hero Bag
+            Salva Herobag
           </Text>
         </TouchableOpacity>
       </View>

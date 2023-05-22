@@ -41,7 +41,7 @@ const UserPreferences = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Preferenze
         </Text>
@@ -54,7 +54,7 @@ const UserPreferences = ({navigation}) => {
           fontFamily: 'Poppins-Regular',
         }}>
         Selezionando le tue preferenze riusciremo a fornirti un’esperienza
-        basata sulle tue esigenze e gusti.
+        basata sulle tue esigenze orarie ed in base ai tuoi gusti preferiti.
       </Text>
       <View
         style={{
@@ -70,10 +70,10 @@ const UserPreferences = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 10,
           }}>
-          Cosa preferisci mangiare?
+          Cosa preferisci mangiare ?
         </Text>
         <Text
           style={{
@@ -82,7 +82,7 @@ const UserPreferences = ({navigation}) => {
             fontWeight: '400',
             fontFamily: 'Poppins-Regular',
           }}>
-          Seleziona una o più categorie
+          Puoi seleziona una o più categorie
         </Text>
       </View>
       <View>
@@ -259,10 +259,10 @@ const UserPreferences = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 20,
           }}>
-          Hai preferenze alimentari?
+          Hai preferenze o intolleranze alimentari?
         </Text>
         <Text
           style={{
@@ -425,7 +425,7 @@ const UserPreferences = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 20,
           }}>
           Orari di ritiro preferiti
@@ -641,7 +641,7 @@ const UserPreferences = ({navigation}) => {
               textAlign: 'center',
               paddingVertical: 10,
             }}>
-            Consiglia preferenze
+            Consiglia altre preferenze
           </Text>
         </TouchableOpacity>
       </View>
@@ -663,7 +663,7 @@ const UserPreferences = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 20,
             }}>
@@ -681,7 +681,7 @@ const UserPreferences = ({navigation}) => {
               color: '#21B861',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 20,
             }}>

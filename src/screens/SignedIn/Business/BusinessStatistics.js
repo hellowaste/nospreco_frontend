@@ -36,7 +36,7 @@ const BusinessStatistics = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingRight: 15,
-              paddingLeft: '40%',
+              paddingLeft: '38%',
               paddingTop: 20,
             }}>
             <Text
@@ -44,7 +44,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Guida all'app
             </Text>
@@ -73,7 +73,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
             Statistiche
@@ -89,7 +89,7 @@ const BusinessStatistics = ({navigation}) => {
             }}>
             In questa schermata potrai gestire in totale autonomia le vendite
             della giornata odierna, qui infatti puoi inserire o modificare le
-            Hero Bag in vendita e monitore o modificare gli ordini del giorno.
+            HeroBag in vendita e monitore o modificare gli ordini del giorno.
           </Text>
           <View
             style={{
@@ -113,7 +113,7 @@ const BusinessStatistics = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -134,7 +134,7 @@ const BusinessStatistics = ({navigation}) => {
                   color: '#000000',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -212,7 +212,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Statistiche
         </Text>
@@ -230,7 +230,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#3C434B',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Novembre 2022
         </Text>
@@ -296,7 +296,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#000000',
                 fontSize: 22,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
               }}>
               234
@@ -326,7 +326,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#000000',
                 fontSize: 22,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
               }}>
               € 937,36
@@ -364,7 +364,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#000000',
                 fontSize: 22,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
               }}>
               187
@@ -394,7 +394,7 @@ const BusinessStatistics = ({navigation}) => {
                 color: '#000000',
                 fontSize: 22,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
               }}>
               4.6 su 5.0
@@ -404,7 +404,7 @@ const BusinessStatistics = ({navigation}) => {
       </View>
       <View
         style={{
-          marginTop: 30,
+          marginTop: 25,
           marginHorizontal: 15,
         }}>
         <Text
@@ -412,7 +412,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Recensioni utenti
         </Text>
@@ -426,7 +426,7 @@ const BusinessStatistics = ({navigation}) => {
               color: '#3C434B',
               fontSize: 14,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               marginRight: 5,
             }}>
             Utente 1 ha assegnato 2
@@ -459,7 +459,7 @@ const BusinessStatistics = ({navigation}) => {
           marginHorizontal: 15,
           marginTop: 10,
           borderColor: '#A3AEB4',
-          borderWidth: 0.5,
+          borderWidth: 1,
           borderRadius: 10,
         }}>
         <TextInput
@@ -469,7 +469,7 @@ const BusinessStatistics = ({navigation}) => {
             color: '#000000',
             fontSize: 14,
             fontWeight: '500',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}
         />
       </View>

@@ -117,7 +117,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 20,
           }}>
           Prezzo massimo
@@ -137,7 +137,6 @@ const StoresFiltersScreen = ({navigation}) => {
           <TextInput
             style={{
               fontSize: 20,
-              
               marginVertical: 5,
               width: '80%',
             }}
@@ -159,7 +158,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 20,
             marginBottom: 10,
           }}>
@@ -398,7 +397,7 @@ const StoresFiltersScreen = ({navigation}) => {
             color: '#020905',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             marginTop: 20,
             marginBottom: 10,
           }}>
@@ -990,7 +989,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 20,
             }}>
@@ -1008,7 +1007,7 @@ const StoresFiltersScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Boldn',
               textAlign: 'center',
               paddingVertical: 20,
             }}>

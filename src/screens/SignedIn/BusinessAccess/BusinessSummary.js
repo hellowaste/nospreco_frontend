@@ -80,7 +80,7 @@ const BusinessRegisterSummary = ({navigation}) => {
           />
           <Text
             style={{
-              paddingTop: 2,
+              paddingTop: 10,
               color: '#A3AEB4',
               fontSize: 14,
               lineHeight: 12,
@@ -88,18 +88,7 @@ const BusinessRegisterSummary = ({navigation}) => {
               fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
-            Informazioni
-          </Text>
-          <Text
-            style={{
-              color: '#A3AEB4',
-              fontSize: 14,
-              lineHeight: 12,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-           negozio
+            Info azienda
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
@@ -110,25 +99,15 @@ const BusinessRegisterSummary = ({navigation}) => {
           />
           <Text
             style={{
-              paddingTop: 2,
+              paddingTop: 10,
               color: '#A3AEB4',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-            Informazioni
-          </Text>
-          <Text
-            style={{
-              color: '#A3AEB4',
-              fontSize: 14,
               lineHeight: 12,
-              fontWeight: '400',
               fontFamily: 'Poppins-Regular',
               textAlign: 'center',
             }}>
-           referente
+            Info referente
           </Text>
         </View>
         <View style={{alignItems: 'center'}}>
@@ -139,25 +118,15 @@ const BusinessRegisterSummary = ({navigation}) => {
           />
           <Text
             style={{
-              paddingTop: 2,
+              paddingTop: 10,
               color: '#21B861',
               fontSize: 14,
               fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
-              textAlign: 'center',
-            }}>
-            Verifica 
-          </Text>
-          <Text
-            style={{
-              color: '#21B861',
-              fontSize: 14,
               lineHeight: 12,
-              fontWeight: '400',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
-             informazioni
+            Verifica
           </Text>
         </View>
       </View>
@@ -174,20 +143,20 @@ const BusinessRegisterSummary = ({navigation}) => {
           style={{
             color: '#000000',
             fontSize: 18,
-            fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontWeight: '500',
+            fontFamily: 'Poppins-Bold',
           }}>
           Controlla le informazioni
         </Text>
         <Text
           style={{
             marginTop: 10,
-            color: '#000000',
+            color: '#21B861',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
-          Informazioni sullo store
+          Informazioni azienda
         </Text>
         <View
           style={{
@@ -398,12 +367,12 @@ const BusinessRegisterSummary = ({navigation}) => {
             }}
           />
           <Text
-            style={{
-              marginTop: 10,
-              color: '#000000',
-              fontSize: 16,
-              fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              style={{
+                marginTop: 10,
+                color: '#21B861',
+                fontSize: 16,
+                fontWeight: '600',
+                fontFamily: 'Poppins-Bold',
             }}>
             Informazioni sul referente
           </Text>
@@ -488,7 +457,7 @@ const BusinessRegisterSummary = ({navigation}) => {
               color: '#000000',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             Accetto i{' '}
           </Text>
@@ -497,7 +466,7 @@ const BusinessRegisterSummary = ({navigation}) => {
               color: '#000000',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               
             }}>
             Termini e Condizioni{' '}
@@ -507,7 +476,7 @@ const BusinessRegisterSummary = ({navigation}) => {
               color: '#000000',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
             }}>
             e{' '}
           </Text>
@@ -516,7 +485,7 @@ const BusinessRegisterSummary = ({navigation}) => {
               color: '#000000',
               fontSize: 12,
               fontWeight: '500',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               
             }}>
             Privacy Policy
@@ -540,7 +509,7 @@ const BusinessRegisterSummary = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
             }}>

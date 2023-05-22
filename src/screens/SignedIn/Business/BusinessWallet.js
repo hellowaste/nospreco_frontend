@@ -40,7 +40,7 @@ const BusinessWallet = ({navigation}) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingRight: 15,
-              paddingLeft: '40%',
+              paddingLeft: '38%',
               paddingTop: 20,
             }}>
             <Text
@@ -48,7 +48,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Guida all'app
             </Text>
@@ -77,7 +77,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 18,
               fontWeight: '600',
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
             }}>
             Wallet
@@ -118,7 +118,7 @@ const BusinessWallet = ({navigation}) => {
                   color: '#21B861',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -139,7 +139,7 @@ const BusinessWallet = ({navigation}) => {
                   color: '#000000',
                   fontSize: 16,
                   
-                  fontFamily: 'Poppins-Regular',
+                  fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 20,
                 }}>
@@ -157,7 +157,7 @@ const BusinessWallet = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '30%',
+            marginTop: '45%',
             alignSelf: 'center',
             borderRadius: 8,
             borderColor: '#000000',
@@ -172,14 +172,14 @@ const BusinessWallet = ({navigation}) => {
               justifyContent: 'space-between',
               paddingHorizontal: 15,
               paddingBottom: 10,
-              paddingLeft: '30%',
+              paddingLeft: '25%',
             }}>
             <Text
               style={{
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Richiesta completata
             </Text>
@@ -232,7 +232,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#21B861',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 marginTop: 10,
               }}>
@@ -243,7 +243,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#3C434B',
                 fontSize: 16,
                 fontWeight: '400',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 marginTop: 10,
               }}>
@@ -257,9 +257,9 @@ const BusinessWallet = ({navigation}) => {
           style={{
             backgroundColor: '#ffffff',
             width: '85%',
-            marginTop: '30%',
+            marginTop: '55%',
             alignSelf: 'center',
-            borderRadius: 8,
+            borderRadius: 10,
             borderColor: '#000000',
             borderWidth: 0.3,
             paddingVertical: 20,
@@ -279,7 +279,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Saldo disponibile
             </Text>
@@ -312,7 +312,7 @@ const BusinessWallet = ({navigation}) => {
               textAlign: 'center',
               marginTop: 10,
             }}>
-            Il saldo disponibile corrisponde al totale delle Hero Bag vendute
+            Il saldo disponibile corrisponde al totale delle HeroBag vendute
             detratto per le nostre commissioni
           </Text>
         </View>
@@ -324,7 +324,7 @@ const BusinessWallet = ({navigation}) => {
             width: '85%',
             marginTop: '30%',
             alignSelf: 'center',
-            borderRadius: 8,
+            borderRadius: 10,
             borderColor: '#000000',
             borderWidth: 0.3,
             paddingVertical: 20,
@@ -344,7 +344,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 14,
                 fontWeight: '500',
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
               }}>
               Prelievo
             </Text>
@@ -384,7 +384,7 @@ const BusinessWallet = ({navigation}) => {
               borderRadius: 10,
               borderColor: '#A3AEB4',
               borderWidth: 0.5,
-              marginHorizontal: 10,
+              marginHorizontal: 5,
               flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'space-between',
@@ -392,7 +392,7 @@ const BusinessWallet = ({navigation}) => {
               marginTop: 5,
             }}>
             <TextInput
-              placeholder="Campo precompilato"
+              placeholder="Campo precompilato       "
               placeholderTextColor={'#000000'}
               style={{
                 color: '#000000',
@@ -412,9 +412,9 @@ const BusinessWallet = ({navigation}) => {
             <Text
               style={{
                 color: '#6D747C',
-                fontSize: 18,
+                fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 marginTop: 10,
                 marginLeft: 10,
               }}>
@@ -425,7 +425,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#6D747C',
                 fontSize: 18,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 marginTop: 10,
                 marginRight: 10,
               }}>
@@ -436,23 +436,24 @@ const BusinessWallet = ({navigation}) => {
             style={{
               backgroundColor: '#F9FAFB',
               borderRadius: 10,
-              width: '60%',
+              width: '70%',
               alignSelf: 'center',
-              marginTop: 20,
+              marginTop: 25,
               flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'center',
             }}>
             <TextInput
-              placeholder="€ 500,00"
+              placeholder="€ 500,00   "
               placeholderTextColor={'#000000'}
               style={{
                 color: '#000000',
-                fontSize: 22,
-                
-                fontFamily: 'Poppins-Regular',
-                textAlign: 'center',
-                marginLeft: 10,
+                fontSize: 19,
+                fontFamily: 'Poppins-Bold',
+                textAlign:'left',
+                marginTop: 10,
+                marginLeft: 5,
+                marginRight: 5,
               }}
             />
             <MaterialCommunityIcons
@@ -460,7 +461,7 @@ const BusinessWallet = ({navigation}) => {
               size={20}
               color={'#A3AEB4'}
               style={{
-                marginLeft: 10,
+                marginLeft: 60,
               }}
             />
           </View>
@@ -481,7 +482,7 @@ const BusinessWallet = ({navigation}) => {
                 color: '#000000',
                 fontSize: 16,
                 
-                fontFamily: 'Poppins-Regular',
+                fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,
               }}>
@@ -558,7 +559,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 18,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Wallet
         </Text>
@@ -605,7 +606,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 22,
             
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
             textAlign: 'center',
           }}>
           € 49,50
@@ -626,7 +627,7 @@ const BusinessWallet = ({navigation}) => {
               color: '#000000',
               fontSize: 16,
               
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 10,
             }}>
@@ -657,7 +658,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Dettagli del tuo saldo
         </Text>
@@ -675,7 +676,7 @@ const BusinessWallet = ({navigation}) => {
               fontWeight: '400',
               fontFamily: 'Poppins-Regular',
             }}>
-            Hero Bag vendute
+            HeroBag vendute
           </Text>
           <Text
             style={{
@@ -750,7 +751,7 @@ const BusinessWallet = ({navigation}) => {
             color: '#000000',
             fontSize: 16,
             fontWeight: '600',
-            fontFamily: 'Poppins-Regular',
+            fontFamily: 'Poppins-Bold',
           }}>
           Storico prelievi
         </Text>

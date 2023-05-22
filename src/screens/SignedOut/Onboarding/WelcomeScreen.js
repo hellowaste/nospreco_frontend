@@ -38,6 +38,7 @@ const WelcomeScreen = ({navigation}) => {
               color: '#21B861',
               fontSize: 14,
               fontWeight: '400',
+              fontFamily: 'Poppins-Bold',
               alignSelf: 'flex-end',
               paddingRight: 30,
             }}>
@@ -199,22 +200,22 @@ const FirstSection = () => {
         style={{
           height: 220,
           width: 220,
-          marginTop:-30,
+          marginTop:-10,
           borderRadius: 120,
           alignSelf: 'center',
-          marginBottom: 30,
+          marginBottom: 10,
         }}
       />
       <Text
         style={{
           color: '#000000',
-          fontSize: 26,
-          padding:5,
+          fontSize: 24,
+          padding:-1,
           fontFamily: 'Poppins-Bold',
           textAlign: 'center',
           paddingHorizontal: 0,
-          lineHeight:24,
-          marginTop:50
+          lineHeight:25,
+          marginTop:40
 
         }}>
         Abbiamo un sogno!
@@ -222,7 +223,7 @@ const FirstSection = () => {
       <Text
         style={{
           color: '#000000',
-          fontSize: 26,
+          fontSize: 22,
           padding:5,
           fontStyle:'normal',
           fontFamily: 'Poppins-Bold',
@@ -242,20 +243,24 @@ const SecondSection = () => {
       <Image
         source={require('../../../assets/app/onboarding/img-2-onboarding.png')}
         style={{
-          height: 200,
-          width: 200,
-          borderRadius: 100,
+          height: 220,
+          width: 220,
+          marginTop:-10,
+          borderRadius: 120,
           alignSelf: 'center',
-          marginBottom: 50,
+          marginBottom: 10,
         }}
       />
       <Text
         style={{
           color: '#000000',
-          fontSize: 22,         
+          fontSize: 22,
+          padding:5,
           fontFamily: 'Poppins-Bold',
           textAlign: 'center',
-          paddingHorizontal: 30,
+          paddingHorizontal: 0,
+          lineHeight:25,
+          marginTop:40
         }}>
         Cerca i nostri store alleati più vicini a te e scegli le tue HeroBag
         scontate fino al 70%
@@ -268,7 +273,7 @@ const SecondSection = () => {
           fontWeight: '400',
           fontFamily: 'Poppins-Regular',
           textAlign: 'center',
-          paddingHorizontal: 90,
+          paddingHorizontal: 50,
           marginTop: 10,
         }}>
         Ricorda, le nostre HeroBag contengono prodotti invenduti ma ancora
@@ -284,32 +289,37 @@ const ThirdSection = () => {
       <Image
         source={require('../../../assets/app/onboarding/img-3-onboarding.png')}
         style={{
-          height: 200,
-          width: 200,
-          borderRadius: 100,
+          height: 220,
+          width: 220,
+          marginTop:-10,
+          borderRadius: 120,
           alignSelf: 'center',
-          marginBottom: 50,
+          marginBottom: 20,
         }}
       />
       <Text
         style={{
           color: '#000000',
-          fontSize: 22,
-          
+          fontSize: 20,
+          padding:3,
+          fontStyle:'normal',
           fontFamily: 'Poppins-Bold',
           textAlign: 'center',
-          paddingHorizontal: 30,
+          paddingHorizontal: 0,
+          lineHeight:35
         }}>
         Acquistarle sarà facilissimo!
       </Text>
       <Text
         style={{
           color: '#000000',
-          fontSize: 22,
-          
+          fontSize: 20,
+          padding:5,
+          fontStyle:'normal',
           fontFamily: 'Poppins-Bold',
           textAlign: 'center',
-          paddingHorizontal: 30,
+          paddingHorizontal: 5,
+          lineHeight:24
         }}>
         Seleziona le tue HeroBag preferite e paga comodamente in app!
       </Text>
@@ -321,7 +331,7 @@ const ThirdSection = () => {
           fontWeight: '400',
           fontFamily: 'Poppins-Regular',
           textAlign: 'center',
-          paddingHorizontal: 90,
+          paddingHorizontal: 50,
           marginTop: 10,
         }}>
         Le tue HeroBag ti aspettano direttamente in store, mostra il tuo codice

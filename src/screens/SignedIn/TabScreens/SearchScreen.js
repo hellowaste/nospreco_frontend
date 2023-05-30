@@ -44,48 +44,6 @@ const SearchScreen = ({navigation}) => {
             pointerEvents={'box-none'}>
             {storeVisibility ? (
               <View style={{paddingTop: 30, marginHorizontal: 30}}>
-                <TouchableOpacity
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    backgroundColor: '#F9FAFB',
-                    borderRadius: 10,
-                  }}
-                  onPress={() => {
-                    setStoreVisibility(!storeVisibility);
-                  }}>
-                  <View>
-                    <MaterialCommunityIcons
-                      name="map-marker"
-                      size={20}
-                      color={'#21B861'}
-                      style={{
-                        margin: 10,
-                        marginVertical: 15,
-                      }}
-                    />
-                  </View>
-                  <View>
-                    <Text
-                      style={{
-                        color: '#6D747C',
-                        fontSize: 14,
-                        fontWeight: '500',
-                        fontFamily: 'Poppins-Regular',
-                      }}>
-                      La tua posizione
-                    </Text>
-                    <Text
-                      style={{
-                        color: '#000000',
-                        fontSize: 14,
-                        fontWeight: '500',
-                        fontFamily: 'Poppins-Regular',
-                      }}>
-                      Milano (entro 10 km)
-                    </Text>
-                  </View>
-                </TouchableOpacity>
                 <View
                   style={{
                     flexDirection: 'row',
@@ -255,6 +213,49 @@ const SearchScreen = ({navigation}) => {
                     </View>
                   )}
                 </View>
+                <TouchableOpacity
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    backgroundColor: '#F9FAFB',
+                    borderRadius: 10,
+                  }}
+                  onPress={() => {
+                    setStoreVisibility(!storeVisibility);
+                  }}>
+                  <View>
+                    <MaterialCommunityIcons
+                      name="map-marker"
+                      size={20}
+                      color={'#21B861'}
+                      style={{
+                        margin: 10,
+                        marginVertical: 15,
+                      }}
+                    />
+                  </View>
+                  <View>
+                    <Text
+                      style={{
+                        color: '#6D747C',
+                        fontSize: 14,
+                        fontWeight: '500',
+                        fontFamily: 'Poppins-Regular',
+                      }}>
+                      La tua posizione
+                    </Text>
+                    <Text
+                      style={{
+                        color: '#000000',
+                        fontSize: 14,
+                        fontWeight: '500',
+                        fontFamily: 'Poppins-Regular',
+                      }}>
+                      Milano (entro 10 km)
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+                
               </View>
             ) : (
               <View style={{paddingTop: 30}}>

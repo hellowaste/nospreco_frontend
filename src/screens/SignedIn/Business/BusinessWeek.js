@@ -25,6 +25,7 @@ const BusinessWeek = ({navigation}) => {
   const togglePushNotificationsSwitch = () =>
     setIsPushNotificationsEnabled(previousState => !previousState);
   const [userGuideModal, setUserGuideModal] = useState(true);
+  const [saveModal, setsaveModal] = useState(false);
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
@@ -363,9 +364,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -485,9 +488,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -607,9 +612,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -729,9 +736,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -851,9 +860,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -973,9 +984,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -1095,9 +1108,11 @@ const BusinessWeek = ({navigation}) => {
                 fontSize: 25,
                 marginRight:15,
                 fontFamily: 'Poppins-Bold',
+                paddingLeft:170,
               }}>
               5
             </Text>
+            <MaterialCommunityIcons name="pencil-plus-outline" size={26} color={'#A3AEB4'} />
           </View>
           <View
             style={{
@@ -1158,12 +1173,14 @@ const BusinessWeek = ({navigation}) => {
             borderRadius: 10,
             marginBottom: 100,
             marginTop: 30,
+          }}
+          onPress={() => {
+            setsaveModal(true);
           }}>
           <Text
             style={{
               color: '#000000',
               fontSize: 16,
-              
               fontFamily: 'Poppins-Bold',
               textAlign: 'center',
               paddingVertical: 15,
@@ -1172,6 +1189,124 @@ const BusinessWeek = ({navigation}) => {
           </Text>
         </TouchableOpacity>
       </View>
+      <Modal animationType="slide" transparent={true} visible={saveModal}>
+        <View
+          style={{
+            backgroundColor: '#ffffff',
+            width: '85%',
+            marginTop: '48%',
+            alignSelf: 'center',
+            borderRadius: 15,
+            borderColor: '#000000',
+            borderWidth: 0.3,
+            paddingVertical: 20,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              width: '100%',
+              justifyContent: 'space-between',
+              paddingHorizontal: 15,
+              paddingBottom: 5,
+              paddingLeft: '5%',
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 14,
+                fontWeight: '500',
+                fontFamily: 'Poppins-Regular',
+                marginStart:80,
+              }}>
+              Salva pianificazione
+            </Text>
+            <TouchableOpacity
+              style={{alignSelf: 'flex-end'}}
+              onPress={() => {
+                setsaveModal(false);
+              }}>
+              <MaterialCommunityIcons
+                name="close"
+                size={30}
+                color={'#020905'}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              marginVertical: 10,
+            }}>
+            <Text
+              style={{
+                color: '#000000',
+                fontSize: 16,
+                fontWeight: '600',
+                fontFamily: 'Poppins-Bold',
+                paddingHorizontal: 20,
+                textAlign: 'center',
+              }}>
+              Vuoi salvare questa pianificazione per le prossime settimane ?
+            </Text>
+          </View>
+          <View
+            style={{
+              backgroundColor: '#D9E0E8',
+              height: 0.5,
+              width: '90%',
+              alignSelf: 'center',
+            }}
+          />
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#E02D3C',
+              width: '92%',
+              marginHorizontal: 10,
+              marginTop: 10,
+              alignSelf: 'center',
+              borderRadius: 10,
+            }}
+            onPress={() => {
+              setsaveModal(false);
+            }}>
+            <Text
+              style={{
+                color: '#ffffff',
+                fontSize: 16,
+                
+                fontFamily: 'Poppins-Bold',
+                textAlign: 'center',
+                paddingVertical: 15,
+              }}>
+              Sì
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#F2FDF7',
+              width: '92%',
+              marginHorizontal: 10,
+              marginTop: 10,
+              alignSelf: 'center',
+              borderRadius: 10,
+            }}
+            onPress={() => {
+              setsaveModal(false);
+            }}>
+            <Text
+              style={{
+                color: '#21B861',
+                fontSize: 16,
+                
+                fontFamily: 'Poppins-Bold',
+                textAlign: 'center',
+                paddingVertical: 15,
+              }}>
+              No
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
     </ScrollView>
   );
 };

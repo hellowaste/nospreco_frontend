@@ -207,7 +207,6 @@ const FavoriteScreen = ({navigation}) => {
               style={{
                 color: '#000000',
                 fontSize: 16,
-                
                 fontFamily: 'Poppins-Bold',
                 textAlign: 'center',
                 paddingVertical: 15,

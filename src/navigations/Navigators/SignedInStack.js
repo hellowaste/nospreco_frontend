@@ -31,6 +31,8 @@ import SearchStoresScreen from '../../screens/SignedIn/Customer/Explore/SearchSt
 import StoresFiltersScreen from '../../screens/SignedIn/Customer/Explore/StoresFiltersScreen';
 import StoreBagsScreen from '../../screens/SignedIn/Customer/Store/StoreBagsScreen';
 import HeroBagScreen from '../../screens/SignedIn/Customer/Store/HeroBagScreen';
+import Addcreditcard from '../../screens/SignedIn/Customer/Store/Addcreditcard';
+
 import Account from '../../screens/SignedIn/Customer/Settings/Account';
 import AppNotifications from '../../screens/SignedIn/Customer/Settings/AppNotifications';
 import PaymentMethods from '../../screens/SignedIn/Customer/Settings/PaymentMethods';
@@ -139,6 +141,8 @@ const MainStack = ({navigation}) => {
         />
         <Stack.Screen name="StoreBagsScreen" component={StoreBagsScreen} />
         <Stack.Screen name="HeroBagScreen" component={HeroBagScreen} />
+        <Stack.Screen name="Addcreditcard" component={Addcreditcard} />
+
         <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="UpdateAccount" component={UpdateAccount} />
         <Stack.Screen name="AppNotifications" component={AppNotifications} />

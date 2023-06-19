@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const PaymentMethods = ({navigation}) => {
+const Addcreditcard = ({navigation}) => {
   const [newPaymentMethod, setNewPaymentMethod] = useState(false);
   return (
     <View
@@ -338,13 +338,15 @@ const PaymentMethods = ({navigation}) => {
               style={{
                 backgroundColor: '#21B861',
                 borderRadius: 10,
-              }}>
+              }}
+              onPress={() => {
+                //navigation.navigate('setStoreModalMP');
+                 }}>
               <Text
                 style={{
                   color: '#000000',
                   fontSize: 16,
-                  
-                  fontFamily: 'Poppins-Bold',
+                   fontFamily: 'Poppins-Bold',
                   textAlign: 'center',
                   paddingVertical: 15,
                 }}>
@@ -358,4 +360,4 @@ const PaymentMethods = ({navigation}) => {
   );
 };
 
-export default PaymentMethods;
+export default Addcreditcard;

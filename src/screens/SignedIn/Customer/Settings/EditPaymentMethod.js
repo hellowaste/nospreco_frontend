@@ -333,7 +333,7 @@ const EditPaymentMethod = ({navigation}) => {
             textAlign: 'left',
             marginBottom: 5,
           }}>
-          Intestario carta
+          Numero carta
         </Text>
         <View
           style={{
@@ -342,7 +342,7 @@ const EditPaymentMethod = ({navigation}) => {
             borderWidth: 0.3,
           }}>
           <TextInput
-            placeholder="Nome Cognome"
+            placeholder="Es: 0000 0000 0000 0000"
             placeholderTextColor={'#646464'}
             style={{
               margin: 10,
@@ -368,7 +368,7 @@ const EditPaymentMethod = ({navigation}) => {
             textAlign: 'left',
             marginBottom: 5,
           }}>
-          Indirizzo associato
+          Intestatario carta 
         </Text>
         <View
           style={{
@@ -377,7 +377,7 @@ const EditPaymentMethod = ({navigation}) => {
             borderWidth: 0.3,
           }}>
           <TextInput
-            placeholder="Via Roma 1, 24100, Milano (MI)"
+            placeholder="Es : Mario Rossi"
             placeholderTextColor={'#646464'}
             style={{
               margin: 10,

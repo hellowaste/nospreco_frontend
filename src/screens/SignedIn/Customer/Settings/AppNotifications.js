@@ -126,7 +126,7 @@ const AppNotifications = ({navigation}) => {
           </Text>
           <Switch
             trackColor={{false: '#767577', true: '#d7d7d7'}}
-            thumbColor={isPushNotificationsEnabled ? '#21B861' : '#D9E0E8'}
+            thumbColor={isPushNotificationsEnabled ? '#21B861' : '#D9E0E9'}
             ios_backgroundColor="#3e3e3e"
             onValueChange={togglePushNotificationsSwitch}
             value={isPushNotificationsEnabled}
